@@ -4,3 +4,4 @@
 - Sub string Functions [[substring() && slice()]].
 - Working with Infinity Value [[Check The Infinity Values]].
 - Comparing Using equal sing = [[ Comparing Using equal sing]].
+- Array [[Array]].

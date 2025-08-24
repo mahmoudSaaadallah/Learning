@@ -1,4 +1,6 @@
 {
   "accentColor": "#f5a65c",
-  "cssTheme": "Blue Topaz"
+  "cssTheme": "Blue Topaz",
+  "baseFontSizeAction": true,
+  "baseFontSize": 19
 }
