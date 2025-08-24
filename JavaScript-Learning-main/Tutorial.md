@@ -1,0 +1,6 @@
+- Casting to Number [[Parsing(Casting to number)]].
+- Working with NaN [[NaN(Not a Number)]].
+- Format Number using toFixed() & toPrecision() [[Format a number using fixed-point notation(toFixed())]].
+- Sub string Functions [[substring() && slice()]].
+- Working with Infinity Value [[Check The Infinity Values]].
+- Comparing Using equal sing = [[ Comparing Using equal sing]].
