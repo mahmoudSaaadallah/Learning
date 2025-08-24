@@ -1,0 +1,251 @@
+{
+  "main": {
+    "id": "eaabace14ce97521",
+    "type": "split",
+    "children": [
+      {
+        "id": "b0c440e3249de665",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e6e110c5b72a9ecd",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5999a490683b9c72",
+    "type": "split",
+    "children": [
+      {
+        "id": "f9fe356dbbe1d687",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0b83626d37970c89",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "148f4fc70a412366",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "15da66d495a880fc",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "b33d6d448e5c0685",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      },
+      {
+        "id": "04a689d437b4ae5f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d26d25fe62df8e05",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "844d25a30cb5cabd",
+    "type": "split",
+    "children": [
+      {
+        "id": "2cefae5fdb84c87f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "74ca81611688002a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "76a0d58f0b2189e1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "b671fc24d8341e50",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "5a585a22ea26c26c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "f17227f8a4c0afbf",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
+          },
+          {
+            "id": "12ba52826ed5761f",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "pinned": true,
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 591.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "omnisearch:Omnisearch": false,
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "graph:Open graph view": false,
+      "copilot:Open Copilot Chat": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "12ba52826ed5761f",
+  "lastOpenFiles": [
+    "JavaScript-Learning-main/Comparing Using equal sing.md",
+    "JavaScript-Learning-main/Parsing(Casting to number).md",
+    "JavaScript-Learning-main/Format a number using fixed-point notation(toFixed()).md",
+    "JavaScript-Learning-main/NaN(Not a Number).md",
+    "obsidian-20250824T143346Z-1-001.zip",
+    "JavaScript-Learning-main/Check The Infinity Values.md",
+    "Markdown CheatSheat.md",
+    "JavaScript-Learning-main/Tutorial.md",
+    "JavaScript-Learning-main/substring() && slice().md",
+    "JavaScript-Learning-main/README.md",
+    "JavaScript-Learning-main",
+    "JavaScript-Learning-main.zip",
+    "copilot-custom-prompts/Remove URLs.md",
+    "copilot-custom-prompts/Rewrite as tweet.md",
+    "copilot-custom-prompts/Rewrite as tweet thread.md",
+    "copilot-custom-prompts/Make longer.md",
+    "copilot-custom-prompts/Generate glossary.md",
+    "copilot-custom-prompts/Fix grammar and spelling.md",
+    "copilot-custom-prompts/Explain like I am 5.md",
+    "copilot-custom-prompts/Emojify.md",
+    "copilot-custom-prompts/Generate table of contents.md",
+    "copilot-custom-prompts/Make shorter.md",
+    "copilot-custom-prompts/Simplify.md",
+    "copilot-custom-prompts/Summarize.md",
+    "copilot-custom-prompts/Translate to Chinese.md",
+    "copilot-custom-prompts",
+    "Untitled 2.base",
+    "Untitled 1.base",
+    "Untitled.base",
+    "Untitled 3.base",
+    "Welcome.md",
+    "Untitled"
+  ]
+}
