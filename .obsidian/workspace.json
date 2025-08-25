@@ -22,21 +22,91 @@
             }
           },
           {
-            "id": "3d71b1f5b1e9b5bf",
+            "id": "bd6978b00fb81139",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript-Learning-main/Array.md",
+                "file": "JavaScript-Learning-main/Window.open.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Array"
+              "title": "Window.open"
+            }
+          },
+          {
+            "id": "1ba67d3c53d9c169",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript-Learning-main/SetInterval.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SetInterval"
+            }
+          },
+          {
+            "id": "9d4b4479ce6d2b6e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript-Learning-main/SetTimeout.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SetTimeout"
+            }
+          },
+          {
+            "id": "a973200850aba606",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript-Learning-main/Location.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Location"
+            }
+          },
+          {
+            "id": "12106c79f1303586",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript-Learning-main/BOM(Browse Object Model).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "BOM(Browse Object Model)"
+            }
+          },
+          {
+            "id": "9ebaade5a67a2d41",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript-Learning-main/Window Object.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Window Object"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -136,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaScript-Learning-main/Array.md",
+                "file": "JavaScript-Learning-main/Location.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +216,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Array"
+              "title": "Backlinks for Location"
             }
           },
           {
@@ -155,12 +225,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaScript-Learning-main/Array.md",
+                "file": "JavaScript-Learning-main/Location.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Array"
+              "title": "Outgoing links from Location"
             }
           },
           {
@@ -184,13 +254,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaScript-Learning-main/Array.md",
+                "file": "JavaScript-Learning-main/Location.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Array"
+              "title": "Outline of Location"
             }
           },
           {
@@ -220,7 +290,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 591.5
+    "width": 578.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -238,17 +308,29 @@
   },
   "active": "12ba52826ed5761f",
   "lastOpenFiles": [
-    "JavaScript-Learning-main/Tutorial.md",
     "JavaScript-Learning-main/Array.md",
+    "JavaScript-Learning-main/Location.md",
+    "JavaScript-Learning-main/Window Object.md",
+    "Images/Pasted image 20250825183307.png",
+    "JavaScript-Learning-main/Window.open.md",
+    "JavaScript-Learning-main/Tutorial.md",
+    "JavaScript-Learning-main/SetInterval.md",
+    "JavaScript-Learning-main/SetTimeout.md",
+    "Welcome.md",
+    "Images/Pasted image 20250825165605.png",
+    "Images",
+    "Pasted image 20250825165519.png",
+    "JavaScript-Learning-main/BOM(Browse Object Model).md",
+    "Untitled.canvas",
+    "JavaScript-Learning-main/substring() && slice().md",
+    "JavaScript-Learning-main/NaN(Not a Number).md",
+    "JavaScript-Learning-main/README.md",
     "JavaScript-Learning-main/Comparing Using equal sing.md",
     "JavaScript-Learning-main/Parsing(Casting to number).md",
     "JavaScript-Learning-main/Format a number using fixed-point notation(toFixed()).md",
-    "JavaScript-Learning-main/NaN(Not a Number).md",
     "obsidian-20250824T143346Z-1-001.zip",
     "JavaScript-Learning-main/Check The Infinity Values.md",
     "Markdown CheatSheat.md",
-    "JavaScript-Learning-main/substring() && slice().md",
-    "JavaScript-Learning-main/README.md",
     "JavaScript-Learning-main",
     "JavaScript-Learning-main.zip",
     "copilot-custom-prompts/Remove URLs.md",
@@ -259,17 +341,10 @@
     "copilot-custom-prompts/Fix grammar and spelling.md",
     "copilot-custom-prompts/Explain like I am 5.md",
     "copilot-custom-prompts/Emojify.md",
-    "copilot-custom-prompts/Generate table of contents.md",
-    "copilot-custom-prompts/Make shorter.md",
-    "copilot-custom-prompts/Simplify.md",
-    "copilot-custom-prompts/Summarize.md",
-    "copilot-custom-prompts/Translate to Chinese.md",
     "copilot-custom-prompts",
     "Untitled 2.base",
     "Untitled 1.base",
     "Untitled.base",
-    "Untitled 3.base",
-    "Welcome.md",
-    "Untitled"
+    "Untitled 3.base"
   ]
 }
