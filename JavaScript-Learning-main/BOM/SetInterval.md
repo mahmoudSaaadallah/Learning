@@ -1,3 +1,10 @@
+---
+copilot-command-context-menu-enabled: true
+copilot-command-slash-enabled: true
+copilot-command-context-menu-order: 0
+copilot-command-model-key: ""
+copilot-command-last-used: 0
+---
 # SetInterval()
 
 - `setInterval()` used as `setTimeout()` [[SetTimeout]] function, but it could calls the function several times.
