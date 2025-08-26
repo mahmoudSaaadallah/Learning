@@ -92,3 +92,4 @@ document.getElementById("example").innerHTML = "Goodbye <i>World</i>";
 - Updating parts of a web page without refreshing.
 - Inserting new HTML dynamically (e.g., adding a list of items).
 - Basic DOM manipulation when you don't need fine control.
+
