@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "JavaScript-Learning-main/DOM/Select Element.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Select Element"
+            }
+          },
+          {
+            "id": "40efa1d297968861",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "JavaScript-Learning-main/DOM/DOM(Document Object Model).md",
                 "mode": "source",
                 "source": false
@@ -22,21 +36,49 @@
             }
           },
           {
-            "id": "aaccfe8c7f80619b",
+            "id": "e34d4dbca4bb7600",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript-Learning-main/DOM/Select Element.md",
+                "file": "JavaScript-Learning-main/DOM/Find Elements by Objects.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Select Element"
+              "title": "Find Elements by Objects"
+            }
+          },
+          {
+            "id": "bfec056b2f81c57b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript-Learning-main/Tutorial.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tutorial"
+            }
+          },
+          {
+            "id": "28a798f27857c51b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript-Learning-main/DOM/Changing & Retrieving the HTML Content.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Changing & Retrieving the HTML Content"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -119,7 +161,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 325.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "844d25a30cb5cabd",
@@ -219,7 +262,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 578.5
+    "width": 499.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -237,8 +280,12 @@
   },
   "active": "12ba52826ed5761f",
   "lastOpenFiles": [
-    "JavaScript-Learning-main/DOM/DOM(Document Object Model).md",
     "JavaScript-Learning-main/DOM/Select Element.md",
+    "JavaScript-Learning-main/DOM/DOM(Document Object Model).md",
+    "JavaScript-Learning-main/DOM/Find Elements by Objects.md",
+    "JavaScript-Learning-main/Tutorial.md",
+    "JavaScript-Learning-main/DOM/Changing & Retrieving the HTML Content.md",
+    "JavaScript-Learning-main/BOM/SetTimeout.md",
     "JavaScript-Learning-main/BOM/Window Object.md",
     "JavaScript-Learning-main/BOM/BOM(Browse Object Model).md",
     "Markdown CheatSheat.md",
@@ -248,7 +295,6 @@
     "JavaScript-Learning-main/BOM/SetInterval.md",
     "JavaScript-Learning-main/BOM/History.md",
     "JavaScript-Learning-main/BOM",
-    "JavaScript-Learning-main/Tutorial.md",
     "Untitled",
     "JavaScript-Learning-main/BOM/Window.open.md",
     "Images/Pasted image 20250825183307.png",
@@ -256,7 +302,6 @@
     "JavaScript-Learning-main/BOM/Navigator.md",
     "JavaScript-Learning-main/BOM/Location.md",
     "JavaScript-Learning-main/Array.md",
-    "JavaScript-Learning-main/BOM/SetTimeout.md",
     "Images/Pasted image 20250825165605.png",
     "Images",
     "Pasted image 20250825165519.png",
@@ -273,8 +318,6 @@
     "JavaScript-Learning-main.zip",
     "copilot-custom-prompts/Remove URLs.md",
     "copilot-custom-prompts/Rewrite as tweet.md",
-    "copilot-custom-prompts/Rewrite as tweet thread.md",
-    "copilot-custom-prompts/Make longer.md",
     "copilot-custom-prompts",
     "Untitled 2.base"
   ]

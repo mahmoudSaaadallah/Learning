@@ -57,9 +57,9 @@
       ]
     },
     {
-      "name": "google/gemini-2.5-flash-lite-preview-06-17",
+      "name": "google/gemini-2.5-flash-lite",
       "provider": "openrouterai",
-      "enabled": false,
+      "enabled": true,
       "isBuiltIn": true,
       "core": true,
       "projectEnabled": true,
@@ -133,6 +133,17 @@
     {
       "name": "gpt-4.1-mini",
       "provider": "openai",
+      "enabled": false,
+      "isBuiltIn": true,
+      "core": true,
+      "projectEnabled": true,
+      "capabilities": [
+        "vision"
+      ]
+    },
+    {
+      "name": "google/gemini-2.5-flash-lite-preview-06-17",
+      "provider": "openrouterai",
       "enabled": false,
       "isBuiltIn": true,
       "core": true,
@@ -267,6 +278,14 @@
       "core": true
     },
     {
+      "name": "gemini-embedding-001",
+      "provider": "google",
+      "enabled": true,
+      "isBuiltIn": true,
+      "isEmbeddingModel": true,
+      "core": true
+    },
+    {
       "name": "text-embedding-3-large",
       "provider": "openai",
       "enabled": true,
@@ -310,10 +329,20 @@
   "autocompleteAcceptKey": "Tab",
   "allowAdditionalContext": true,
   "enableWordCompletion": false,
-  "lastDismissedVersion": null,
+  "lastDismissedVersion": "3.0.0",
   "passMarkdownImages": true,
   "enableCustomPromptTemplating": true,
   "suggestedDefaultCommands": true,
   "reasoningEffort": "low",
-  "verbosity": "medium"
+  "verbosity": "medium",
+  "lexicalSearchRamLimit": 100,
+  "autonomousAgentMaxIterations": 4,
+  "autonomousAgentEnabledToolIds": [
+    "localSearch",
+    "webSearch",
+    "pomodoro",
+    "youtubeTranscription",
+    "writeToFile",
+    "replaceInFile"
+  ]
 }

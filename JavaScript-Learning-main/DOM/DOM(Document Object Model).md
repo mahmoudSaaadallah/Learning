@@ -55,8 +55,24 @@ Essentially, the DOM is a **platform- and language-neutral interface** that allo
 
 3.  **API (Application Programming Interface)**:
     *   The DOM provides a set of APIs (methods and properties) that JavaScript can use to:
-        *   **Find/Select elements**: `document.getElementById()`, `document.querySelector()`, `document.querySelectorAll()`, `document.getElementsByClassName()`, `document.getElementsByTagName()`.
-        *   **Change HTML content**: `element.innerHTML`, `element.textContent`.
+        *   **Find/Select elements**: 
+        * `document.getElementById()` [[Select Element#document.getElementById(id)]], 
+        
+        * `document.querySelector()` [[Select Element#document.querySelector(selector)]],
+        
+        * `document.querySelectorAll()` [[Select Element#document.querySelectorAll(selector)]],
+        
+        * `document.getElementsByClassName()` [[Select Element#document.getElementByClassName(className)]],
+        
+        * `document.getElementsByTagName()` [[Select Element#document.getElementsByTagName(tagName)]].
+        
+        *   **Change HTML content**: 
+        * `element.innerHTML` [[Changing & Retrieving the HTML Content#innerHTML]],
+        
+        * `element.innerText` [[Changing & Retrieving the HTML Content#innerText]],
+        
+        * `element.textContent` [[Changing & Retrieving the HTML Content#textContent]].
+        
         *   **Change CSS styles**: `element.style.property`.
         *   **Add/Remove elements**: `document.createElement()`, `parentNode.appendChild()`, `parentNode.removeChild()`.
         *   **Add/Remove attributes**: `element.setAttribute()`, `element.removeAttribute()`, `element.getAttribute()`.
@@ -66,8 +82,8 @@ Essentially, the DOM is a **platform- and language-neutral interface** that allo
 
 The `document` object is the entry point to the DOM. It represents the entire web page and is the root of the DOM tree. It's a property of the `window` object (`window.document`).
 
-**Common `document` object properties and methods:**
-
+**Common `document` object properties and methods:** [[Find Elements by Objects]]
+ 
 *   `document.documentElement`: Refers to the `<html>` element.
 *   `document.head`: Refers to the `<head>` element.
 *   `document.body`: Refers to the `<body>` element.

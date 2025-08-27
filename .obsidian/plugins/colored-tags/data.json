@@ -10,7 +10,17 @@
     "highTextContrast": false
   },
   "knownTags": {
-    "getElementById": 1
+    "getElementById": 1,
+    "getElementBy": 2,
+    "getElementsByTagName": 3,
+    "getElementByClassName": 4,
+    "innerHTMl": 5,
+    "innerText": 6,
+    "textContent": 7,
+    "querySelectorAll": 8,
+    "CssSelector": 9,
+    "qe": 10,
+    "querySelector": 11
   },
   "_version": 3
 }
