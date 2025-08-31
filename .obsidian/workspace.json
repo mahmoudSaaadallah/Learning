@@ -4,81 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "b0c440e3249de665",
+        "id": "a98ff92ba8eded54",
         "type": "tabs",
         "children": [
           {
-            "id": "9f1d585b5c2fd654",
+            "id": "7a7ed0aa155cba5b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript-Learning-main/DOM/Select Element.md",
+                "file": "linux/awk Command.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Select Element"
+              "title": "awk Command"
             }
           },
           {
-            "id": "40efa1d297968861",
+            "id": "cbb6e78f4d701ddc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript-Learning-main/DOM/DOM(Document Object Model).md",
+                "file": "linux/awk Exercises.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DOM(Document Object Model)"
-            }
-          },
-          {
-            "id": "e34d4dbca4bb7600",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JavaScript-Learning-main/DOM/Find Elements by Objects.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Find Elements by Objects"
-            }
-          },
-          {
-            "id": "bfec056b2f81c57b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JavaScript-Learning-main/Tutorial.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Tutorial"
-            }
-          },
-          {
-            "id": "28a798f27857c51b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JavaScript-Learning-main/DOM/Changing & Retrieving the HTML Content.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Changing & Retrieving the HTML Content"
+              "title": "awk Exercises"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -280,11 +238,20 @@
   },
   "active": "12ba52826ed5761f",
   "lastOpenFiles": [
+    "linux/awk Command.md",
+    "linux/awk Exercises.md",
+    "linux/Linux Tutorial.md",
+    "linux/sed command.md",
+    "JavaScript-Learning-main/JSTutorial.md",
+    "JavaScript-Learning-main/Tutorial.md",
+    "JavaScript-Learning-main/DOM/Find Elements by Object Collections.md",
+    "DataBaseDesign/Normalization.md",
+    "DataBaseDesign",
+    "linux",
+    "JavaScript-Learning-main/DOM/Changing & Retrieving the HTML Content.md",
     "JavaScript-Learning-main/DOM/Select Element.md",
     "JavaScript-Learning-main/DOM/DOM(Document Object Model).md",
     "JavaScript-Learning-main/DOM/Find Elements by Objects.md",
-    "JavaScript-Learning-main/Tutorial.md",
-    "JavaScript-Learning-main/DOM/Changing & Retrieving the HTML Content.md",
     "JavaScript-Learning-main/BOM/SetTimeout.md",
     "JavaScript-Learning-main/BOM/Window Object.md",
     "JavaScript-Learning-main/BOM/BOM(Browse Object Model).md",
@@ -295,7 +262,6 @@
     "JavaScript-Learning-main/BOM/SetInterval.md",
     "JavaScript-Learning-main/BOM/History.md",
     "JavaScript-Learning-main/BOM",
-    "Untitled",
     "JavaScript-Learning-main/BOM/Window.open.md",
     "Images/Pasted image 20250825183307.png",
     "JavaScript-Learning-main/BOM/Screen.md",
@@ -308,17 +274,9 @@
     "Untitled.canvas",
     "JavaScript-Learning-main/substring() && slice().md",
     "JavaScript-Learning-main/NaN(Not a Number).md",
-    "JavaScript-Learning-main/README.md",
-    "JavaScript-Learning-main/Comparing Using equal sing.md",
-    "JavaScript-Learning-main/Parsing(Casting to number).md",
-    "JavaScript-Learning-main/Format a number using fixed-point notation(toFixed()).md",
     "obsidian-20250824T143346Z-1-001.zip",
-    "JavaScript-Learning-main/Check The Infinity Values.md",
     "JavaScript-Learning-main",
     "JavaScript-Learning-main.zip",
-    "copilot-custom-prompts/Remove URLs.md",
-    "copilot-custom-prompts/Rewrite as tweet.md",
-    "copilot-custom-prompts",
-    "Untitled 2.base"
+    "copilot-custom-prompts"
   ]
 }

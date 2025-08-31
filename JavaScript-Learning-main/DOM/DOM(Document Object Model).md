@@ -82,7 +82,7 @@ Essentially, the DOM is a **platform- and language-neutral interface** that allo
 
 The `document` object is the entry point to the DOM. It represents the entire web page and is the root of the DOM tree. It's a property of the `window` object (`window.document`).
 
-**Common `document` object properties and methods:** [[Find Elements by Objects]]
+**Common `document` object properties and methods:** [[Find Elements by Object Collections]]
  
 *   `document.documentElement`: Refers to the `<html>` element.
 *   `document.head`: Refers to the `<head>` element.
