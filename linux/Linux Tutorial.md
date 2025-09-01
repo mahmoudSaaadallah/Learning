@@ -1,3 +1,12 @@
 - sed Command [[sed command]].
 - awk Commadn [[awk Command]].
 	- awk Exercises [[awk Exercises]].
+
+- Bash Script
+	- what is Bash Script? Why we need to learn it [[What is Bash Script and why we need to learn it]].
+	- Introduction to Bash Script [[First Bash Script File(Introduction)]].
+	- Bash Variables [[Bash Variables]].
+	- Bash Math [[Bash Math]].
+	- If Condition [[If Condition]].
+		- If condition examples [[If Condition Examples]].
+	- 
