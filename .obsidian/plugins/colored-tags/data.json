@@ -22,7 +22,8 @@
     "qe": 10,
     "querySelector": 11,
     "read": 12,
-    "readCommand": 13
+    "readCommand": 13,
+    "TypesOfConditionsInBash": 14
   },
   "_version": 3
 }

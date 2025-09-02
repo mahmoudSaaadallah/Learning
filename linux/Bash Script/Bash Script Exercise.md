@@ -32,7 +32,15 @@ echo "Scond way to print x: $1"
 ```
 - In the s2.sh file we used the argument x which we passed in s1.sh file while calling s2.sh and we print it twice once as a global variable `$x` another one as `$1` the first argument.
 
+- This is also another way to do the same task without using `export` or `$1` argument which by using `source` or `.` in the s1.sh file.
 
+```Bash
+#!/bin/bash
+x=5
+. ./s2.sh
+# source ./s2.sh
+```
+- Here we used `. ./s2.sh` or `source ./s2.sh` to make the s2.sh file run in the same bash without opening new bash, this will bake s2.sh able to see the variables that we created in s1.sh file.
 
 ---
 s

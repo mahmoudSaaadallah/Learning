@@ -9,4 +9,5 @@
 	- Bash Math [[Bash Math]].
 	- If Condition [[If Condition]].
 		- If condition examples [[If Condition Examples]].
-	- 
+	- Exit code [[Exit Code]].
+	- While Loop [[While Loop]].
