@@ -106,7 +106,7 @@ done
 
 ---
 
-#### Example 4: Reading a File Line by Line (Most Common Use Case)
+#### Example 5: Reading a File Line by Line (Most Common Use Case)
 
 This is a very common and powerful pattern.
 
@@ -137,7 +137,7 @@ rm fruits.txt # Clean up
 - **`< fruits.txt`**: Redirects the content of `fruits.txt` to the standard input of the `while` loop. The `read` command inside the loop then reads from this input.
 - The `read` command returns an exit status of `0` as long as it successfully reads a line. When it reaches the end of the file (EOF), it returns a non-zero status, terminating the loop.
 
-#### Example 3: Processing Command Output
+#### Example 6: Processing Command Output
 
 ```bash
 #!/bin/bash
@@ -174,19 +174,19 @@ echo "Outside loop, COUNTER is: $COUNTER" # Will still be 0 (original value)
 
 1. **Process Substitution (Bash 4+)**:
     
-    ```bash
+```bash
     COUNTER=0
     while read num; do
         COUNTER=$((COUNTER + num))
         echo "Inside loop, COUNTER is: $COUNTER"
     done < <(echo "1"; echo "2"; echo "3") # Output of commands is treated as a file
     echo "Outside loop, COUNTER is: $COUNTER" # Will be 6
-    ```
+   ```
     
-1. **Redirecting a file directly (if applicable)**: As shown in Example 3.
+2. **Redirecting a file directly (if applicable)**: As shown in Example 5.
 
 #### Example 4: Infinite Loop with `break` (Menu-Driven Script)
-
+- This example contains `case` you could check it from here [[Switch Case]].
 ```bash
 #!/bin/bash
 

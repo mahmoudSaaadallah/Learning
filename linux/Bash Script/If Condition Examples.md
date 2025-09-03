@@ -429,3 +429,26 @@ fi
 ---
 
 These examples cover a wide range of `if` condition uses in Bash, from simple checks to more complex logical evaluations and command exit status handling. Remember to always use the shebang, quote your variables, and use appropriate test constructs (`[`, `[[`, `((`) for the task at hand.
+
+
+---
+### Example for script that could be used to manage packages in our system.
+- The following script could be used to manage the packages in our system like(install, update, and remove).
+
+```Bash
+#!/bin/bash
+
+if [ $# -lt 2 ]; then
+	echo "You have to specify the operation and the package name."
+	echo "For example install htop      OR      remove Vlc"
+	exit 1
+else
+	sudo apt "$1" "$2"
+fi
+```
+- To use this script we have to pass two arguments to it when executing like
+
+```Bash
+./pack.sh install vlc
+```
+- This call will make this script install vlc player in your machine.
