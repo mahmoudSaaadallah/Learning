@@ -1,6 +1,7 @@
 - sed Command [[sed command]].
 - awk Commadn [[awk Command]].
 	- awk Exercises [[awk Exercises]].
+- Data Steams [[Data Streams]].
 
 - Bash Script
 	- what is Bash Script? Why we need to learn it [[What is Bash Script and why we need to learn it]].
@@ -12,3 +13,5 @@
 	- Exit code [[Exit Code]].
 	- While Loop [[While Loop]].
 	- For Loop [[For Loop]].
+	- Function [[Function]].
+		- Function Exercise [[Function Exercise]].
