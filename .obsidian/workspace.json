@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a98ff92ba8eded54",
+        "id": "479a616690cd27a1",
         "type": "tabs",
         "children": [
           {
-            "id": "7a7ed0aa155cba5b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "linux/awk Command.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "awk Command"
-            }
-          },
-          {
-            "id": "b466d4e1f03ae80f",
+            "id": "682202b92b3d0c7f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -36,7 +22,21 @@
             }
           },
           {
-            "id": "3a113613686cd2b3",
+            "id": "989b3c9f75c44177",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "linux/Function Exercise.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Function Exercise"
+            }
+          },
+          {
+            "id": "4f049758098c8435",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -50,147 +50,20 @@
             }
           },
           {
-            "id": "7bc4065e57d52ba6",
+            "id": "2f910aea9f0ba46d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/Bash Script/Bash Math.md",
+                "file": "linux/Data Streams.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bash Math"
-            }
-          },
-          {
-            "id": "f43d9ffd4f2fb95e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "linux/Bash Script/If Condition.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "If Condition"
-            }
-          },
-          {
-            "id": "1a9124d40b378432",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "linux/Bash Script/If Condition Examples.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "If Condition Examples"
-            }
-          },
-          {
-            "id": "4035d4705926f3d8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "linux/Bash Script/For Loop.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "For Loop"
-            }
-          },
-          {
-            "id": "81f9c0ec7fa92e1b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "linux/Bash Script/If Condition.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "If Condition"
-            }
-          },
-          {
-            "id": "34aa1cdbe9dfe462",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "linux/Bash Script/Types Of Conditions In Bash.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Types Of Conditions In Bash"
-            }
-          },
-          {
-            "id": "c40b91ac1d673323",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "linux/Bash Script/Bash Script Exercise.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Bash Script Exercise"
-            }
-          },
-          {
-            "id": "adda6e297282ccd5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "linux/Bash Script/Exit Code.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Exit Code"
-            }
-          },
-          {
-            "id": "edd499e73c56e89e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "linux/Bash Script/First Bash Script File(Introduction).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "First Bash Script File(Introduction)"
-            }
-          },
-          {
-            "id": "cbb6e78f4d701ddc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "linux/awk Exercises.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "awk Exercises"
+              "title": "Data Streams"
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -273,8 +146,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 325.51103591918945,
-    "collapsed": true
+    "width": 325.51103591918945
   },
   "right": {
     "id": "844d25a30cb5cabd",
@@ -374,7 +246,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 877.5
+    "width": 877.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -390,23 +263,26 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "12ba52826ed5761f",
+  "active": "682202b92b3d0c7f",
   "lastOpenFiles": [
-    "linux/Bash Script/For Loop.md",
+    "linux/While Loop.md",
+    "linux/Function Exercise.md",
     "linux/Linux Tutorial.md",
+    "linux/Bash Script/If Condition Examples.md",
+    "linux/Bash Script/For Loop.md",
+    "linux/Bash Script/If Condition.md",
+    "linux/Function.md",
+    "linux/Data Streams.md",
+    "linux/awk Exercises.md",
     "Welcome.md",
     "Thougths.md",
     "JavaScript-Learning-main/BOM/Location.md",
-    "linux/Bash Script/If Condition Examples.md",
     "linux/Bash Script/Bash Math.md",
-    "linux/While Loop.md",
     "linux/Switch Case.md",
-    "linux/Bash Script/If Condition.md",
     "linux/Bash Script/Types Of Conditions In Bash.md",
     "linux/Bash Script/Exit Code.md",
     "linux/Bash Script/Bash Script Exercise.md",
     "linux/Bash Script/First Bash Script File(Introduction).md",
-    "linux/awk Exercises.md",
     "copilot-custom-prompts/Untitled.md",
     "linux/Bash Script/Bash Variables.md",
     "linux/What is Bash Script and why we need to learn it.md",
@@ -417,9 +293,6 @@
     "linux/awk Command.md",
     "linux/sed command.md",
     "JavaScript-Learning-main/JSTutorial.md",
-    "JavaScript-Learning-main/Tutorial.md",
-    "JavaScript-Learning-main/DOM/Find Elements by Object Collections.md",
-    "DataBaseDesign/Normalization.md",
     "DataBaseDesign",
     "linux",
     "JavaScript-Learning-main/DOM",
