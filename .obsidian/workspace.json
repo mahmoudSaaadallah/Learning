@@ -22,63 +22,101 @@
             }
           },
           {
-            "id": "440e1d02489f16d6",
+            "id": "b6691d8593c5c854",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/Bash Script/While Loop.md",
+                "file": "linux/Bash Script/If Condition.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "While Loop"
+              "title": "If Condition"
             }
           },
           {
-            "id": "f38b13964b4509cd",
+            "id": "70900f652df34c25",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/Bash Script/Function Exercise.md",
+                "file": "linux/Script Exercise.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Function Exercise"
+              "title": "Script Exercise"
             }
           },
           {
-            "id": "4f049758098c8435",
+            "id": "bcb8669a7bbeb245",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/Bash Script/While Loop.md",
-                "mode": "source",
+                "file": "JavaScript-Learning-main/Parsing(Casting to number).md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "While Loop"
+              "title": "Parsing(Casting to number)"
             }
           },
           {
-            "id": "2f910aea9f0ba46d",
+            "id": "4fde9699bb346d1c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/Data Streams.md",
+                "file": "Thougths.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Data Streams"
+              "title": "Thougths"
+            }
+          },
+          {
+            "id": "5f8e4ca0181c77dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Thougths.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Thougths"
+            }
+          },
+          {
+            "id": "20ef10a6ce9956f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Markdown CheatSheat.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Markdown CheatSheat"
+            }
+          },
+          {
+            "id": "4596a4ac4e8e8624",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -257,7 +295,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -278,36 +316,36 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "440e1d02489f16d6",
+  "active": "5f8e4ca0181c77dd",
   "lastOpenFiles": [
-    "linux/Bash Script/Switch Case.md",
+    "Markdown CheatSheat.md",
+    "Daily.md",
+    "Thougths.md",
+    "JavaScript-Learning-main/Parsing(Casting to number).md",
+    "JavaScript-Learning-main/Comparing Using equal sing.md",
+    "linux/Script Exercise.md",
+    "linux/Bash Script/If Condition.md",
     "linux/Linux Tutorial.md",
+    "linux/awk Command.md",
+    "linux/awk Exercises.md",
+    "linux/sed Exercises.md",
+    "linux/sed command.md",
+    "linux/Scheduling Jobs using at command.md",
+    "linux/Bash Script/Switch Case.md",
+    "linux/Bash Script/While Loop.md",
     "linux/Bash Script/Function Exercise.md",
     "linux/Bash Script/Function.md",
     "linux/Data Streams.md",
-    "linux/Bash Script/While Loop.md",
     "linux/Bash Script/If Condition Examples.md",
     "linux/Bash Script/For Loop.md",
-    "linux/Bash Script/If Condition.md",
-    "linux/awk Exercises.md",
     "Welcome.md",
-    "Thougths.md",
     "JavaScript-Learning-main/BOM/Location.md",
     "linux/Bash Script/Bash Math.md",
     "linux/Bash Script/Types Of Conditions In Bash.md",
     "linux/Bash Script/Exit Code.md",
     "linux/Bash Script/Bash Script Exercise.md",
-    "linux/Bash Script/First Bash Script File(Introduction).md",
-    "copilot-custom-prompts/Untitled.md",
-    "linux/Bash Script/Bash Variables.md",
-    "linux/What is Bash Script and why we need to learn it.md",
-    "linux/Bash Script/What is Bash Script and why we need to learn it.md",
-    "linux/First Bash Script File(Introduction).md",
     "linux/Bash Script",
     "linux/New folder",
-    "linux/awk Command.md",
-    "linux/sed command.md",
-    "JavaScript-Learning-main/JSTutorial.md",
     "DataBaseDesign",
     "linux",
     "JavaScript-Learning-main/DOM",

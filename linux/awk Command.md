@@ -460,6 +460,3 @@ Frank,28,Berlin,Developer,70000
 ---
 
 **You could see more exercises about awk here** [[awk Exercises]].
-
----
-### Conclusion

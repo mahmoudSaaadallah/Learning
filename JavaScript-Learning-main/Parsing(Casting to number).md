@@ -16,7 +16,7 @@ console.log(str, typeof str); // 23 'number'
 * As we saw in the previous example we it also work even with string with character.
 * But we have to know how the parseInt() method work when the string contains characters?
 
-- The pareseInt() will start by checking the first character in the parameter, if it a number it goes to the next number and so on, until it find a decimal point of a character then it will stop and return the result.
+- _The pareseInt() will start by checking the first character in the parameter, if it a number it goes to the next number and so on, until it find a decimal point or a character then it will stop and return the result._
 
 - <span style="color:rgb(255, 255, 0)">What if the first char in the string was a letter or a decimal point?</span>
 - Then it will stop directly and return NaN(Not a Number);
@@ -27,7 +27,7 @@ console.log(str, typeof str); // NaN 'number'
 ```
 
 - As we saw in this example as the string started with letter it returns NaN, because the parseInt() method didn't find number.
-- We also have to know that NaN is a type of number, even if it Not a Number, but it's under the Number class.
+- We also have to know that NaN is a type of number, even if it Not a Number, but it's under the Number class. [[NaN(Not a Number)]].
 
 
 ------- 
@@ -68,7 +68,7 @@ console.log(str, typeof str); // NaN 'number'
 - We have to know that casting using Number will cast to integer and float depend on the value that we want to cast.
 - If it contains decimal point the Number will cast it to float, else it will cast it to int.
 - <span style="color:rgb(255, 255, 0)">What is the different between casting using parsing and Number class?</span>
-- Casting with Number() is more restricted than parsing, as if the string that we want to cast contains any character or any thing except numbers it will return NaN.
+- _Casting with Number() is more restricted than parsing, as if the string that we want to cast contains any character or any thing except numbers it will return NaN._
 
 ```JavaScript
 var str = Number("23.3");

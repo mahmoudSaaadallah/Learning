@@ -187,6 +187,7 @@ echo "Outside loop, COUNTER is: $COUNTER" # Will still be 0 (original value)
 
 #### Example 4: Infinite Loop with `break` (Menu-Driven Script)
 - This example contains `case` you could check it from here [[Switch Case]].
+
 ```bash
 #!/bin/bash
 

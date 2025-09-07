@@ -1,4 +1,5 @@
 - sed Command [[sed command]].
+	- Sed Exercises [[sed Exercises]]. 
 - awk Commadn [[awk Command]].
 	- awk Exercises [[awk Exercises]].
 - Data Steams [[Data Streams]].
@@ -15,4 +16,6 @@
 	- For Loop [[For Loop]].
 	- Function [[Function]].
 		- Function Exercise [[Function Exercise]].
-	- 
+	- Switch Case [[Switch Case]].
+	- Scheduling Jobs [[Scheduling Jobs using at command]].
+	- Script Exercise [[Script Exercise]].

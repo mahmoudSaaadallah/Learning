@@ -254,3 +254,6 @@ sed '/lp/d' /etc/passwd
 ```bash
 sed 's/lp/mylp/g' /etc/passwd
 ```
+
+---
+Check more exercises here [[sed Exercises]].
