@@ -43,4 +43,52 @@ x=5
 - Here we used `. ./s2.sh` or `source ./s2.sh` to make the s2.sh file run in the same bash without opening new bash, this will bake s2.sh able to see the variables that we created in s1.sh file.
 
 ---
-s
+<span style="color:rgb(255, 0, 0)">3. Create a script called mycp where:<br>a. It copies a file to another<br>b. It copies multiple files to a directory.</span>
+
+**One file to another**
+
+```Bash
+#!/bin/bash
+if (( $# == 0 )); then
+	echo "You have to enter the source and the destination like: file.txt newfile.txt"
+	read -p "Please enter the path for the source file: " src
+	read -p "Please enter the path for the destination file: " dest
+	cp "$src" "$dest"
+elif (( $# == 1 )); then
+	echo "You provided the path of the source file we still need the destination file. "
+	read -p "Please enter the path for the destination file: " dest
+	cp "$1" "$dest"
+else
+	cp "$1" "$2"
+fi
+```
+
+
+**Multiple files to directory**
+
+```Bash
+#!/bin/bash
+if (( $# == 0 )); then
+	echo "You have to enter at least the source and the destination like: file.txt dir"
+	
+	read -p "How many files you want to copy? " num
+	read -p "Please enter the path for the destination directory: " dest
+	for (( i=1; i < num; i++ )) do
+		read -p "please enter the path for the file number $1: " path
+		cp path dest
+	done
+elif (( $# == 1 )); then
+	echo "You provided the path of the source file we still need the destination file. "
+	read -p "Please enter the path for the destination file: " dest
+	cp "$1" "$dest"
+else
+	dest="${!#}"
+	for (( i=0; i < dest; i++ )); do
+	
+		cp $file $dest
+	done
+fi
+```
+- `dest="${!#}"` this mean get the value of the last element.
+
+******
