@@ -1,8 +1,8 @@
 - [ ] check `counter` method in python
 - [ ] `<details></details`  tag in html.
 - [ ] `<marquee></marquee>` tag in html.
-- [ ] margin collapse in css.
+- [x] margin collapse in css.
 - [ ] root scope in CSS `:root{ }`.
-- [ ] Transition CSS.
-- [ ] Transform CSS.
+- [x] Transition CSS.
+- [x] Transform CSS.
 - [ ] 
