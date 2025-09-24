@@ -34,7 +34,7 @@
   "defaultOpenArea": "view",
   "customPromptsFolder": "copilot-custom-prompts",
   "indexVaultToVectorStore": "ON MODE SWITCH",
-  "qaExclusions": "copilot-conversations,copilot-custom-prompts",
+  "qaExclusions": "copilot-conversations,copilot-custom-prompts,copilot",
   "qaInclusions": "",
   "chatNoteContextPath": "",
   "chatNoteContextTags": [],
@@ -344,5 +344,7 @@
     "youtubeTranscription",
     "writeToFile",
     "replaceInFile"
-  ]
+  ],
+  "generateAIChatTitleOnSave": true,
+  "enableInlineCitations": true
 }

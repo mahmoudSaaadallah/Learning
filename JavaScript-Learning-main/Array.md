@@ -144,8 +144,63 @@ let first = arr.shift(); // first is 1, arr is now [2, 3]
 ```
 
 
---- 
+---
 
+
+### sort():
+`sort()`: used to sort the array alphabetically, so it doesn't sort numbers.
+
+```JavaScript
+let arr = ["omar", "Osman", "Saad", "Ibrahim", "Ali", "Mahmoud"];
+console.log(arr.sort()); // [ 'Ali', 'Ibrahim', 'Mahmoud', 'Osman', 'Saad', 'omar' ]
+```
+
+**How to use `sort()` to sort numeric array?**
+- there is a specific way to user `sort()` function to sort numeric array by using a compare function.
+
+```javascript
+let arr = [3, 2, 5, 5, 1, 6, 7];
+
+// Sort in ascending order
+arr.sort(function(a, b){
+	return a - b;
+});
+console.log(arr); // [ 1, 2, 3, 5, 5, 6, 7 ]
+
+// Sort in Descending order
+arr.sort(function(a, b){
+	return b - a;
+})
+console.log(arr); // [ 7, 6, 5, 5, 3, 2, 1 ]
+```
+
+💡 Using arrow functions (shorter syntax):
+
+```javascript
+let arr = [3, 2, 5, 5, 1, 6, 7];
+
+// Sort in ascending order
+arr.sort((a, b) =>  a - b)
+console.log(arr); // [ 1, 2, 3, 5, 5, 6, 7 ]
+
+// Sort in Descending order
+arr.sort((a, b) =>  b - a)
+console.log(arr); // [ 7, 6, 5, 5, 3, 2, 1 ]
+```
+
+##### ⚠️ Why `numbers.sort()` without a compare function is wrong:
+
+```JavaScript
+let numbers = [5, 12, 1, 42, 7]; 
+numbers.sort(); 
+console.log(numbers);  // [1, 12, 42, 5, 7] ❌ Wrong
+```
+
+This happens because `sort()` converts numbers to strings and compares them character by character:
+- `"1"` < `"12"` < `"42"` < `"5"` < `"7"
+
+
+--- 
 
 ### splice():
 
@@ -162,11 +217,11 @@ let first = arr.shift(); // first is 1, arr is now [2, 3]
     Elements to **add** to the array starting from `start`.
 
 
-```javascript
+```JavaScript
 let arr = ["a", "b", "c", "d", "e"];
 arr.splice(2, 1); // Remove 1 element starting at index 2 (removes "c") -> ["a", "b", "d", "e"]
 arr.splice(1, 0, "x", "y"); // Add "x", "y" at index 1 (no elements removed) -> ["a", "x", "y", "b", "d", "e"]
-arr.splice(2, 2, "p", "q"); // Remove 2 elements from index 2, then add "p", "q" -> ["a", "x", "p", "q", "e"]
+arr.splice(2, 2, "p", "q"); // Remove 2 elements from index 2, then add "p", "q" -> [ 'a', 'x', 'p', 'q', 'd', 'e' ]
 ```
 
 
@@ -207,7 +262,6 @@ console.log(fruits.slice(-3, -1)); // ["cherry", "date"]
 // Copying the whole array
 let copy = fruits.slice();
 console.log(copy); // ["apple", "banana", "cherry", "date", "fig"]
-
 ```
 
 
