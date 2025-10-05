@@ -27,3 +27,8 @@
 	- Select Elements Methods [[Select Element]]
 	- Changing & Retrieving the HTML Content [[Changing & Retrieving the HTML Content]].
 	- Find Element By Objects [[Find Elements by Object Collections]].
+
+- Constructor Function [[Constructor Function]].
+- Hoisting [[Hoisting]].
+- Encapsulation [[Encapsulation]].
+- Prototype Chain [[Prototype Chain]].

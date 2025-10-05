@@ -19,3 +19,5 @@
 	- Switch Case [[Switch Case]].
 	- Scheduling Jobs [[Scheduling Jobs using at command]].
 	- Script Exercise [[Script Exercise]].
+	- Bash Script Exercise [[Bash Script Exercise]].
+	- DBMS Using Bash Shell Script [[DBMS-Using-Bash-Shell-Script.canvas|DBMS-Using-Bash-Shell-Script]].
