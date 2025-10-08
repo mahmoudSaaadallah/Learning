@@ -10,7 +10,13 @@
 
 - Comparing Using equal sing = [[ Comparing Using equal sing]].
 
+- Scopes For Variables [[Scopes For Variables]].
+
+- Check Datatype using `typeof` and `constructor.name` [[Check Datatype using `typeof` and `constructor.name` ]].
+
 - Array [[Array]].
+
+- Null [[Null]].
 
 -  Window Object [[Window Object]].
 	 - Window.open() [[Window.open]].
@@ -28,7 +34,8 @@
 	- Changing & Retrieving the HTML Content [[Changing & Retrieving the HTML Content]].
 	- Find Element By Objects [[Find Elements by Object Collections]].
 
-- Constructor Function [[Constructor Function]].
-- Hoisting [[Hoisting]].
-- Encapsulation [[Encapsulation]].
-- Prototype Chain [[Prototype Chain]].
+- OOP
+	- Constructor Function [[Constructor Function]].
+	- Hoisting [[Hoisting]].
+	- Encapsulation [[Encapsulation]].
+	- Prototype Chain [[Prototype Chain]].

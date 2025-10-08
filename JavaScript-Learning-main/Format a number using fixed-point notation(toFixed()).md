@@ -3,7 +3,7 @@
 
 ### Using toFixed()
 - toFixed(): is a method that we use to format a number using **<mark style="background: #D2B3FFA6;">fixed-point notation</mark>**.
-- This method return the result as a string not a number representing the number with a specified number of digits after the decimal point. So we have to parse it to number if we want to work with it as a number.
+- This method return the result as a _string_ not a number representing the number with a specified number of digits after the decimal point. So we have to parse it to number if we want to work with it as a number.
   check the parsing(Cast to number)[[Parsing(Casting to number)]]
 
 -  The toFixed() method accepts an int that represents the number of digits that we want to get after the decimal point.
@@ -36,7 +36,7 @@ console.log(num.toFixed(6));    // "3.141590" (adds trailing zero)
 ---
 
 ### Using toPrecision()
-- toPrecision(): used for formatting numbers with a **specific number of _significant digits_** — not just decimal places.
+- toPrecision(): used for formatting numbers with a **specific number of _significant digits_** — not just decimal places.(specific length)
 #### ✅ What it does?
 - Formats a number to a specified **<mark style="background: #D2B3FFA6;">number of significant digits</mark>**, regardless of whether those digits are before or after the decimal point.
 - So the toPrescision() method accepts an int number which represents the number of numbers that we want to return as whole with and without decimal point.
