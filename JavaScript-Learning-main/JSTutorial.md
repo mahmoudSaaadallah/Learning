@@ -8,13 +8,19 @@
 
 - Working with Infinity Value [[Check The Infinity Values]].
 
-- Comparing Using equal sing = [[ Comparing Using equal sing]].
+- Comparing Using equal sign = [[ Comparing Using equal sing]].
 
 - Scopes For Variables [[Scopes For Variables]].
 
 - Check Datatype using `typeof` and `constructor.name` [[Check Datatype using `typeof` and `constructor.name` ]].
 
+- String(subString(), subStr(), slice()) [[String(substring(), substr(), slice())]].
+
 - Array [[Array]].
+
+- Filter method with array [[Array.filter()]].
+
+- Reduce Method with array [[Array.reduce()]].
 
 - Null [[Null]].
 

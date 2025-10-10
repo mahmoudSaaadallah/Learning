@@ -143,6 +143,17 @@ let arr = [1, 2, 3];
 let first = arr.shift(); // first is 1, arr is now [2, 3]
 ```
 
+---
+
+
+### reverse():
+`shift()`: It reverse the indices inside the array and return reversed array.
+
+```JavaScript
+let arr = [1, 2, 3];
+arr.reverse(); // [3, 2, 1]
+```
+
 
 ---
 
@@ -265,8 +276,47 @@ console.log(copy); // ["apple", "banana", "cherry", "date", "fig"]
 ```
 
 
+----
+### concat()
+The `Array.prototype.concat()` method is used to **merge two or more arrays** into a single new array.
 
+*   **Purpose**: To combine arrays or add elements to an array without modifying the original array(s).
+*   **Immutability**: It's a non-mutating method. It **always returns a brand new array** containing the elements of the original array(s) and any additional values provided. The original arrays remain unchanged.
+*   **Syntax**: `array.concat(value1, value2, ..., valueN)`
+    *   `valueN` can be an array or a single value. If it's an array, its elements are added. If it's a single value, the value itself is added.
 
+**Example:**
+
+```javascript
+let arr1 = [1, 2];
+let arr2 = [3, 4];
+let arr3 = [5, 6];
+
+// Merging two arrays
+let combined1 = arr1.concat(arr2);
+console.log(combined1); // Output: [1, 2, 3, 4]
+console.log(arr1);      // Output: [1, 2] (arr1 is unchanged)
+
+// Merging multiple arrays and adding individual values
+let combined2 = arr1.concat(arr2, arr3, 7, [8, 9]);
+console.log(combined2); // Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+// Adding elements to an array (similar to push, but returns new array)
+let newArr = [10, 20];
+let extendedArr = newArr.concat(30, 40);
+console.log(extendedArr); // Output: [10, 20, 30, 40]
+console.log(newArr);      // Output: [10, 20] (newArr is unchanged)
+```
+
+For modern JavaScript, the **spread syntax (`...`)** is often preferred for concatenating arrays due to its conciseness and readability:
+
+```javascript
+let arrA = [1, 2];
+let arrB = [3, 4];
+
+let combinedSpread = [...arrA, ...arrB, 5, ...[6, 7]];
+console.log(combinedSpread); // Output: [1, 2, 3, 4, 5, 6, 7]
+```
 
 ---
 
