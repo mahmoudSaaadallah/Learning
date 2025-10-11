@@ -22,6 +22,8 @@
 
 - Reduce Method with array [[Array.reduce()]].
 
+- Math [[Math]].
+
 - Null [[Null]].
 
 -  Window Object [[Window Object]].
