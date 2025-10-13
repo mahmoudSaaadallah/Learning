@@ -83,6 +83,8 @@ console.log(demoDiv.innerHTML);
 // Output: 'Hello <span style="display:none">invisible</span> World'
 ```
 
+- Al the previous operations are getter and setter `textContent`, `innerText`, `innerHtml`.
+- This mean we could change the data inside the tag using them.
 
 
 ---
@@ -98,7 +100,7 @@ console.log(demoDiv.innerHTML);
     - It returns all elements that match that tag name, regardless of their position in the DOM tree.
 
 2. **`HTMLCollection` Return Type:**    
-    - The method returns an `HTMLCollection`. This is an array-like object (you can access elements by index and it has a `length` property), but it's **not a true JavaScript array**.
+    - The method returns an `HTMLCollection`. This is an _array-like object_ (you can access elements by index and it has a `length` property), but it's **not a true JavaScript array**.
     - You can iterate over it using a `for` loop or convert it to an array using `Array.from()` or the spread operator (`...`).
     - **Live Collection:** This is a crucial point. An `HTMLCollection` returned by `getElementsByTagName` is **live**. This means that if elements are added to or removed from the document that match the specified tag name _after_ the collection has been created, the collection will automatically update to reflect these changes.
 
@@ -146,7 +148,7 @@ console.log(allElements.length); // 39
 
 - We can't change the html content using one of the changing properties[[Changing & Retrieving the HTML Content]] with `getElementsByTagName` directly, as it retrieve a collection of html elements not just single element this why we use `Elements` keyword.
 - But we could change any retrieved element using its index number like:
-- 
+
 ```javaScript
 let lsitems = document.getElementsByTagName("li");
 
@@ -331,6 +333,22 @@ element.querySelector(selectors);
 
 - `selectors`: A string containing one or more CSS selectors separated by commas. (Though typically, for `querySelector`, you'd use a single, specific selector to target one element)
 
+- We could use `querySelector` to get element with specific attribute like getting the input with attribute `type="password"`.
+
+```HTML
+<input type="text" id="username" name="username" placeholder="Enter username">
+
+<input type="password" id="password" name="password" placeholder="Enter password">
+
+<button id="submitBtn" class="action" name="submitBtn">Submit</button>
+
+<button id="resetBtn" class="action" name="resetBtn">Reset</button>
+```
+
+```JavaScript
+const passwordInput = document.querySelector("input[type=password]");
+console.log(passwordInput.value);
+```
 ### When to Use `document.querySelector()`:
 
 - **When you need to select a single, specific element:** This is its primary use case.

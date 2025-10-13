@@ -24,12 +24,15 @@ The `new` keyword is crucial when working with constructor functions. When you c
 
 By convention, constructor functions are named with a **capital letter** (PascalCase) to distinguish them from regular functions.
 
+- In the constructor function if we have any variable created inside, we will not be able to access this variable unless we use `this` before create it to make it accessible for the current instance, so all the variables inside this function will be created with `this` keyword.
+
 ```javascript
 function MyObject(property1, property2) {
     // 1. 'this' refers to the new object created by 'new'
     this.property1 = property1; // Assign properties to the instance
     this.property2 = property2;
-
+	var variable = 0; // not accessible outside this function.(private variable).
+	// this.variabel = 0; // now it because accessibel.
     // 2. Methods can be defined directly on the instance (less efficient for shared methods)
     this.getDetails = function() {
         return `Prop1: ${this.property1}, Prop2: ${this.property2}`;

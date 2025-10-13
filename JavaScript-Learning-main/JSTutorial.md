@@ -41,6 +41,9 @@
 	- Select Elements Methods [[Select Element]]
 	- Changing & Retrieving the HTML Content [[Changing & Retrieving the HTML Content]].
 	- Find Element By Objects [[Find Elements by Object Collections]].
+	- Making Style using JS [[Making Style using JS]].
+	- Creating and removing Elements using JS [[Creating and removing Elements using JS]].
+	- Cookies [[Cookies]].
 
 - OOP
 	- Constructor Function [[Constructor Function]].

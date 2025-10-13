@@ -149,3 +149,21 @@ It's crucial to understand how `innerText` differs from its counterparts:
 |Ignores|CSS styles (like hidden text)|No, considers styles|No, includes all markup|
 |Safer?|Yes (plain text)|Yes (plain text)|No (can expose XSS risk if misused)|
 |Includes tags?|❌ No|❌ No|✅ Yes|
+
+---
+#value
+### value
+- While dealing with `<input/>` tags we can't use `innerHTML`, or `innerText`, or `textContent` to retrieve and change what inside input tag, but we could use `value` instead.
+
+```HTML
+<input type="text" id="username" name="username" placeholder="Enter username">
+```
+
+```JavaScript
+const input = document.querySelect("#username");
+console.log(input.value);
+input.value = "Mahmoud Saadallah";
+
+// console.log(input.innerHtml) // This is not going to retrieve the data inside the input tag.
+```
+	
