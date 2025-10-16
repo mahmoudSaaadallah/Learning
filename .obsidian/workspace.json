@@ -148,7 +148,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -307,12 +307,11 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 873.5,
-    "collapsed": true
+    "width": 873.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -328,10 +327,10 @@
       "graph:Open graph view": false
     }
   },
-  "active": "b3172e7a04d09a4a",
+  "active": "4003043815a115e7",
   "lastOpenFiles": [
-    "JavaScript-Learning-main/DOM/Cookies.md",
     "JavaScript-Learning-main/JSTutorial.md",
+    "JavaScript-Learning-main/DOM/Cookies.md",
     "JavaScript-Learning-main/DOM/Creating and removing Elements using JS.md",
     "JavaScript-Learning-main/DOM/Making Style using JS.md",
     "Thougths.md",

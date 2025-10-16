@@ -1,5 +1,5 @@
 ## Format Numbers
-- To format a number depend on the fixed-point we have several ways to do that:
+- To format a number depend on the fixed-point we have several ways to do that: 
 
 ### Using toFixed()
 - toFixed(): is a method that we use to format a number using **<mark style="background: #D2B3FFA6;">fixed-point notation</mark>**.
