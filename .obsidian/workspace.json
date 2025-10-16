@@ -55,7 +55,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript-Learning-main/Cookies.md",
+                "file": "JavaScript-Learning-main/DOM/Cookies.md",
                 "mode": "source",
                 "source": false
               },
@@ -69,7 +69,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript-Learning-main/Creating and removing Elements using JS.md",
+                "file": "JavaScript-Learning-main/DOM/Creating and removing Elements using JS.md",
                 "mode": "source",
                 "source": false
               },
@@ -83,7 +83,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript-Learning-main/Making Style using JS.md",
+                "file": "JavaScript-Learning-main/DOM/Making Style using JS.md",
                 "mode": "source",
                 "source": false
               },
@@ -148,7 +148,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -205,8 +205,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0876a6af07bdcd18",
@@ -329,12 +328,12 @@
       "graph:Open graph view": false
     }
   },
-  "active": "a087eb6788203ed6",
+  "active": "b3172e7a04d09a4a",
   "lastOpenFiles": [
-    "JavaScript-Learning-main/Cookies.md",
+    "JavaScript-Learning-main/DOM/Cookies.md",
     "JavaScript-Learning-main/JSTutorial.md",
-    "JavaScript-Learning-main/Creating and removing Elements using JS.md",
-    "JavaScript-Learning-main/Making Style using JS.md",
+    "JavaScript-Learning-main/DOM/Creating and removing Elements using JS.md",
+    "JavaScript-Learning-main/DOM/Making Style using JS.md",
     "Thougths.md",
     "JavaScript-Learning-main/DOM/Changing & Retrieving the HTML Content.md",
     "JavaScript-Learning-main/DOM/Select Element.md",
