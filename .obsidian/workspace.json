@@ -146,9 +146,35 @@
               "icon": "lucide-file",
               "title": "Format a number using fixed-point notation(toFixed())"
             }
+          },
+          {
+            "id": "c44701954d7f24f0",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.14"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.14"
+            }
+          },
+          {
+            "id": "86486d49ae62c982",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Links To Study.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Links To Study"
+            }
           }
         ],
-        "currentTab": 9
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -205,7 +231,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0876a6af07bdcd18",
@@ -311,7 +338,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 873.5
+    "width": 873.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -327,8 +355,9 @@
       "graph:Open graph view": false
     }
   },
-  "active": "4003043815a115e7",
+  "active": "86486d49ae62c982",
   "lastOpenFiles": [
+    "Links To Study.md",
     "JavaScript-Learning-main/JSTutorial.md",
     "JavaScript-Learning-main/DOM/Cookies.md",
     "JavaScript-Learning-main/DOM/Creating and removing Elements using JS.md",
@@ -355,7 +384,6 @@
     "linux/Linux Tutorial.md",
     "DBMS-Using-Bash-Shell-Script.canvas",
     "JavaScript-Learning-main/JS OOP/Encapsulation.md",
-    "copilot-custom-prompts/Generate table of contents.md",
     "Type Script",
     "JavaScript-Learning-main/JS OOP"
   ]
