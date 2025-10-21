@@ -172,9 +172,51 @@
               "icon": "lucide-file",
               "title": "Links To Study"
             }
+          },
+          {
+            "id": "094adac12637beca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Django/Django Tutorial.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Django Tutorial"
+            }
+          },
+          {
+            "id": "3a61947655933062",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Django/Manual and Automatic Forms.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Manual and Automatic Forms"
+            }
+          },
+          {
+            "id": "73386510c302b663",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Django/How to handle the From submitting security from the templet(csrf_token).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "How to handle the From submitting security from the templet(csrf_token)"
+            }
           }
         ],
-        "currentTab": 11
+        "currentTab": 13
       }
     ],
     "direction": "vertical"
@@ -334,7 +376,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -355,9 +397,13 @@
       "graph:Open graph view": false
     }
   },
-  "active": "86486d49ae62c982",
+  "active": "3a61947655933062",
   "lastOpenFiles": [
+    "Django/Manual and Automatic Forms.md",
+    "Django/Django Tutorial.md",
+    "Django/How to handle the From submitting security from the templet(csrf_token).md",
     "Links To Study.md",
+    "Django",
     "JavaScript-Learning-main/JSTutorial.md",
     "JavaScript-Learning-main/DOM/Cookies.md",
     "JavaScript-Learning-main/DOM/Creating and removing Elements using JS.md",
@@ -380,10 +426,7 @@
     "JavaScript-Learning-main/Check Datatype using `typeof` and `constructor.name`.md",
     "JavaScript-Learning-main/Array.filter().md",
     "JavaScript-Learning-main/Scopes For Variables.md",
-    "Type Script/Record Type.md",
-    "linux/Linux Tutorial.md",
     "DBMS-Using-Bash-Shell-Script.canvas",
-    "JavaScript-Learning-main/JS OOP/Encapsulation.md",
     "Type Script",
     "JavaScript-Learning-main/JS OOP"
   ]

@@ -12,6 +12,8 @@
 ## Ract
 - ### 50 hours in React 19 https://www.youtube.com/watch?v=M9O5AjEFzKw
 
+- ### React Mohammed Elzanaty [(149) React Tutorial for Beginners Workshop | Day 1 - Part 1 | Pure React - Props - Vite - Eslint-Prettier - YouTube](https://www.youtube.com/watch?v=BzbwDE5O8pk&list=PLLWuK602vNiXfozP5ei2k0BpGNcU3_7_H)
+
 
 
 ## ITI
