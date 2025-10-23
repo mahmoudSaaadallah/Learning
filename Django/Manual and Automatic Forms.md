@@ -123,7 +123,7 @@ urlpatterns = [
 ### 3. Manual Forms (`forms.Form`) - "Non-Model Forms"
 
 **Concept:**
-A "manual" form, or more accurately, a `forms.Form` subclass, is used when the data you're collecting **doesn't directly map one-to-one with a single Django model**, or when you need highly customized validation and processing logic before deciding how to save the data. You define each field explicitly, and you are responsible for handling how the `cleaned_data` is then used to create or update model instances.
+A "manual" form, or more accurately, a `forms.Form` subclass, is used when the data you're collecting **doesn't directly map one-to-one with a single Django model**, or when you _need highly customized validation and processing logic_ before deciding how to save the data. You define each field explicitly, and you are responsible for handling how the `cleaned_data` is then used to create or update model instances.
 
 **When to use it:**
 *   Contact forms.
@@ -321,15 +321,15 @@ Create a `templates` folder inside `myapp`, and then another `myapp` folder insi
 ```
 
 **Explanation of `manual_inquiry_form.html`:**
-*   `{% csrf_token %}`: **Absolutely critical for security!** This Django template tag generates a hidden input field with a unique token, protecting your form against Cross-Site Request Forgery (CSRF) attacks.
+*   `{% csrf_token %}`: **Absolutely critical for security!** This Django template tag generates a hidden input field with a unique token, protecting your form against Cross-Site Request Forgery (CSRF) attacks.[[How to handle the Form submitting security from the templet(csrf_token)]].
 *   `{{ form.as_p }}`: A quick way to render all form fields, each wrapped in a `<p>` tag. Django also provides `{{ form.as_ul }}` (as list items) and `{{ form.as_table }}` (as table rows). For more control, you can render fields individually:
-    ```html
-    <label for="{{ form.your_name.id_for_label }}">{{ form.your_name.label }}</label>
-    {{ form.your_name }}
-    {% if form.your_name.help_text %}<span class="helptext">{{ form.your_name.help_text }}</span>{% endif %}
-    {% if form.your_name.errors %}<ul class="errorlist">{% for error in form.your_name.errors %}<li>{{ error }}</li>{% endfor %}</ul>{% endif %}
-    ```
-    This gives you granular control over styling and placement of labels, fields, help text, and errors.
+ ```html
+<label for="{{ form.your_name.id_for_label }}">{{ form.your_name.label }}</label>
+{{ form.your_name }}
+{% if form.your_name.help_text %}<span class="helptext">{{ form.your_name.help_text }}</span>{% endif %}
+{% if form.your_name.errors %}<ul class="errorlist">{% for error in form.your_name.errors %}<li>{{ error }}</li>{% endfor %}</ul>{% endif %}
+```
+This gives you granular control over styling and placement of labels, fields, help text, and errors.
 
 **Step 4: Create Success Page Template (`myapp/templates/myapp/success.html`)**
 
@@ -366,12 +366,12 @@ Create a `templates` folder inside `myapp`, and then another `myapp` folder insi
 ### 4. Automatic Forms (`forms.ModelForm`) - "Model Forms"
 
 **Concept:**
-An "automatic" form, or `forms.ModelForm`, is a special type of `Form` that is directly tied to a Django model. It automatically generates form fields based on the fields defined in your model, and it provides a convenient `save()` method to create or update model instances in the database. This significantly reduces boilerplate code.
+An "automatic" form, or `forms.ModelForm`, is a special type of `Form` that is directly tied to a Django model. It automatically generates form fields based on the fields defined in your model, and it _provides a convenient `save()` method to create or update model instances_ in the database. This significantly reduces boilerplate code.
 
 **When to use it:**
 *   Creating new instances of a model (e.g., "Add New Product").
 *   Editing existing instances of a model (e.g., "Edit Product Details").
-*   Any time your form's purpose is to directly manipulate a single database model.
+*   **Any time your form's purpose is to directly manipulate a single database model.**
 
 **Example Scenario:** A form to create a new `Product` or update an existing `Product`.
 

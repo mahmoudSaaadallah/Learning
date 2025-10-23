@@ -207,12 +207,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django/How to handle the From submitting security from the templet(csrf_token).md",
+                "file": "Django/How to handle the Form submitting security from the templet(csrf_token).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "How to handle the From submitting security from the templet(csrf_token)"
+              "title": "How to handle the Form submitting security from the templet(csrf_token)"
             }
           }
         ],
@@ -399,9 +399,9 @@
   },
   "active": "3a61947655933062",
   "lastOpenFiles": [
+    "Django/How to handle the Form submitting security from the templet(csrf_token).md",
     "Django/Manual and Automatic Forms.md",
     "Django/Django Tutorial.md",
-    "Django/How to handle the From submitting security from the templet(csrf_token).md",
     "Links To Study.md",
     "Django",
     "JavaScript-Learning-main/JSTutorial.md",
