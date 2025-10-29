@@ -3,7 +3,14 @@
 
 - ### Algorithm https://www.youtube.com/watch?v=coqQwbDezUA&list=PLC3y8-rFHvwjPxNAKvZpdnsr41E0fCMMP
 
+## Django
+- ### Django Rest https://youtube.com/playlist?list=PL-2EBeDYMIbTLulc9FSoAXhbmXpLq2l5t&si=aZgI0R1Kh_4AJm9H
 
+- ### Django Rest API [Complete Django REST Framework Views (APIView, GenericAPIView, Mixions, Concrete &ViewSet) | by Sunil Nepali | Medium](https://medium.com/@sunilnepali844/a-complete-guide-to-django-rest-framework-views-a452449c6de2)
+
+- ### Django JWT [Securing Django REST APIs with JWT Authentication using Simple-JWT: A Step-by-Step Guide with Project | by Mehedi Khan | Django Unleashed | Medium](https://medium.com/django-unleashed/securing-django-rest-apis-with-jwt-authentication-using-simple-jwt-a-step-by-step-guide-28efa84666fe)
+
+- ### YouTube Chanel [BugBytes - YouTube](https://www.youtube.com/@bugbytes3923/playlists)
 
 ## Python
 - ### Alogrithm https://www.youtube.com/watch?v=pkYVOmU3MgA
@@ -38,6 +45,8 @@
 - ### Postgres https://online.umich.edu/series/postgresql-for-everybody/?gad_campaignid=22643360538
 
 
+## Docker
+- ### Docker [(179) Docker and Kubernetes | العلبة دي فيها سوعبان - YouTube](https://www.youtube.com/watch?v=PrusdhS2lmo)
 
 
 ## Git Hub
@@ -49,3 +58,13 @@
 
 ## Courses platform 
 - ### Front https://scrimba.com/courses
+
+
+## Interview Tips 
+- ### Interview Question using AI https://www.linkedin.com/posts/ayman-nawwar-573606246_interviews-career-javascript-activity-7386673555348008960-gryr?utm_source=share&utm_medium=member_desktop&rcm=ACoAADLYLYQBm60OZoEThV3_Qgc-04xxXYYxJqY
+- 
+
+## Working
+- ### cousrsehero [Course Hero | Own the study hour](https://www.coursehero.com/)
+- ### outlier [Train the Next Generation of AI as a Freelancer | Outlier AI](https://outlier.ai/)
+- ### studyGate [StudyGate: Online Tutoring & Homework Help](https://www.studygate.com/)

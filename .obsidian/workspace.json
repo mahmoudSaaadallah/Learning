@@ -216,7 +216,7 @@
             }
           }
         ],
-        "currentTab": 13
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -397,10 +397,10 @@
       "graph:Open graph view": false
     }
   },
-  "active": "3a61947655933062",
+  "active": "86486d49ae62c982",
   "lastOpenFiles": [
-    "Django/How to handle the Form submitting security from the templet(csrf_token).md",
     "Django/Manual and Automatic Forms.md",
+    "Django/How to handle the Form submitting security from the templet(csrf_token).md",
     "Django/Django Tutorial.md",
     "Links To Study.md",
     "Django",
