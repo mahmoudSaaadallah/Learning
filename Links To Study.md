@@ -56,6 +56,11 @@
 
 - ### Git Hub Problem Solving video https://www.youtube.com/watch?v=rH3zE7VlIMs
 
+
+## LinkedIn
+- ### Make your LinkedIn better https://youtu.be/ahwa7TvfOm4?si=koXDeDY04ZvnwfJJ
+
+
 ## Courses platform 
 - ### Front https://scrimba.com/courses
 
