@@ -1,4 +1,6 @@
 - React Component life-cycle [[React Component life-cycle]].
+- UseEffect Hook [[UseEffect Hook]].
+- Cleanup Function For the Previous Effect [[Cleanup Function For the Previous Effect]].
 - React Virtual Dom [[React Virtual Dom]]:
   - Re-conciliation Process [[Re-Conciliation Process]].
   - Fiber Tree [[Fiber Tree]].
