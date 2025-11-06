@@ -4,133 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "c6188629a87c92cb",
+        "id": "b8f83740685badf1",
         "type": "tabs",
         "children": [
           {
-            "id": "1528fd6b18323e56",
+            "id": "fce41479607d5b13",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React/React Tutorial.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "React Tutorial"
-            }
-          },
-          {
-            "id": "46fa3ecfd6532ab7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React/UseEffect Hook.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "UseEffect Hook"
-            }
-          },
-          {
-            "id": "49533f5ad6f27494",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React/Cleanup Function For the Previous Effect.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Cleanup Function For the Previous Effect"
-            }
-          },
-          {
-            "id": "92a55e477e441e34",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React/UseEffect Hook.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "UseEffect Hook"
-            }
-          },
-          {
-            "id": "db5a4ec60e20d8b6",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "6e5e6fc17f9d45ea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React/React Component life-cycle.md",
-                "mode": "source",
-                "source": false
-              },
               "icon": "lucide-file",
-              "title": "React Component life-cycle"
-            }
-          },
-          {
-            "id": "035b27181364c220",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React/Fiber Tree.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Fiber Tree"
-            }
-          },
-          {
-            "id": "c4db4189c2de10a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React/Re-Conciliation Process.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Re-Conciliation Process"
-            }
-          },
-          {
-            "id": "8ac5918c9f6e7443",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React/React Virtual Dom.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "React Virtual Dom"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -187,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0876a6af07bdcd18",
@@ -311,7 +197,7 @@
       "graph:Open graph view": false
     }
   },
-  "active": "db5a4ec60e20d8b6",
+  "active": "fce41479607d5b13",
   "lastOpenFiles": [
     "JavaScript-Learning-main/DOM/DOM(Document Object Model).md",
     "React/UseEffect Hook.md",
