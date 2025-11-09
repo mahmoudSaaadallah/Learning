@@ -10,6 +10,8 @@
 
 - ### Django JWT [Securing Django REST APIs with JWT Authentication using Simple-JWT: A Step-by-Step Guide with Project | by Mehedi Khan | Django Unleashed | Medium](https://medium.com/django-unleashed/securing-django-rest-apis-with-jwt-authentication-using-simple-jwt-a-step-by-step-guide-28efa84666fe)
 
+- ### Django JWT https://www.youtube.com/watch?v=7Q17ubqLfaM
+
 - ### YouTube Chanel [BugBytes - YouTube](https://www.youtube.com/@bugbytes3923/playlists)
 
 ## Python
@@ -20,6 +22,8 @@
 - ### 50 hours in React 19 https://www.youtube.com/watch?v=M9O5AjEFzKw
 
 - ### React Mohammed Elzanaty [(149) React Tutorial for Beginners Workshop | Day 1 - Part 1 | Pure React - Props - Vite - Eslint-Prettier - YouTube](https://www.youtube.com/watch?v=BzbwDE5O8pk&list=PLLWuK602vNiXfozP5ei2k0BpGNcU3_7_H)
+
+- ### React Simple Project https://www.youtube.com/watch?v=G6D9cBaLViA
 
 
 

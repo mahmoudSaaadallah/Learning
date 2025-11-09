@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "b8f83740685badf1",
+        "id": "ff740d84e3686639",
         "type": "tabs",
         "children": [
           {
-            "id": "fce41479607d5b13",
+            "id": "0fba06795d26c484",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Links To Study.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Links To Study"
             }
           }
         ]
@@ -74,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0876a6af07bdcd18",
@@ -197,7 +202,7 @@
       "graph:Open graph view": false
     }
   },
-  "active": "fce41479607d5b13",
+  "active": "0fba06795d26c484",
   "lastOpenFiles": [
     "JavaScript-Learning-main/DOM/DOM(Document Object Model).md",
     "React/UseEffect Hook.md",
