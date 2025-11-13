@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "f357930f9bdd6ddc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Links To Study.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Links To Study"
+            }
+          },
+          {
             "id": "01c1055fa5357b3b",
             "type": "leaf",
             "state": {
@@ -50,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -107,8 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0876a6af07bdcd18",
@@ -231,16 +244,17 @@
       "graph:Open graph view": false
     }
   },
-  "active": "ec3f22cffe3e8567",
+  "active": "f357930f9bdd6ddc",
   "lastOpenFiles": [
+    "Django/Customization For Class Based View.md",
+    "Django/Class Based View.md",
+    "Django/Django Tutorial.md",
     "linux/Data Streams.md",
     "2025-11-10.md",
     "Django/Django Rest Frame work/Serializer.md",
     "Untitled.canvas",
-    "Django/Django Tutorial.md",
     "Django/Serializer With Many to Many Relations.md",
     "Django/DateTimeField.md",
-    "Django/Class Based View.md",
     "Django/How to handle the Form submitting security from the templet(csrf_token).md",
     "Django/Django Rest Frame work",
     "Links To Study.md",

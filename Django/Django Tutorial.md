@@ -7,3 +7,4 @@
 	- Serializer [[Serializer]].
 	- Serializer With Many to Many Relations(nested serializer) [[Serializer With Many to Many Relations]].
 	- Class Based View [[Class Based View ]].
+	- Customization For Class Based View [[Customization For Class Based View]].

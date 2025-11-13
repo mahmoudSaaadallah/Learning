@@ -77,3 +77,9 @@
 - ### cousrsehero [Course Hero | Own the study hour](https://www.coursehero.com/)
 - ### outlier [Train the Next Generation of AI as a Freelancer | Outlier AI](https://outlier.ai/)
 - ### studyGate [StudyGate: Online Tutoring & Homework Help](https://www.studygate.com/)
+
+
+
+
+## CVs
+- ### [ISI-Python-CVs - Google Drive](https://drive.google.com/drive/folders/1yoJhuaTm-gF7Uh6VvpRcd-pE2N0gpPQI)
