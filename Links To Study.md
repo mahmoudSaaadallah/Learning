@@ -15,7 +15,8 @@
 - ### YouTube Chanel [BugBytes - YouTube](https://www.youtube.com/@bugbytes3923/playlists)
 
 ## Python
-- ### Alogrithm https://www.youtube.com/watch?v=pkYVOmU3MgA
+- ### Algorithm https://www.youtube.com/watch?v=pkYVOmU3MgA
+- ### OOP https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc
 
 
 ## Ract

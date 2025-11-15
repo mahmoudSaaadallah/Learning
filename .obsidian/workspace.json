@@ -36,6 +36,18 @@
             }
           },
           {
+            "id": "3cf328ed4a6c78aa",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.3"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.10.3"
+            }
+          },
+          {
             "id": "01c1055fa5357b3b",
             "type": "leaf",
             "state": {
@@ -121,7 +133,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0876a6af07bdcd18",
@@ -246,18 +259,18 @@
   },
   "active": "f357930f9bdd6ddc",
   "lastOpenFiles": [
-    "Django/Customization For Class Based View.md",
+    "Django/DateTimeField.md",
+    "Links To Study.md",
     "Django/Class Based View.md",
+    "Django/Customization For Class Based View.md",
     "Django/Django Tutorial.md",
     "linux/Data Streams.md",
     "2025-11-10.md",
     "Django/Django Rest Frame work/Serializer.md",
     "Untitled.canvas",
     "Django/Serializer With Many to Many Relations.md",
-    "Django/DateTimeField.md",
     "Django/How to handle the Form submitting security from the templet(csrf_token).md",
     "Django/Django Rest Frame work",
-    "Links To Study.md",
     "JavaScript-Learning-main/DOM/DOM(Document Object Model).md",
     "React/UseEffect Hook.md",
     "React/React Tutorial.md",
