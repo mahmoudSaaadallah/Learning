@@ -17,6 +17,7 @@
 ## Python
 - ### Algorithm https://www.youtube.com/watch?v=pkYVOmU3MgA
 - ### OOP https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc
+- ### Python Tutorial https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU
 
 
 ## Ract
