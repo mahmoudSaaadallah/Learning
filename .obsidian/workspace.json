@@ -53,12 +53,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django/DateTimeField.md",
+                "file": "Daily.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DateTimeField"
+              "title": "Daily"
             }
           },
           {
@@ -258,14 +258,15 @@
   },
   "active": "01c1055fa5357b3b",
   "lastOpenFiles": [
-    "Untitled.canvas",
+    "2025-11-10.md",
+    "Daily.md",
     "Django/DateTimeField.md",
+    "Untitled.canvas",
     "Django/Class Based View.md",
     "Links To Study.md",
     "Django/Customization For Class Based View.md",
     "Django/Django Tutorial.md",
     "linux/Data Streams.md",
-    "2025-11-10.md",
     "Django/Django Rest Frame work/Serializer.md",
     "Django/Serializer With Many to Many Relations.md",
     "Django/How to handle the Form submitting security from the templet(csrf_token).md",
