@@ -361,5 +361,6 @@
   "enableSavedMemory": true,
   "maxRecentConversations": 30,
   "quickCommandIncludeNoteContext": true,
-  "defaultSendShortcut": "enter"
+  "defaultSendShortcut": "enter",
+  "autoIncludeTextSelection": false
 }
