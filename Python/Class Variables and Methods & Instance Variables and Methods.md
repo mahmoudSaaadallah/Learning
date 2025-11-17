@@ -244,7 +244,7 @@ print(f"Car 2 (from string): {car2.make} {car2.model}, Mileage: {car2.mileage}")
 
 ### 5. Static Methods (For Completeness)
 
- static methods are often discussed alongside instance and class methods, and understanding them provides a complete picture.
+ Static methods are often discussed alongside instance and class methods, and understanding them provides a complete picture.
 
 **Definition**:
 Static methods are utility functions that are logically related to the class but do not operate on either the instance (`self`) or the class (`cls`). They are decorated with `@staticmethod` and do not take `self` or `cls` as their first parameter.
@@ -288,13 +288,13 @@ print(f"10 + 20 = {utils.add(10, 20)}")
 
 Here's a summary to help solidify your understanding:
 
-| Feature           | Instance Variables | Class Variables    | Instance Methods | Class Methods      | Static Methods     |
-| :---------------- | :----------------- | :----------------- | :--------------- | :----------------- | :----------------- |
-| **Scope**         | Per instance       | Per class          | Per instance     | Per class          | Per class          |
-| **Accesses**      | `self`             | `Class.variable`   | `self`           | `cls`              | Neither `self` nor `cls` |
-| **Purpose**       | Unique data for each object | Shared data for all objects, constants, counters | Object-specific behavior | Class-specific behavior, alternative constructors, factory methods | Utility functions related to the class, but independent of instance/class state |
-| **Declaration**   | `self.var = val` (usually in `__init__`) | `var = val` (directly in class body) | `def method(self, ...)` | `@classmethod`<br>`def method(cls, ...)` | `@staticmethod`<br>`def method(...)` |
-| **Called By**     | Instance           | Class or Instance  | Instance         | Class or Instance  | Class or Instance  |
+| Feature         | Instance Variables                       | Class Variables                                                                               | Instance Methods                                             | Class Methods                                                                  | Static Methods                                                                  |
+| :-------------- | :--------------------------------------- | :-------------------------------------------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
+| **Scope**       | Per instance                             | Per class                                                                                     | Per instance                                                 | Per class                                                                      | Per class                                                                       |
+| **Accesses**    | `self`                                   | `Class.variable`                                                                              | `self`                                                       | `cls`                                                                          | Neither `self` nor `cls`                                                        |
+| **Purpose**     | Unique data for each object              | Shared data for all objects, constants, counters                                              | Object-specific behavior                                     | Class-specific behavior, alternative constructors, factory methods             | Utility functions related to the class, but independent of instance/class state |
+| **Declaration** | `self.var = val` (usually in `__init__`) | `var = val` (directly in class body)<br>or <br>`className.var = val`(if used inside a method) | `def method(self, ...)`<br>Takes self as its first parameter | `@classmethod`<br>`def method(cls, ...)`<br>Takes class as its first parameter | `@staticmethod`<br>`def method(...)`                                            |
+| **Called By**   | Instance                                 | Class or Instance                                                                             | Instance                                                     | Class or Instance                                                              | Class or Instance                                                               |
 
 **When to use what:**
 
@@ -306,6 +306,3 @@ Here's a summary to help solidify your understanding:
 
 ---
 
-### Conclusion
-
-Mastering the distinction between instance and class variables, and their corresponding methods, is a cornerstone of effective object-oriented design in Python. It allows you to structure your code logically, manage data efficiently, and create flexible, reusable components. By carefully considering whether data or behavior belongs to an individual object or to the class as a whole, you can write cleaner, more maintainable, and more Pythonic code.

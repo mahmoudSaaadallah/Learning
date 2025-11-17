@@ -1,1 +1,2 @@
+- Closure [[Closure]]
 - Class Variables and Methods & Instance Variables and Methods [[Class Variables and Methods & Instance Variables and Methods]]
