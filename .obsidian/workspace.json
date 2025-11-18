@@ -36,6 +36,20 @@
             }
           },
           {
+            "id": "0375b86950516dfd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Python/Property Decorators - Getters, Setters, and Deleters.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Property Decorators - Getters, Setters, and Deleters"
+            }
+          },
+          {
             "id": "efe682a2bcd4962f",
             "type": "leaf",
             "state": {
@@ -287,10 +301,11 @@
       "graph:Open graph view": false
     }
   },
-  "active": "efe682a2bcd4962f",
+  "active": "0375b86950516dfd",
   "lastOpenFiles": [
-    "Python/Dunder Methods.md",
+    "Python/Property Decorators - Getters, Setters, and Deleters.md",
     "Python/Tutorial.md",
+    "Python/Dunder Methods.md",
     "Python/Multiple Inheritance.md",
     "Python/Decorators.md",
     "Django/Class Based View.md",
@@ -317,7 +332,6 @@
     "copilot-custom-prompts/Explain .md",
     "React/React Component life-cycle.md",
     "React/Fiber Tree.md",
-    "React/Re-Conciliation Process.md",
     "React",
     "Django",
     "DBMS-Using-Bash-Shell-Script.canvas",

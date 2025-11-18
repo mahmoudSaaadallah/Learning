@@ -3,3 +3,4 @@
 - Class Variables and Methods & Instance Variables and Methods [[Class Variables and Methods & Instance Variables and Methods]].
 - Multiple Inheritance [[Multiple Inheritance]].
 - Dunder Methods [[Dunder Methods]].
+- Property Decorators - Getters, Setters, and Deleters [[Property Decorators - Getters, Setters, and Deleters]].
