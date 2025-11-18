@@ -1,3 +1,4 @@
-- Closure [[Closure]]
-- Decorators [[Decorators]]
-- Class Variables and Methods & Instance Variables and Methods [[Class Variables and Methods & Instance Variables and Methods]]
+- Closure [[Closure]].
+- Decorators [[Decorators]].
+- Class Variables and Methods & Instance Variables and Methods [[Class Variables and Methods & Instance Variables and Methods]].
+- Multiple Inheritance [[Multiple Inheritance]].
