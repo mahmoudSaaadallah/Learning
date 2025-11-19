@@ -27,96 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Tutorial.md",
+                "file": "Django/Django Tutorial.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tutorial"
+              "title": "Django Tutorial"
             }
           },
           {
-            "id": "0375b86950516dfd",
+            "id": "00353d121db170da",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Property Decorators - Getters, Setters, and Deleters.md",
+                "file": "Django/Django Field Types.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Property Decorators - Getters, Setters, and Deleters"
-            }
-          },
-          {
-            "id": "efe682a2bcd4962f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/Dunder Methods.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Dunder Methods"
-            }
-          },
-          {
-            "id": "3ac85d657f468c2e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/Multiple Inheritance.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Multiple Inheritance"
-            }
-          },
-          {
-            "id": "dfa5c173f8b81260",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/Decorators.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Decorators"
-            }
-          },
-          {
-            "id": "9fdfb15c7145afc8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/Class Variables and Methods & Instance Variables and Methods.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Class Variables and Methods & Instance Variables and Methods"
-            }
-          },
-          {
-            "id": "ec3f22cffe3e8567",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Django/Class Based View.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Class Based View"
+              "title": "Django Field Types"
             }
           }
         ],
@@ -301,18 +231,19 @@
       "graph:Open graph view": false
     }
   },
-  "active": "0375b86950516dfd",
+  "active": "00353d121db170da",
   "lastOpenFiles": [
-    "Python/Property Decorators - Getters, Setters, and Deleters.md",
+    "Django/Django Tutorial.md",
+    "Django/Django Field Types.md",
     "Python/Tutorial.md",
-    "Python/Dunder Methods.md",
-    "Python/Multiple Inheritance.md",
-    "Python/Decorators.md",
     "Django/Class Based View.md",
     "Python/Class Variables and Methods & Instance Variables and Methods.md",
+    "Python/Decorators.md",
+    "Python/Multiple Inheritance.md",
+    "Python/Dunder Methods.md",
+    "Python/Property Decorators - Getters, Setters, and Deleters.md",
     "Links To Study.md",
     "Python/Closure.md",
-    "Django/Django Tutorial.md",
     "Python",
     "Daily.md",
     "2025-11-10.md",
@@ -331,7 +262,6 @@
     "React/React Virtual Dom.md",
     "copilot-custom-prompts/Explain .md",
     "React/React Component life-cycle.md",
-    "React/Fiber Tree.md",
     "React",
     "Django",
     "DBMS-Using-Bash-Shell-Script.canvas",
