@@ -27,6 +27,9 @@
 
 - ### React Simple Project https://www.youtube.com/watch?v=G6D9cBaLViA
 
+## Security
+- ### SQL Injection https://portswigger.net/web-security/sql-injection 
+
 
 
 ## ITI
