@@ -5,6 +5,7 @@
 - DateTimeField [[DateTimeField]].
 - Circular Dependency [[Circular Dependency]]. 
 - Generic Relationship [[Generic Relationship]].
+- Django Class Meta [[Django Class Meta]].
 - #### Django Rest Framework
 	- Serializer [[Serializer]].
 	- Serializer With Many to Many Relations(nested serializer) [[Serializer With Many to Many Relations]].
