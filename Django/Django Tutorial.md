@@ -4,6 +4,7 @@
 - Django Field Types [[Django Field Types]].
 - DateTimeField [[DateTimeField]].
 - Circular Dependency [[Circular Dependency]]. 
+- Generic Relationship [[Generic Relationship]].
 - #### Django Rest Framework
 	- Serializer [[Serializer]].
 	- Serializer With Many to Many Relations(nested serializer) [[Serializer With Many to Many Relations]].
