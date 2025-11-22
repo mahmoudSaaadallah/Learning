@@ -16,6 +16,8 @@
 
 ## Python
 - ### Algorithm https://www.youtube.com/watch?v=pkYVOmU3MgA
+- ### D & A https://www.youtube.com/playlist?list=PLKYEe2WisBTFEr6laH5bR2J19j7sl5O8R
+
 - ### OOP https://www.youtube.com/playlist?list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc
 - ### Python Tutorial https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU
 

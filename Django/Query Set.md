@@ -151,11 +151,11 @@ for order in orders:
 To combat this, Django provides `select_related()` and `prefetch_related()`:
 
 *   **`select_related()`**: Used for `ForeignKey` and `OneToOneField` relationships. It performs a SQL `JOIN` and fetches the related objects in the *same* query as the main objects.
-    ```python
-    orders = Order.objects.select_related('customer').all() # 1 query, joins Customer data
-    for order in orders:
-        print(f"Order {order.id} by {order.customer.name}") # No additional query per customer
-    ```
+```python
+orders = Order.objects.select_related('customer').all() # 1 query, joins Customer data
+for order in orders:
+	print(f"Order {order.id} by {order.customer.name}") # No additional query per customer
+```
 
 *   **`prefetch_related()`**: Used for `ManyToManyField` and reverse `ForeignKey` relationships. It performs a *separate* query for each related table and then "joins" them in Python. This avoids the N+1 problem for many-to-many or one-to-many relationships.
 

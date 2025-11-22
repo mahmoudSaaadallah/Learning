@@ -36,7 +36,21 @@
             }
           },
           {
-            "id": "463a4c405924b0b4",
+            "id": "da83be89b2f42408",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Django/Field Lookup with .filter().md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Field Lookup with .filter()"
+            }
+          },
+          {
+            "id": "7667a4a82e084baa",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -61,20 +75,6 @@
               },
               "icon": "lucide-file",
               "title": "Circular Dependency"
-            }
-          },
-          {
-            "id": "9e1a5f8fc7a32843",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Django/Django Tutorial.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Django Tutorial"
             }
           },
           {
@@ -287,21 +287,23 @@
       "graph:Open graph view": false
     }
   },
-  "active": "463a4c405924b0b4",
+  "active": "da83be89b2f42408",
   "lastOpenFiles": [
-    "Django/Query Set.md",
     "Django/Django Tutorial.md",
-    "Python/Python Tutorial.md",
+    "Django/Field Lookup with .filter().md",
+    "Django/Query Set.md",
     "Links To Study.md",
-    "Django/Django Class Meta.md",
     "Django/Untitled.md",
-    "Django/Generic Relationship.md",
     "Django/Circular Dependency.md",
-    "Thougths.md",
+    "Django/Django Class Meta.md",
     "Ds & Alg/Static and Dynamic Array.md",
-    "Pasted image 20251121112827.png",
-    "Pasted image 20251121112754.png",
-    "Pasted image 20251121112720.png",
+    "Thougths.md",
+    "Django/Generic Relationship.md",
+    "Images/Pasted image 20251121112720.png",
+    "Images/Pasted image 20251121112827.png",
+    "Images/Pasted image 20251121112754.png",
+    "DBMS-Using-Bash-Shell-Script.canvas",
+    "Python/Python Tutorial.md",
     "Images/Pasted image 20250910180759.png",
     "Images/Pasted image 20250825183307.png",
     "Images/Pasted image 20250825165605.png",
@@ -323,11 +325,9 @@
     "linux/Data Streams.md",
     "Django/Django Rest Frame work/Serializer.md",
     "Django/Serializer With Many to Many Relations.md",
-    "Django/How to handle the Form submitting security from the templet(csrf_token).md",
     "Django/Django Rest Frame work",
     "React",
     "Django",
-    "DBMS-Using-Bash-Shell-Script.canvas",
     "Type Script",
     "JavaScript-Learning-main/JS OOP"
   ]
