@@ -164,3 +164,28 @@ Understanding when and how to use these optimization methods is a hallmark of an
 ### Conclusion
 
 The Django QuerySet is a cornerstone of the framework's elegance and efficiency. Its lazy evaluation model allows for flexible, readable, and performant database interactions. By understanding when a QuerySet is merely a definition and when it actually triggers a database hit, you gain immense control over your application's data access patterns, enabling you to write robust and highly optimized Django code. It's a concept I spend considerable time on with my students, as it underpins so much of what makes Django a joy to work with.
+
+---
+---
+
+| Returns a QuerySet (Lazy Evaluation)     | Hits Database Immediately (Returns Object/Value) |
+| :--------------------------------------- | :----------------------------------------------- |
+| `MyModel.objects.all()`                  | Iteration (e.g., `for obj in queryset:`)         |
+| `queryset.filter(...)`                   | Slicing (e.g., `queryset[0]`, `queryset[:5]`)    |
+| `queryset.exclude(...)`                  | `repr()` or `str()` (e.g., `print(queryset)`)    |
+| `queryset.order_by(...)`                 | `queryset.get(...)`                              |
+| `queryset.select_related(...)`           | `queryset.first()`                               |
+| `queryset.prefetch_related(...)`         | `queryset.last()`                                |
+| `MyModel.objects.values('v1', v2', ...)` | `queryset.count()`                               |
+| `MyModel.objects.distinct()`             | `queryset.exists()`                              |
+| `MyModel.objects.reverse()`              | `queryset.aggregate(...)`                        |
+| `MyModel.objects.annotate()`             | `queryset.latest()`                              |
+| `MyModel.objects.differ()`               | `queryset.earliest()`                            |
+| `MyModel.objects.only()`                 | `queryset.update(...)`                           |
+| `MyModel.objects.union()`<br>            | `queryset.delete(...)`                           |
+| `MyModel.objects.intersection()`         | `list(queryset)`                                 |
+
+**Key Takeaways from the Table:**
+
+*   **Lazy Evaluation (Returns QuerySet)**: These methods build and refine your database query without actually executing it. You can chain them indefinitely, and Django will construct a single, optimized SQL query when the results are finally needed. This is the core of Django's efficiency.
+*   **Immediate Database Hit (Returns Object/Value)**: These actions or methods force the QuerySet to execute its underlying SQL query against the database. They return concrete Python objects (single or multiple), integers, booleans, or dictionaries, rather than another QuerySet. Understanding these "trigger points" is vital to avoid the N+1 query problem and ensure your application interacts with the database as efficiently as possible.
