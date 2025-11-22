@@ -9,6 +9,7 @@
 	- Query Set [[Query Set]].
 	- Field Lookup with .filter() [[Field Lookup with .filter()]].
 	- Q [[Q]].
+	- F [[F]].
 - #### Django Rest Framework
 	- Serializer [[Serializer]].
 	- Serializer With Many to Many Relations(nested serializer) [[Serializer With Many to Many Relations]].
