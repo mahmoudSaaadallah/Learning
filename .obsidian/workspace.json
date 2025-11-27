@@ -134,7 +134,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -315,17 +315,17 @@
       "graph:Open graph view": false
     }
   },
-  "active": "7667a4a82e084baa",
+  "active": "b49a9620435e2031",
   "lastOpenFiles": [
-    "Django/Q.md",
     "Django/F.md",
-    "Django/Django Tutorial.md",
+    "Django/Q.md",
     "Django/Field Lookup with .filter().md",
     "Django/Query Set.md",
+    "Django/Django Class Meta.md",
+    "Django/Circular Dependency.md",
+    "Django/Django Tutorial.md",
     "Links To Study.md",
     "Django/Untitled.md",
-    "Django/Circular Dependency.md",
-    "Django/Django Class Meta.md",
     "Ds & Alg/Static and Dynamic Array.md",
     "Thougths.md",
     "Django/Generic Relationship.md",
@@ -339,7 +339,7 @@
     "Images/Pasted image 20250825165605.png",
     "Django/Django Field Types.md",
     "Ds & Alg",
-    "Django/Class Based View.md",
+    "Django/Django Rest Frame work/Class Based View.md",
     "Python/Class Variables and Methods & Instance Variables and Methods.md",
     "Python/Decorators.md",
     "Python/Multiple Inheritance.md",
@@ -351,7 +351,7 @@
     "2025-11-10.md",
     "Django/DateTimeField.md",
     "Untitled.canvas",
-    "Django/Customization For Class Based View.md",
+    "Django/Django Rest Frame work/Customization For Class Based View.md",
     "linux/Data Streams.md",
     "Django/Django Rest Frame work",
     "React",

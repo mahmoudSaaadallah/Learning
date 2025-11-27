@@ -205,3 +205,32 @@ not_available = Product.objects.filter(~Q(is_available=True))
 ### Conclusion
 
 Field lookups with `.filter()` are the backbone of data retrieval in Django. They provide a highly expressive, Pythonic, and powerful way to interact with your database, abstracting away the complexities of SQL. By understanding the various lookup types, the chaining mechanism, and when to leverage `Q` objects, you gain precise control over your data, enabling you to build robust and efficient applications. It's a topic I spend considerable time on with my students, as it underpins so much of what makes Django a joy to work with.
+
+### Summarizing
+
+| Lookup | Meaning |
+|---|---|
+| `exact` (or implicit) | Checks for an exact match (case-sensitive). |
+| `iexact` | Checks for an exact match (case-insensitive). |
+| `contains` | Checks if the field's value contains the specified string (case-sensitive). |
+| `icontains` | Checks if the field's value contains the specified string (case-insensitive). |
+| `startswith` | Checks if the field's value starts with the specified string (case-sensitive). |
+| `istartswith` | Checks if the field's value starts with the specified string (case-insensitive). |
+| `endswith` | Checks if the field's value ends with the specified string (case-sensitive). |
+| `iendswith` | Checks if the field's value ends with the specified string (case-insensitive). |
+| `gt` | Checks if the field's value is greater than the specified value. |
+| `gte` | Checks if the field's value is greater than or equal to the specified value. |
+| `lt` | Checks if the field's value is less than the specified value. |
+| `lte` | Checks if the field's value is less than or equal to the specified value. |
+| `in` | Checks if the field's value is present in a given list, tuple, or QuerySet. |
+| `range` | Checks if the field's value is within a given range (inclusive). |
+| `year` | Extracts the year component from a `DateField` or `DateTimeField` and compares it. |
+| `month` | Extracts the month component from a `DateField` or `DateTimeField` and compares it. |
+| `day` | Extracts the day component from a `DateField` or `DateTimeField` and compares it. |
+| `hour` | Extracts the hour component from a `DateTimeField` and compares it. |
+| `minute` | Extracts the minute component from a `DateTimeField` and compares it. |
+| `second` | Extracts the second component from a `DateTimeField` and compares it. |
+| `week_day` | Extracts the day of the week (1=Sunday, 7=Saturday) from a `DateField` or `DateTimeField` and compares it. |
+| `isnull` | Checks if a field's value is `NULL` (or `None` in Python). |
+| `regex` | Performs powerful pattern matching using regular expressions (case-sensitive). |
+| `iregex` | Performs powerful pattern matching using regular expressions (case-insensitive). |
