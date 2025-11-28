@@ -184,6 +184,7 @@ The Django QuerySet is a cornerstone of the framework's elegance and efficiency.
 | `MyModel.objects.only()`                 | `queryset.update(...)`                           |
 | `MyModel.objects.union()`<br>            | `queryset.delete(...)`                           |
 | `MyModel.objects.intersection()`         | `list(queryset)`                                 |
+| `MyModel.objects.defer()`                |                                                  |
 
 **Key Takeaways from the Table:**
 
