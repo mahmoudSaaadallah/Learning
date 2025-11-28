@@ -36,6 +36,20 @@
             }
           },
           {
+            "id": "0eb6cb33b9100585",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Django/Annotate and Aggregate.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Annotate and Aggregate"
+            }
+          },
+          {
             "id": "32202d99b2ee3c70",
             "type": "leaf",
             "state": {
@@ -47,20 +61,6 @@
               },
               "icon": "lucide-file",
               "title": "N + 1"
-            }
-          },
-          {
-            "id": "db253316b6287e7c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Django/Defer, Only and Values.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Defer, Only and Values"
             }
           },
           {
@@ -259,12 +259,13 @@
       "graph:Open graph view": false
     }
   },
-  "active": "32202d99b2ee3c70",
+  "active": "0eb6cb33b9100585",
   "lastOpenFiles": [
-    "Django/Django Tutorial.md",
     "Django/N + 1.md",
-    "Links To Study.md",
+    "Django/Annotate and Aggregate.md",
+    "Django/Django Tutorial.md",
     "Django/Query Set.md",
+    "Links To Study.md",
     "Django/Defer, Only and Values.md",
     "Django/Untitled.md",
     "Ds & Alg/Linked List.md",
@@ -295,7 +296,6 @@
     "Python/Closure.md",
     "Python",
     "Daily.md",
-    "2025-11-10.md",
     "Untitled.canvas",
     "Django/Django Rest Frame work",
     "React",
