@@ -55,6 +55,8 @@
 ## DataBase
 - ### Postgres https://online.umich.edu/series/postgresql-for-everybody/?gad_campaignid=22643360538
 
+- ### Advanced DB https://www.youtube.com/playlist?list=PLE8kQVoC67PzGwMMsSk3C8MvfAqcYjusF
+
 
 ## Docker
 - ### Docker [(179) Docker and Kubernetes | العلبة دي فيها سوعبان - YouTube](https://www.youtube.com/watch?v=PrusdhS2lmo)

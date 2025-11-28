@@ -10,7 +10,8 @@
 	- Field Lookup with .filter() [[Field Lookup with .filter()]].
 	- Q [[Q]].
 	- F [[F]].
-	- Defer, Only and Values [[Defer, Only and Values]]
+	- Defer, Only and Values [[Defer, Only and Values]].
+	- N + 1 [[N + 1]].
 - #### Django Rest Framework
 	- Serializer [[Serializer]].
 	- Serializer With Many to Many Relations(nested serializer) [[Serializer With Many to Many Relations]].
