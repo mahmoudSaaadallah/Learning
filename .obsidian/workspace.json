@@ -36,6 +36,20 @@
             }
           },
           {
+            "id": "70732235f8714dc4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Django/QuerySet Cache.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "QuerySet Cache"
+            }
+          },
+          {
             "id": "0eb6cb33b9100585",
             "type": "leaf",
             "state": {
@@ -135,8 +149,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0876a6af07bdcd18",
@@ -259,11 +272,12 @@
       "graph:Open graph view": false
     }
   },
-  "active": "0eb6cb33b9100585",
+  "active": "70732235f8714dc4",
   "lastOpenFiles": [
-    "Django/N + 1.md",
-    "Django/Annotate and Aggregate.md",
+    "Django/QuerySet Cache.md",
     "Django/Django Tutorial.md",
+    "Django/Annotate and Aggregate.md",
+    "Django/N + 1.md",
     "Django/Query Set.md",
     "Links To Study.md",
     "Django/Defer, Only and Values.md",
@@ -295,7 +309,6 @@
     "Python/Property Decorators - Getters, Setters, and Deleters.md",
     "Python/Closure.md",
     "Python",
-    "Daily.md",
     "Untitled.canvas",
     "Django/Django Rest Frame work",
     "React",
