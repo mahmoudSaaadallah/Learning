@@ -6,6 +6,7 @@
 - Generic Relationship [[Generic Relationship]].
 - Django Class Meta [[Django Class Meta]].
 - #### ORM
+	- CRUD [[CRUD]].
 	- Query Set [[Query Set]].
 	- Field Lookup with .filter() [[Field Lookup with .filter()]].
 	- Q [[Q]].

@@ -36,6 +36,20 @@
             }
           },
           {
+            "id": "78ff65a04476fb75",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Django/CRUD.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CRUD"
+            }
+          },
+          {
             "id": "70732235f8714dc4",
             "type": "leaf",
             "state": {
@@ -47,6 +61,16 @@
               },
               "icon": "lucide-file",
               "title": "QuerySet Cache"
+            }
+          },
+          {
+            "id": "f7e3964177590c87",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           },
           {
@@ -149,7 +173,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0876a6af07bdcd18",
@@ -272,14 +297,16 @@
       "graph:Open graph view": false
     }
   },
-  "active": "70732235f8714dc4",
+  "active": "78ff65a04476fb75",
   "lastOpenFiles": [
-    "Django/QuerySet Cache.md",
     "Django/Django Tutorial.md",
-    "Django/Annotate and Aggregate.md",
-    "Django/N + 1.md",
-    "Django/Query Set.md",
+    "Django/CRUD.md",
     "Links To Study.md",
+    "Django/Query Set.md",
+    "Django/N + 1.md",
+    "Django/Annotate and Aggregate.md",
+    "Django Debug Toolbar.md",
+    "Django/QuerySet Cache.md",
     "Django/Defer, Only and Values.md",
     "Django/Untitled.md",
     "Ds & Alg/Linked List.md",
@@ -306,8 +333,6 @@
     "Python/Decorators.md",
     "Python/Multiple Inheritance.md",
     "Python/Dunder Methods.md",
-    "Python/Property Decorators - Getters, Setters, and Deleters.md",
-    "Python/Closure.md",
     "Python",
     "Untitled.canvas",
     "Django/Django Rest Frame work",
