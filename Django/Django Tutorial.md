@@ -5,6 +5,8 @@
 - Circular Dependency [[Circular Dependency]]. 
 - Generic Relationship [[Generic Relationship]].
 - Django Class Meta [[Django Class Meta]].
+- Django Admin [[Django Admin]].
+- Django ModelAdmin [[Django ModelAdmin]].
 - #### ORM
 	- CRUD [[CRUD]].
 	- Query Set [[Query Set]].
