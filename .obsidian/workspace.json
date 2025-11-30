@@ -36,17 +36,17 @@
             }
           },
           {
-            "id": "78ff65a04476fb75",
+            "id": "0239aa7608010b1a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django/CRUD.md",
+                "file": "Django/Transaction Atomic Changes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CRUD"
+              "title": "Transaction Atomic Changes"
             }
           },
           {
@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django/QuerySet Cache.md",
+                "file": "GIT/Git Level 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "QuerySet Cache"
+              "title": "Git Level 1"
             }
           },
           {
@@ -71,48 +71,6 @@
               "state": {},
               "icon": "lucide-git-fork",
               "title": "Graph view"
-            }
-          },
-          {
-            "id": "0eb6cb33b9100585",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Django/Annotate and Aggregate.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Annotate and Aggregate"
-            }
-          },
-          {
-            "id": "32202d99b2ee3c70",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Django/N + 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "N + 1"
-            }
-          },
-          {
-            "id": "b95c7e7090a80257",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Django/Query Set.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Query Set"
             }
           }
         ],
@@ -297,16 +255,21 @@
       "graph:Open graph view": false
     }
   },
-  "active": "78ff65a04476fb75",
+  "active": "0239aa7608010b1a",
   "lastOpenFiles": [
+    "DataBaseDesign/ACID.md",
+    "GIT/Git Level 1.md",
+    "linux/Data Streams.md",
+    "Django/Transaction Atomic Changes.md",
     "Django/Django Tutorial.md",
+    "Django/QuerySet Cache.md",
+    "GIT",
     "Django/CRUD.md",
     "Links To Study.md",
     "Django/Query Set.md",
     "Django/N + 1.md",
     "Django/Annotate and Aggregate.md",
     "Django Debug Toolbar.md",
-    "Django/QuerySet Cache.md",
     "Django/Defer, Only and Values.md",
     "Django/Untitled.md",
     "Ds & Alg/Linked List.md",
@@ -329,10 +292,6 @@
     "Images/Pasted image 20250825165605.png",
     "Django/Django Field Types.md",
     "Ds & Alg",
-    "Django/Django Rest Frame work/Class Based View.md",
-    "Python/Decorators.md",
-    "Python/Multiple Inheritance.md",
-    "Python/Dunder Methods.md",
     "Python",
     "Untitled.canvas",
     "Django/Django Rest Frame work",

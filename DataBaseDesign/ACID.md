@@ -165,7 +165,7 @@ Imagine a customer, Sarah, is placing a large, important order on an e-commerce 
 **Scenario**: Sarah clicks "Place Order," and the system initiates a transaction to:
 
 1.  Record the order details (items, quantities, total cost).
-2.  Update inventory to reflect the purchased items.
+2.  Update inventory to reflect the pur     chased items.
 3.  Process the payment through a third-party gateway.
 4.  Mark the order as "confirmed" in the database.
 
