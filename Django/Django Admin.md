@@ -47,6 +47,7 @@ class Book(models.Model):
     publication_date = models.DateField()
     price = models.DecimalField(max_digits=5, decimal_places=2)
     is_published = models.BooleanField(default=True)
+    pages = models.PositiveIntegerField()
 
     def __str__(self):
         return self.title
@@ -141,6 +142,34 @@ Let's break down some of these powerful `ModelAdmin` options:
 *   **`raw_id_fields`**: For `ForeignKey` or `ManyToManyField` fields, if there are many related objects, the default select box can be cumbersome. `raw_id_fields` replaces it with a text input that requires the ID of the related object, often accompanied by a magnifying glass icon to open a lookup pop-up.
 *   **`actions`**: Allows you to define custom actions that can be performed on selected objects from the change list page. This is incredibly powerful for bulk operations (e.g., "publish selected posts," "archive selected users").
 *   **`@admin.display`**: A decorator introduced in Django 3.2 that makes it easier to define custom display logic for `list_display` and `fieldsets`, including setting `description` and `boolean` attributes.
+
+---
+#### Adding Computed Columns
+- Let's consider that we want to display `Volume` if the number of pages for book greater than `1500` pages, and `book` if the number of pages between `500` to `1500`, and `booklet` if number of pages less than `500`
+- To do so we need to use **Computed Columns**.
+- It means Change the displayed value depend on the real value for the column cell.
+
+```python
+from django.contrib import admin
+from .models import Author, Book
+
+@admin.regester(Book)
+class BookAdmin(admin.ModelAdmin):
+	list_display = ['title', 'author__name', 'book_status'] # book_status here is a function 
+														   # that will create the Computed 
+														   # Columns
+														   
+	# The following decorator used to order the displayed book_status value depend on the value of the book.pages as we can't order depend on the returned values form the book_status.
+	@admin.display(ordering='pages')
+	def book_status(self, book):
+		if book.pages > 1500:
+			return 'Volume'
+		elif book.pages > 500:
+			return 'Book'
+		else:
+			return 'Booklet'
+	# This book_status function will create the computed column that will display the values depend on the book.pages value.								    
+```
 
 ### Security Considerations
 
