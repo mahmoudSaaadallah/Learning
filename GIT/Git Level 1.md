@@ -98,6 +98,7 @@ Notice that we can see:
 
 However, we _cannot_ see the contents of the `contents.md` file itself! That's because the `blob` object stores it.
 
+### cat-file 
 Use `git cat-file -p` again, but this time with the hash of the `tree` object instead of the commit hash. You should see a `blob` object with _its_ own hash
 
 ```bash
@@ -149,3 +150,10 @@ committer mahmoudsaaadallah <mahmoud.saadallah73@gmail.com> 1764783467 +0200
 
 B: Adding titles.md file
 ```
+
+### Storing Data
+- When commit changes, Git stores an entire _snapshot_ of files on a per_commit level, not only the changes.
+- While it's true that Git stores entire snapshots, it _does_ have some performance optimizations so that your `.git` directory doesn't get too unbearably large.
+	- Git [compresses and packs](https://git-scm.com/book/en/v2/Git-Internals-Packfiles) files to store them more efficiently.
+	- Git deduplicates files that are the same across different commits. If a file doesn't change between commits, Git will only store it once
+	

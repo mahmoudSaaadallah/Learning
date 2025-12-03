@@ -12,7 +12,7 @@
 *   **Prevents Inconsistent States**: Without atomicity, a multi-step operation could fail midway, leaving the database in an illogical or corrupted state. For example, in a fund transfer, if money is debited from one account but not credited to another, the total money in the system becomes incorrect.
 *   **Simplifies Error Handling**: Developers don't need to write complex rollback logic for each potential failure point within a transaction. The database system handles the "undo" automatically upon an unhandled error.
 
-**In Practice (Django ORM)**: As we discussed with `django.db.transaction.atomic()`[[tranca]], this context manager or decorator ensures atomicity. If an exception occurs within the `atomic()` block, all database changes made up to that point are automatically rolled back.
+**In Practice (Django ORM)**: As we discussed with `django.db.transaction.atomic()`tranca, this context manager or decorator ensures atomicity. If an exception occurs within the `atomic()` block, all database changes made up to that point are automatically rolled back.
 
 
 ###### Real-life Scenario

@@ -197,21 +197,21 @@ In this nested scenario, when `process_data_step_b()` raises an exception, the s
 2.  **Avoid External Calls**: Try to avoid making calls to external services (e.g., third-party APIs, email services) within an `atomic()` block. If an external service fails, you might want to retry it independently, not necessarily roll back your entire database transaction. If you must, consider using Django's `transaction.on_commit()` hook.
 3.  **`transaction.on_commit()`**: This powerful hook allows you to register callbacks that will be executed *only if* the outermost `atomic()` block successfully commits. This is perfect for sending emails, updating search indexes, or calling external APIs, as these actions should only happen if the database changes are permanent.
 
-    ```python
-    from django.db import transaction
+```python
+from django.db import transaction
 
-    def send_welcome_email(user_email):
-        print(f"Sending welcome email to {user_email}...")
-        # Simulate email sending
-        # mail.send_mail(...)
+def send_welcome_email(user_email):
+	print(f"Sending welcome email to {user_email}...")
+	# Simulate email sending
+	# mail.send_mail(...)
 
-    def register_user(username, email, password):
-        with transaction.atomic():
-            user = User.objects.create_user(username=username, email=email, password=password)
-            # This callback will only run if the user creation is successfully committed
-            transaction.on_commit(lambda: send_welcome_email(user.email))
-            return user
-    ```
+def register_user(username, email, password):
+	with transaction.atomic():
+		user = User.objects.create_user(username=username, email=email, password=password)
+		# This callback will only run if the user creation is successfully committed
+		transaction.on_commit(lambda: send_welcome_email(user.email))
+		return user
+```
 4.  **Error Handling**: Always ensure proper error handling around your `atomic()` blocks. Unhandled exceptions are the mechanism by which Django triggers rollbacks.
 5.  **Read-Only Operations**: For operations that only read from the database and don't modify any data, `atomic()` is generally not necessary and can add overhead.
 6.  **Deadlocks**: While `atomic()` helps with consistency, it doesn't inherently prevent deadlocks. Deadlocks occur when two or more transactions are waiting for each other to release locks. Careful ordering of operations and using `select_for_update()` judiciously can help mitigate this.
