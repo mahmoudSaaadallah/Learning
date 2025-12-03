@@ -7,6 +7,7 @@
 - Django Class Meta [[Django Class Meta]].
 - Django Admin [[Django Admin]].
 - Django ModelAdmin [[Django ModelAdmin]].
+- Django Validator [[Django Validator]].
 - #### ORM
 	- CRUD [[CRUD]].
 	- Query Set [[Query Set]].
