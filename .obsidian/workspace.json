@@ -102,7 +102,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -283,10 +283,10 @@
       "graph:Open graph view": false
     }
   },
-  "active": "6a6a07c40141d76a",
+  "active": "70732235f8714dc4",
   "lastOpenFiles": [
-    "Django/Django Admin.md",
     "Django/Django ModelAdmin.md",
+    "Django/Django Admin.md",
     "Django/Django Tutorial.md",
     "Django/Transaction Atomic Changes.md",
     "DataBaseDesign/ACID.md",

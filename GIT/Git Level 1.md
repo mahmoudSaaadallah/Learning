@@ -41,4 +41,111 @@ git log
 ```
 - `git log` will return all the logs, but we could specify the number of logs using
    `-n <number_of_logs>` option.
-   
+
+---
+### .git/objects
+**It's Just Files All the Way Down**
+
+All the data in a Git repository is stored directly in the (hidden) `.git` directory. That includes all the commits, branches, tags, and other objects we'll learn about later.
+
+Git is made up of [objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects) that are stored in the `.git/objects` directory. A commit is just a type of object.
+
+-  Git has a built-in plumbing command, [cat-file](https://git-scm.com/docs/git-cat-file), that allows us to see the contents of a commit without needing to futz around with the object files directly.
+```bash
+git cat-file -p <commitHash>
+```
+
+example
+```bash
+$ git log -n 10
+> commit d57fc01b6099fd73b9f361b6a2a45de885fe0609 (HEAD -> master)
+	 Author: mahmoudsaaadallah <mahmoud.saadallah73@gmail.com>
+	 Date:   Sun Nov 30 09:31:44 2025 +0200
+	A: add contents.md
+	
+$ git cat-file -p d57fc01b6099fd73b9f361b6a2a45de885fe0609
+> tree 5b21d4f16a4b07a6cde5a3242187f6a5a68b060f
+	author mahmoudsaaadallah <mahmoud.saadallah73@gmail.com> 1764487904 +0200
+	committer mahmoudsaaadallah <mahmoud.saadallah73@gmail.com> 1764487904 +0200
+	A: add contents.md
+```
+
+---
+### Trees and Blobs
+
+Now that we understand some of our plumbing equipment, let's get into the pipes. Here are some terms to know:
+
+- `tree`: git's way of storing a directory
+- `blob`: git's way of storing a file
+
+Here's what I got when I inspected my last commit:
+
+```bash
+$ git cat-file -p d57fc01b6099fd73b9f361b6a2a45de885fe0609
+
+tree 5b21d4f16a4b07a6cde5a3242187f6a5a68b060f
+author mahmoudsaaadallah <mahmoud.saadallah73@gmail.com> 1764487904 +0200
+committer mahmoudsaaadallah <mahmoud.saadallah73@gmail.com> 1764487904 +0200
+A: add contents.md
+```
+
+Notice that we can see:
+
+- The `tree` object
+- The `author`
+- The `committer`
+- The commit message
+
+However, we _cannot_ see the contents of the `contents.md` file itself! That's because the `blob` object stores it.
+
+Use `git cat-file -p` again, but this time with the hash of the `tree` object instead of the commit hash. You should see a `blob` object with _its_ own hash
+
+```bash
+# Using commit hash
+$ git cat-file -p d57fc01b6099fd73b9f361b6a2a45de885fe0609
+tree 5b21d4f16a4b07a6cde5a3242187f6a5a68b060f
+author mahmoudsaaadallah <mahmoud.saadallah73@gmail.com> 1764487904 +0200
+committer mahmoudsaaadallah <mahmoud.saadallah73@gmail.com> 1764487904 +0200
+A: add contents.md
+
+# Using tree hash
+$ git cat-file -p 5b21d4f16a4b07a6cde5a3242187f6a5a68b060f
+100644 blob ef7e93fc61a91deecaa551c4707e4c3049af42c9    contents.md # blob hash
+
+# Use `cat-file` _again_, using the `blob` object's hash to view its contents.
+$ git cat-file -p ef7e93fc61a91deecaa551c4707e4c3049af42c9
+This is the first line in the txt file.
+```
+
+**To Illustrate**
+we have three hashes now:
+	1. _Commit Hash_.
+	2. _Tree Hash_.
+	3. _Blob Hash_.
+
+
+- You have to know that the previous example has the (tree, Author, Committer, and Commit) only because this is the first commit in this repo.
+- But if we added another commit to the same repo we will find new field appear which is (parent).
+
+```bash
+$ git log
+commit 9f4d366ae5d495a55b2bed2280fcd5e2b56b763c (HEAD -> master)
+Author: mahmoudsaaadallah <mahmoud.saadallah73@gmail.com>
+Date:   Wed Dec 3 19:37:47 2025 +0200
+
+    B: Adding titles.md file
+
+commit d57fc01b6099fd73b9f361b6a2a45de885fe0609
+Author: mahmoudsaaadallah <mahmoud.saadallah73@gmail.com>
+Date:   Sun Nov 30 09:31:44 2025 +0200
+
+    A: add contents.md
+    
+$ git cat-file -p 9f4d366ae5d495a55b2bed2280fcd5e2b56b763c
+tree 3843e9a820792877796d0ad3dfa5d2860155cab7
+parent d57fc01b6099fd73b9f361b6a2a45de885fe0609  # this is the new field because this commit has a parent commit.
+author mahmoudsaaadallah <mahmoud.saadallah73@gmail.com> 1764783467 +0200
+committer mahmoudsaaadallah <mahmoud.saadallah73@gmail.com> 1764783467 +0200
+
+B: Adding titles.md file
+```
