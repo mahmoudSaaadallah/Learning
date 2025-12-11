@@ -102,7 +102,13 @@ from .models import Book
 
 class BookListView(ListView):
     model = Book # Specifies the model to work with
+    # If we didn't override the tempalate_name then it will use the default name.
+    # The default template_name is: app_name/model_name_viewType.html.
+    # which will be myapp/book_list.html.
     template_name = "myapp/book_list.html" # Custom template name
+    
+    # If we didn't override th context_object_name then the django will use the default name.
+    # The default name for context_object_name is: object.
     context_object_name = "books" # Name for the list of objects in the template context
 
 # myproject/urls.py
@@ -155,7 +161,7 @@ urlpatterns = [
 
 #### 4. `CreateView`, `UpdateView`, `DeleteView`
 
-These are for handling forms related to creating, updating, and deleting model instances. They often work in conjunction with Django Forms.
+These are for handling forms related to creating, updating, and deleting model instances. They often work in conjunction with Django Forms [[Django Forms]].
 
 ```python
 # myapp/forms.py
@@ -176,6 +182,7 @@ from .forms import BookForm
 class BookCreateView(CreateView):
     model = Book
     form_class = BookForm # Or specify fields = ['title', 'author', 'published_date']
+    # we could use form_class or use fields and override with a list of fields that we want.
     template_name = "myapp/book_form.html"
     success_url = reverse_lazy('book_list') # Redirect after successful creation
 
@@ -222,7 +229,7 @@ urlpatterns = [
 
 Mixins are a powerful concept in Python's object-oriented programming, and they are particularly useful with Django CBVs. A mixin is a class that provides specific functionality to another class without being its primary base class. You combine mixins with your main CBV using multiple inheritance.
 
-Common use cases for mixins:
+Common use cases for mixins [[Django Auth Mixins]]:
 *   **Authentication/Authorization**: `LoginRequiredMixin`, `PermissionRequiredMixin`, `UserPassesTestMixin`.
 *   **Form Handling**: `FormMixin`.
 *   **Context Data**: `ContextMixin`.
@@ -242,6 +249,7 @@ class ProtectedBookListView(LoginRequiredMixin, ListView):
     # If a user is not logged in, they will be redirected to settings.LOGIN_URL
 ```
 By simply adding `LoginRequiredMixin` to the inheritance list, the `ProtectedBookListView` now automatically enforces that only logged-in users can access it.
+Read more about mixins here [[More About Auth Mixins]]
 
 ### Advantages of CBVs (from a Professor's perspective)
 
