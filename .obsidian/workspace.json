@@ -36,7 +36,7 @@
             }
           },
           {
-            "id": "79c4869aec3d9ff6",
+            "id": "4ef9f7ac0dd7fd81",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -50,63 +50,35 @@
             }
           },
           {
-            "id": "b0bd66684395c9fc",
+            "id": "8664210ffda8a6bb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django/Transaction Atomic Changes.md",
+                "file": "Django/Django Forms.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Transaction Atomic Changes"
+              "title": "Django Forms"
             }
           },
           {
-            "id": "6a6a07c40141d76a",
+            "id": "f657408194798782",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django/Django ModelAdmin.md",
+                "file": "Thought From books/Pomodoro Technique.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Django ModelAdmin"
-            }
-          },
-          {
-            "id": "586671142decb77e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Django/Django Admin.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Django Admin"
-            }
-          },
-          {
-            "id": "0239aa7608010b1a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Django/Transaction Atomic Changes.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Transaction Atomic Changes"
+              "title": "Pomodoro Technique"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -287,35 +259,36 @@
       "graph:Open graph view": false
     }
   },
-  "active": "79c4869aec3d9ff6",
+  "active": "f657408194798782",
   "lastOpenFiles": [
+    "Django/Django Forms.md",
+    "Thought From books/Pomodoro Technique.md",
+    "Thought From books",
     "Django/Django Validator.md",
+    "Django/Django Class Based View.md",
+    "Django/get_absolute_url Function.md",
     "Django/Django Tutorial.md",
-    "Django/Django ModelAdmin.md",
+    "Django/N + 1 With Class Based View.md",
+    "Django/N + 1 in Advanced.md",
+    "Django/Django Auth Mixins.md",
+    "Django/More About Auth Mixins.md",
+    "Django/Django Rest Frame work/Class Based View.md",
+    "Links To Study.md",
+    "Django/Django Built-in User.md",
+    "Django/Django Auth.md",
     "Django/Transaction Atomic Changes.md",
+    "Django/Django Admin.md",
+    "Django/Django ModelAdmin.md",
     "DataBaseDesign/ACID.md",
     "GIT/Git Level 1.md",
     "tranca.md",
-    "Django/Django Admin.md",
     "linux/Data Streams.md",
     "Django/QuerySet Cache.md",
     "GIT",
     "Django/CRUD.md",
-    "Links To Study.md",
     "Django/Query Set.md",
     "Django/N + 1.md",
     "Django/Annotate and Aggregate.md",
-    "Django Debug Toolbar.md",
-    "Django/Defer, Only and Values.md",
-    "Django/Untitled.md",
-    "Ds & Alg/Linked List.md",
-    "Python/Class Variables and Methods & Instance Variables and Methods.md",
-    "Django/Generic Relationship.md",
-    "Django/Django Class Meta.md",
-    "Django/Circular Dependency.md",
-    "Django/Field Lookup with .filter().md",
-    "Django/Q.md",
-    "Django/F.md",
     "Images/Pasted image 20251121112720.png",
     "Images/Pasted image 20251121112827.png",
     "Images/Pasted image 20251121112754.png",

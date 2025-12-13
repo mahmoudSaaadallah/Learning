@@ -10,21 +10,18 @@
     "highTextContrast": false
   },
   "knownTags": {
-    "getElementById": 1,
-    "getElementBy": 2,
-    "getElementsByTagName": 3,
-    "getElementByClassName": 4,
-    "innerHTMl": 5,
-    "innerText": 6,
-    "textContent": 7,
-    "querySelectorAll": 8,
-    "CssSelector": 9,
-    "qe": 10,
-    "querySelector": 11,
-    "read": 12,
-    "readCommand": 13,
-    "TypesOfConditionsInBash": 14,
+    "cssselector": 9,
+    "getelementbyclassname": 4,
+    "getelementbyid": 1,
+    "getelementsbytagname": 3,
+    "innerhtml": 5,
+    "innertext": 6,
+    "queryselector": 11,
+    "queryselectorall": 8,
+    "readcommand": 13,
+    "textcontent": 7,
     "value": 15
   },
-  "_version": 3
+  "tagColors": {},
+  "_version": 4
 }

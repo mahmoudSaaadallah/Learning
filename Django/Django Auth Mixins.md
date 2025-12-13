@@ -175,22 +175,22 @@ This mixin is specifically designed to check Django's built-in permission system
 
 *   **Example**:
 
-    ```python
-    # myapp/views.py
-    from django.contrib.auth.mixins import PermissionRequiredMixin
-    from django.views.generic.edit import DeleteView
-    from django.urls import reverse_lazy
-    from .models import Book
+```python
+# myapp/views.py
+from django.contrib.auth.mixins import PermissionRequiredMixin
+from django.views.generic.edit import DeleteView
+from django.urls import reverse_lazy
+from .models import Book
 
-    class BookDeleteView(PermissionRequiredMixin, DeleteView):
-        model = Book
-        template_name = "myapp/book_confirm_delete.html"
-        success_url = reverse_lazy('protected_book_list')
-        permission_required = 'myapp.delete_book' # User must have this permission
-        # permission_required = ('myapp.delete_book', 'myapp.can_mass_delete') # Can require multiple
-        raise_exception = True # Raise 403 if permission is denied
-    ```
-    For this to work, you'd typically assign the `myapp.delete_book` permission to specific user groups or individual users in the Django admin.
+class BookDeleteView(PermissionRequiredMixin, DeleteView):
+	model = Book
+	template_name = "myapp/book_confirm_delete.html"
+	success_url = reverse_lazy('protected_book_list')
+	permission_required = 'myapp.delete_book' # User must have this permission
+	# permission_required = ('myapp.delete_book', 'myapp.can_mass_delete') # Can require multiple
+	raise_exception = True # Raise 403 if permission is denied
+```
+For this to work, you'd typically assign the `myapp.delete_book` permission to specific user groups or individual users in the Django admin.
 
 ---
 
@@ -204,7 +204,7 @@ This mixin is specifically designed to check Django's built-in permission system
 
 ### Considerations and Best Practices
 
-*   **Order of Mixins**: When using multiple mixins, the order matters due to Python's Method Resolution Order (MRO). Generally, authentication/authorization mixins should come *before* generic views in the inheritance list, as they need to run their checks first.
+*   **Order of Mixins**: When using multiple mixins, the order matters due to Python's Method Resolution Order (MRO) [[Multiple Inheritance]] in python. Generally, authentication/authorization mixins should come *before* generic views in the inheritance list, as they need to run their checks first.
 ```python
 class MyProtectedView(LoginRequiredMixin, UserPassesTestMixin, CreateView):
 	# ...
@@ -212,3 +212,33 @@ class MyProtectedView(LoginRequiredMixin, UserPassesTestMixin, CreateView):
 *   **`raise_exception`**: For public-facing sites, redirecting to a login page (`raise_exception = False`, the default) is often more user-friendly. For APIs or internal tools, raising a `PermissionDenied` (403 Forbidden) is usually more appropriate.
 *   **Custom Mixins**: For very complex or frequently used authorization patterns, consider writing your own custom mixins. This further enhances reusability.
 *   **Clarity**: While powerful, ensure your `test_func` methods are clear and concise. Overly complex `test_func` methods can become difficult to debug.
+
+---
+
+### 5. Advanced Architecture: Stacking Mixins
+
+In a production environment (or a lab setting), we don't repeat ourselves (DRY). If you have a section of your site dedicated to "Lab Administrators," do not add UserPassesTestMixin to every single view.
+
+Create a base Mixin for that domain.
+
+python
+
+```python
+# mixins.py
+
+class LabAdminRequiredMixin(LoginRequiredMixin, UserPassesTestMixin):
+    """
+    Custom mixin to ensure user is a Superuser OR belongs to 'Lab Admins' group.
+    """
+    def test_func(self):
+        return (
+            self.request.user.is_superuser or 
+            self.request.user.groups.filter(name='Lab Admins').exists()
+        )
+
+# views.py
+
+class SensitiveDataView(LabAdminRequiredMixin, ListView):
+    # This view is now automatically secured
+    model = SensitiveData
+```
