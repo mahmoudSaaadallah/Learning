@@ -92,3 +92,4 @@
 
 ## CVs
 - ### [ISI-Python-CVs - Google Drive](https://drive.google.com/drive/folders/1yoJhuaTm-gF7Uh6VvpRcd-pE2N0gpPQI)
+### - Review cv https://www.linkedin.com/posts/mohamedabusrea_%D8%AE%D9%84%D9%8A-%D8%AC%D9%8A%D9%85%D9%8A%D9%86%D8%A7%D9%8A-%D9%8A%D8%B1%D8%A7%D8%AC%D8%B9%D9%84%D9%83-%D8%A7%D9%84%D9%80-cv-%D8%A8%D8%A8%D9%84%D8%A7%D8%B4-%D9%88%D9%85%D9%86-%D8%BA%D9%8A%D8%B1-activity-7405585658985144320-3ebo?utm_source=share&utm_medium=member_desktop&rcm=ACoAADLYLYQBm60OZoEThV3_Qgc-04xxXYYxJqY

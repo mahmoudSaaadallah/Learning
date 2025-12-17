@@ -15,6 +15,7 @@
 - Django Forms [[Django Forms]].
 - Django Auth Mixins [[Django Auth Mixins]]
 - More About Auth Mixins [[More About Auth Mixins ]]
+- Password and Mail [[Password and Mail ]].
 - #### ORM
 	- CRUD [[CRUD]].
 	- Query Set [[Query Set]].
@@ -29,7 +30,12 @@
 	- QuerySet Cache [[QuerySet Cache]].
 	- Transaction Atomic Changes [[Transaction Atomic Changes]].
 - #### Django Rest Framework
+	- Function Based View RestAPI [[Function Based View RestAPI]].
 	- Serializer [[Serializer]].
+	- Serializing Relationships [[Serializing Relationships]].
 	- Serializer With Many to Many Relations(nested serializer) [[Serializer With Many to Many Relations]].
-	- Class Based View [[Class Based View ]].
+	- Class Based View Generic  [[Class Based View (Generic)]].
+	- Class Based View APIView  [[Class Based View (APIView)]].
+	- Class Based View (ModelViewSet) [[Class Based View (ModelViewSet)]].
 	- Customization For Class Based View [[Customization For Class Based View]].
+	- Comparison Between APIView, Generic View, and ModelViewSet [[Comparison Between APIView, Generic View, and ModelViewSet]].

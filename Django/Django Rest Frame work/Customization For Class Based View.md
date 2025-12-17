@@ -11,7 +11,7 @@ However, in real-world applications, you rarely have purely generic CRUD operati
 
 DRF provides specific methods you can override to inject your custom logic at various points in the request-response cycle.
 
-Let's continue using our `Product` model and `ProductSerializer` from the previous discussion [[Class Based View]]:
+Let's continue using our `Product` model and `ProductSerializer` from the previous discussion [[Class Based View (Generic)]]:
 
 ```python
 # myapp/models.py
