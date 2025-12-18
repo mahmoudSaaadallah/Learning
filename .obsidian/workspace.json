@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -219,8 +219,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0876a6af07bdcd18",
@@ -343,11 +342,11 @@
       "graph:Open graph view": false
     }
   },
-  "active": "d137ea318eeedf19",
+  "active": "bb9682ce711d7948",
   "lastOpenFiles": [
     "Django/Django Class Based View.md",
-    "Django/Class Based View (APIView).md",
     "Django/Comparison Between APIView, Generic View, and ModelViewSet.md",
+    "Django/Class Based View (APIView).md",
     "copilot/memory/Recent Conversations.md",
     "copilot/memory",
     "copilot",
