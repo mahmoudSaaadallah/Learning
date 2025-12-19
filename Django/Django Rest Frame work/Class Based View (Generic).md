@@ -49,6 +49,14 @@ To use these generic views, you typically need to configure just a few key attri
 *   **`serializer_class`**: The [[Serializer]] class that DRF should use to convert your model instances to/from JSON.
 *   **`lookup_field`**: (For detail views) The model field that should be used to look up individual instances (defaults to `pk` for primary key). use for search if not override it will be `pk` by default.
 
+Or 
+	*  Override `get_queryset()`/`get_serializer_class()`.
+	  If you are overriding a view method, it is important that you call
+	  `get_queryset()` instead of accessing the `queryset` property directly,
+	  as `queryset` will get evaluated only once, and those results are cached
+	  for all subsequent requests.
+	* This is the rely important when we want to use specific logic with the queryset or the serializer class before we set it, then we will need to override those methods. 
+	
 Let's set up a simple Django model and its serializer, which we'll use throughout our examples.
 
 ---
@@ -483,6 +491,53 @@ class UserProductListCreateView(generics.ListCreateAPIView):
 
 # (You'd need to add an 'owner' ForeignKey to your Product model for this to work)
 ```
+
+---
+## Override one of the built in methods in the generic class.
+
+This method is called right before the instance is actually deleted from the database. It receives the `instance` object that is about to be deleted.
+
+Here's an example using `generics.DestroyAPIView` where we add some custom logging before deleting a product, and also demonstrate how you could prevent deletion under a specific condition:
+
+```python
+# myapp/views.py
+from rest_framework import generics, status
+from rest_framework.response import Response
+from .models import Product
+from .serializers import ProductSerializer
+import logging
+
+logger = logging.getLogger(__name__)
+
+class ProductDestroyView(generics.DestroyAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer # Still good practice to include, though not strictly used for deletion logic
+
+        def delete(self, request, pk):
+			product = get_object_or_404(Product, pk=pk)
+			if product.in_stock:
+				return Response({'error': 'product still in stock'}, status=status.HTTP_405_METHOD_NOT_ALLOWED)
+			product.delete()
+			return Response(status=status.HTTP_204_NO_CONTENT)
+# myapp/urls.py
+from django.urls import path
+from .views import ProductDestroyView
+
+urlpatterns = [
+    path('products/<int:pk>/delete/', ProductDestroyView.as_view(), name='product-delete'),
+]
+```
+
+**How it works:**
+
+1.  **`ProductDestroyView`** inherits from `generics.DestroyAPIView`, which provides the basic DELETE functionality.
+2.  **`perform_destroy(self, instance)`** is overridden.
+3.  Inside `perform_destroy`, we first log that a deletion attempt is being made.
+4.  We then add a conditional check: if `instance.in_stock` is `True`, we log a warning and raise a `generics.ValidationError`. This will result in a `HTTP 400 Bad Request` response with the specified error message, preventing the deletion.
+5.  If the condition is not met (i.e., the product is not in stock), `instance.delete()` is called, which performs the actual database deletion.
+6.  Finally, a success message is logged.
+
+This demonstrates how you can intercept the deletion process to add custom validation, logging, trigger side effects (like sending notifications), or prevent the operation entirely based on your application's business rules.
 
 ### Conclusion
 
