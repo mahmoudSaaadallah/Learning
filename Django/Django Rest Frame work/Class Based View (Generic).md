@@ -1,6 +1,6 @@
 ### The Evolution: From Function-Based Views to Class-Based Views
 
-Before we jump into DRF's generic views, let's briefly recall **Function-Based Views (FBVs)** in Django. You might have written something like this:
+Before we jump into DRF's generic views, let's briefly recall **Function-Based Views (FBVs)** in Django [[Function Based View RestAPI]]. You might have written something like this:
 
 ```python
 # views.py (Example FBV)
@@ -50,12 +50,9 @@ To use these generic views, you typically need to configure just a few key attri
 *   **`lookup_field`**: (For detail views) The model field that should be used to look up individual instances (defaults to `pk` for primary key). use for search if not override it will be `pk` by default.
 
 Or 
-	*  Override `get_queryset()`/`get_serializer_class()`.
-	  If you are overriding a view method, it is important that you call
-	  `get_queryset()` instead of accessing the `queryset` property directly,
-	  as `queryset` will get evaluated only once, and those results are cached
-	  for all subsequent requests.
-	* This is the rely important when we want to use specific logic with the queryset or the serializer class before we set it, then we will need to override those methods. 
+*  Override `get_queryset()`/`get_serializer_class()`.
+    If you are overriding a view method, it is important that you call `get_queryset()` instead of accessing the `queryset` property directly, as `queryset` will get evaluated only once, and those results are cached for all subsequent requests.
+* This is the really important when we want to use specific logic with the queryset or the serializer class before we set it, then we will need to override those methods. 
 	
 Let's set up a simple Django model and its serializer, which we'll use throughout our examples.
 
