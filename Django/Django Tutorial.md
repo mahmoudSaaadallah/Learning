@@ -39,3 +39,5 @@
 	- Class Based View (ModelViewSet) [[Class Based View (ModelViewSet)]].
 	- Customization For Class Based View [[Customization For Class Based View]].
 	- Comparison Between APIView, Generic View, and ModelViewSet [[Comparison Between APIView, Generic View, and ModelViewSet]].
+	- Filter [[Filter]].
+	- Search [[Search]].
