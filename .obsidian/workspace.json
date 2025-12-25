@@ -22,87 +22,17 @@
             }
           },
           {
-            "id": "92c3e033b9bf49e0",
+            "id": "510fc0fea884a31e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django/F.md",
+                "file": "Django/Ordering.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "F"
-            }
-          },
-          {
-            "id": "ebe9cf13264a1ac1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Django/Q.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Q"
-            }
-          },
-          {
-            "id": "7b4e034bdcfef67e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Django/Search.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Search"
-            }
-          },
-          {
-            "id": "dd785eabc0c09d62",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Django/Filter.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Filter"
-            }
-          },
-          {
-            "id": "6cda59c5be325343",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DataBaseDesign/ACID.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ACID"
-            }
-          },
-          {
-            "id": "d130bedd867c08e7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DataBaseDesign/SQL/SQL Queries Summary.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "SQL Queries Summary"
+              "title": "Ordering"
             }
           },
           {
@@ -134,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -315,26 +245,27 @@
       "graph:Open graph view": false
     }
   },
-  "active": "d130bedd867c08e7",
+  "active": "510fc0fea884a31e",
   "lastOpenFiles": [
-    "SQL.pdf",
-    "DataBaseDesign/ACID.md",
-    "DataBaseDesign/SQL/SQL Queries Summary.md",
-    "DataBaseDesign/SQL",
-    "Django/Password and Mail.md",
+    "Django/Ordering.md",
+    "Django/Django Tutorial.md",
+    "Django/Django Validator.md",
     "Django/Filter.md",
     "Django/Search.md",
-    "Django/F.md",
-    "Django/Django Tutorial.md",
     "Django/Q.md",
+    "DataBaseDesign/ACID.md",
+    "DataBaseDesign/SQL/SQL Queries Summary.md",
+    "Django/Django Forms.md",
+    "SQL.pdf",
+    "DataBaseDesign/SQL",
+    "Django/Password and Mail.md",
+    "Django/F.md",
     "Django/Django Rest Frame work/Customization For Class Based View.md",
     "Django/Django Rest Frame work/Class Based View (ModelViewSet).md",
     "Django/Django Rest Frame work/Comparison Between APIView, Generic View, and ModelViewSet.md",
     "Django/Django Rest Frame work/Class Based View (APIView).md",
     "Django/Django Rest Frame work/Class Based View (Generic).md",
     "Django/Django Class Based View.md",
-    "Django/Django Validator.md",
-    "Django/Django Forms.md",
     "Django/Serializer.md",
     "copilot/memory/Recent Conversations.md",
     "copilot/memory",
@@ -359,7 +290,6 @@
     "Python",
     "Untitled.canvas",
     "Django/Django Rest Frame work",
-    "React",
-    "Django"
+    "React"
   ]
 }
