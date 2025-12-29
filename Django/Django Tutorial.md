@@ -42,3 +42,5 @@
 	- Filter [[Filter]].
 	- Search [[Search]].
 	- Ordering [[Ordering]].
+
+- Middleware [[Middleware]].
