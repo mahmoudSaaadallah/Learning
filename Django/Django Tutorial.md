@@ -43,5 +43,5 @@
 	- Search [[Search]].
 	- Ordering [[Ordering]].
 	- User-defined User custom user [[Custom User]]
-
+	- Djoser [[Djoser]].
 - Middleware [[Middleware]].
