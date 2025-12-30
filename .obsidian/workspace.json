@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django/Djoser.md",
+                "file": "Django/Django Rest Frame work/Djoser.md",
                 "mode": "source",
                 "source": false
               },
@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django/Custom User.md",
+                "file": "Django/Django Rest Frame work/Custom User.md",
                 "mode": "source",
                 "source": false
               },
@@ -63,8 +63,7 @@
               "title": "Django Forms"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -121,8 +120,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0876a6af07bdcd18",
@@ -245,24 +243,27 @@
       "graph:Open graph view": false
     }
   },
-  "active": "966a1c72fd7bffeb",
+  "active": "b3172e7a04d09a4a",
   "lastOpenFiles": [
-    "Django/Django Forms.md",
-    "Django/Custom User.md",
-    "Django/Djoser.md",
+    "Django/Django Rest Frame work/Djoser.md",
+    "Django/ORM/Query Set.md",
+    "Django/ORM/Q.md",
     "Django/Django Tutorial.md",
+    "Django/ORM/CRUD.md",
+    "Django/ORM",
+    "Django/Django Forms.md",
+    "Django/Django Rest Frame work/Custom User.md",
     "Django/Middleware.md",
     "Django/Django Validator.md",
-    "Django/Ordering.md",
-    "Django/Filter.md",
-    "Django/Search.md",
-    "Django/Q.md",
+    "Django/Django Rest Frame work/Ordering.md",
+    "Django/Django Rest Frame work/Filter.md",
+    "Django/Django Rest Frame work/Search.md",
     "DataBaseDesign/ACID.md",
     "DataBaseDesign/SQL/SQL Queries Summary.md",
     "SQL.pdf",
     "DataBaseDesign/SQL",
     "Django/Password and Mail.md",
-    "Django/F.md",
+    "Django/ORM/F.md",
     "Django/Django Rest Frame work/Customization For Class Based View.md",
     "Django/Django Rest Frame work/Class Based View (ModelViewSet).md",
     "Django/Django Rest Frame work/Comparison Between APIView, Generic View, and ModelViewSet.md",
@@ -273,10 +274,8 @@
     "copilot/memory/Recent Conversations.md",
     "copilot/memory",
     "copilot",
-    "Django/N + 1.md",
+    "Django/ORM/N + 1.md",
     "Django/Django Rest Frame work/Function Based View RestAPI.md",
-    "Django/Serializing Relationships.md",
-    "Links To Study.md",
     "Thought From books",
     "GIT",
     "Images/Pasted image 20251121112720.png",
@@ -289,7 +288,6 @@
     "Ds & Alg",
     "Python",
     "Untitled.canvas",
-    "Django/Django Rest Frame work",
-    "React"
+    "Django/Django Rest Frame work"
   ]
 }
