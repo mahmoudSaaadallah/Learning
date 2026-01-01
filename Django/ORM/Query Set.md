@@ -105,6 +105,15 @@ Product.objects.filter(price__lt=50).update(price=50) # Database hit (UPDATE sta
 product_list = list(expensive_available_products) # Database hit occurs here
 ```
 
+#### Illustration: 
+- The Querysets are only evaluated in the following cases:
+	1. The first time you iterate over them.
+	2. When you slice them, for instance, `Post.objects.all()[:3]`.
+	3. When you pickle or cache them.
+	4. When you call `repr()` or `len()` on them.
+	5. When you explicitly call `list()` on them.
+	6. When you test them in a statement, such as `bool()`, or, and, or if.
+
 ### Common QuerySet Methods and Chaining
 
 The beauty of QuerySets lies in their chainability. Each method that returns a QuerySet can be followed by another, building up a more specific query.

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django/Django Tutorial.md",
+                "file": "Django/ORM/Query Set.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Django Tutorial"
+              "title": "Query Set"
             }
           },
           {
@@ -120,7 +120,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0876a6af07bdcd18",
@@ -243,12 +244,13 @@
       "graph:Open graph view": false
     }
   },
-  "active": "b3172e7a04d09a4a",
+  "active": "b49a9620435e2031",
   "lastOpenFiles": [
+    "Links To Study.md",
+    "Django/Django Tutorial.md",
     "Django/Django Rest Frame work/Djoser.md",
     "Django/ORM/Query Set.md",
     "Django/ORM/Q.md",
-    "Django/Django Tutorial.md",
     "Django/ORM/CRUD.md",
     "Django/ORM",
     "Django/Django Forms.md",
@@ -275,7 +277,6 @@
     "copilot/memory",
     "copilot",
     "Django/ORM/N + 1.md",
-    "Django/Django Rest Frame work/Function Based View RestAPI.md",
     "Thought From books",
     "GIT",
     "Images/Pasted image 20251121112720.png",
