@@ -7,6 +7,7 @@
 - Django Class Meta [[Django Class Meta]].
 - Django Class Based View [[Django Class Based View]].
 - get_absolute_url Function [[get_absolute_url Function]].
+- Django Pagination [[Django Pagination]].
 - Django Admin [[Django Admin]].
 - Django ModelAdmin [[Django ModelAdmin]].
 - Django Validator [[Django Validator]].
