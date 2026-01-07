@@ -136,3 +136,16 @@ This allows you to verify the impact of your deletion and revert it if it's not 
 6.  **Soft Deletes:** In many applications, instead of physically deleting data, a "soft delete" approach is used. This involves adding a `IsDeleted` (BIT) column to the table and simply updating it to `1` (true) instead of deleting the row. This preserves historical data and allows for easy recovery, though it requires all queries to filter out `IsDeleted = 1` rows.
 
 The `DELETE` statement is an indispensable tool in a database developer's arsenal. Mastering its nuances, understanding its impact on data integrity and performance, and employing best practices are hallmarks of a truly skilled professional. Always approach data modification with respect and caution!
+
+
+| Feature             | `DELETE`                              | `TRUNCATE TABLE`                             | `DROP TABLE`                                |
+| :------------------ | :------------------------------------ | :------------------------------------------- | :------------------------------------------ |
+| **What it removes** | Rows (data)                           | All rows (data)                              | Table structure and all data                |
+| **Object remains?** | Yes, table structure remains.         | Yes, table structure remains.                | No, table is completely removed.            |
+| **Logging**         | Fully logged (row by row).            | Minimally logged (page deallocations).       | Fully logged (schema change).               |
+| **Rollback**        | Yes, within a transaction.            | No, cannot be rolled back.                   | No, cannot be rolled back (without backup). |
+| **WHERE Clause**    | Yes, allows conditional deletion.     | No, deletes all rows unconditionally.        | N/A                                         |
+| **Triggers**        | Fires `DELETE` triggers.              | Does NOT fire `DELETE` triggers.             | N/A                                         |
+| **Identity Seed**   | Does NOT reset.                       | Resets to the seed value (usually 1).        | N/A (table is gone).                        |
+| **Constraints**     | Respects foreign key constraints.     | Fails if foreign keys reference it.          | Removes all associated constraints.         |
+| **Performance**     | Slower for large tables (row-by-row). | Faster for large tables (page deallocation). | Fast (metadata operation).                  |
