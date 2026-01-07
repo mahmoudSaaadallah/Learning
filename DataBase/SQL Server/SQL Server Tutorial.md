@@ -3,7 +3,8 @@
 - Alter table and Column [[Alter]].
 ## DML
 - Insert into [[Insert Into]].
-
+- Update [[Update]].
+- Delete [[Delete]].
 ## DCL
 
 ## DQL
