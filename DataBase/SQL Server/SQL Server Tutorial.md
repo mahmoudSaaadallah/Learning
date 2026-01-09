@@ -7,6 +7,7 @@
 - Insert into [[Insert Into]].
 - Update [[Update]].
 - Delete [[Delete]].
+- Joins [[Joins]].
 ## DCL
 
 ## DQL
