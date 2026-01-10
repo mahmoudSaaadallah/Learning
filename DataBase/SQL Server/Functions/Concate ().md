@@ -48,7 +48,7 @@ The most critical aspect of the `+` operator for concatenation is its behavior w
 
 In the example above, for `EmployeeID` 105 (Eve), `LastName` is `NULL`. When `FirstName + ' ' + LastName` is evaluated, `NULL` is introduced, causing the entire `FullName` for Eve to become `NULL`.
 
-To handle `NULL` values with the `+` operator, you typically need to use functions like `ISNULL()` or `COALESCE()` on each potentially `NULL` expression.
+To handle `NULL` values with the `+` operator, you typically need to use functions like `ISNULL()` [[IsNull ()]] or `COALESCE()` [[Coalesce ()]]on each potentially `NULL` expression.
 
 **Example with `ISNULL()` to handle `NULL`s:**
 ```sql

@@ -13,6 +13,7 @@
 
 ## DQL
 - Select [[Select]].
+- Like [[Like]].
 
 ## TCL
 
