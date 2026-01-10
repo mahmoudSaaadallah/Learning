@@ -1,5 +1,5 @@
 # Normalization
-- is the process or organizing columns and tables in a relational database to minimize data redundancy and improve data integrity.
+- Is the process or organizing columns and tables in a relational database to minimize data redundancy and improve data integrity.
 
 The primary goals of normalization are:
 
@@ -30,7 +30,7 @@ The primary goals of normalization are:
 - **Dependence**: is a relation between two columns.
 		<span style="color:rgb(255, 0, 0)">A--->B</span> : this mean data in Column <span style="color:rgb(255, 0, 0)">B</span> depend on the data in column <span style="color:rgb(255, 0, 0)">A</span> 
 
-#### When we say that the table is normalized?
+#### When do we say that the table is normalized?
 - When each all the columns inside the table depend only on the Primary Key.
 
 There is three types of Dependence:
@@ -42,14 +42,13 @@ There is three types of Dependence:
 - This type of Dependence appears in the table that has a composite <span style="color:rgb(255, 0, 0)">PK</span>, and there is a column in this table depend on one of the columns that consist the PK.
 
 
-
 ### Transitive Functional Dependence
 - This type of Dependence appears in the table that has a column which is non Key depends on another column that is also non Key
 
 ---
 
 ## 1st Normal Form
-- **Dealing with multivalued column**
+- **Dealing with multivalued columns**
 - **Repeating Groups**
 
 **Multivalued** ---> Cell that has more than one value 
@@ -119,7 +118,7 @@ There is three types of Dependence:
 |                      40                       |  B-E  |  105  |  84   |  Saad   |                       2                       |
 |                      20                       |  OS   |  70   |  77   | Hossam  |                       3                       |
 
-
+- We have to notice that when we separated the repeated groups, we didn't remove the relation that connect the tables this why we put the `SID` in the Courses table to keep the relation between the tables.
 --- 
 ## 2nd Normal Form
 **Dealing with the Partial Dependency**
