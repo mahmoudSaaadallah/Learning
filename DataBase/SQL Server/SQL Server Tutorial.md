@@ -15,3 +15,7 @@
 - Select [[Select]].
 
 ## TCL
+
+## Functions
+- Is Null [[IsNull ()]].
+- Coalesce [[Coalesce ()]].
