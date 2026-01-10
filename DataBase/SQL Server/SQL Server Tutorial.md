@@ -21,3 +21,4 @@
 - Is Null [[IsNull ()]].
 - Coalesce [[Coalesce ()]].
 - Concate [[Concate ()]].
+- Aggregate Function [[Aggregate Functions]].
