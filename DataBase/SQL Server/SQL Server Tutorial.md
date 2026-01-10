@@ -19,3 +19,4 @@
 ## Functions
 - Is Null [[IsNull ()]].
 - Coalesce [[Coalesce ()]].
+- Concate [[Concate ()]].
