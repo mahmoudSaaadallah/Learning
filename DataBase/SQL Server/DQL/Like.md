@@ -272,6 +272,150 @@ WHERE ProductCode LIKE '%\[%' ESCAPE '\';
 |-------------|
 | P[Q]R       |
 
+--- 
+#### Another way without using escape character
+**you can indeed use square brackets `[]` to treat wildcard characters (`%`, `_`, `[`, `]`, `^`) as literal characters within a `LIKE` pattern.**
+
+### Escaping Wildcards with Square Brackets `[]`
+
+The `[]` wildcard in SQL Server's `LIKE` operator is designed to match *any single character within a specified set or range*. When you place a character that would normally be a wildcard inside these brackets, it loses its special meaning and is interpreted as a literal character that must be matched.
+
+**How it works:**
+
+*   **`%` (Percent Sign):** When inside `[]`, `[%]` matches a literal percent sign.
+*   **`_` (Underscore):** When inside `[]`, `[_]` matches a literal underscore.
+*   **`[` (Opening Bracket):** When inside `[]`, `[[]` matches a literal opening square bracket.
+*   **`]` (Closing Bracket):** When inside `[]`, `[]]` matches a literal closing square bracket. (Note: The closing bracket is special; if it's the *first* character after the opening bracket, it's treated as a literal. Otherwise, it closes the set. `[abc]]` would match 'a', 'b', 'c', or ']').
+*   **`^` (Caret):** When inside `[]` and *not* at the beginning, `[^]` matches a literal caret. If it's at the beginning, `[^...]` negates the set.
+
+Let's revisit your examples and expand on them using our `ProductCodes` table:
+
+**`ProductCodes` Table:**
+
+| ProductCode |
+|-------------|
+| ABC_123     |
+| XYZ%456     |
+| P[Q]R       |
+| DATA_RAW    |
+| 100%SALE    |
+| [ERROR]     |
+| ^START      |
+
+**1. Matching a literal underscore (`_`):**
+
+Your example `'%[_]%'` is perfectly valid.
+
+```sql
+SELECT ProductCode
+FROM ProductCodes
+WHERE ProductCode LIKE '%[_]%';
+```
+
+**Result:**
+
+| ProductCode |
+|-------------|
+| ABC_123     |
+| DATA_RAW    |
+
+**Explanation:** `[_]` tells SQL Server to look for a literal underscore character, not "any single character."
+
+**2. Matching a literal percent sign (`%`):**
+
+Your example `'%[%]'` is also correct for matching strings that *contain* a percent sign. If you want to match strings *ending* with a percent sign, you'd use `'%[%]'`.
+
+```sql
+SELECT ProductCode
+FROM ProductCodes
+WHERE ProductCode LIKE '%[%]%'; -- Matches codes containing a literal %
+```
+
+**Result:**
+
+| ProductCode |
+|-------------|
+| XYZ%456     |
+| 100%SALE    |
+
+**Explanation:** `[%]` tells SQL Server to look for a literal percent sign character, not "zero or more characters."
+
+**Additional Examples:**
+
+*   **Matching a literal opening square bracket (`[`):**
+```sql
+SELECT ProductCode
+FROM ProductCodes
+WHERE ProductCode LIKE '%[[]%';
+```
+**Result:**
+
+| ProductCode |
+|-------------|
+| P[Q]R       |
+| [ERROR]     |
+
+**Explanation:** `[[]` matches a literal `[`.
+
+*   **Matching a literal closing square bracket (`]`):**
+```sql
+SELECT ProductCode
+FROM ProductCodes
+WHERE ProductCode LIKE '%[]]%';
+```
+**Result:**
+
+| ProductCode |
+|-------------|
+| P[Q]R       |
+| [ERROR]     |
+
+**Explanation:** `[]]` matches a literal `]`. Note that if `]` is the first character after `[`, it's treated as a literal.
+
+*   **Matching a literal caret (`^`):**
+```sql
+SELECT ProductCode
+FROM ProductCodes
+WHERE ProductCode LIKE '%[^]%'; -- Matches codes containing a literal ^
+```
+**Result:**
+
+| ProductCode |
+|-------------|
+| ^START      |
+
+**Explanation:** `[^]` matches a literal `^` (when not at the beginning of the character set).
+
+### Comparison: `[]` vs. `ESCAPE` Clause
+
+Both methods achieve the goal of matching literal wildcard characters, but they have different use cases and characteristics:
+
+**Using `[]` (Bracket List):**
+*   **Pros:**
+    *   Often more concise and readable for single wildcard characters.
+    *   No need to define an `ESCAPE` character, which can sometimes conflict with data.
+    *   Part of the standard `LIKE` pattern syntax.
+*   **Cons:**
+    *   Only works for single wildcard characters. You can't use `[%_]` to match a literal percent *followed by* a literal underscore; it would mean "match a single character that is either `%` or `_`".
+    *   Can become less readable if you're trying to match multiple different literal wildcards in a complex pattern.
+    *   Requires careful handling for `[` and `]` themselves (e.g., `[[]` and `[]]`).
+
+**Using `ESCAPE` Clause:**
+*   **Pros:**
+    *   More explicit about the escaping mechanism.
+    *   Can escape any character, including sequences of characters if the escape character is placed before each.
+    *   Necessary if you need to escape a character that is *not* one of the `LIKE` wildcards but might be interpreted specially in other contexts (though `LIKE` only cares about `%, _, [], ^`).
+*   **Cons:**
+    *   Requires an extra `ESCAPE 'character'` clause.
+    *   The chosen escape character must not appear literally in your data where it's not intended as an escape.
+
+### When to Use Which?
+
+*   **For simple literal wildcard matches (like `_`, `%`, `^`):** Using `[_]`, `[%]`, `[^]` is often preferred for its conciseness and clarity.
+*   **For matching literal `[` or `]`:** Using `[[]` and `[]]` is the standard way.
+*   **For complex patterns or when you prefer explicit control:** The `ESCAPE` clause provides a clear, separate mechanism for escaping. It's particularly useful if you have a dynamic pattern where you might not know which characters need escaping beforehand, and you can programmatically prepend the escape character.
+
+As a senior developer, I often use the `[]` method for single character wildcards because it integrates seamlessly into the pattern itself. However, I'm always mindful of the `ESCAPE` clause for situations where it offers better clarity or is the only viable option (e.g., if I needed to match a literal `[` and `]` in a way that `[]` syntax makes ambiguous). Both are valuable tools in your SQL pattern matching toolkit!
 ### Important Considerations and Best Practices
 
 1.  **Case Sensitivity:** The behavior of `LIKE` regarding case sensitivity depends on the collation of the database or the specific column. If your database uses a case-insensitive collation (e.g., `SQL_Latin1_General_CP1_CI_AS`), then `LIKE 'a%'` will match 'Alice', 'alice', 'ALICE', etc. If it's case-sensitive, it will only match 'Alice'. You can explicitly control this using `COLLATE` in your query if needed.
