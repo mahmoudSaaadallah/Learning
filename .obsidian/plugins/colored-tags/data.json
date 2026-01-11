@@ -10,12 +10,15 @@
     "highTextContrast": false
   },
   "knownTags": {
+    "check": 1,
+    "creates": 2,
     "cssselector": 9,
     "getelementbyclassname": 4,
     "getelementbyid": 1,
     "getelementsbytagname": 3,
     "innerhtml": 5,
     "innertext": 6,
+    "print": 10,
     "queryselector": 11,
     "queryselectorall": 8,
     "readcommand": 13,

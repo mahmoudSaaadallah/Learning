@@ -104,9 +104,21 @@
               "icon": "lucide-file",
               "title": "Git Pro"
             }
+          },
+          {
+            "id": "9facb5455b28c1a2",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "GIT/git-cheat-sheet-education.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "git-cheat-sheet-education"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -163,8 +175,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0876a6af07bdcd18",
@@ -287,11 +298,14 @@
       "graph:Open graph view": false
     }
   },
-  "active": "8e8ce7395e25f30f",
+  "active": "9facb5455b28c1a2",
   "lastOpenFiles": [
+    "GIT/Git شخبط.md",
+    "GIT/git-cheat-sheet-education.pdf",
+    "DataBase/SQL.pdf",
+    "GIT/Git Pro.md",
     "GIT/Git Level 1.md",
     "DataBase/SQL Server/DML/More about Joins.md",
-    "GIT/Git Pro.md",
     "DataBase/SQL Server/SQL Server Tutorial.md",
     "DataBase/SQL Server/Functions/Concate ().md",
     "DataBase/SQL Server/Functions/Aggregate Functions.md",
@@ -314,8 +328,6 @@
     "DataBase/SQL Server/DML/Delete.md",
     "DataBase/SQL Server/DML/Update.md",
     "DataBase/SQL Server/DDL/Create Table with Constrains.md",
-    "DataBase/SQL Server/DML/Insert Into.md",
-    "Django/Django Forms.md",
     "DataBase/SQL Server/TCL",
     "DataBase/SQL Server/DQL",
     "DataBase/SQL Server/DCL",
@@ -323,8 +335,6 @@
     "DataBase/SQL Server/DDL",
     "DataBase/SQL Server",
     "DataBase",
-    "DataBaseDesign/Untitled",
-    "Django/ORM",
     "Images/Pasted image 20251121112720.png",
     "Images/Pasted image 20251121112827.png",
     "Images/Pasted image 20251121112754.png",
