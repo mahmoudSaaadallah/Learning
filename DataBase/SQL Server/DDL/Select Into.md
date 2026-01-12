@@ -129,6 +129,17 @@ HAVING
 ```
 **Explanation:** This creates `DepartmentSalarySummary` with `DepartmentName` and `AverageSalary` for departments where the average salary exceeds $75,000.
 
+---
+#### 6- Coping the structure of the table into another table 
+- In Some scenarios, we need to create a new table with the same structure of an existing table(columns name, data types), but with new data.
+- So Instead of using `create table` we could use `instert...into` with impossible condition in where and this command will copy the structure without data.
+```sql
+select *
+into consultants 
+from employees
+where 1 = 2
+```
+ - As the condition in the `where` statement `1 = 2` is impossible then the data will not being copied, but as we used `into` then it will create a new table with the same structure as the employee table, and we could use this table now to insert new data to it.
 ### Important Considerations and Best Practices
 
 1.  **New Table Creation:** `SELECT INTO` *always* creates a new table. If a table with `NewTableName` already exists, the statement will fail with an error. If you want to insert into an existing table, you should use `INSERT INTO ... SELECT ...`.
