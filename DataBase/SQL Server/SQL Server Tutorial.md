@@ -3,6 +3,7 @@
 - Alter table and Column [[Alter]].
 - Drop [[Drop]].
 - Truncate [[Truncate]].
+- Select Into [[Select Into]].
 ## DML
 - Insert into [[Insert Into]].
 - Update [[Update]].

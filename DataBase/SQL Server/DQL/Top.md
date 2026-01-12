@@ -145,6 +145,37 @@ ORDER BY Salary DESC;
 *   Because `WITH TIES` is used, SQL Server checks if any other employees also have a salary of 85000. John Doe also has 85000.
 *   Therefore, John Doe is included in the result set, even though it makes the total count 4, exceeding the initial `TOP (3)` specification. This ensures that no "tied" records are unfairly excluded.
 
+---
+### 5- Get Random Records using `top` with `newid()` function
+- In SQL Server if we used `newid()` it will return a new universal id which is random.
+```SQL
+select *, newid() as newid
+from employee
+where employeeid < 105
+```
+
+| EmployeeID | FirstName | LastName | DepartmentID | Salary | newid                                |
+| ---------- | --------- | -------- | ------------ | ------ | ------------------------------------ |
+| 101        | Alice     | Smith    | 1            | 70000  | 7F982BA7-3537-4085-8B78-01F95B326C7F |
+| 102        | Bob       | Johnson  | 2            | 85000  | E93E02FA-9DC8-4DFF-B545-9500BD290EE2 |
+| 103        | Carol     | Davis    | 1            | 72000  | 2DA5C687-077F-4B0D-91DC-EEDDA514A86D |
+| 104        | David     | Brown    | 6            | 60000  | 56B0CA73-2305-4D78-9859-17619D6C2322 |
+- As we can see in the result we have got a new column with name `newid` which has random IDs.
+- By using the `newid()` function with `top` we could get a random records
+- **Get a random 2 records from the employee table**
+```SQL
+select top 3 *
+from employee
+order by newid()
+```
+
+| EmployeeID | FirstName | LastName | DepartmentID | Salary |
+| ---------- | --------- | -------- | ------------ | ------ |
+| 104        | David     | Brown    | 6            | 60000  |
+| 102        | Bob       | Johnson  | 2            | 85000  |
+| 106        | Frank     | Green    | 3            | 90000  |
+- As we can see in the result using the `newid()` in the `order by` has created some random `UID` and order by them which will retrieve random records.
+
 ### Important Considerations and Best Practices
 
 1.  **`ORDER BY` is Mandatory for Meaningful Results:** I cannot stress this enough. Always use `ORDER BY` with `TOP` unless you genuinely need an arbitrary subset of data (which is rare).
