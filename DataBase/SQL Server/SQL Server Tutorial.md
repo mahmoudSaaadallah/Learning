@@ -15,6 +15,7 @@
 - Select [[Select]].
 - Like [[Like]].
 - Union Family [[Union Family]].
+- Intersection [[Intersection]].
 
 ## TCL
 
