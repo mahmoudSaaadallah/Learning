@@ -4,7 +4,7 @@
 - Drop [[Drop]].
 - Truncate [[Truncate]].
 - Select Into [[Select Into]].
-- 
+- Insert Based On Select [[Insert Based On Select]].
 ## DML
 - Insert into [[Insert Into]].
 - Update [[Update]].
