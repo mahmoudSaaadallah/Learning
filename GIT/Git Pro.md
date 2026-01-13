@@ -21,7 +21,63 @@ git ls-files -s
 git rm --cached <fileName>
 git restore --staged <fileName>
 ```
-- The `git rm --cached` will remove file from the staging area.
+- The `git rm --cached` will remove file from the staging area, as the `git restore --staged` do.
+- **What is the difference between those commands? and when to use which?**
+- To answer this question we will imagen the following scenario, we have created a new file in our working directory and this file is still untracked like the following
+```bash
+git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+- So as the file is still untracked then there is no copies of the file in the repo, then after adding it to the staging area we can't use the normal `git restore --staged <filename>` command to untrack or remove it from the staging area, as this command depend on the copy of that file in the repo and we don't have any copies for this file so it will return the following error if we try.
+```bash
+git restore --staged file.txt
+fatal: could not resolve HEAD
+```
+- This output means there are no copies in for this file in the repo, so the git can't restore the old copy from the repo.
+- On the other hand we could use `git rm --cached <filename>` for this scenario, because this command doesn't need any copy from the repo it just delete the cached copy in the staging area.
+```bash
+git rm --cached file.txt
+rm 'file.txt'
+```
+
+- The Other scenario is if we already have a copy of this file in the repo, which mean this file already committed before, but we modified it and we added it to the staging area, so the correct command here to un-stage the file is to use `git restore --staged <filename>`, because this command will rely on the last copy of this file in the repo to restore it to the stage area which mean delete the modified version of the file, so the file will return modified, but not added to the staging area.
+```bash
+git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file.txt
+
+git restore --staged file.txt
+
+git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+
+**Now the third Scenario**
+- What if the changes that we made to this file is wrong and we need to get the file before these changes which is the last version in the stage area and repo then we could use `git restore <filename>`
+```bash
+git restore file.txt
+git status
+On branch master
+nothing to commit, working tree clean
+```
+- As we can see in the this command after we restored the previous version and check the status we find `nothing to commit`, which means we get the last version from the staging are which is the version before modification.
 ---
 
 ### SHA for the committed files 
@@ -245,3 +301,75 @@ git log --graph
 
       initial commit
 ```
+
+----
+
+### Change the commit message
+- If make a commit and we want to modify the message for this commit then we could use `git commit --amend`, this command will give us chance to modify the last commit.
+```bash
+git commit --amend
+```
+- This command will open `vim` with the last commit message that we could modify.
+---
+
+### Rolling back and forward in the commits
+- first let's see the logs
+```bash
+git log --oneline
+67c561e (HEAD -> master) Ading the fourth line
+e4b74a7 third line added
+942d9a3 Addin the second line
+e1feee0 inital commit
+```
+- As we can see from the previous command we have four commits in our repo and the `HEAD` if referring to the last commit with `SHA` starts with `67c561e`.
+- What if I want to back to previous commit and git this commit to my working directory?
+- Before we answer this question we have to know what is the `HEAD`? 
+- The `HEAD` is a file that has a pointer for the `SHA` for last commit.
+- So to roll back in the commits we could use `git reset HEAD~<n>` as `n` is the number of version that you want to move backward.
+- So `git reset HEAD~1` will back to the `SHA` `e4b74a7` and `git rest HEAD~2` will back to `942d9a3` and so on.
+```bash
+git reset HEAD~1
+Unstaged changes after reset:
+M       file.txt
+```
+- Now what had happened?
+- What happened here is the the `HEAD` file now is pointing on the third commit `e4b74a7` and this version of the file stored to the staging area.
+- The `git` restore this commit to the staging area not the working directory directly to give us change to check changes, and to prevent loosing the un-staged changes, because may be have some changes that not saved yet to the stage or the repo so this will save it from lost.
+- Now after getting this old version to the staging area we could check the difference between it and the working directory using `git diff`.
+- By the way, when using the `git reset HEAD~<n>` command, we could make the older version back to the working directory direct using `--hard` option with this command.
+```bash
+git reset --hard HEAD~1
+```
+- This command will discard the changes in the working directory and automatically override the file in it, and also in the staging area.
+
+- New after rolling back, let's check the logs
+```bash
+git log --oneline
+e4b74a7 (HEAD -> master) third line added
+942d9a3 Addin the second line
+e1feee0 inital commit
+```
+- As we can see from the result, there are only three commits, and the fourth commit has gone, _**Does this mean we lost that commit?**_
+- The Answer is **No**, but we can't see its `SHA` in the logs, but we could get all the actions that applied on the repo using other commend `git reflog`, and this command will has the `SHA` for the commit we rolled back from.
+```bash
+git reflog
+e4b74a7 (HEAD -> master) HEAD@{0}: reset: moving to HEAD~1
+67c561e HEAD@{1}: commit: Ading the fourth line
+e4b74a7 (HEAD -> master) HEAD@{2}: commit: third line added
+942d9a3 HEAD@{3}: commit: Addin the second line
+e1feee0 HEAD@{4}: commit (initial): inital commit
+```
+- AS we can see in the second line of the output we have `67c561e` which is the `SHA` for the commit that removed, but in the real work it didn't remove it just moved from the commits that appear with the `git log` command.
+
+**Now What if we want to roll forward or as git call Fast Forward?**
+- To do that we could use `git reset HEAD@{<n>}` as `n` is the number for the reference to this commit, which we could find when we use `git reflog` as `67c561e HEAD@{1}: commit: Ading the fourth line`, so the reference is `1`
+```bash
+git reset HEAD@{1}
+
+git log --oneline
+67c561e (HEAD -> master) Ading the fourth line
+e4b74a7 third line added
+942d9a3 Addin the second line
+e1feee0 inital commit
+```
+- Now we could see that the commit return back again and the `HEAD` in pointing to it now.
