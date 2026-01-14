@@ -36,5 +36,6 @@
 - Dense_Rank [[Dense_Rank()]].
 - Rank [[Rank()]].
 - IIF [[IIF()]].
+- Date Functions [[Date Function]].
 
 ---
