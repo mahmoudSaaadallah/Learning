@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DataBase/SQL Server/Rank().md",
+                "file": "DataBase/SQL Server/Data Types.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Rank()"
+              "title": "Data Types"
             }
           },
           {
@@ -315,10 +315,11 @@
   },
   "active": "8ff0679c0501cfd0",
   "lastOpenFiles": [
-    "DataBase/SQL Server/Rank().md",
     "DataBase/SQL Server/SQL Server Tutorial.md",
+    "DataBase/SQL Server/Data Types.md",
+    "DataBase/SQL Server/Functions/Rank().md",
     "DataBase/SQL Server/Advanced Queries.md",
-    "DataBase/SQL Server/Dense_Rank().md",
+    "DataBase/SQL Server/Functions/Dense_Rank().md",
     "Rank().md",
     "GIT/Git Pro.md",
     "Links To Study.md",
@@ -343,7 +344,6 @@
     "DataBase/SQL Server/DML/More about Joins.md",
     "DataBase/SQL Server/Functions/Aggregate Functions.md",
     "DataBase/SQL Server/DQL/Like.md",
-    "Daily.md",
     "DataBase/SQL Server/Functions",
     "DataBase/SQL Server/TCL",
     "DataBase/SQL Server/DQL",
