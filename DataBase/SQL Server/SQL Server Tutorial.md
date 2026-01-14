@@ -22,6 +22,7 @@
 - Intersection [[Intersection]].
 - Except [[Except]].
 - Top [[Top]]
+- Case [[Case]].
 ## TCL
 
 ## Functions

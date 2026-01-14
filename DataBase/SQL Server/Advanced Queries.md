@@ -61,3 +61,51 @@ from (
 ) as SalaryDense
 where DR <= 2;
 ```
+
+---
+#### Scenario number three
+
+You want to count how many employees are in each department, but also get a count of "Senior" employees (e.g., those with more than 10 years of experience) within each department, all in one query.
+
+```sql
+SELECT
+    DepartmentName,
+    COUNT(EmployeeID) AS TotalEmployees,
+    SUM(CASE WHEN YearsOfExperience > 10 THEN 1 ELSE 0 END) AS SeniorEmployees
+FROM
+    Employees
+GROUP BY
+    DepartmentName;
+```
+
+---
+#### Scenario 4: Ordering Results with Custom Logic
+
+You want to sort a list of tasks, prioritizing 'High' priority tasks first, then 'Medium', then 'Low', and finally any 'Unknown' priority tasks.
+
+```sql
+SELECT
+    TaskID,
+    TaskName,
+    Priority
+FROM
+    Tasks
+ORDER BY
+    CASE Priority
+        WHEN 'High' THEN 1
+        WHEN 'Medium' THEN 2
+        WHEN 'Low' THEN 3
+        ELSE 4 -- Assign a numerical order to each priority level
+    END,
+    TaskName; -- Secondary sort for tasks within the same priority
+```
+**Example Output (conceptual):**
+
+| TaskID | TaskName          | Priority |
+|--------|-------------------|----------|
+| 201    | Fix critical bug  | High     |
+| 205    | Review code       | High     |
+| 202    | Update documentation | Medium   |
+| 204    | Plan next sprint  | Medium   |
+| 203    | Clean up old data | Low      |
+| 206    | Research new tech | Unknown  |

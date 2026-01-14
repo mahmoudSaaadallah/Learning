@@ -2,7 +2,7 @@
 
 At its core, a linked list is a *linear* data structure, much like an array. However, unlike arrays, which store elements in *contiguous* memory locations, a linked list stores elements at *arbitrary* locations. The "link" comes from the fact that each element, often called a **node**, contains not only the data itself but also a reference (or "pointer") to the next node in the sequence.
 
-	Think of it like a treasure hunt: each clue tells you where the next clue is, rather than having all the clues laid out in a row on a single map.
+Think of it like a treasure hunt: each clue tells you where the next clue is, rather than having all the clues laid out in a row on a single map.
 
 **Key Characteristics:**
 
