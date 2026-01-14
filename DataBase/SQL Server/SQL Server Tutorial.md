@@ -4,13 +4,14 @@
 - Drop [[Drop]].
 - Truncate [[Truncate]].
 - Select Into [[Select Into]].
-- Insert Based On Select [[Insert Based On Select]].
 ## DML
 - Insert into [[Insert Into]].
 - Update [[Update]].
 - Delete [[Delete]].
 - Joins [[Joins]].
 - More about Joins [[More about Joins]].
+- Insert Based On Select [[Insert Based On Select]].
+
 ## DCL
 
 ## DQL
@@ -27,3 +28,6 @@
 - Coalesce [[Coalesce ()]].
 - Concate [[Concate ()]].
 - Aggregate Function [[Aggregate Functions]].
+### Ranking Functions
+- Row_Number [[Row_Number()]].
+- Dense_Rank [[Dense_Rank()]].
