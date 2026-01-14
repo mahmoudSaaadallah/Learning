@@ -35,5 +35,6 @@
 - Row_Number [[Row_Number()]].
 - Dense_Rank [[Dense_Rank()]].
 - Rank [[Rank()]].
+- IIF [[IIF()]].
 
 ---
