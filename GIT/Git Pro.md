@@ -301,7 +301,7 @@ git log --graph
 
       initial commit
 ```
-
+- or we could use `git log --oneline --decorate --graph --all`
 ----
 
 ### Change the commit message
@@ -373,3 +373,178 @@ e4b74a7 third line added
 e1feee0 inital commit
 ```
 - Now we could see that the commit return back again and the `HEAD` in pointing to it now.
+
+---
+### Tags 
+- In Git when we are working on a project and this project has a core changes then we call these changes new version, and using git we could put a tag for a specific commit to mark at as a specific version, and this is the power of `git tag -a <version> -m <message>` command.
+```bash
+git log --online
+9ca8c9f (HEAD -> master) Adding the fifth line to the txt file
+67c561e Ading the fourth line
+e4b74a7 third line added
+942d9a3 Addin the second line
+e1feee0 inital commit
+```
+- As we can see from the output of the `git log` command, we have five commits.
+- Let's consider that after the fifth commit, we want to consider that all the previous changes were a new version, which will be `v2.0`, and we want to put tag with that, so we will use.
+```bash
+git tag -a v2.0 -m 'New Version v2.0'
+```
+- There is no output for `git tag` command, but the power of this command appears when we use `git show <version>`, we this command we don't have to look for all the commits messages to get the commit for the new version, instead we could use this command to get it directly.
+```bash
+git show v2.0
+tag v2.0
+Tagger: Mahmoud <mahmoud.saadallah73@gmail.com>
+Date:   Thu Jan 15 22:51:05 2026 +0200
+
+New version v2.0
+
+commit 9ca8c9fc982eff06f24229e95052183d4d9064b1 (HEAD -> master, tag: v2.0)
+Author: Mahmoud <mahmoud.saadallah73@gmail.com>
+Date:   Thu Jan 15 22:47:37 2026 +0200
+
+    Adding the fifth line to the txt file
+
+diff --git a/file.txt b/file.txt
+index f62a38b..7a0e831 100644
+--- a/file.txt
++++ b/file.txt
+@@ -2,3 +2,4 @@ Hello, Git
+ second line added
+ third line added
+ Fourth line added
++Fifth line added
+```
+- As we can see from the output for the `git show <version>`, we get all the information that we want know about the commit for that specific version.
+
+----
+---
+## Branching 
+- I've started a new empty repo for this section, so we will not find the previous commits.
+- Now I've made three commits and here are the commits for them
+```bash
+git log --oneline --decorate --graph --all
+* a674d87 (HEAD -> master) Third line added to file
+* 2768669 Second line added to file
+* 534c4cc Inital Commit
+```
+
+![drawing](https://raw.githubusercontent.com/ahmedsami76/AraBigData/a4b6d07d50e36eded3e80966eedb903579f2e34d/Git/images/git9.jpg)
+
+- So here in this image, we could see that we have three commits and the `HEAD` points to the `Master` branch which points to the last `Commit`.
+- So here we have only one branch, which is the `Master` branch.
+
+To create new branch, we use `git brance <branchName>` command.
+```bash
+git brance testing
+```
+- This command has created a new branch we name `testing`
+
+To see all the branches that we have we use `git branch` command
+```bash
+git branch
+* master
+  testing
+```
+- As we can see in the result we have two branches `master` and `testing`, and the `*` satiric sign here refers to the `HEAD`, and in git bash we will find the `master` branch in green color which mean its the current branch, which mean if we created any new commit this commit will be in the master branch.
+
+```bash
+git log --oneline --decorate --graph --all
+* a674d87 (HEAD -> master, testing) Third line added to file
+* 2768669 Second line added to file
+* 534c4cc Inital Commit
+```
+- The output of `git log` here means as the following image mean
+  ![drawing](https://raw.githubusercontent.com/ahmedsami76/AraBigData/a4b6d07d50e36eded3e80966eedb903579f2e34d/Git/images/git11.jpg)
+- This mean we have three `commits`, and two `branchs`, which both of them point to the last `commit`, and the `HEAD` points to the `master` branch.
+
+
+To switch form one branch to another we use 
+ `git switch <branchName>` or `git checkout <branchName>`.
+ ```bash
+ git switch testing
+ Switched to branch 'testing'
+ 
+ $ git branch
+  master
+* testing
+ ```
+ - Here we switched to the `testing` branch and using `git branch` we could know that the current branch is `testing` and the `HEAD` is now point to this branch.
+ ![drawing](https://raw.githubusercontent.com/ahmedsami76/AraBigData/a4b6d07d50e36eded3e80966eedb903579f2e34d/Git/images/git12.jpg)
+
+Now let's try to make changes in the file and see the new commit 
+```bash
+$ git log --oneline --decorate --graph --all
+* 49d84bf (HEAD -> testing) First Commit in testing branch
+* a674d87 (master) Third line added to file
+* 2768669 Second line added to file
+* 534c4cc Inital Commit
+```
+- After making new commit while we are in the the `master` branch now we could see from the `git log --graph` that the `HEAD` is pointing to `testing` branch which has a new commit, and the `master` branch still with the third commit.
+
+
+I want to read the content of the `file.txt` that we are using here in this example, while we are in the `testing` branch.
+```bash
+cat file.txt
+Hello, Git
+Second line in file
+Third line in file
+Fourth line in file
+```
+- As we can see we have four lines in our file, and the fourth line in the line that we added while we are using the `testing` branch, and we made the last commits according to this line.
+
+Now What will happen if we switch again to the `master` branch.
+```bash
+git switch master
+Switched to branch 'master'
+
+cat file.txt
+Hello, Git
+Second line in file
+Third line in file
+```
+- As we can see the fourth line disappeared, Why this happen?
+- This happened because this branch doesn't have any idea about the changes that happened in the other branches, so this branch still point to the third `commit` which has this version of content not the version is the `testing` branch.
+
+Let's see logs to see where is the head pointing?
+```bash
+git log --oneline --decorat --graph --all
+* 49d84bf (testing) First Commit in testing branch
+* a674d87 (HEAD -> master) Third line added to file
+* 2768669 Second line added to file
+* 534c4cc Inital Commit
+```
+- The `HEAD` is pointing to the third commit, which the master branch also pointing.
+![drawing](https://raw.githubusercontent.com/ahmedsami76/AraBigData/a4b6d07d50e36eded3e80966eedb903579f2e34d/Git/images/git13.jpg)
+
+
+**Merging**
+- Now if we ok with changes that happened on any branch and we want to `merge` the changes that happened on this branch to the `master` branch we have first to switch to the `master` branch then use `git merge <branchName>`
+
+```bash
+git switch master
+Switched to branch 'master'
+
+git merge testing
+Updating a674d87..49d84bf
+Fast-forward
+ file.txt | 1 +
+ 1 file changed, 1 insertion(+)
+```
+- Here in the output of the `git merge` command we have `fat-forward`, because the `master` branch and the `HEAD` have been moved forward to the fourth commit, which was the commit that created on the `testing` branch, but now it's not just belong to the `testing` branch, now `master` branch also could see the changes that happened on it.
+
+```bash
+cat file.txt
+Hello, Git
+Second line in file
+Third line in file
+Fourth line in file
+```
+- Now we have the fourth line even we are in the `master` branch, because we already merged the changes.
+
+After merging the changes, may be we need to delete the branch, do to so we use
+ `git branch -d <branchName>`
+```bash
+git branch -d testing
+Deleted branch testing (was 49d84bf).
+```
