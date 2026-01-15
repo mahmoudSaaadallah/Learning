@@ -78,17 +78,17 @@
             }
           },
           {
-            "id": "effd1714354d023e",
+            "id": "195e39def0f6fc8d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DataBase/SQL Server/Entity and Relationship Integrity.md",
+                "file": "DataBase/SQL Server/Constraints.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Entity and Relationship Integrity"
+              "title": "Constraints"
             }
           },
           {
@@ -313,12 +313,13 @@
       "graph:Open graph view": false
     }
   },
-  "active": "effd1714354d023e",
+  "active": "195e39def0f6fc8d",
   "lastOpenFiles": [
+    "DataBase/SQL Server/Constraints.md",
+    "DataBase/SQL Server/SQL Server Tutorial.md",
+    "DataBase/SQL Server/Entity and Relationship Integrity.md",
     "DataBase/SQL Server/Advanced Queries.md",
     "DataBase/SQL Server/Database Integrity.md",
-    "DataBase/SQL Server/Entity and Relationship Integrity.md",
-    "DataBase/SQL Server/SQL Server Tutorial.md",
     "Images/Pasted image 20260115125114.png",
     "DataBase/SQL Server/Functions/Date Function.md",
     "DataBase/SQL Server/DDL/Truncate.md",
@@ -342,7 +343,6 @@
     "DataBase/SQL Server/DQL/Except.md",
     "GIT/Git Level 1.md",
     "DataBase/DataBaseDesign/More About Normalization.md",
-    "Css/Flex.md",
     "GIT/git-cheat-sheet-education.pdf",
     "DataBase/DataBaseDesign/SQL.pdf",
     "DataBase/SQL Server/Functions",
