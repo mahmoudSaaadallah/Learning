@@ -436,9 +436,22 @@ git log --oneline --decorate --graph --all
 
 To create new branch, we use `git brance <branchName>` command.
 ```bash
-git brance testing
+git branch testing
 ```
 - This command has created a new branch we name `testing`
+
+```bash
+git branch my_new_branch
+```
+
+This creates a new branch called `my_new_branch`. The thing is, I rarely use this command because usually I want to create a branch and switch to it immediately. So I use this command instead:
+
+```bash
+git switch -c my_new_branch
+```
+
+The `switch` command allows you to switch branches, and the `-c` flag tells Git to create a new branch if it doesn't already exist.
+
 
 To see all the branches that we have we use `git branch` command
 ```bash
@@ -448,6 +461,24 @@ git branch
 ```
 - As we can see in the result we have two branches `master` and `testing`, and the `*` satiric sign here refers to the `HEAD`, and in git bash we will find the `master` branch in green color which mean its the current branch, which mean if we created any new commit this commit will be in the master branch.
 
+To change the name of the branch we could use `git branch -m <oldName> <newName>`
+```bash
+git branch -m testing test
+
+git branch
+* master
+  test
+  
+
+git branch -m test testing
+
+git branch
+* master
+  testing
+  
+```
+
+let's see logs.
 ```bash
 git log --oneline --decorate --graph --all
 * a674d87 (HEAD -> master, testing) Third line added to file
@@ -548,3 +579,299 @@ After merging the changes, may be we need to delete the branch, do to so we use
 git branch -d testing
 Deleted branch testing (was 49d84bf).
 ```
+
+Let's check the branches and logs 
+```bash
+git branch 
+* master
+
+git log --oneline --decorate --graph --all
+* 49d84bf (HEAD -> master) First Commit in testing branch
+* a674d87 Third line added to file
+* 2768669 Second line added to file
+* 534c4cc Inital Commit
+```
+- As we can see the testing branch has been deleted, and the `HEAD` point to the `master` branch which point to the `48d84bf` commit.
+
+**The previous scenario is not the common scenario, as we saw we after creating the testing branch, we didn't change anything in the master branch and we kept it until we finish working on the testing branch and then we merged our changes.**
+
+**In real world we will have more than two branches and each will have some changes and most of the time these changes make conflicts and we have to learn how to solve these conflicts.**
+
+#### Divergent history 
+**![drawing](https://raw.githubusercontent.com/ahmedsami76/AraBigData/a4b6d07d50e36eded3e80966eedb903579f2e34d/Git/images/git14.jpg)
+
+Let's create the `testing` branch again
+```bash
+git branch testing
+
+git switch testing
+Switched to branch 'testing'
+```
+- Now we are in the `testing` branch.
+
+Let's add new line to the `file.txt` while we are in the `testing` branch.
+```bash
+echo 'Fifth Line in file useing testing branch' >> file.txt
+
+git commit -am 'Fifth line added in testing branch'
+warning: in the working copy of 'file.txt', LF will be replaced by CRLF the next time Git touches it
+[testing 91333b1] Fifth line added in testing branch
+ 1 file changed, 1 insertion(+)
+
+
+git log --oneline --decorate --graph --all
+* 91333b1 (HEAD -> testing) Fifth line added in testing branch
+* 49d84bf (master) First Commit in testing branch
+* a674d87 Third line added to file
+* 2768669 Second line added to file
+* 534c4cc Inital Commit
+```
+- Now as previous we could see from the output of the previous commands we have `HEAD` point to the `testing` branch which is point to the fifth commit and the `master` branch still point to the fourth commit.
+
+
+Let's now switch back to the `master` branch
+```bash
+git switch master
+Switched to branch 'master'
+
+cat file.txt
+Hello, Git
+Second line in file
+Third line in file
+Fourth line in file
+
+```
+- As we know the line that we added using the `testing` branch will disappear as we have merged them yet.
+
+
+Let's now add new file using the `master` branch
+```bash
+echo 'First line Using master branch' >>  file2.txt 
+
+$ git add .
+warning: in the working copy of 'file2.txt', LF will be replaced by CRLF the next time Git touches it
+
+
+$ git commit -am 'New file added in master branch'
+[master 9732058] New file added in master branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file2.txt
+
+```
+
+Now let's see the logs
+```bash
+git log --oneline --decorate --graph --all
+* 9732058 (HEAD -> master) New file added in master branch
+| * 91333b1 (testing) Fifth line added in testing branch
+|/
+* 49d84bf First Commit in testing branch
+* a674d87 Third line added to file
+* 2768669 Second line added to file
+* 534c4cc Inital Commit
+```
+- Now the magic happen, previously everything was liner, which mean we could see the commits and the changes in the liner way, but now each branch has its own changes that the other branch can't see yet.
+**![drawing](https://raw.githubusercontent.com/ahmedsami76/AraBigData/a4b6d07d50e36eded3e80966eedb903579f2e34d/Git/images/git14.jpg)
+- This is how it looks like now, and this will change the way of merging as the merging will not be direct like previous in the liner changes.
+
+Before merging let's add another change in the testing branch.
+```bash
+git switch testing
+Switched to branch 'testing'
+
+echo 'sixth line using testing branch' >> file.txt
+
+git commit -am 'Six line into the file using testing branch'
+warning: in the working copy of 'file.txt', LF will be replaced by CRLF the next time Git touches it
+[testing 2ce9be4] Six line into the file using testing branch
+ 1 file changed, 1 insertion(+)
+
+```
+
+Let's check logs
+```bash
+git log --oneline --decorate --graph --all
+* 2ce9be4 (HEAD -> testing) Six line into the file using testing branch
+* 91333b1 Fifth line added in testing branch
+| * 9732058 (master) New file added in master branch
+|/
+* 49d84bf First Commit in testing branch
+* a674d87 Third line added to file
+* 2768669 Second line added to file
+* 534c4cc Inital Commit
+```
+![drawing](https://raw.githubusercontent.com/ahmedsami76/AraBigData/a4b6d07d50e36eded3e80966eedb903579f2e34d/Git/images/git20.jpg)
+- This is how the log looks like 
+
+Let's merge and see how the merge will be applied.
+```bash
+git switch master
+Switched to branch 'master'
+
+git merge testing
+Merge made by the 'ort' strategy.
+ file.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+```
+- We have to know that when we try to merge the git will open `vim` to ask us to enter a message for the merging, **But Why we need a message for the merging?**
+- This happen because in this situation the merging is not happen directly like before, here git will create new commit to the new merged branches, this way git ask us for the message, it's for the new commit.
+
+Let's see logs to see the new commit
+```bash
+git log --oneline --decorate --graph --all
+*   2ca06c1 (HEAD -> master) Merge branch 'testing'
+|\
+| * 2ce9be4 (testing) Six line into the file using testing branch
+| * 91333b1 Fifth line added in testing branch
+* | 9732058 New file added in master branch
+|/
+* 49d84bf First Commit in testing branch
+* a674d87 Third line added to file
+* 2768669 Second line added to file
+* 534c4cc Inital Commit
+```
+![drawing](https://raw.githubusercontent.com/ahmedsami76/AraBigData/a4b6d07d50e36eded3e80966eedb903579f2e34d/Git/images/git22.jpg)
+- Now as we can see from the graph that the changes that happened on the `testing` branch has been merged to the `master` class.
+- But we have to notice that this merge happened using new commit `2ca06c1` and the `master` branch and `HEAD` are pointing now to that commit.
+- Also we have to know that the changes that happened on the `testing` branch will be visible to the `master` branch, but the changes that happened on the `master` will not be visible to the `testing` branch 
+
+To make sure let's see if the testing branch could see the `file2.txt` that we have created using master branch
+```bash
+git switch master
+Switched to branch 'master'
+
+ls -l
+total 2
+-rw-r--r-- 1 HP 197121 149 Jan 16 23:11 file.txt
+-rw-r--r-- 1 HP 197121  32 Jan 16 23:20 file2.txt
+# Now we have two files on the master branch
+
+git switch testing
+Switched to branch 'testing'
+
+ls -l
+total 1
+-rw-r--r-- 1 HP 197121 149 Jan 16 23:11 file.txt
+# Here we have only one file on the testing branch 
+# This mean the changes that happend on the master branch would be visiable for testing branch
+```
+
+
+
+#### Merge Conflicts
+
+A merge conflict occurs when two commits _modify the same line_ and Git can't automatically decide which change to keep and which change to discard.
+
+Conflicting changes on two different branches is not a problem. The problem only arises when you try to _merge_ those branches. When you do, Git will detect the conflict and ask you to resolve it.
+
+New let's do the following 
+1. Get the content of the `file3.txt`.
+2. Create new branch `testing`.
+3. Switching to the `testing` branch, and modify the `file3.txt` by adding a new line, then commit the changes.
+4. Modify the `file3.txt` using the `master` branch by adding new line, then commit the changes.
+```bash
+# 1
+cat file3.txt
+Hello, Git
+
+# 2
+git switch -c testing
+Switched to a new branch 'testing'
+
+# 3
+git branch
+  master
+* testing
+# 3
+echo "Second Line using testing branch" >> file3.txt
+# 3
+cat file3.txt
+ Hello, Git
+Second Line using testing branch
+
+# 3 
+git commit -am "Second line added to file3 using testing branch"
+warning: in the working copy of 'file3.txt', LF will be replaced by CRLF the next time Git touches it
+[testing f26eaf2] Second line added to file3 using testing branch
+ 1 file changed, 1 insertion(+
+ 
+ 
+#4
+git switch master
+Switched to branch 'master'
+
+# 4
+cat file3.txt
+Hello, Git
+
+# 4
+echo "Second Line using master branch" >> file3.txt
+
+# 4
+cat file3.txt
+ Hello, Git
+Second Line using master branch
+
+# 4
+git commit -am "Second line added to file3 using master branch"
+warning: in the working copy of 'file3.txt', LF will be replaced by CRLF the next time Git touches it
+[master 38f31dd] Second line added to file3 using master branch
+ 1 file changed, 1 insertion(+)
+
+
+```
+
+- Now as we can see from the previous commands now we have two different versions for `file3.txt` in each branch.
+
+If we tried to merge them now we will get a conflict.
+```bash
+git merge testing
+Auto-merging file3.txt
+CONFLICT (content): Merge conflict in file3.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+```
+- This happened because in two different branches, we have changed the content of the same file with different values, and git can't merge them directly as git can't decide which version will be used and which one will be removed, so it asked to fix conflicts first then make new commit to save changes to make a correct merge.
+
+To fix conflict we have to use any editor to open the conflicted file and fix it manually.
+We will use `vim`
+```bash
+vim file3.txt
+Hello, Git
+<<<<<<< HEAD
+Second Line using master branch
+=======
+Second Line using testing branch
+>>>>>>> testing
+```
+- As we can see `git` already marked the lines that make the conflict to help us to fix them.
+- By the way we could keep the changes from `master` branch, or keep the changes from `tesing` branch, or both of them by editing the file manually.
+
+So here we will keep the changes from both of the branches, but we will delete the marked lines that git made.
+```bash
+cat file3.txt
+Hello, Git
+Second Line using master branch
+Second Line using testing branch
+```
+
+After that we have to make new commit with the new changes to solve the conflict and make the merge happen.
+```bash
+git commit -am 'Fix the conflict between master and testing branch'
+[master 8a4dc94] Fix the conflict between master and testing branch
+
+```
+
+Now let's check the logs.
+```bash
+git log --oneline --decorate --graph --all
+*   8a4dc94 (HEAD -> master) Fix the conflict between master and testing branch
+|\
+| * f26eaf2 (testing) Second line added to file3 using testing branch
+* | 38f31dd Second line added to file3 using master branch
+|/
+* 60ddfa2 first commit to file3.txt
+
+```
+- As we can see the conflict has been solved using new commit.
+
