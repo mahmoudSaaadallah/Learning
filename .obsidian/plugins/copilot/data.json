@@ -338,7 +338,7 @@
   "autocompleteAcceptKey": "Tab",
   "allowAdditionalContext": true,
   "enableWordCompletion": false,
-  "lastDismissedVersion": "3.1.2",
+  "lastDismissedVersion": "3.1.5",
   "passMarkdownImages": true,
   "enableCustomPromptTemplating": true,
   "suggestedDefaultCommands": true,
@@ -362,5 +362,12 @@
   "maxRecentConversations": 30,
   "quickCommandIncludeNoteContext": true,
   "defaultSendShortcut": "enter",
-  "autoIncludeTextSelection": false
+  "autoIncludeTextSelection": false,
+  "autoAddActiveContentToContext": true,
+  "autoCompactThreshold": 128000,
+  "autoAddSelectionToContext": false,
+  "autoAcceptEdits": false,
+  "chatHistorySortStrategy": "recent",
+  "projectListSortStrategy": "recent",
+  "userSystemPromptsFolder": "copilot/system-prompts"
 }

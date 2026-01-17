@@ -43,3 +43,6 @@
 - Entity and Relationship Integrity [[Entity and Relationship Integrity]].
 - Constraints [[Constraints]].
 - Rule [[Rule]].
+
+#### Variables 
+- Local Variables [[Local Variables]]
