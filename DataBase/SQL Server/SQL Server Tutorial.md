@@ -39,10 +39,13 @@
 - Date Functions [[Date Function]].
 
 ---
+
+## T_SQL
 #### [[Database Integrity]].
 - Entity and Relationship Integrity [[Entity and Relationship Integrity]].
 - Constraints [[Constraints]].
 - Rule [[Rule]].
 
 #### Variables 
-- Local Variables [[Local Variables]]
+- Local Variables [[Local Variables]].
+- Global Variables [[Global Variables]].
