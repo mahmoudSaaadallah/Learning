@@ -50,5 +50,7 @@
 - Local Variables [[Local Variables]].
 - Global Variables [[Global Variables]].
 
+
 #### Control Of Flow
 - IF Statement [[IF Statement]].
+- Try and Catch [[Try and Catch]].
