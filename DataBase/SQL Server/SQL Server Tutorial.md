@@ -54,3 +54,4 @@
 #### Control Of Flow
 - IF Statement [[IF Statement]].
 - Try and Catch [[Try and Catch]].
+- While Loop [[While Loop T-SQL]].
