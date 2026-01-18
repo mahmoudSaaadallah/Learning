@@ -109,3 +109,52 @@ ORDER BY
 | 204    | Plan next sprint  | Medium   |
 | 203    | Clean up old data | Low      |
 | 206    | Research new tech | Unknown  |
+
+
+---
+#### Scenario 5
+Consider the following table
+![[Pasted image 20260117172253.png]]
+
+A _median_ is defined as a number separating the higher half of a data set from the lower half. Query the _median_ of the _Northern Latitudes_ (_LAT_N_) from **STATION** and round your answer to 4 decimal places.
+```SQL
+with NumberedTable as(
+	select LAT_N,
+		row_number() over(order by LAT_N) as RN,
+		count(*) over() as counted
+	from station
+)select LAT_N
+from NumberedTable
+where RN in ((counted + 1) / 2, (counted + 2) / 2);
+```
+
+
+
+---
+#### Scenario 6
+The total score of a hacker is the sum of their maximum scores for all of the challenges. Write a query to print the _hacker_id_, _name_, and total score of the hackers ordered by the descending score. If more than one hacker achieved the same total score, then sort the result by ascending _hacker_id_. Exclude all hackers with a total score of `0` from your result.
+
+**Input Format**
+
+The following tables contain contest data:
+
+- _Hackers:_ The _hacker_id_ is the id of the hacker, and _name_ is the name of the hacker.
+
+![](https://s3.amazonaws.com/hr-challenge-images/19503/1458522826-a9ddd28469-ScreenShot2016-03-21at6.40.27AM.png)
+
+- _Submissions:_ The _submission_id_ is the id of the submission, _hacker_id_ is the id of the hacker who made the submission, _challenge_id_ is the id of the challenge for which the submission belongs to, and _score_ is the score of the submission.
+
+![](https://s3.amazonaws.com/hr-challenge-images/19503/1458523022-771511df90-ScreenShot2016-03-21at6.40.37AM.png)
+
+```SQL
+with NewTable as(
+	select hacker_id, challenge_id, max(score) as mx
+	from Submissions
+	group by hacker_id, challenge_id
+)select new.hacker_id, h.name, sum(mx) as sm
+from Hackers as h inner join NewTable as new
+on h.hacker_id = new.hacker_id 
+group by new.hacker_id, h.name
+having sum(mx) > 0
+order by sm desc, new.hacker_id asc;	
+```
