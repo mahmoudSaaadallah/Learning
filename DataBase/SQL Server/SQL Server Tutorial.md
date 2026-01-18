@@ -55,3 +55,5 @@
 - IF Statement [[IF Statement]].
 - Try and Catch [[Try and Catch]].
 - While Loop [[While Loop T-SQL]].
+- Case [[Case]].
+- Choose [[Choose]].
