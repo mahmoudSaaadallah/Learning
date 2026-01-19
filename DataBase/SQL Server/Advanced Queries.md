@@ -158,3 +158,32 @@ group by new.hacker_id, h.name
 having sum(mx) > 0
 order by sm desc, new.hacker_id asc;	
 ```
+
+
+----
+#### Scenario 7
+You are given a table, _Functions_, containing two columns: _X_ and _Y_. 
+
+![](https://s3.amazonaws.com/hr-challenge-images/12892/1443818798-51909e977d-1.png)
+
+Two pairs _(X1, Y1)_ and _(X2, Y2)_ are said to be _symmetric_ _pairs_ if _X1 = Y2_ and _X2 = Y1_.
+Write a query to output all such _symmetric_ _pairs_ in ascending order by the value of _X_. List the rows such that _X1 ≤ Y1_.
+
+```SQL
+select f1.x, f1.y
+from functions f1 inner join functions f2
+on f1.x = f2.y and f1.y = f2.x
+group by f1.x, f1.y
+having f1.x < f1.y or (f1.x = f1.y and count(*) > 1)
+order by f1.x
+```
+
+1. **The Self-Join**
+We join the table to itself (`f1` and `f2`) using the symmetric condition: `f1.X = f2.Y` and `f1.Y = f2.X`. This pairs every row with its potential mirror image.
+
+ **2. The `GROUP BY` and `HAVING` Clauses**
+This is where we filter for valid pairs and the specific requirements:
+- **`f1.X < f1.Y`**: This handles the unique pairs. By requiring $X < Y$, we satisfy the requirement $X_1 \leq Y_1$ and ensure we don't list the same symmetric pair twice (e.g., we show $(20, 21)$ but not $(21, 20)$).
+- **`f1.X = f1.Y AND COUNT(*) > 1`**: This handles the "equal" case. If $X=Y$, a self-join will always match a row to itself. However, for it to be a _symmetric pair_, there must be a _different_ row with the same values. Counting the occurrences ensures there are at least two.
+
+---
