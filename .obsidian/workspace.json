@@ -78,17 +78,17 @@
             }
           },
           {
-            "id": "c1fad6ff98220c3f",
+            "id": "09c042c8d41469c8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DataBase/SQL Server/T-SQL/T-SQL LEAD.md",
+                "file": "DataBase/SQL Server/T-SQL/T-SQL First_Value.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "T-SQL LEAD"
+              "title": "T-SQL First_Value"
             }
           },
           {
@@ -327,11 +327,12 @@
       "graph:Open graph view": false
     }
   },
-  "active": "c1fad6ff98220c3f",
+  "active": "09c042c8d41469c8",
   "lastOpenFiles": [
-    "DataBase/SQL Server/T-SQL/T-SQL LEAD.md",
+    "DataBase/SQL Server/T-SQL/T-SQL First_Value.md",
     "DataBase/SQL Server/SQL Server Tutorial.md",
     "DataBase/SQL Server/Advanced Queries.md",
+    "DataBase/SQL Server/T-SQL/T-SQL LEAD.md",
     "DataBase/SQL Server/T-SQL/T-SQL LAG.md",
     "DataBase/SQL Server/T-SQL/T-SQL Multi-Statement Table-Valued Functions.md",
     "DataBase/SQL Server/T-SQL/T-SQL Date Functions.md",
@@ -358,7 +359,6 @@
     "DataBase/SQL Server/T-SQL/Global Variables.md",
     "DataBase/SQL Server/T-SQL",
     "DataBase/SQL Server/T-SQL/Local Variables.md",
-    "GIT/Untitled.md",
     "Images/Pasted image 20260115125114.png",
     "DataBase/DataBaseDesign/ER2-MDM.pdf",
     "DataBase/DataBaseDesign/SQL.pdf",

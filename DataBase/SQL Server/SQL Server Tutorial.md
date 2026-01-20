@@ -75,3 +75,4 @@
 - Windowing Functions
 	- LAG [[T-SQL LAG]].
 	- LEAD [[T-SQL LEAD]].
+	- First_Value [[T-SQL First_Value]].
