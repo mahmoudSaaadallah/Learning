@@ -1,4 +1,4 @@
-
+	
 ### 4. Date Functions
 
 Working with dates and times is a common requirement in database systems. SQL Server provides a comprehensive set of functions to retrieve, manipulate, and format date/time values, handling everything from simple date extraction to complex interval calculations.
