@@ -76,3 +76,4 @@
 	- LAG [[T-SQL LAG]].
 	- LEAD [[T-SQL LEAD]].
 	- First_Value [[T-SQL First_Value]].
+	- Last_Value [[T-SQL Last_Value]].
