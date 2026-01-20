@@ -74,3 +74,4 @@
 	- Multi Statement Function [[T-SQL Multi-Statement Table-Valued Functions]].
 - Windowing Functions
 	- LAG [[T-SQL LAG]].
+	- LEAD [[T-SQL LEAD]].
