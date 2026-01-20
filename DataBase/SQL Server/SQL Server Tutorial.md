@@ -70,3 +70,4 @@
 	- Math Functions [[T-SQL Math Functions]].
 - User Defined Functions
 	- Scaler Function [[Scaler Function]].
+	- Inline Function [[T-SQL Inline Table-Valued Functions]].
