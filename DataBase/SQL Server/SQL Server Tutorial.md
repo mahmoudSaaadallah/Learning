@@ -72,3 +72,5 @@
 	- Scaler Function [[Scaler Function]].
 	- Inline Function [[T-SQL Inline Table-Valued Functions]].
 	- Multi Statement Function [[T-SQL Multi-Statement Table-Valued Functions]].
+- Windowing Functions
+	- LAG [[T-SQL LAG]].
