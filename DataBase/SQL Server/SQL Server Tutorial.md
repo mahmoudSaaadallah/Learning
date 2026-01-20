@@ -59,3 +59,14 @@
 - Choose [[Choose]].
 - waitFor [[waitFor]].
 - Transaction [[Transaction]].
+
+---
+#### Functions
+- Built-in Functions
+	- Null Functions [[T-SQL Null Functions]].
+	- Convert Functions [[T-SQL Convert Functions]].
+	- String Functions [[T-SQL String Functions]].
+	- Date Functions [[T-SQL Date Functions]].
+	- Math Functions [[T-SQL Math Functions]].
+- User Defined Functions
+	- Scaler Function [[Scaler Function]].
