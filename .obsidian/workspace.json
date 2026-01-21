@@ -78,31 +78,17 @@
             }
           },
           {
-            "id": "2c350863d85673c6",
+            "id": "3a2b5c4ad94dcbc9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DataBase/SQL Server/T-SQL/T-SQL Non-Clustered Index.md",
+                "file": "DataBase/SQL Server/T-SQL/Local & Global Tables.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "T-SQL Non-Clustered Index"
-            }
-          },
-          {
-            "id": "dea78dd64e0c7cd0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DataBase/SQL Server/T-SQL/T-SQL Clustered Index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "T-SQL Clustered Index"
+              "title": "Local & Global Tables"
             }
           },
           {
@@ -341,13 +327,15 @@
       "graph:Open graph view": false
     }
   },
-  "active": "2c350863d85673c6",
+  "active": "3a2b5c4ad94dcbc9",
   "lastOpenFiles": [
+    "DataBase/SQL Server/Advanced Queries.md",
+    "GIT/Git Pro.md",
+    "DataBase/SQL Server/T-SQL/Local & Global Tables.md",
+    "DataBase/SQL Server/SQL Server Tutorial.md",
     "DataBase/SQL Server/T-SQL/T-SQL Clustered Index.md",
     "DataBase/SQL Server/T-SQL/T-SQL Non-Clustered Index.md",
     "GIT/git-cheat-sheet-education.pdf",
-    "DataBase/SQL Server/SQL Server Tutorial.md",
-    "DataBase/SQL Server/Advanced Queries.md",
     "DataBase/SQL Server/T-SQL/T-SQL First_Value.md",
     "DataBase/SQL Server/T-SQL/T-SQL Last_Value.md",
     "DataBase/SQL Server/T-SQL/T-SQL LEAD.md",
@@ -361,7 +349,6 @@
     "DataBase/SQL Server/T-SQL/T-SQL Null Functions.md",
     "DataBase/SQL Server/T-SQL/T-SQL String Functions.md",
     "DataBase/SQL Server/T-SQL/T-SQL Convert Functions.md",
-    "GIT/Git Pro.md",
     "DataBase/SQL Server/T-SQL/Transaction.md",
     "GIT/Git شخبط.md",
     "Pasted image 20260119135407.png",
