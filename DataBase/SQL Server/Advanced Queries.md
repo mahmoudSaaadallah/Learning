@@ -187,3 +187,71 @@ This is where we filter for valid pairs and the specific requirements:
 - **`f1.X = f1.Y AND COUNT(*) > 1`**: This handles the "equal" case. If $X=Y$, a self-join will always match a row to itself. However, for it to be a _symmetric pair_, there must be a _different_ row with the same values. Counting the occurrences ensures there are at least two.
 
 ---
+
+#### Scenario 7
+Consider the following table 
+
+| Region  | ProductCategory | ProductSubCategory | SalesAmount |
+| ------- | --------------- | ------------------ | ----------- |
+| East    | Electronics     | Laptops            | 1500.00     |
+| East    | Electronics     | Laptops            | 1200.00     |
+| East    | Electronics     | Smartphones        | 800.00      |
+| East    | Clothing        | Shirts             | 300.00      |
+| West    | Electronics     | Laptops            | 1800.00     |
+| West    | Electronics     | Smartphones        | 950.00      |
+| West    | Clothing        | Pants              | 450.00      |
+| Central | Clothing        | Shirts             | 200.00      |
+| Central | Electronics     | Laptops            | 1000.00     |
+
+We want to get the sales totals for each `Region` and for each `ProductCategory`, which means sales Amount for `electronics` in each `Region` and `clothing` for each `Region` and so on.
+Then get the total `SalesAmount` for all `Regions`
+
+```SQL
+-- 1. Detailed Sales (Region and Category)
+select region, ProductCategory, sum(SalesAmount) as SalesAmount
+from Sales
+group by region, ProductCategory
+union 
+select region, null,sum(sales.SalesAmount)
+from Sales
+group by region
+union
+select 'ztotal', null, sum(salesAmount)
+from sales
+order by region asc, SalesAmount;
+```
+
+
+| Region  | ProductCategory | TotalSales | --                             |
+| :------ | :-------------- | :--------- | ------------------------------ |
+| Central | Clothing        | 200.00     |                                |
+| Central | Electronics     | 1000.00    |                                |
+| Central | NULL            | 1200.00    | -- Subtotal for Central Region |
+| East    | Clothing        | 300.00     |                                |
+| East    | Electronics     | 3500.00    |                                |
+| East    | NULL            | 3800.00    | -- Subtotal for East Region    |
+| West    | Clothing        | 450.00     |                                |
+| West    | Electronics     | 2750.00    |                                |
+| West    | NULL            | 3200.00    | -- Subtotal for West Region    |
+| ztotal  | NULL            | 8200.00    | -- Grand Total                 |
+
+Also we could use `Rollup` to solve this problem with more simple code.
+
+```SQL
+select Region, ProductCategory, SUM(SalesAmount) AS TotalSales
+from Sales
+group by rollup (Region, ProductCategory);
+```
+
+| Region  | ProductCategory | TotalSales | --                             |
+| :------ | :-------------- | :--------- | ------------------------------ |
+| Central | Clothing        | 200.00     |                                |
+| Central | Electronics     | 1000.00    |                                |
+| Central | NULL            | 1200.00    | -- Subtotal for Central Region |
+| East    | Clothing        | 300.00     |                                |
+| East    | Electronics     | 3500.00    |                                |
+| East    | NULL            | 3800.00    | -- Subtotal for East Region    |
+| West    | Clothing        | 450.00     |                                |
+| West    | Electronics     | 2750.00    |                                |
+| West    | NULL            | 3200.00    | -- Subtotal for West Region    |
+| NULL    | NULL            | 8200.00    | -- Grand Total                 |
