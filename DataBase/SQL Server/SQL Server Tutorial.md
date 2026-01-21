@@ -80,3 +80,4 @@
 ---
 #### Index
 - Clustered Index [[T-SQL Clustered Index]].
+- Non-Clustered Index [[T-SQL Non-Clustered Index]].
