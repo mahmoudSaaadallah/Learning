@@ -77,3 +77,6 @@
 	- LEAD [[T-SQL LEAD]].
 	- First_Value [[T-SQL First_Value]].
 	- Last_Value [[T-SQL Last_Value]].
+---
+#### Index
+- Clustered Index [[T-SQL Clustered Index]].
