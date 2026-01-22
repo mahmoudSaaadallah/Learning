@@ -235,12 +235,36 @@ order by region asc, SalesAmount;
 | West    | NULL            | 3200.00    | -- Subtotal for West Region    |
 | ztotal  | NULL            | 8200.00    | -- Grand Total                 |
 
+> using `ROLLUP`
+
 Also we could use `Rollup` to solve this problem with more simple code.
 
 ```SQL
 select Region, ProductCategory, SUM(SalesAmount) AS TotalSales
 from Sales
 group by rollup (Region, ProductCategory);
+```
+
+| Region  | ProductCategory | TotalSales | --                             |
+| :------ | :-------------- | :--------- | ------------------------------ |
+| Central | Clothing        | 200.00     |                                |
+| Central | Electronics     | 1000.00    |                                |
+| Central | NULL            | 1200.00    | -- Subtotal for Central Region |
+| East    | Clothing        | 300.00     |                                |
+| East    | Electronics     | 3500.00    |                                |
+| East    | NULL            | 3800.00    | -- Subtotal for East Region    |
+| West    | Clothing        | 450.00     |                                |
+| West    | Electronics     | 2750.00    |                                |
+| West    | NULL            | 3200.00    | -- Subtotal for West Region    |
+| NULL    | NULL            | 8200.00    | -- Grand Total                 |
+
+
+> Using `GOUPING SETS`
+
+```SQL
+SELECT Region, ProductCategory, SUM(SalesAmount) AS TotalSales
+from Sales
+group by grouping sets((Region, ProductCategory), (Region), ())
 ```
 
 | Region  | ProductCategory | TotalSales | --                             |

@@ -182,7 +182,8 @@ ORDER BY
 *   **Data Warehousing:** Pre-calculating aggregates for OLAP cubes or summary tables.
 
 ---
-
+[[T-SQL CUBE]]
+[[T-SQL Grouping sets]]
 ### `ROLLUP` vs. `CUBE` vs. `GROUPING SETS`
 
 It's important to understand how `ROLLUP` fits into the broader family of `GROUP BY` extensions:

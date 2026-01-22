@@ -84,4 +84,6 @@
 ---
 
 - Local & Global Tables [[Local & Global Tables]].
-- Rollup [[Rollup]].
+- Rollup [[T-SQL Rollup]].
+- CUBE [[T-SQL CUBE]].
+- T-SQL Grouping sets [[T-SQL Grouping sets]].
