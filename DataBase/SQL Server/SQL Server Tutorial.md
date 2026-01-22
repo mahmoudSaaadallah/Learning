@@ -86,4 +86,6 @@
 - Local & Global Tables [[Local & Global Tables]].
 - Rollup [[T-SQL Rollup]].
 - CUBE [[T-SQL CUBE]].
-- T-SQL Grouping sets [[T-SQL Grouping sets]].
+- Grouping sets [[T-SQL Grouping sets]].
+- PIVOT [[T-SQL PIVOT]].
+- UNPIVOT [[T-SQL UNPIVOT]].

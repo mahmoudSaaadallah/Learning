@@ -16,6 +16,7 @@ let's consider that we have the following employee table:
 
 #### Scenario number one
 - Get the **Highest Salary in each department **
+
 ```sql
 select *
 from (
@@ -34,7 +35,7 @@ with RankedTable as(
 from RankedTable
 where ranking = 1;
 ```
-
+[[Rank()]][[Row_Number()]]
 - In both of the previous statement we used the `row_number()` function with `partition by` to divide the result of the select statement into groups as the `partition by` will do.
 - then we used the output from the inner statement in the first query and `with` statement in the second query to get only the records that has a `Ranking = 1`, which is the highest salary in each department.
 ---
@@ -61,6 +62,7 @@ from (
 ) as SalaryDense
 where DR <= 2;
 ```
+[[Dense_Rank()]]
 
 ---
 #### Scenario number three
@@ -77,6 +79,7 @@ FROM
 GROUP BY
     DepartmentName;
 ```
+[[Case]]
 
 ---
 #### Scenario 4: Ordering Results with Custom Logic
@@ -220,7 +223,7 @@ select 'ztotal', null, sum(salesAmount)
 from sales
 order by region asc, SalesAmount;
 ```
-
+[[Union Family]]
 
 | Region  | ProductCategory | TotalSales | --                             |
 | :------ | :-------------- | :--------- | ------------------------------ |
@@ -235,7 +238,7 @@ order by region asc, SalesAmount;
 | West    | NULL            | 3200.00    | -- Subtotal for West Region    |
 | ztotal  | NULL            | 8200.00    | -- Grand Total                 |
 
-> using `ROLLUP`
+> using `ROLLUP` [[T-SQL Rollup]]
 
 Also we could use `Rollup` to solve this problem with more simple code.
 
@@ -259,7 +262,7 @@ group by rollup (Region, ProductCategory);
 | NULL    | NULL            | 8200.00    | -- Grand Total                 |
 
 
-> Using `GOUPING SETS`
+> Using `GOUPING SETS` [[T-SQL Grouping sets]]
 
 ```SQL
 SELECT Region, ProductCategory, SUM(SalesAmount) AS TotalSales
@@ -279,3 +282,48 @@ group by grouping sets((Region, ProductCategory), (Region), ())
 | West    | Electronics     | 2750.00    |                                |
 | West    | NULL            | 3200.00    | -- Subtotal for West Region    |
 | NULL    | NULL            | 8200.00    | -- Grand Total                 |
+
+---
+
+#### Scenario 8
+
+| SaleID | SaleYear | Product  | Amount  | Region |
+| :----- | :------- | :------- | :------ | :----- |
+| 1      | 2023     | Laptop   | 1000.00 | North  |
+| 2      | 2023     | Mouse    | 50.00   | North  |
+| 3      | 2023     | Keyboard | 75.00   | South  |
+| 4      | 2024     | Laptop   | 1200.00 | South  |
+| 5      | 2024     | Mouse    | 60.00   | South  |
+| 6      | 2024     | Monitor  | 200.00  | East   |
+| 7      | 2023     | Laptop   | 1100.00 | North  |
+| 8      | 2024     | Keyboard | 80.00   | East   |
+
+**Goal**: Show total sales amount for each product, broken down by `SaleYear` AND `Region`, with products as columns.
+
+```sql
+SELECT
+    SaleYear,
+    Region,
+    [Laptop],
+    [Mouse],
+    [Keyboard],
+    [Monitor]
+FROM
+    (SELECT SaleYear, Region, Product, Amount FROM Sales) AS SourceTable
+PIVOT
+(
+    SUM(Amount)
+    FOR Product IN ([Laptop], [Mouse], [Keyboard], [Monitor])
+) AS PivotTable
+ORDER BY
+    SaleYear, Region;
+```
+[[T-SQL PIVOT]]
+**Result of Example 2:**
+
+| SaleYear | Region | Laptop  | Mouse | Keyboard | Monitor |
+| :------- | :----- | :------ | :---- | :------- | :------ |
+| 2023     | North  | 2100.00 | 50.00 | NULL     | NULL    |
+| 2023     | South  | NULL    | NULL  | 75.00    | NULL    |
+| 2024     | East   | NULL    | NULL  | 80.00    | 200.00  |
+| 2024     | South  | 1200.00 | 60.00 | NULL     | NULL    |
