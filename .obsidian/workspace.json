@@ -160,7 +160,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -341,17 +341,18 @@
       "graph:Open graph view": false
     }
   },
-  "active": "ed3150dff70f36f6",
+  "active": "8e8ce7395e25f30f",
   "lastOpenFiles": [
+    "GIT/git-cheat-sheet-education.pdf",
+    "GIT/Git شخبط.md",
+    "GIT/Git Pro.md",
+    "DataBase/SQL Server/Advanced Queries.md",
     "DataBase/SQL Server/T-SQL/T-SQL PIVOT.md",
     "DataBase/SQL Server/T-SQL/T-SQL UNPIVOT.md",
     "DataBase/SQL Server/SQL Server Tutorial.md",
-    "DataBase/SQL Server/Advanced Queries.md",
-    "GIT/Git Pro.md",
     "DataBase/SQL Server/T-SQL/().md",
     "Django/Django Pagination.md",
     "DataBase/SQL Server/().md",
-    "GIT/Git شخبط.md",
     "DataBase/SQL Server/T-SQL/T-SQL CUBE.md",
     "DataBase/SQL Server/T-SQL/T-SQL Grouping sets.md",
     "DataBase/SQL Server/T-SQL/T-SQL Rollup.md",
@@ -359,7 +360,6 @@
     "DataBase/SQL Server/T-SQL/Local & Global Tables.md",
     "DataBase/SQL Server/T-SQL/T-SQL Clustered Index.md",
     "DataBase/SQL Server/T-SQL/T-SQL Non-Clustered Index.md",
-    "GIT/git-cheat-sheet-education.pdf",
     "DataBase/SQL Server/T-SQL/T-SQL First_Value.md",
     "DataBase/SQL Server/T-SQL/T-SQL Last_Value.md",
     "DataBase/SQL Server/T-SQL/T-SQL LEAD.md",
@@ -369,7 +369,6 @@
     "DataBase/SQL Server/T-SQL/Data Types.md",
     "DataBase/SQL Server/T-SQL/T-SQL Inline Table-Valued Functions.md",
     "DataBase/SQL Server/T-SQL/Scaler Function.md",
-    "DataBase/SQL Server/T-SQL/T-SQL Math Functions.md",
     "Pasted image 20260119135407.png",
     "Images/Pasted image 20260117172253.png",
     "DataBase/SQL Server/T-SQL",

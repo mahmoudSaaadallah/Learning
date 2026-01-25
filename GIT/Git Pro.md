@@ -875,3 +875,136 @@ git log --oneline --decorate --graph --all
 ```
 - As we can see the conflict has been solved using new commit.
 
+---
+----
+---
+
+## Working with remote
+- First of all, we have to know that if we have a local repo then this repo could be connected to multiple remote repos.
+
+If we have a `remote` repo and we want to have this repo in our machine, then we have to `clone` it.
+- The meaning of `clone` here is not just downloading the repo, it means having all the information about that repo like the commits, history, SHAs, and everything in addition to that also having the trace between the `local` and the `remote` repo, which means we could upload (`push`) the changes to that remote and also download (`fetch`) the changes on the remote repo.
+
+cloning the remote repo
+```bash
+git clone <link_for_the_remote_repo> [name_for_the_Local_repo]
+
+
+git clone './remote' local
+Cloning into 'local'...
+done.
+```
+- If we didn't specify a name for the local repo it will be the same as the remote one.
+
+----
+#### Fetch
+What if we the `remote` repo has been changed after we cloned it, then we have to get the final version of the repo and we could do that using `git fetch` in the local repo
+
+``` bash
+git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 286 bytes | 1024 bytes/s, done.
+From H:/Courses/Git/شخبط/./remote
+   02a4ba9..71f0177  master     -> origin/master
+```
+- After we fetch the last version of the remote repo, this doesn't mean that we are in the last commit in our local repo, As the `git fetch` only fetch the last version of the remote repo, and get all the commits, but without merging it to the local repo as we have to merge manually after make sure that we want to merge.
+
+if we checked the status of the local repo after fetching the changes from the remote one we will find the following output.
+```bash
+git status
+On branch master
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+```
+- In the output we have a message that says that we are behind the `origin/master` which is the remote repo by `1` commit and we could do the `fast-forward` to make our local repo updated
+
+let's merge the changes 
+```bash
+git merge
+Updating 02a4ba9..71f0177
+Fast-forward
+ file1.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ 
+ 
+git status
+ On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+```
+
+**What is the difference between using `git fetch` and `git pull`?**
+- **`git fetch`**: Downloads updates from the remote **without changing your local branch**. Safe—lets you review changes first.
+    
+- **`git pull`**: Downloads updates **and immediately merges (or rebases) them** into your current branch. Faster, but can cause merge conflicts.
+
+
+There are some conflicts that could happen because of using `git pull`, because of the changes in the remote could be in the same file that the local has changed and those changes makes conflicts together.
+This why it's better to use `git fetch` to fetch the last version of the remote then merge it, and if faced any conflicts then we could solve the conflicts then commit the fixed one.
+
+```bash
+git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 288 bytes | 1024 bytes/s, done.
+From H:/Courses/Git/شخبط/./remote
+   71f0177..b0c77a5  master     -> origin/master
+error: Your local changes to the following files would be overwritten by merge:
+        file1.txt
+Please commit your changes or stash them before you merge.
+Aborting
+Updating 71f0177..b0c77a5
+
+
+
+
+git fetch
+
+git merge
+error: Your local changes to the following files would be overwritten by merge:
+        file1.txt
+Please commit your changes or stash them before you merge.
+Aborting
+Updating 71f0177..b0c77a5
+
+
+git commit -am 'commit in local'
+[master 5d86d3a] commit in local
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+       
+git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")   
+
+    
+git commit -am 'mergeing'
+[master 5d5dd45] mergeing
+
+git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+```
