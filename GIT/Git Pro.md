@@ -1008,3 +1008,14 @@ Your branch is ahead of 'origin/master' by 2 commits.
 
 nothing to commit, working tree clean
 ```
+- As we can see from the output of the last `git status` we have `Your branch is ahead of 'origin/master' by 2 commits` this mean we have two commits in our local that is not in the remote repo.
+- **Where did those two commits come from?**
+- If we looked to the commands in the previous example, we will find that the had a conflict because we fetched the remote repo while we already have some changes in the same file that has been changed in the remote repo.
+- And when we tried to merge we git an error because of the conflict and asked me to commit my current changes first before merging, So this commit is the first commit that we have but the remote doesn't.
+- The second one is when we merged, it asked me to fix the conflict first and after I fixed it I make another commit for the fixing, this is the second commit.
+
+So If we want to make the remote have the same version that we have in our local repo then we have to use `git push`
+```bash
+git push
+
+```
