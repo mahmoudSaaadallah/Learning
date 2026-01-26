@@ -1017,5 +1017,4 @@ nothing to commit, working tree clean
 So If we want to make the remote have the same version that we have in our local repo then we have to use `git push`
 ```bash
 git push
-
 ```

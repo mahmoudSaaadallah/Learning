@@ -82,10 +82,16 @@
 - Clustered Index [[T-SQL Clustered Index]].
 - Non-Clustered Index [[T-SQL Non-Clustered Index]].
 ---
-
+---
 - Local & Global Tables [[Local & Global Tables]].
 - Rollup [[T-SQL Rollup]].
 - CUBE [[T-SQL CUBE]].
 - Grouping sets [[T-SQL Grouping sets]].
 - PIVOT [[T-SQL PIVOT]].
 - UNPIVOT [[T-SQL UNPIVOT]].
+
+---
+#### Views
+- Standard View [[T-SQL Standard View]].
+- Partitioned View
+- Indexed View
