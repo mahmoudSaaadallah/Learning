@@ -93,5 +93,5 @@
 ---
 #### Views
 - Standard View [[T-SQL Standard View]].
-- Partitioned View
+- Partitioned View [[T-SQL Partitioned View]].
 - Indexed View
