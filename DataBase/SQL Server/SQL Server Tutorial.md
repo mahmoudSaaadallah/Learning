@@ -95,3 +95,6 @@
 - Standard View [[T-SQL Standard View]].
 - Partitioned View [[T-SQL Partitioned View]].
 - Indexed View [[T-SQL Indexed View]].
+
+----
+- Merge [[T-SQL Merge]].

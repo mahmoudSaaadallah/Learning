@@ -78,6 +78,20 @@
             }
           },
           {
+            "id": "34d59afb1e7d9093",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DataBase/SQL Server/T-SQL Merge.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "T-SQL Merge"
+            }
+          },
+          {
             "id": "030f0c3c985b7dcb",
             "type": "leaf",
             "state": {
@@ -327,10 +341,11 @@
       "graph:Open graph view": false
     }
   },
-  "active": "030f0c3c985b7dcb",
+  "active": "34d59afb1e7d9093",
   "lastOpenFiles": [
-    "DataBase/SQL Server/T-SQL Indexed View.md",
+    "DataBase/SQL Server/T-SQL Merge.md",
     "DataBase/SQL Server/SQL Server Tutorial.md",
+    "DataBase/SQL Server/T-SQL Indexed View.md",
     "DataBase/SQL Server/Advanced Queries.md",
     "DataBase/SQL Server/T-SQL Partitioned View.md",
     "DataBase/SQL Server/T-SQL/T-SQL Standard View.md",
@@ -355,7 +370,6 @@
     "DataBase/SQL Server/T-SQL/T-SQL LAG.md",
     "DataBase/SQL Server/T-SQL/T-SQL Multi-Statement Table-Valued Functions.md",
     "DataBase/SQL Server/T-SQL/T-SQL Date Functions.md",
-    "DataBase/SQL Server/T-SQL/Data Types.md",
     "Pasted image 20260119135407.png",
     "Images/Pasted image 20260117172253.png",
     "DataBase/SQL Server/T-SQL",
