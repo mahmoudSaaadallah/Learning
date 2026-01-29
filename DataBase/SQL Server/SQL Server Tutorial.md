@@ -101,3 +101,5 @@
 ----
 #### Stored Procedure 
 - Built-in Stored Procedure [[T-SQL Built-in Stored Procedure]].
+- User-defined Procedure [[T-SQL User-defined Procedure]]. 
+- Trigger [[T-SQL Trigger]].

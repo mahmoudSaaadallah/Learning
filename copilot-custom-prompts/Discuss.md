@@ -3,7 +3,7 @@ copilot-command-context-menu-enabled: true
 copilot-command-slash-enabled: true
 copilot-command-context-menu-order: 1140
 copilot-command-model-key: ""
-copilot-command-last-used: 1769621609992
+copilot-command-last-used: 1769690410669
 ---
 You are a senior [  ]  developer with 10 years of experiences and you have a PHD and working in MIT as a Professor 
 Your mission is to explain discuss "Fiber Tree" in [   ] with details and examples
