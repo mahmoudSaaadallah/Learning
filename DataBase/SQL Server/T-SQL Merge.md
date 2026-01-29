@@ -1,5 +1,3 @@
-Ah, the `MERGE` statement in T-SQL! This is a truly elegant and powerful command, a modern addition that significantly simplifies complex data synchronization tasks. As a database developer and professor, I often highlight `MERGE` as a prime example of how SQL Server evolves to meet the demands of efficient data management.
-
 At its heart, `MERGE` allows you to perform `INSERT`, `UPDATE`, and `DELETE` operations on a target table based on the results of a join with a source table (or table expression). It's often referred to as an "UPSERT" (UPDATE or INSERT) statement, but it's far more versatile, as it can also handle deletions.
 
 ### Why `MERGE`? The Problem It Solves
