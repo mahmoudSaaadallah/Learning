@@ -327,3 +327,81 @@ ORDER BY
 | 2023     | South  | NULL    | NULL  | 75.00    | NULL    |
 | 2024     | East   | NULL    | NULL  | 80.00    | 200.00  |
 | 2024     | South  | 1200.00 | 60.00 | NULL     | NULL    |
+
+
+----
+#### Scenario 9
+Julia asked her students to create some coding challenges. Write a query to print the _hacker_id_, _name_, and the total number of challenges created by each student. Sort your results by the total number of challenges in descending order. If more than one student created the same number of challenges, then sort the result by _hacker_id_. If more than one student created the same number of challenges and the count is less than the maximum number of challenges created, then exclude those students from the result.
+
+Hackers
+![](https://s3.amazonaws.com/hr-challenge-images/19506/1458521004-cb4c077dd3-ScreenShot2016-03-21at6.06.54AM.png)
+
+Challenges
+
+![](https://s3.amazonaws.com/hr-challenge-images/19506/1458521079-549341d9ec-ScreenShot2016-03-21at6.07.03AM.png)
+
+To solve this in SQL Server, we need to:
+
+1. Count challenges per hacker.
+2. Determine the **Maximum** number of challenges created by anyone.
+3. Determine which challenge counts are **Unique** (only one hacker has that count).
+4. Apply the filter: Keep hackers if they hit the maximum OR if their count is unique.
+```SQL
+WITH ChallengeCounts AS (
+    -- Step 1: Get the count for every hacker
+    SELECT 
+        h.hacker_id, 
+        h.name, 
+        COUNT(c.challenge_id) AS total_challenges
+    FROM Hackers h
+    JOIN Challenges c ON h.hacker_id = c.hacker_id
+    GROUP BY h.hacker_id, h.name
+),
+CounterSummary AS (
+    -- Step 2: Analyze the counts to find the Max and the frequency of each count
+    SELECT 
+        total_challenges,
+        COUNT(*) AS count_frequency,
+        MAX(total_challenges) OVER() AS max_challenges
+    FROM ChallengeCounts
+    GROUP BY total_challenges
+)
+-- Step 3: Join and filter based on Julia's rules
+SELECT 
+    cc.hacker_id, 
+    cc.name, 
+    cc.total_challenges
+FROM ChallengeCounts cc
+JOIN CounterSummary cs ON cc.total_challenges = cs.total_challenges
+WHERE 
+    cc.total_challenges = cs.max_challenges -- Rule: Keep all if they hit the max
+    OR cs.count_frequency = 1               -- Rule: Keep if the count is unique
+ORDER BY cc.total_challenges DESC, cc.hacker_id;
+```
+
+---
+#### Scenario 10
+Students
+![](https://s3.amazonaws.com/hr-challenge-images/12891/1443818166-a5c852caa0-1.png)
+
+Grades
+![](https://s3.amazonaws.com/hr-challenge-images/12891/1443818137-69b76d805c-2.png)
+
+_Ketty_ gives _Eve_ a task to generate a report containing three columns: _Name_, _Grade_ and _Mark_. _Ketty_ doesn't want the NAMES of those students who received a grade lower than _8_. The report must be in descending order by grade -- i.e. higher grades are entered first. If there is more than one student with the same grade (8-10) assigned to them, order those particular students by their name alphabetically. Finally, if the grade is lower than 8, use "NULL" as their name and list them by their grades in descending order. If there is more than one student with the same grade (1-7) assigned to them, order those particular students by their marks in ascending order.
+
+```SQL
+select 
+	case
+	when g.grade >= 8 then s.name
+	else null 
+	end as name,
+	g.grade,
+	s.marks
+from Students as s inner join Grades as g
+on s.marks between g.Min_Marks and g.Max_Marks
+order by 
+	g.grade desc,
+	name asc,
+	marks asc
+```
+[[Case]]

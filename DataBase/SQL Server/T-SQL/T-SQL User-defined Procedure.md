@@ -364,7 +364,7 @@ While powerful, stored procedures aren't a silver bullet for every database inte
 *   **Simple, One-Off Ad-hoc Queries**: If you're just running a quick `SELECT * FROM MyTable` for exploration or a simple `UPDATE` that won't be reused, a procedure is overkill.
 *   **Highly Dynamic SQL**: If the structure of your SQL query (table names, column names, complex `JOIN` conditions) changes significantly with every execution, building a stored procedure with dynamic SQL can become very complex and potentially introduce SQL injection vulnerabilities if not handled meticulously (e.g., using `sp_executesql` with proper parameterization). In such cases, constructing the query in the application layer might be more manageable.
 *   **When a View or Function is More Appropriate**:
-    *   **Views**: If you just need to simplify a complex `SELECT` statement, hide certain columns, or enforce row-level security without any parameters or DML, a [[T-SQL View]] is a better choice.
+    *   **Views**: If you just need to simplify a complex `SELECT` statement, hide certain columns, or enforce row-level security without any parameters or DML, a [[T-SQL Standard View]] [[T-SQL Partitioned View]] is a better choice.
     *   **Functions (Scalar or Table-Valued)**: If you need to perform a calculation that returns a single value (scalar function) or return a table result set that can be composed with other queries (table-valued function), and you don't need to perform DML or DDL, functions are often more suitable as they can be used directly within `SELECT`, `WHERE`, or `JOIN` clauses.
 
 ### 8. Comparison with Related Concepts

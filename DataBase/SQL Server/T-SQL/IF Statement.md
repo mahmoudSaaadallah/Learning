@@ -4,7 +4,7 @@
 
 The primary purpose of the `IF` statement is to introduce **conditional execution** into your T-SQL code. This is vital for:
 
-*   **Dynamic Behavior:** Allowing your scripts, stored procedures, and functions to behave differently based on input parameters, data values, or system states.
+*   **Dynamic Behavior:** Allowing your scripts, stored procedures [[T-SQL User-defined Procedure]], and functions [[Scaler Function]] to behave differently based on input parameters, data values, or system states.
 *   **Error Handling:** Checking for specific conditions (e.g., `@@ERROR` value, existence of data) and reacting accordingly.
 *   **Data Validation:** Ensuring that data meets certain criteria before proceeding with an `INSERT`, `UPDATE`, or `DELETE` operation.
 *   **Resource Management:** Preventing unnecessary or potentially harmful operations (e.g., dropping a table if it doesn't exist).

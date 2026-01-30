@@ -92,7 +92,7 @@
             }
           },
           {
-            "id": "0af0699643bcbc8b",
+            "id": "6de641850b74a241",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -103,6 +103,34 @@
               },
               "icon": "lucide-file",
               "title": "Case"
+            }
+          },
+          {
+            "id": "5ab91737fd1d8869",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DataBase/SQL Server/Advanced Queries.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Advanced Queries"
+            }
+          },
+          {
+            "id": "52534e94da690db9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DataBase/SQL Server/Functions/Aggregate Functions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Aggregate Functions"
             }
           },
           {
@@ -146,7 +174,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -327,12 +355,18 @@
       "graph:Open graph view": false
     }
   },
-  "active": "0af0699643bcbc8b",
+  "active": "5ab91737fd1d8869",
   "lastOpenFiles": [
-    "DataBase/SQL Server/SQL Server Tutorial.md",
-    "DataBase/SQL Server/T-SQL/T-SQL Trigger.md",
-    "DataBase/SQL Server/Advanced Queries.md",
+    "DataBase/SQL Server/Functions/Aggregate Functions.md",
     "DataBase/SQL Server/T-SQL/T-SQL User-defined Procedure.md",
+    "T-SQL View.md",
+    "DataBase/SQL Server/Advanced Queries.md",
+    "DataBase/SQL Server/SQL Server Tutorial.md",
+    "DataBase/SQL Server/DQL/Case.md",
+    "GIT/Git Pro.md",
+    "DataBase/SQL Server/T-SQL/IF Statement.md",
+    "DataBase/SQL Server/Functions/IIF().md",
+    "DataBase/SQL Server/T-SQL/T-SQL Trigger.md",
     "Django/Django Pagination.md",
     "DataBase/SQL Server/T-SQL/T-SQL Partitioned View.md",
     "DataBase/SQL Server/T-SQL/Transaction.md",
@@ -346,17 +380,11 @@
     "DataBase/SQL Server/T-SQL/T-SQL Standard View.md",
     "DataBase/SQL Server/T-SQL/T-SQL UNPIVOT.md",
     "DataBase/SQL Server/T-SQL/T-SQL PIVOT.md",
-    "GIT/Git Pro.md",
     "GIT/git-cheat-sheet-education.pdf",
     "GIT/Git شخبط.md",
     "DataBase/SQL Server/T-SQL/().md",
     "DataBase/SQL Server/().md",
     "DataBase/SQL Server/T-SQL/T-SQL CUBE.md",
-    "DataBase/SQL Server/T-SQL/T-SQL Grouping sets.md",
-    "DataBase/SQL Server/T-SQL/T-SQL Rollup.md",
-    "DataBase/SQL Server/DQL/Case.md",
-    "DataBase/SQL Server/T-SQL/Local & Global Tables.md",
-    "DataBase/SQL Server/T-SQL/T-SQL Clustered Index.md",
     "Pasted image 20260119135407.png",
     "Images/Pasted image 20260117172253.png",
     "DataBase/SQL Server/T-SQL",
