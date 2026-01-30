@@ -6,7 +6,7 @@ It's crucial to understand that `CASE` is an *expression*, not a statement. This
 
 ### Why is the `CASE` Expression Essential?
 
-1.  **Conditional Logic in Queries:** It allows you to define custom logic directly within your SQL queries, eliminating the need for client-side processing or complex stored procedures for simple conditional formatting.
+1.  **Conditional Logic in Queries:** It allows you to define custom logic directly within your SQL queries, eliminating the need for client-side processing or complex stored procedures [[T-SQL User-defined Procedure]] for simple conditional formatting.
 2.  **Data Categorization/Classification:** Grouping data into categories based on specific criteria (e.g., "High", "Medium", "Low" for sales figures).
 3.  **Dynamic Output Formatting:** Displaying different text or values based on the state of a record (e.g., "Active" vs. "Inactive").
 4.  **Complex Ordering:** Sorting results based on custom, non-standard rules.
@@ -20,28 +20,28 @@ There are two primary forms of the `CASE` expression:
 1.  **Simple `CASE` Expression:**
     *   Compares an input expression to a series of simple values.
     *   Syntax:
-        ```sql
-        CASE input_expression
-            WHEN when_expression_1 THEN result_expression_1
-            WHEN when_expression_2 THEN result_expression_2
-            ...
-            [ELSE else_result_expression]
-        END
-        ```
-    *   The `input_expression` is evaluated once, and its value is compared against each `when_expression`. The first match determines the `result_expression` returned.
+```sql
+CASE input_expression
+	WHEN when_expression_1 THEN result_expression_1
+	WHEN when_expression_2 THEN result_expression_2
+	...
+	[ELSE else_result_expression]
+END
+```
+*   The `input_expression` is evaluated once, and its value is compared against each `when_expression`. The first match determines the `result_expression` returned.
 
 2.  **Searched `CASE` Expression:**
     *   Evaluates a series of Boolean conditions.
     *   Syntax:
-        ```sql
-        CASE
-            WHEN boolean_condition_1 THEN result_expression_1
-            WHEN boolean_condition_2 THEN result_expression_2
-            ...
-            [ELSE else_result_expression]
-        END
-        ```
-    *   Each `boolean_condition` is evaluated independently. The first condition that evaluates to `TRUE` determines the `result_expression` returned. This is more flexible as it allows for different conditions for each `WHEN` clause.
+```sql
+CASE
+	WHEN boolean_condition_1 THEN result_expression_1
+	WHEN boolean_condition_2 THEN result_expression_2
+	...
+	[ELSE else_result_expression]
+END
+```
+*   Each `boolean_condition` is evaluated independently. The first condition that evaluates to `TRUE` determines the `result_expression` returned. This is more flexible as it allows for different conditions for each `WHEN` clause.
 
 **Important Note on `ELSE`:**
 The `ELSE` clause is optional. If omitted and no `WHEN` condition is met, the `CASE` expression returns `NULL`. It's generally good practice to include an `ELSE` clause to explicitly handle all possible scenarios and prevent unexpected `NULL` values.
