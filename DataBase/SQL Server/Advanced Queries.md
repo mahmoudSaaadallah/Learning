@@ -405,3 +405,94 @@ order by
 	marks asc
 ```
 [[Case]]
+
+----
+#### Scenario 11
+
+| Hackers                                                                                                           | Difficulty                                                                                                        | Challenges                                                                                                        | Submissions                                                                                                       |
+| ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| ![](https://s3.amazonaws.com/hr-challenge-images/19504/1458526776-67667350b4-ScreenShot2016-03-21at7.45.59AM.png) | ![](https://s3.amazonaws.com/hr-challenge-images/19504/1458526915-57eb75d9a2-ScreenShot2016-03-21at7.46.09AM.png) | ![](https://s3.amazonaws.com/hr-challenge-images/19504/1458527032-f9ca650442-ScreenShot2016-03-21at7.46.17AM.png) | ![](https://s3.amazonaws.com/hr-challenge-images/19504/1458527077-298f8e922a-ScreenShot2016-03-21at7.46.29AM.png) |
+
+Julia just finished conducting a coding contest, and she needs your help assembling the leaderboard! Write a query to print the respective _hacker_id_ and _name_ of hackers who achieved full scores for _more than one_ challenge. Order your output in descending order by the total number of challenges in which the hacker earned a full score. If more than one hacker received full scores in same number of challenges, then sort them by ascending _hacker_id_.
+
+
+_**Solution**_
+
+##### Step 1: The "Paper Trail" (Joining the Tables)
+
+Imagine four filing cabinets. We need to pull a folder from one and find its matching folder in the next.
+1. **Submissions (s):** This is our starting point. It lists every attempt made by every student.
+2. **Challenges (c):** We look up the submission's `challenge_id` here to see _which_ challenge they were doing.
+3. **Difficulty (d):** We look at the challenge's `difficulty_level` to find out the **maximum possible score** for that specific task.
+4. **Hackers (h):** Finally, we look up the `hacker_id` from the **submission** to get the actual name of the student.
+
+**The Golden Rule of Joins:** Always connect the student who _did_ the work (`s.hacker_id`), not the one who _created_ the task (`c.hacker_id`).
+
+---
+
+### Step 2: The "Quality Control" (The WHERE Clause)
+
+Now we have a giant pile of data, but most of it is "noise." We only care about **Perfect Scores**.
+We compare the student's actual score (`s.score`) to the maximum allowed for that difficulty level (`d.score`).
+
+```sql
+WHERE s.score = d.score
+```
+
+_If a student scored 10, but the max was 100, this line throws that record away._
+
+---
+
+### Step 3: The "Tally" (GROUP BY & COUNT)
+
+Now we have a pile of only "Perfect" folders. But the same student might appear multiple times if they were perfect on different challenges. We need to stack all folders belonging to "Alice" in one pile and all folders for "Bob" in another.
+
+```sql
+GROUP BY h.hacker_id, h.name
+```
+
+Once they are in piles, we count how many folders are in each stack using `COUNT(s.submission_id)`.
+
+---
+
+### Step 4: The "Elite Filter" (The HAVING Clause)
+
+Julia only wants students who were perfect **more than once**.
+
+In SQL, you cannot use a `WHERE` clause on a count (an aggregate). You must use `HAVING`. It’s like a second filter that happens _after_ the piles are made.
+
+```sql
+HAVING COUNT(s.submission_id) > 1
+```
+
+_If Alice has 3 perfect scores, she stays. If Bob only has 1, his pile is removed._
+
+---
+
+### Step 5: The "Presentation" (ORDER BY)
+
+Finally, we arrange the survivors.
+
+- **Primary Sort:** The "Big Winners" (highest count) at the top (`DESC`).
+- **Tie-Breaker:** If two people have the same number of wins, sort by their ID number (`ASC`).
+
+---
+
+### The Final Blueprint
+
+When you put it all together, it looks like this:
+
+```SQL
+
+SELECT 
+    h.hacker_id, 
+    h.name
+FROM Submissions AS s 
+INNER JOIN Challenges AS c ON s.challenge_id = c.challenge_id
+INNER JOIN Difficulty AS d ON c.difficulty_level = d.difficulty_level
+INNER JOIN Hackers AS h ON s.hacker_id = h.hacker_id 
+WHERE s.score = d.score
+GROUP BY h.hacker_id, h.name
+HAVING COUNT(s.submission_id) > 1
+ORDER BY COUNT(s.submission_id) DESC, h.hacker_id ASC;
+```
