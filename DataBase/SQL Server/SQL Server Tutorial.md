@@ -31,7 +31,7 @@
 - Coalesce [[Coalesce ()]].
 - Concate [[Concate ()]].
 - Aggregate Function [[Aggregate Functions]].
-- Casting [[Casting]].
+- Casting [[T-SQL Casting]].
 ### Ranking Functions
 - Row_Number [[Row_Number()]].
 - Dense_Rank [[Dense_Rank()]].

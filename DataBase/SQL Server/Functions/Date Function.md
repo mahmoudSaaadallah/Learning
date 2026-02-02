@@ -55,7 +55,7 @@ SELECT FORMAT(@CurrentDateTime, 'd', 'de-DE') AS 'GermanShortDate'; -- e.g., 14.
 
 **Best Practices and Considerations:**
 *   **Readability:** `FORMAT()` makes your code very readable for complex formatting requirements.
-*   **Performance:** For simple, common date formats, `CONVERT()` with a style code (as we discussed in [[Casting]]) can sometimes be more performant than `FORMAT()`, as `FORMAT()` involves the .NET Framework Common Language Runtime (CLR). Use `FORMAT()` when you need its specific flexibility or culture-aware formatting.
+*   **Performance:** For simple, common date formats, `CONVERT()` with a style code (as we discussed in [[T-SQL Casting]]) can sometimes be more performant than `FORMAT()`, as `FORMAT()` involves the .NET Framework Common Language Runtime (CLR). Use `FORMAT()` when you need its specific flexibility or culture-aware formatting.
 *   **Data Type:** The output of `FORMAT()` is always `NVARCHAR`.
 
 ---

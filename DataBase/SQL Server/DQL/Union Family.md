@@ -6,7 +6,7 @@ Before we dive into the specifics, there are fundamental rules that apply to all
 
 1.  **Number of Columns:** Each `SELECT` statement within the `UNION` query must have the same number of columns.
 2.  **Order of Columns:** The columns in each `SELECT` statement must be in the same logical order.
-3.  **Compatible Data Types:** The data types of corresponding columns in each `SELECT` statement must be compatible. SQL Server will attempt implicit conversions if possible, but it's best practice to ensure they are the same or explicitly `CAST`/`CONVERT` them.
+3.  **Compatible Data Types:** The data types of corresponding columns in each `SELECT` statement must be compatible. SQL Server will attempt implicit conversions if possible, but it's best practice to ensure they are the same or explicitly `CAST`/`CONVERT` [[T-SQL Casting]] them.
 4.  **Column Names:** The column names in the final result set are typically derived from the first `SELECT` statement.
 
 Let's set up some hypothetical tables to illustrate:
@@ -110,16 +110,16 @@ FROM Contractors;
 
 **Result:**
 
-| FirstName | LastName | JobTitle      |
-|-----------|----------|---------------|
-| Alice     | Smith    | Developer     |
-| Bob       | Johnson  | Manager       |
-| Carol     | Davis    | Developer     |
-| David     | Brown    | QA Engineer   |
-| Carol     | Davis    | Developer     | -- Duplicate from Contractors table
-| Eve       | White    | UI Designer   |
-| Frank     | Green    | Project Lead  |
-| Alice     | Smith    | Developer     | -- Duplicate from Contractors table
+| FirstName | LastName | JobTitle     |                                     |
+| --------- | -------- | ------------ | ----------------------------------- |
+| Alice     | Smith    | Developer    |                                     |
+| Bob       | Johnson  | Manager      |                                     |
+| Carol     | Davis    | Developer    |                                     |
+| David     | Brown    | QA Engineer  |                                     |
+| Carol     | Davis    | Developer    | -- Duplicate from Contractors table |
+| Eve       | White    | UI Designer  |                                     |
+| Frank     | Green    | Project Lead |                                     |
+| Alice     | Smith    | Developer    | -- Duplicate from Contractors table |
 
 **Explanation:**
 *   All rows from both `Employees` and `Contractors` are returned.
