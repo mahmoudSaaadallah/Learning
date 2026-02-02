@@ -1,6 +1,6 @@
 ### The Essence of Joins
 
-In a relational database, data is often distributed across multiple tables to ensure data integrity, reduce redundancy, and optimize storage – a concept known as normalization. However, to answer meaningful business questions, we frequently need to combine related data from these separate tables. This is precisely where **Joins** come into play.
+In a relational database, data is often distributed across multiple tables to ensure data integrity, reduce redundancy, and optimize storage – a concept known as normalization [[Normalization]]. However, to answer meaningful business questions, we frequently need to combine related data from these separate tables. This is precisely where **Joins** come into play.
 
 A `JOIN` clause is used to combine rows from two or more tables based on a related column between them. It allows us to reconstruct a unified view of data that is logically connected but physically separated.
 
@@ -119,14 +119,14 @@ LEFT JOIN
 
 **Result:**
 
-| FirstName | LastName | DepartmentName    |
-|-----------|----------|-------------------|
-| Alice     | Smith    | Human Resources   |
-| Bob       | Johnson  | Information Technology|
-| Carol     | Davis    | Human Resources   |
-| David     | Brown    | NULL              |
-| Eve       | White    | NULL              |
-| Frank     | Green    | Sales             |
+| FirstName | LastName | DepartmentName         |
+| --------- | -------- | ---------------------- |
+| Alice     | Smith    | Human Resources        |
+| Bob       | Johnson  | Information Technology |
+| Carol     | Davis    | Human Resources        |
+| David     | Brown    | NULL                   |
+| Eve       | White    | NULL                   |
+| Frank     | Green    | Sales                  |
 
 **Explanation:**
 *   All employees from the `Employees` table (the left table) are included.
@@ -281,14 +281,14 @@ ON A1.column = A2.column;
 
 **Augmented `Employees` Table:**
 
-| EmployeeID | FirstName | LastName | DepartmentID | Salary | ManagerID |
-|------------|-----------|----------|--------------|--------|-----------|
-| 101        | Alice     | Smith    | 1            | 70000  | 102       |
-| 102        | Bob       | Johnson  | 2            | 85000  | NULL      | -- Bob is a top-level manager
-| 103        | Carol     | Davis    | 1            | 72000  | 101       |
-| 104        | David     | Brown    | 6            | 60000  | 102       |
-| 105        | Eve       | White    | NULL         | 65000  | 101       |
-| 106        | Frank     | Green    | 3            | 90000  | 102       |
+| EmployeeID | FirstName | LastName | DepartmentID | Salary | ManagerID |                               |
+| ---------- | --------- | -------- | ------------ | ------ | --------- | ----------------------------- |
+| 101        | Alice     | Smith    | 1            | 70000  | 102       |                               |
+| 102        | Bob       | Johnson  | 2            | 85000  | NULL      | -- Bob is a top-level manager |
+| 103        | Carol     | Davis    | 1            | 72000  | 101       |                               |
+| 104        | David     | Brown    | 6            | 60000  | 102       |                               |
+| 105        | Eve       | White    | NULL         | 65000  | 101       |                               |
+| 106        | Frank     | Green    | 3            | 90000  | 102       |                               |
 
 ```sql
 SELECT
@@ -319,6 +319,99 @@ WHERE
 *   The join condition `E.ManagerID = M.EmployeeID` links each employee to their respective manager.
 *   The `WHERE` clause then filters for employees whose salary is greater than their manager's salary.
 
+
+---
+### Scenario: Employees, Departments, and Projects
+
+Imagine we have the following three tables:
+
+**1. `Departments` Table:**
+
+| DepartmentID | DepartmentName         |
+| :----------- | :--------------------- |
+| 1            | Human Resources        |
+| 2            | Information Technology |
+| 3            | Sales                  |
+| 4            | Marketing              |
+| 5            | Research               |
+
+**2. `Employees` Table:**
+
+| EmployeeID | FirstName | LastName | DepartmentID | Salary |
+| :--------- | :-------- | :------- | :----------- | :----- |
+| 101        | Alice     | Smith    | 1            | 70000  |
+| 102        | Bob       | Johnson  | 2            | 85000  |
+| 103        | Carol     | Davis    | 1            | 72000  |
+| 104        | David     | Brown    | 6            | 60000  | -- Department 6 does not exist
+| 105        | Eve       | White    | NULL         | 65000  | -- No department assigned
+| 106        | Frank     | Green    | 3            | 90000  |
+
+**3. `Projects` Table:**
+This table stores information about projects, and each project is associated with a `DepartmentID`.
+
+| ProjectID | ProjectName     | DepartmentID |
+| :-------- | :-------------- | :----------- |
+| 1         | HR Portal       | 1            |
+| 2         | New CRM System  | 3            |
+| 3         | Data Migration  | 2            |
+| 4         | Mobile App Dev  | 2            |
+| 5         | Internal Tool   | NULL         | -- Not assigned to a specific department yet
+
+---
+
+### Example: Multi-Level Join Query
+
+Let's say you want to retrieve a list of all employees, their department names, and any projects that are associated with their department. We'll use `LEFT JOIN`s to ensure that all employees and departments are included, even if there's no matching project.
+
+```sql
+SELECT
+    E.FirstName,
+    E.LastName,
+    D.DepartmentName,
+    P.ProjectName
+FROM
+    Employees AS E LEFT JOIN Departments AS D
+    ON E.DepartmentID = D.DepartmentID
+	LEFT JOIN Projects AS P 
+	ON D.DepartmentID = P.DepartmentID;
+```
+
+**Explanation of the Query:**
+
+1.  **`FROM Employees AS E`**: We start with the `Employees` table, aliased as `E`, as our primary table.
+2.  **`LEFT JOIN Departments AS D ON E.DepartmentID = D.DepartmentID`**:
+    *   This is the first join, connecting `Employees` to `Departments`.
+    *   It links employees to their respective departments using the `DepartmentID` column.
+    *   Since it's a `LEFT JOIN`, all employees will be included in the result, even if their `DepartmentID` doesn't exist in the `Departments` table (like David) or is `NULL` (like Eve). For these employees, `DepartmentName` will be `NULL`.
+3.  **`LEFT JOIN Projects AS P ON D.DepartmentID = P.DepartmentID`**:
+    *   This is the second join, connecting the *result of the first join* (which now includes employee and department info) to the `Projects` table, aliased as `P`.
+    *   It links departments to their associated projects using the `DepartmentID` column.
+    *   Again, a `LEFT JOIN` ensures that all department information (from the previous join's result) is retained, even if a department has no projects. If a department has multiple projects, the employee and department information will be duplicated for each project. If a department has no projects, `ProjectName` will be `NULL`.
+
+### Expected Result:
+
+| FirstName | LastName | DepartmentName         | ProjectName        |
+| :-------- | :------- | :--------------------- | :----------------- |
+| Alice     | Smith    | Human Resources        | HR Portal          |
+| Bob       | Johnson  | Information Technology | Data Migration     |
+| Bob       | Johnson  | Information Technology | Mobile App Dev     |
+| Carol     | Davis    | Human Resources        | HR Portal          |
+| David     | Brown    | NULL                   | NULL               |
+| Eve       | White    | NULL                   | NULL               |
+| Frank     | Green    | Sales                  | New CRM System     |
+
+**Analysis of the Result:**
+
+*   **Alice (EmployeeID 101)**: Works in Human Resources (ID 1), which has the 'HR Portal' project.
+*   **Bob (EmployeeID 102)**: Works in Information Technology (ID 2), which has two projects: 'Data Migration' and 'Mobile App Dev'. Bob's information is repeated for each project.
+*   **Carol (EmployeeID 103)**: Works in Human Resources (ID 1), which has the 'HR Portal' project.
+*   **David (EmployeeID 104)**: Has `DepartmentID` 6, which doesn't exist. So, `DepartmentName` and `ProjectName` are `NULL`.
+*   **Eve (EmployeeID 105)**: Has `DepartmentID` `NULL`. So, `DepartmentName` and `ProjectName` are `NULL`.
+*   **Frank (EmployeeID 106)**: Works in Sales (ID 3), which has the 'New CRM System' project.
+
+This example demonstrates how you can progressively join tables to gather related data from different parts of your database schema. The choice of `INNER` vs. `OUTER` joins at each step is critical for determining which rows are included or excluded based on matching conditions.
+
+---
 ### Choosing the Right Join
 
 The choice of join type is crucial and depends entirely on the specific data you need to retrieve:
