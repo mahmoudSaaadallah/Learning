@@ -4,7 +4,7 @@ While joins are most commonly associated with `SELECT` statements to retrieve co
 
 #### 1. UPDATE with JOIN
 
-When you need to update data in one table based on information or conditions from another table, a join within an `UPDATE` statement is the perfect solution. In SQL Server, this is typically achieved by specifying the target table for the `UPDATE` and then using a `FROM` clause to join it with other tables.
+When you need to update data in one table based on information or conditions from another table, a join within an `UPDATE` [[Update]] statement is the perfect solution. In SQL Server, this is typically achieved by specifying the target table for the `UPDATE` and then using a `FROM` clause to join it with other tables.
 
 **Purpose:** To modify records in a target table where those records meet criteria defined by related data in one or more other tables.
 
@@ -66,7 +66,7 @@ WHERE
 
 #### 2. DELETE with JOIN
 
-Similarly, when you need to delete rows from one table based on conditions found in another related table, a join within a `DELETE` statement is highly effective.
+Similarly, when you need to delete rows from one table based on conditions found in another related table, a join within a `DELETE` [[Delete]] statement is highly effective.
 
 **Purpose:** To remove records from a target table where those records meet criteria defined by related data in one or more other tables.
 
@@ -119,10 +119,10 @@ The employee with `EmployeeID` 107 (Grace Hopper) would be deleted from the `Emp
 
 #### 3. INSERT with JOIN (or INSERT...SELECT)
 
-While not strictly an `INSERT` with a `JOIN` keyword in the same way as `UPDATE` and `DELETE`, the `INSERT...SELECT` statement often implicitly involves joins in its `SELECT` part. This is used to insert data into a table by selecting it from one or more other tables, potentially combining and transforming data using joins.
+While not strictly an `INSERT` [[Insert Into]] with a `JOIN` keyword in the same way as `UPDATE` and `DELETE`, the `INSERT...SELECT` statement often implicitly involves joins in its `SELECT` part. This is used to insert data into a table by selecting it from one or more other tables, potentially combining and transforming data using joins.
 
 **Purpose:** To populate a new table or add rows to an existing table by querying data from other tables.
-
+[[Insert Based On Select]]
 **Syntax:**
 ```sql
 INSERT INTO TargetTable (Column1, Column2, ...)
@@ -176,18 +176,18 @@ WHERE
 ### Important Considerations and Best Practices
 
 *   **Always use `BEGIN TRAN` and `ROLLBACK TRAN` (or `COMMIT TRAN`)**: When performing `UPDATE` or `DELETE` operations, especially with joins, it's a critical best practice to wrap your statements in a transaction. This allows you to test the impact of your query and revert changes if they are not as expected.
-    ```sql
-    BEGIN TRAN;
+```sql
+BEGIN TRAN;
 
-    -- Your UPDATE or DELETE statement here
+-- Your UPDATE or DELETE statement here
 
-    -- To see the effect without committing:
-    SELECT * FROM Employees; -- Or whatever table you modified
+-- To see the effect without committing:
+SELECT * FROM Employees; -- Or whatever table you modified
 
-    ROLLBACK TRAN; -- To undo the changes
-    -- OR
-    -- COMMIT TRAN; -- To save the changes permanently
-    ```
+ROLLBACK TRAN; -- To undo the changes
+-- OR
+-- COMMIT TRAN; -- To save the changes permanently
+```
 *   **Test on a Development Environment**: Never run complex DML statements directly on a production database without thorough testing in a development or staging environment.
 *   **Understand the Join Type**: Just as with `SELECT` statements, the type of join (`INNER`, `LEFT`, `RIGHT`) you use in `UPDATE` or `DELETE` can significantly alter which rows are affected. An `INNER JOIN` is generally safer as it only affects rows with matches in both tables.
 *   **Performance**: For very large tables, ensure that appropriate indexes are in place on the join columns (`DepartmentID` in our examples) to optimize performance.
