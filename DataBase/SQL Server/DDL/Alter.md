@@ -1,6 +1,6 @@
 ### The `ALTER` Statement: Evolving Your Database Schema
 
-The `ALTER` statement is a DDL command used to change the structure of an existing database object. While it can be applied to various objects like databases, views, stored procedures, functions, and indexes, its most common and versatile application is with tables.
+The `ALTER` statement is a DDL command used to change the structure of an existing database object. While it can be applied to various objects like databases, views [[T-SQL Standard View]], stored procedures [[T-SQL User-defined Procedure]], functions [[Scaler Function]], and indexes [[T-SQL Non-Clustered Index]], its most common and versatile application is with tables.
 
 The ability to `ALTER` objects is crucial because database schemas are rarely static. Business needs evolve, data requirements change, and optimizations become necessary. `ALTER` provides the flexibility to make these modifications gracefully, often without significant downtime or data loss.
 
@@ -8,7 +8,7 @@ The ability to `ALTER` objects is crucial because database schemas are rarely st
 
 ### 1. `ALTER TABLE`: Modifying Table Structures
 
-`ALTER TABLE` is by far the most common usage of the `ALTER` statement. It allows you to add, modify, or drop columns, and manage constraints on an existing table.
+`ALTER TABLE` is by far the most common usage of the `ALTER` statement. It allows you to add, modify, or drop[[Drop]] columns, and manage constraints on an existing table.
 
 #### 1.1. Adding a New Column
 
@@ -189,7 +189,7 @@ DROP CONSTRAINT PK__Students__3214EC27A9B0C1D0; -- (Note: SQL Server often auto-
 
 #### 1.6. Renaming a Table
 
-In SQL Server, renaming a table is typically done using the system stored procedure `sp_rename`. While not strictly an `ALTER TABLE` command, it's a common schema modification.
+In SQL Server, renaming a table is typically done using the system stored procedure [[T-SQL Built-in Stored Procedure]] `sp_rename`. While not strictly an `ALTER TABLE` command, it's a common schema modification.
 
 **Syntax**:
 
@@ -226,34 +226,34 @@ EXEC sp_rename 'UniversityStudents.FirstName', 'StudentFirstName', 'COLUMN';
 While `ALTER TABLE` is the most common, the `ALTER` keyword is used across various DDL operations to modify other database objects.
 
 *   **`ALTER DATABASE`**: Used to modify database properties, such as adding or removing data files, changing recovery models, or setting database options.
-    ```sql
-    ALTER DATABASE MyDatabase
-    SET RECOVERY FULL;
-    ```
+```sql
+ALTER DATABASE MyDatabase
+SET RECOVERY FULL;
+```
 *   **`ALTER VIEW`**: Used to modify the definition of an existing view.
-    ```sql
-    ALTER VIEW ActiveStudentsView
-    AS
-    SELECT StudentID, StudentFirstName, LastName, Major
-    FROM UniversityStudents
-    WHERE IsActive = 1;
-    ```
+```sql
+ALTER VIEW ActiveStudentsView
+AS
+SELECT StudentID, StudentFirstName, LastName, Major
+FROM UniversityStudents
+WHERE IsActive = 1;
+```
 *   **`ALTER PROCEDURE` / `ALTER FUNCTION`**: Used to modify the definition of an existing stored procedure or user-defined function.
-    ```sql
-    ALTER PROCEDURE GetStudentDetails (@StudentID INT)
-    AS
-    BEGIN
-        SELECT StudentFirstName, LastName, Major FROM UniversityStudents WHERE StudentID = @StudentID;
-    END;
-    ```
+```sql
+ALTER PROCEDURE GetStudentDetails (@StudentID INT)
+AS
+BEGIN
+	SELECT StudentFirstName, LastName, Major FROM UniversityStudents WHERE StudentID = @StudentID;
+END;
+```
 *   **`ALTER INDEX`**: Used to rebuild, reorganize, or disable indexes, or change index properties.
-    ```sql
-    ALTER INDEX PK_UniversityStudents ON UniversityStudents REBUILD;
-    ```
+```sql
+ALTER INDEX PK_UniversityStudents ON UniversityStudents REBUILD;
+```
 *   **`ALTER SCHEMA`**: Used to transfer securables (like tables, views, procedures) between schemas.
-    ```sql
-    ALTER SCHEMA NewSchema TRANSFER OldSchema.MyTable;
-    ```
+```sql
+ALTER SCHEMA NewSchema TRANSFER OldSchema.MyTable;
+```
 
 ---
 
