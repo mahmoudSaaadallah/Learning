@@ -338,7 +338,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 935.5
+    "width": 935.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -354,15 +355,16 @@
       "graph:Open graph view": false
     }
   },
-  "active": "3c856724c5fbd55d",
+  "active": "17101cbd9576a650",
   "lastOpenFiles": [
+    "GIT/Git Pro.md",
+    "DataBase/SQL Server/Advanced Queries.md",
+    "DataBase/SQL Server/DQL/T-SQL OFFSET-FETCH.md",
+    "GIT/git-cheat-sheet-education.pdf",
     "DataBase/SQL Server/DQL/Select.md",
     "DataBase/SQL Server/SQL Server Tutorial.md",
-    "DataBase/SQL Server/DQL/T-SQL OFFSET-FETCH.md",
     "DataBase/SQL Server/DML/Insert Based On Select.md",
-    "DataBase/SQL Server/Advanced Queries.md",
     "DataBase/SQL Server/DML/More about Joins.md",
-    "GIT/Git Pro.md",
     "DataBase/SQL Server/DML/Joins.md",
     "DataBase/SQL Server/DML/Delete.md",
     "DataBase/SQL Server/DML/Update.md",
@@ -383,9 +385,7 @@
     "T-SQL View.md",
     "DataBase/SQL Server/T-SQL/IF Statement.md",
     "DataBase/SQL Server/Functions/IIF().md",
-    "DataBase/SQL Server/T-SQL/T-SQL Trigger.md",
     "copilot/system-prompts",
-    "GIT/git-cheat-sheet-education.pdf",
     "Pasted image 20260119135407.png",
     "Images/Pasted image 20260117172253.png",
     "DataBase/SQL Server/T-SQL",
