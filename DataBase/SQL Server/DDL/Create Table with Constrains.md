@@ -1,6 +1,6 @@
 ### The Essence of `CREATE TABLE`
 
-At its core, the `CREATE TABLE` statement is a Data Definition Language (DDL) command used to define a new table in a database. It specifies the table's name, its columns, and the data type for each column. However, a table without constraints is like a house without a foundation – it might stand for a bit, but it's prone to collapse under pressure.
+At its core, the `CREATE TABLE` statement is a Data Definition Language (DDL) command used to define a new table in a database. It specifies the table's name, its columns, and the data type for each column. However, a _table without constraints is like a house without a foundation_ – it might stand for a bit, but it's prone to collapse under pressure.
 
 ### The Power of Constraints
 
@@ -79,6 +79,39 @@ CREATE TABLE OrderDetails (
 ```
 
 In `Products`, `ProductID` uniquely identifies each product. In `OrderDetails`, the combination of `OrderID` and `ProductID` uniquely identifies each line item within an order.
+
+**What is the difference between Unique and Primary key?
+How would you decide whether to use a Primary Key constraint versus a Unique constraint?**
+
+The decision between using a `PRIMARY KEY` constraint and a `UNIQUE` constraint depends on the role the column(s) play in your table and the specific data integrity rules you need to enforce.
+### Key Differences
+
+| Feature                   | `PRIMARY KEY`                                                                                                                                   | `UNIQUE` Constraint                                                                                                                       |
+| :------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
+| **Purpose**               | Uniquely identifies each record in a table; the main identifier.                                                                                | Ensures all values in a column (or group of columns) are distinct.                                                                        |
+| **Null Values**           | Cannot contain `NULL` values (implicitly `NOT NULL`).                                                                                           | Can contain `NULL` values (unless explicitly defined as `NOT NULL`).                                                                      |
+| **Number per Table**      | Only one `PRIMARY KEY` per table.                                                                                                               | A table can have multiple `UNIQUE` constraints.                                                                                           |
+| **Referential Integrity** | Often referenced by `FOREIGN KEY` constraints in other tables to establish relationships.                                                       | Can be referenced by `FOREIGN KEY` constraints, but less commonly used as the primary target for relationships compared to `PRIMARY KEY`. |
+| **Index**                 | Automatically creates a clustered index (by default in SQL Server), which dictates the physical storage order of data.[[T-SQL Clustered Index]] | Automatically creates a non-clustered index (by default in SQL Server).[[T-SQL Non-Clustered Index]]                                      |
+
+### How to Decide
+
+1.  **Identify the Main Identifier**:
+    *   If a column (or a combination of columns) serves as the **primary, stable, and unchanging identifier** for each record in the table, and it will be used to link this table to other tables (via `FOREIGN KEY`s), then it should be the `PRIMARY KEY`.
+    *   **Example**: `StudentID` in a `Students` table, `ProductID` in a `Products` table.
+
+2.  **Ensure Essential Uniqueness**:
+    *   If a column must contain unique values but is **not the main identifier** of the record, use a `UNIQUE` constraint. These are often alternate keys or important attributes that must be distinct.
+    *   **Example**: An `Email` address or `Username` in a `Users` table. While unique, the `UserID` might be the `PRIMARY KEY` because it's a simpler, often auto-incrementing, and more stable identifier for internal system use.
+
+3.  **Consider Nullability**:
+    *   If the identifier **cannot ever be `NULL`**, `PRIMARY KEY` is suitable as it implicitly enforces `NOT NULL`.
+    *   If the unique attribute **might occasionally be `NULL`** (e.g., a user might not provide an email initially, but if they do, it must be unique), then a `UNIQUE` constraint (without `NOT NULL`) is appropriate. Note that most database systems allow only one `NULL` value in a `UNIQUE` column.
+
+4.  **Multiple Unique Identifiers**:
+    *   If you have several columns that need to be unique across all records (e.g., `Username` and `Email` in a `Users` table), you would designate one as the `PRIMARY KEY` (e.g., `UserID`) and the others as `UNIQUE` constraints.
+
+In summary, use a `PRIMARY KEY` for the single, definitive identifier of each row that cannot be null and is crucial for table relationships. Use `UNIQUE` constraints for any other columns that must hold distinct values but are not the primary means of identifying a record.
 
 ---
 
