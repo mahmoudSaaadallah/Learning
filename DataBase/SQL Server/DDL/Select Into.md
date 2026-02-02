@@ -5,7 +5,7 @@ The `SELECT INTO` statement in SQL Server is a powerful and concise way to creat
 **Purpose:**
 *   To quickly create a backup or archive of a table or a subset of its data.
 *   To create a temporary table for complex query processing, especially when intermediate results need to be stored and indexed.
-*   To denormalize data for reporting purposes.
+*   To de-normalize data for reporting purposes.
 *   To create a new table with a specific structure and populate it with data from an existing source.
 
 **Basic Syntax:**
@@ -85,7 +85,7 @@ WHERE DepartmentID = 1;
 **Explanation:** This creates `HR_Employees` containing only the specified columns for employees whose `DepartmentID` is 1 (Human Resources).
 
 #### 4. Using Joins with `SELECT INTO`
-
+[[Joins]]
 This is where `SELECT INTO` becomes particularly powerful, allowing you to create a new table based on combined data from multiple sources.
 
 **Example:** Create a table of employees with their full department names.
@@ -108,7 +108,7 @@ WHERE
 **Explanation:** A new table `EmployeeDetailsWithDepartment` is created. It includes `EmployeeID`, `FirstName`, `LastName`, `DepartmentName`, and `Salary` for employees who earn more than $70,000 and have a matching department.
 
 #### 5. Using Aggregate Functions with `SELECT INTO`
-
+[[Aggregate Functions]]
 You can also create summary tables using `SELECT INTO` with `GROUP BY` and aggregate functions.
 
 **Example:** Create a table summarizing the average salary per department.
@@ -145,7 +145,7 @@ where 1 = 2
 1.  **New Table Creation:** `SELECT INTO` *always* creates a new table. If a table with `NewTableName` already exists, the statement will fail with an error. If you want to insert into an existing table, you should use `INSERT INTO ... SELECT ...`.
 2.  **Schema Copying:**
     *   `SELECT INTO` copies the column names, data types, and nullability from the source query.
-    *   It **does not** copy primary keys, foreign keys, indexes, default constraints, or triggers from the source table(s). You would need to add these manually after the table is created.
+       It **does not** copy **primary keys, foreign keys, indexes, default constraints, or triggers from the source table(s)**. You would need to add these manually after the table is created.
     *   `IDENTITY` properties *are* copied if the source column has one.
 3.  **Performance:** `SELECT INTO` is generally very efficient for creating new tables and populating them, often performing better than `CREATE TABLE` followed by `INSERT INTO` for large datasets, as it's a single, optimized operation.
 4.  **Transaction Logging:** `SELECT INTO` operations are minimally logged in the full recovery model if the database is in `SIMPLE` or `BULK_LOGGED` recovery models, which can significantly improve performance for very large data transfers.
