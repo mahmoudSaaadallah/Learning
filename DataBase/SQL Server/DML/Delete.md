@@ -23,7 +23,7 @@ WHERE [condition];
     Every `DELETE` operation is fully logged in the transaction log. This means it can be rolled back if executed within an explicit transaction (`BEGIN TRAN...ROLLBACK TRAN`) and is also crucial for point-in-time recovery of your database.
 
 3.  **Triggers and Constraints:**
-    -   **Triggers:** `DELETE` statements fire `AFTER DELETE` or `INSTEAD OF DELETE` triggers defined on the table. This allows for custom logic to be executed before or after the deletion, such as auditing, cascading deletions to other tables, or preventing the deletion entirely.
+    -   **Triggers:** `DELETE` [[T-SQL Trigger]] statements fire `AFTER DELETE` or `INSTEAD OF DELETE` triggers defined on the table. This allows for custom logic to be executed before or after the deletion, such as auditing, cascading deletions to other tables, or preventing the deletion entirely.
     -   **Foreign Key Constraints:** If the table being deleted from is referenced by a foreign key in another table, the `DELETE` operation will respect the foreign key's `ON DELETE` action:
         -   `NO ACTION` (default): Prevents deletion if referencing rows exist.
         -   `CASCADE`: Deletes referencing rows in the child table.
@@ -81,7 +81,7 @@ WHERE EmployeeID NOT IN (SELECT DISTINCT EmployeeID FROM Sales);
 **6. Deleting Rows Using a JOIN (SQL Server Specific - `FROM` clause in `DELETE`):**
 
 This is a powerful SQL Server extension that allows you to join the target table with other tables to define your deletion criteria. Suppose we want to delete employees who work in departments located in 'New York'.
-
+[[Joins]]
 ```sql
 -- Assume a 'Departments' table with DepartmentID, DepartmentName, Location
 DELETE E
@@ -137,6 +137,7 @@ This allows you to verify the impact of your deletion and revert it if it's not 
 
 The `DELETE` statement is an indispensable tool in a database developer's arsenal. Mastering its nuances, understanding its impact on data integrity and performance, and employing best practices are hallmarks of a truly skilled professional. Always approach data modification with respect and caution!
 
+[[Drop]] vs [[Delete]] vs [[Truncate]].
 
 | Feature             | `DELETE`                              | `TRUNCATE TABLE`                             | `DROP TABLE`                                |
 | :------------------ | :------------------------------------ | :------------------------------------------- | :------------------------------------------ |
