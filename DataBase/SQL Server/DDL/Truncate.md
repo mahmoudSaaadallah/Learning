@@ -15,13 +15,13 @@ TRUNCATE TABLE table_name;
 #### Key Concepts and Distinctions
 
 1.  **Minimal Logging (Logical Deallocation):**
-    Unlike `DELETE`, which logs each individual row deletion, `TRUNCATE TABLE` deallocates the data pages used by the table. It logs the deallocation of these pages, not the individual rows. This minimal logging is why it's significantly faster and uses less transaction log space, especially for large tables.
+    Unlike `DELETE` [[Delete]], which logs each individual row deletion, `TRUNCATE TABLE` deallocates the data pages used by the table. It logs the deallocation of these pages, not the individual rows. This minimal logging is why it's significantly faster and uses less transaction log space, especially for large tables.
 
 2.  **Non-Rollbackable (Practically):**
-    While `TRUNCATE TABLE` operations *are* logged in the transaction log (specifically, the page deallocations), for practical purposes, it is generally considered non-rollbackable in the same way a `DELETE` statement within an explicit `BEGIN TRAN...ROLLBACK TRAN` block is. If you execute `TRUNCATE TABLE`, you typically cannot simply `ROLLBACK TRAN` to recover the data. Recovery usually requires a point-in-time restore of the database from a backup.
+    While `TRUNCATE TABLE` operations *are* logged in the transaction log (specifically, the page deallocations), for practical purposes, it is generally considered non-roll backable in the same way a `DELETE` statement within an explicit `BEGIN TRAN...ROLLBACK TRAN` block is. If you execute `TRUNCATE TABLE`, you typically cannot simply `ROLLBACK TRAN` to recover the data. Recovery usually requires a point-in-time restore of the database from a backup.
 
 3.  **No Trigger Firing:**
-    Since `TRUNCATE TABLE` is a DDL operation (modifying the table's structure by deallocating pages, rather than manipulating individual rows), it does **not** fire any `DELETE` triggers defined on the table. This is a crucial difference if your application relies on triggers for auditing or cascading actions.
+    Since `TRUNCATE TABLE` is a DDL operation (modifying the table's structure by deallocating pages, rather than manipulating individual rows), it does **not** fire any `DELETE` triggers [[T-SQL Trigger]] defined on the table. This is a crucial difference if your application relies on triggers for auditing or cascading actions.
 
 4.  **Identity Column Reset:**
     A significant feature of `TRUNCATE TABLE` is that it resets the identity column (if one exists) back to its seed value (usually 1). This is often a desired behavior when you want to completely clear and "reset" a table. `DELETE` does not do this.
@@ -77,7 +77,7 @@ TRUNCATE TABLE Departments;
 ```
 
 #### Comparison Revisited: `DELETE` vs. `TRUNCATE TABLE` vs. `DROP TABLE`
-
+[[Drop]] vs [[Delete]] vs [[Truncate]].
 To reinforce the distinctions, here's our comparison table:
 
 | Feature             | `DELETE`                              | `TRUNCATE TABLE`                             | `DROP TABLE`                                |
