@@ -17,6 +17,7 @@
 
 ## DQL
 - Select [[Select]].
+- OFFSET-FETCH [[T-SQL OFFSET-FETCH]]
 - Like [[Like]].
 - Union Family [[Union Family]].
 - Intersection [[Intersection]].

@@ -175,7 +175,7 @@ WHERE DepartmentID IN (10, 20, 40);
 ```
 
 **e. `LIKE` Operator:**
-
+[[Like]]
 Used for pattern matching with wildcards (`%` for any sequence of characters, `_` for any single character).
 
 **Employees whose first name starts with 'J':**
@@ -257,7 +257,7 @@ ORDER BY DepartmentID ASC, Salary DESC;
 ```
 
 #### 5. `TOP` Clause (SQL Server Specific) / `OFFSET-FETCH` (Standard SQL)
-
+[[Top]]
 Used to limit the number of rows returned.
 
 **a. `TOP` (Absolute Number):**
@@ -281,7 +281,7 @@ ORDER BY Salary DESC;
 ```
 
 **c. `OFFSET-FETCH` (For Pagination - SQL Server 2012+):**
-
+[[T-SQL OFFSET-FETCH]]
 **Retrieve employees for the second page, with 10 employees per page (skipping the first 10, taking the next 10):**
 
 ```sql
@@ -293,7 +293,7 @@ FETCH NEXT 10 ROWS ONLY;
 ```
 
 #### 6. Aggregate Functions
-
+[[Aggregate Functions]]
 Used to perform calculations on a set of rows and return a single summary value. Common functions include `COUNT()`, `SUM()`, `AVG()`, `MIN()`, `MAX()`.
 
 **Total number of employees:**
@@ -375,7 +375,7 @@ HAVING AVG(Salary) > 75000.00;
 ```
 
 #### 9. `JOIN` Operations
-
+[[Joins]]
 Used to combine rows from two or more tables based on a related column between them.
 
 **a. `INNER JOIN` (Most Common):** Returns rows when there is a match in both tables.
@@ -458,7 +458,7 @@ WHERE DepartmentID IN (SELECT DepartmentID FROM Projects WHERE Budget > 1000000.
 ```
 
 #### 11. `UNION` and `UNION ALL`
-
+[[Union Family]]
 Used to combine the result-set of two or more `SELECT` statements.
 -   `UNION` removes duplicate rows.
 -   `UNION ALL` includes duplicate rows.
