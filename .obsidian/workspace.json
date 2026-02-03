@@ -92,17 +92,17 @@
             }
           },
           {
-            "id": "63e23d4d3dd6ac8e",
+            "id": "4d341f9db5b6c1ae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DataBase/SQL Server/DQL/Union Family.md",
+                "file": "DataBase/SQL Server/DQL/Top.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Union Family"
+              "title": "Top"
             }
           },
           {
@@ -341,12 +341,15 @@
       "graph:Open graph view": false
     }
   },
-  "active": "63e23d4d3dd6ac8e",
+  "active": "4d341f9db5b6c1ae",
   "lastOpenFiles": [
-    "DataBase/SQL Server/Advanced Queries.md",
-    "DataBase/SQL Server/Functions/T-SQL Casting.md",
-    "DataBase/SQL Server/DQL/Union Family.md",
     "DataBase/SQL Server/SQL Server Tutorial.md",
+    "DataBase/SQL Server/DQL/Top.md",
+    "DataBase/SQL Server/Advanced Queries.md",
+    "DataBase/SQL Server/DQL/Except.md",
+    "DataBase/SQL Server/DQL/Intersection.md",
+    "DataBase/SQL Server/DQL/Union Family.md",
+    "DataBase/SQL Server/Functions/T-SQL Casting.md",
     "DataBase/SQL Server/DQL/Like.md",
     "DataBase/SQL Server/DQL/T-SQL OFFSET-FETCH.md",
     "GIT/Git Pro.md",
@@ -369,9 +372,6 @@
     "Pasted image 20260131132414.png",
     "Pasted image 20260131132323.png",
     "DataBase/SQL Server/Functions/Aggregate Functions.md",
-    "DataBase/SQL Server/![[Pasted.md",
-    "DataBase/SQL Server/T-SQL/T-SQL User-defined Procedure.md",
-    "T-SQL View.md",
     "copilot/system-prompts",
     "Pasted image 20260119135407.png",
     "Images/Pasted image 20260117172253.png",

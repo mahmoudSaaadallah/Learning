@@ -119,7 +119,7 @@ SELECT FirstName, LastName, JobTitle
 FROM Contractors
 ORDER BY LastName, FirstName; -- Applies to the final result
 ```
-1.  **Alternative Implementations:** You can often achieve the same result as `EXCEPT` using `LEFT JOIN` combined with a `WHERE` clause that checks for `NULL` values in the right table.
+1.  **Alternative Implementations:** You can often achieve the same result as `EXCEPT` using `LEFT JOIN` [[Joins]] combined with a `WHERE` clause that checks for `NULL` values in the right table.
 ```sql
 -- Equivalent using LEFT JOIN (more verbose)
 SELECT E.FirstName, E.LastName, E.JobTitle

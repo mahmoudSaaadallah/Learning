@@ -95,7 +95,7 @@ SELECT FirstName, LastName, JobTitle
 FROM Contractors
 ORDER BY LastName, FirstName; -- Applies to the entire common result
 ```
-1.  **Alternative Implementations:** While `INTERSECT` is concise, you can often achieve the same result using `INNER JOIN` combined with a `WHERE` clause that checks for equality across all selected columns. However, `INTERSECT` is generally more readable and often optimized well by the query optimizer for this specific task.
+1.  **Alternative Implementations:** While `INTERSECT` is concise, you can often achieve the same result using `INNER JOIN` [[Joins]] combined with a `WHERE` clause that checks for equality across all selected columns. However, `INTERSECT` is generally more readable and often optimized well by the query optimizer for this specific task.
 ```sql
 -- Equivalent using INNER JOIN (more verbose)
 SELECT E.FirstName, E.LastName, E.JobTitle

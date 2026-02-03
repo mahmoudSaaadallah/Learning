@@ -180,12 +180,12 @@ order by newid()
 
 1.  **`ORDER BY` is Mandatory for Meaningful Results:** I cannot stress this enough. Always use `ORDER BY` with `TOP` unless you genuinely need an arbitrary subset of data (which is rare).
 2.  **Performance:**
-    *   `TOP` can improve performance by reducing the number of rows processed and returned, especially if the `ORDER BY` clause can be satisfied by an existing index.
+    *   `TOP` can improve performance by reducing the number of rows processed and returned, especially if the `ORDER BY` clause can be satisfied by an existing index [[T-SQL Non-Clustered Index]].
     *   However, if the `ORDER BY` clause requires a full sort of a very large dataset before `TOP` can be applied, it can still be resource-intensive.
     *   `WITH TIES` can sometimes lead to more rows being returned than initially expected, which might have a slight performance impact if the ties are extensive.
 3.  **Alternatives for Pagination/Ranking:**
-    *   For more advanced pagination (e.g., "get rows 11-20"), SQL Server 2012 introduced `OFFSET-FETCH`, which is generally preferred over complex `TOP` subqueries.
-    *   For complex ranking scenarios (e.g., rank employees within each department), **Window Functions** like `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()`, and `NTILE()` are more powerful and flexible.
+    *   For more advanced pagination (e.g., "get rows 11-20"), SQL Server 2012 introduced `OFFSET-FETCH` [[T-SQL OFFSET-FETCH]], which is generally preferred over complex `TOP` subqueries.
+    *   For complex ranking scenarios (e.g., rank employees within each department), **Window Functions** like `ROW_NUMBER()` [[Row_Number()]], `RANK()` [[Rank()]], `DENSE_RANK()` [[Dense_Rank()]], and `NTILE()` are more powerful and flexible.
 4.  **`TOP` in DML Statements:** SQL Server also allows `TOP` in `INSERT`, `UPDATE`, and `DELETE` statements. This is a powerful feature but must be used with extreme caution, especially in `UPDATE` and `DELETE`, as it can lead to unintended data modifications if not precisely controlled with `ORDER BY`.
 ```sql
 -- Example: Delete the 2 oldest employees (use with extreme caution!)
