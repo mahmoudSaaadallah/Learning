@@ -97,6 +97,80 @@ The Buffer Pool plays the same crucial role as with clustered indexes:
 *   **Bookmark Lookups**: If a query cannot be covered by the index, the additional step of looking up data in the base table (bookmark lookup) can be expensive, especially for a large number of rows.
 *   **Fragmentation**: Non-clustered indexes can also suffer from logical and physical fragmentation, requiring periodic maintenance (rebuilds/reorganizes).
 
+---
+### Downsides of having too many indexes
+
+This is where people get burned.
+
+#### 1. Slower writes (INSERT, UPDATE, DELETE)
+
+Every index must be updated when data changes.
+
+So:
+
+- More indexes = slower inserts
+    
+- Updates that touch indexed columns get more expensive
+    
+- Deletes take longer
+    
+
+On write-heavy systems, too many indexes can seriously hurt performance.
+
+---
+
+#### 2. Increased storage and memory usage
+
+Indexes:
+
+- Take disk space
+    
+- Consume buffer cache memory
+    
+
+Unused or redundant indexes waste resources that could be used by useful ones.
+
+---
+
+#### 3. Slower maintenance
+
+Indexes need:
+
+- Rebuilding or reorganizing (fragmentation)
+    
+- Statistics updates
+    
+
+More indexes = longer maintenance windows.
+
+---
+
+#### 4. Query optimizer overhead
+
+SQL Server must consider available indexes when creating execution plans.  
+With too many similar indexes, plan compilation can become more complex and sometimes less optimal.
+
+---
+
+## The practical balance
+
+**Good indexing strategy:**
+
+- Index columns used in `WHERE`, `JOIN`, `ORDER BY`, `GROUP BY`
+    
+- Prefer **fewer, well-designed** indexes over many narrow ones
+    
+- Use `INCLUDE` columns to cover queries instead of adding new indexes
+    
+- Regularly identify and remove unused indexes
+    
+
+**Rule of thumb:**
+
+> Index for reads, but respect your writes.
+
+---
+
 ### Conclusion
 
 Non-clustered indexes are indispensable for optimizing query performance in SQL Server. They provide flexible and efficient access paths to your data without dictating its physical storage order. However, like any powerful tool, they come with trade-offs. A well-designed indexing strategy involves carefully selecting key columns, utilizing included columns for covering indexes, and understanding the impact on DML operations.
