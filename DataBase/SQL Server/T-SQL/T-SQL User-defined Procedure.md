@@ -93,12 +93,12 @@ CREATE TABLE Students (
     IsActive BIT DEFAULT 1
 );
 
-INSERT INTO Students (FirstName, LastName, IsActive) VALUES
-('Alice', 'Smith', 1),
-('Bob', 'Johnson', 1),
-('Charlie', 'Brown', 0),
-('Diana', 'Prince', 1);
-GO
+		INSERT INTO Students (FirstName, LastName, IsActive) VALUES
+		('Alice', 'Smith', 1),
+		('Bob', 'Johnson', 1),
+		('Charlie', 'Brown', 0),
+		('Diana', 'Prince', 1);
+		GO
 
 -- Our first simple procedure
 CREATE PROCEDURE GetActiveStudents
@@ -396,3 +396,46 @@ Let's briefly differentiate stored procedures from other T-SQL constructs:
 | **When NOT to use** | Simple ad-hoc queries, highly dynamic SQL, when a view/function is better suited. |
 
 Mastering user-defined stored procedures is a hallmark of a proficient T-SQL developer. They are indispensable for building efficient, secure, and maintainable database applications. Now, go forth and write some elegant database recipes!
+
+
+
+----
+### What is the difference between the Functions and Procedures?
+
+User-Defined Functions (UDFs) and Stored Procedures are both reusable blocks of T-SQL code, but they serve different primary purposes and have distinct characteristics:
+
+1.  **Purpose**:
+    *   **Stored Procedures**: Designed to perform actions or tasks. This often involves modifying data (INSERT, UPDATE, DELETE), executing complex business logic, or managing transactions. Think of them as mini-programs.
+    *   **User-Defined Functions**: Designed to compute and return a value. They can return either a single scalar value (Scalar Function) or a table (Table-Valued Function). They are primarily used to encapsulate logic that can be integrated *within* a query.
+
+2.  **Data Modification (DML/DDL)**:
+    *   **Stored Procedures**: Can perform Data Manipulation Language (DML) operations (INSERT, UPDATE, DELETE) and even Data Definition Language (DDL) operations (CREATE, ALTER, DROP).
+    *   **User-Defined Functions**: Generally *cannot* perform DML or DDL operations. Their primary role is to compute and return data without side effects on the database state. (Multi-statement Table-Valued Functions are a slight exception, but even they are not meant for direct DML on base tables).
+
+3.  **Return Value**:
+    *   **Stored Procedures**: Can optionally return an integer status code (0 for success, non-zero for error or specific status). They can also return data through `SELECT` statements or `OUTPUT` parameters.
+    *   **User-Defined Functions**: *Must* return a value. This can be a single scalar value (like an integer, string, date) or a table.
+
+4.  **Execution**:
+    *   **Stored Procedures**: Executed as standalone commands using `EXEC` or `EXECUTE`.
+    *   **User-Defined Functions**: Called *within* a SQL statement, similar to built-in functions. For example, you can use a scalar function in a `SELECT` list or `WHERE` clause, and a table-valued function in a `FROM` clause.
+
+5.  **Transaction Management and Error Handling**:
+    *   **Stored Procedures**: Can encapsulate transactions (`BEGIN TRANSACTION`, `COMMIT TRANSACTION`, `ROLLBACK TRANSACTION`) and have robust error handling with `TRY...CATCH` blocks.
+    *   **User-Defined Functions**: Do not support transaction management. While errors will propagate, they cannot use `TRY...CATCH` to manage transaction rollbacks within the function itself.
+
+6.  **Usage Context**:
+    *   **Stored Procedures**: Typically called by applications or other stored procedures to perform a specific task.
+    *   **User-Defined Functions**: Used directly within `SELECT`, `WHERE`, `HAVING`, or `FROM` clauses of other queries to derive values or result sets.
+
+Here's a quick summary table:
+
+| Feature             | User-Defined Stored Procedure                               | User-Defined Function                                       |
+| :------------------ | :---------------------------------------------------------- | :---------------------------------------------------------- |
+| **Primary Purpose** | Perform actions, execute business logic, modify data.       | Compute and return a value (scalar or table).               |
+| **DML/DDL**         | Yes                                                         | No (generally)                                              |
+| **Return Value**    | Optional integer status code, data via `SELECT` or `OUTPUT` parameters. | Must return a value (scalar or table).                      |
+| **Execution**       | `EXEC ProcedureName [parameters]` (standalone)              | Used *within* a query (e.g., `SELECT MyFunction(col)`).     |
+| **Transactions**    | Yes (full control)                                          | No                                                          |
+| **Error Handling**  | Yes (`TRY...CATCH`)                                         | Limited (errors propagate, no internal `TRY...CATCH` for transactions) |
+| **Can be used in**  | `EXEC` statement                                            | `SELECT`, `WHERE`, `HAVING`, `FROM` clauses                 |
