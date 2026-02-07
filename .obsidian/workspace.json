@@ -301,6 +301,8 @@
   },
   "active": "d91c3bf9ec16cd04",
   "lastOpenFiles": [
+    "copilot/copilot-conversations/hi@20260206_202714.md",
+    "Django/Widgets For Forms.md",
     "Django/Django Tutorial.md",
     "Django/Manual and Automatic Forms.md",
     "GIT/Git Pro.md",
@@ -326,8 +328,6 @@
     "linux/Bash Script/Function Exercise.md",
     "linux/Bash Script/For Loop.md",
     "linux/Bash Script/First Bash Script File(Introduction).md",
-    "linux/Bash Script/Exit Code.md",
-    "linux/Bash Script/Bash Variables.md",
     "linux/Bash Script",
     "linux",
     "copilot/system-prompts",
