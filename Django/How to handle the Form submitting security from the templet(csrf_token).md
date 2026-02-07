@@ -132,7 +132,7 @@ While `csrf_token` is essential for preventing CSRF, it's just one piece of a co
     *   **Why it's secure:** Client-side validation (JavaScript) can be easily bypassed by malicious users. Server-side validation ensures that data conforms to expected types, lengths, and formats, preventing common vulnerabilities like SQL injection, cross-site scripting (XSS), and buffer overflows.
     *   **Implementation:** Django Forms and Django REST Framework serializers provide robust validation mechanisms.
 
-	```python
+```python
 # forms.py
 from django import forms
 
@@ -146,7 +146,7 @@ class MySecureForm(forms.Form):
 		if not username.isalnum():
 			raise forms.ValidationError("Username must be alphanumeric.")
 		return username
-	```
+```
 
 
 3.  **Data Sanitization:**

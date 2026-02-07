@@ -4,7 +4,7 @@ At its core, a web form is how users interact with your application to submit da
  
 *   **Render HTML forms:** Automatically generate form fields based on your definitions.
 *   **Validate user input:** Ensure data meets specific criteria (e.g., email format, minimum length, numeric values) on the server-side.
-*   **Handle security:** Automatically include CSRF tokens to protect against Cross-Site Request Forgery.
+*   **Handle security:** Automatically include CSRF tokens to protect against Cross-Site Request Forgery. [[How to handle the Form submitting security from the templet(csrf_token)]]
 *   **Clean and normalize data:** Convert raw input into Python data types.
 *   **Interact with your database:** Especially with `ModelForms`, they simplify saving and updating model instances.
 
@@ -323,7 +323,7 @@ Create a `templates` folder inside `myapp`, and then another `myapp` folder insi
 **Explanation of `manual_inquiry_form.html`:**
 *   `{% csrf_token %}`: **Absolutely critical for security!** This Django template tag generates a hidden input field with a unique token, protecting your form against Cross-Site Request Forgery (CSRF) attacks.[[How to handle the Form submitting security from the templet(csrf_token)]].
 *   `{{ form.as_p }}`: A quick way to render all form fields, each wrapped in a `<p>` tag. Django also provides `{{ form.as_ul }}` (as list items) and `{{ form.as_table }}` (as table rows). For more control, you can render fields individually:
- ```html
+```html
 <label for="{{ form.your_name.id_for_label }}">{{ form.your_name.label }}</label>
 {{ form.your_name }}
 {% if form.your_name.help_text %}<span class="helptext">{{ form.your_name.help_text }}</span>{% endif %}

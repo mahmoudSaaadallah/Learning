@@ -1,5 +1,3 @@
-That's a great question about Django model fields, and it touches upon how we manage timestamps in our database records. Even though the [[Class Based View (Generic)]] note uses these in its `Product` model, let's clarify their exact behavior.
-
 In Django's `DateTimeField`, `auto_now_add` and `auto_now` are two very useful parameters, but they serve distinct purposes:
 
 ### `auto_now_add=True`
@@ -64,12 +62,12 @@ print(product.updated_at) # Will show the *new* current datetime (when it was sa
 
 ### Key Differences Summarized:
 
-| Feature          | `auto_now_add=True`                               | `auto_now=True`                                   |
-| :--------------- | :------------------------------------------------ | :------------------------------------------------ |
-| **When Set**     | Only on **creation** of the object.               | On **creation** AND **every subsequent save**.    |
-| **Mutability**   | Value is **immutable** after initial creation.    | Value **changes** with every save operation.      |
-| **Common Use**   | `created_at`, `date_joined`, `first_seen`.        | `updated_at`, `last_modified`, `last_login`.      |
-| **Manual Edit**  | Cannot be manually set or changed via ORM.        | Cannot be manually set or changed via ORM.        |
+| Feature         | `auto_now_add=True`                            | `auto_now=True`                                |
+| :-------------- | :--------------------------------------------- | :--------------------------------------------- |
+| **When Set**    | Only on **creation** of the object.            | On **creation** AND **every subsequent save**. |
+| **Mutability**  | Value is **immutable** after initial creation. | Value **changes** with every save operation.   |
+| **Common Use**  | `created_at`, `date_joined`, `first_seen`.     | `updated_at`, `last_modified`, `last_login`.   |
+| **Manual Edit** | Cannot be manually set or changed via ORM.     | Cannot be manually set or changed via ORM.     |
 
 In the `Product` model example from the [[Class Based View (Generic)]] note, you can see both in action:
 
