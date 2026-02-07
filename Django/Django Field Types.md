@@ -1,11 +1,11 @@
 ### The Essence of Django Field Types
 
-In Django, models are the single, definitive source of information about your data. They encapsulate the structure of your database tables, and the attributes within these models are defined using **Django Field Types**. Think of them as the blueprints for your database columns. Each field type maps to a specific data type in your underlying database (e.g., PostgreSQL, MySQL, SQLite) and also provides a rich set of Python-level validations, widgets for forms, and serialization behaviors.
+In Django, models are the single, definitive source of information about your data. They encapsulate the structure of your database tables, and the attributes within these models are defined using **Django Field Types**. Think of them as the blueprints for your database columns. Each field type maps to a specific data type in your underlying database (e.g., PostgreSQL, MySQL, SQLite) and also provides a rich set of Python-level validations, widgets for forms [[Widgets For Forms]], and serialization [[Serializer]] behaviors.
 
 Understanding and correctly utilizing these field types is paramount for:
 1.  **Database Schema Definition**: They dictate how your tables are created and altered.
 2.  **Data Integrity**: Built-in validation ensures data conforms to expected types and constraints.
-3.  **Form Handling**: Django's `ModelForm` automatically generates forms based on your model fields.
+3.  **Form Handling**: Django's `ModelForm` [[Django Forms]] automatically generates forms based on your model fields.
 4.  **API Development**: Fields influence how data is serialized and deserialized in REST APIs.
 
 Let's dissect the most common and crucial field types, categorized for clarity.
@@ -67,7 +67,7 @@ class Task(models.Model):
 5.  **`DateField`, `DateTimeField`, `TimeField`**
     -   **Purpose**: For storing dates, dates and times, and times respectively.
     -   **Database Mapping**: `DATE`, `DATETIME`/`TIMESTAMP`, `TIME`.
-    -   **Key Arguments**:
+    -   **Key Arguments**: [[DateTimeField]]
         -   `auto_now_add=True`: Automatically sets the field to the current date/time when the object is first created. Useful for creation timestamps.
         -   `auto_now=True`: Automatically updates the field to the current date/time every time the object is saved. Useful for last-modified timestamps.
 -   **Example**:
@@ -91,7 +91,7 @@ class Event(models.Model):
 class Transaction(models.Model):
 	amount = models.DecimalField(max_digits=10, decimal_places=2) # e.g., 12345678.99
 	currency = models.CharField(max_length=3, default='USD')
-        ```
+```
 
 7.  **`EmailField`**
     -   **Purpose**: A `CharField` that validates the input as an email address.

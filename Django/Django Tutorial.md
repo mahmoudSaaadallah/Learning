@@ -1,6 +1,7 @@
 - How to handle the From submitting security from the templet(csrf_token)[[How to handle the Form submitting security from the templet(csrf_token)]].
 - Manual and Automatic Forms [[Manual and Automatic Forms]].
 - Django Field Types [[Django Field Types]].
+	- Widgets For Forms [[Widgets For Forms]].
 - DateTimeField [[DateTimeField]].
 - Circular Dependency [[Circular Dependency]]. 
 - Generic Relationship [[Generic Relationship]].
