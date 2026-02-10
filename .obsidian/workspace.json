@@ -144,21 +144,9 @@
               "icon": "lucide-file",
               "title": "Git شخبط"
             }
-          },
-          {
-            "id": "9facb5455b28c1a2",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "GIT/git-cheat-sheet-education.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "git-cheat-sheet-education"
-            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -339,17 +327,28 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8e8ce7395e25f30f",
+  "active": "08f277aa1f4c1df9",
   "lastOpenFiles": [
+    "GIT/Git شخبط.md",
+    "Liner Algebra/Tutorial.md",
+    "Liner Algebra/The Absolute Basics Vectors, Matrices, and Systems of Equations.md",
+    "Liner Algebra/Gaussian Elimination.md",
+    "Liner Algebra/Plan.md",
+    "copilot/copilot-conversations/you_are_Gilbert_Strang_from_MIT_and_you_will_teach@20260211_002827.md",
+    "copilot/copilot-conversations/If_I_you_are_Gilbert_Strang_from_MIT_and_you@20260211_002202.md",
+    "DataBase/SQL Server/DML/Joins.md",
+    "Liner Algebra",
+    "DataBase/SQL Server/SQL Server Tutorial.md",
+    "DataBase/SQL Server/DQL/Union Family.md",
+    "DataBase/SQL Server/DQL/Except.md",
+    "GIT/git-cheat-sheet-education.pdf",
+    "GIT/Git Pro.md",
     "Django/Django Field Types.md",
     "Django/Django Tutorial.md",
     "Django/DateTimeField.md",
     "Django/Widgets For Forms.md",
     "copilot/copilot-conversations/hi@20260206_202714.md",
-    "GIT/Git شخبط.md",
-    "GIT/Git Pro.md",
     "DataBase/SQL Server/T-SQL/T-SQL User-defined Procedure.md",
-    "DataBase/SQL Server/SQL Server Tutorial.md",
     "Django/Django Rest Frame work/Djoser.md",
     "copilot/copilot-conversations/hi@20260204_135415.md",
     "copilot/copilot-conversations",
@@ -359,15 +358,6 @@
     "linux/Bash Script/What is Bash Script and why we need to learn it.md",
     "linux/Bash Script/Types Of Conditions In Bash.md",
     "linux/Bash Script/Switch Case.md",
-    "linux/Bash Script/If Condition.md",
-    "linux/Bash Script/Function.md",
-    "linux/Bash Script/If Condition Examples.md",
-    "linux/Bash Script/Function Exercise.md",
-    "linux/Bash Script/For Loop.md",
-    "linux/Bash Script/First Bash Script File(Introduction).md",
-    "linux/Bash Script/Exit Code.md",
-    "linux/Bash Script/Bash Variables.md",
-    "linux/Bash Script/Bash Script Exercise.md",
     "linux/Bash Script",
     "linux",
     "copilot/system-prompts",
@@ -375,8 +365,6 @@
     "copilot",
     "Python",
     "JavaScript-Learning-main/JS OOP",
-    "JavaScript-Learning-main/DOM",
-    "JavaScript-Learning-main/BOM",
     "Images/Pasted image 20260117172253.png",
     "Images/Pasted image 20260115125114.png",
     "Images/Pasted image 20251121112827.png",
