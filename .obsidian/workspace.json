@@ -106,18 +106,6 @@
             }
           },
           {
-            "id": "bcf19c03897e1b66",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.7"
-            }
-          },
-          {
             "id": "8e8ce7395e25f30f",
             "type": "leaf",
             "state": {
@@ -146,7 +134,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -203,8 +191,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0876a6af07bdcd18",
@@ -327,17 +314,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "08f277aa1f4c1df9",
+  "active": "8e8ce7395e25f30f",
   "lastOpenFiles": [
-    "GIT/Git شخبط.md",
+    "DataBase/SQL Server/DDL/Drop.md",
     "Liner Algebra/Tutorial.md",
+    "Liner Algebra/Plan.md",
     "Liner Algebra/The Absolute Basics Vectors, Matrices, and Systems of Equations.md",
     "Liner Algebra/Gaussian Elimination.md",
-    "Liner Algebra/Plan.md",
+    "Liner Algebra",
+    "GIT/Git شخبط.md",
     "copilot/copilot-conversations/you_are_Gilbert_Strang_from_MIT_and_you_will_teach@20260211_002827.md",
     "copilot/copilot-conversations/If_I_you_are_Gilbert_Strang_from_MIT_and_you@20260211_002202.md",
     "DataBase/SQL Server/DML/Joins.md",
-    "Liner Algebra",
     "DataBase/SQL Server/SQL Server Tutorial.md",
     "DataBase/SQL Server/DQL/Union Family.md",
     "DataBase/SQL Server/DQL/Except.md",
@@ -357,7 +345,6 @@
     "linux/Bash Script/While Loop.md",
     "linux/Bash Script/What is Bash Script and why we need to learn it.md",
     "linux/Bash Script/Types Of Conditions In Bash.md",
-    "linux/Bash Script/Switch Case.md",
     "linux/Bash Script",
     "linux",
     "copilot/system-prompts",
