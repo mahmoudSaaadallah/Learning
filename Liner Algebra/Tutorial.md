@@ -4,6 +4,7 @@ Welcome to our Linear Algebra journey! Below is an outline of the topics we will
 
 -   [[The Absolute Basics Vectors, Matrices, and Systems of Equations]]
 	- [[Gaussian Elimination]]
+	- [[Matrices And Simple Operations]].
 -   [[Vector Spaces and Subspaces: The Four Fundamental Subspaces]]
 -   [[Linear Transformations: The Action of a Matrix]]
 -   [[Orthogonality: Perpendicularity and Projections]]

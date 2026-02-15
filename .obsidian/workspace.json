@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Liner Algebra/Tutorial.md",
+                "file": "Liner Algebra/Matrices And Simple Operations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tutorial"
+              "title": "Matrices And Simple Operations"
             }
           },
           {
@@ -148,7 +148,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -329,15 +329,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e9068821f327e9fa",
+  "active": "5e191641a82d7310",
   "lastOpenFiles": [
     "Liner Algebra/Tutorial.md",
+    "Liner Algebra/Matrices And Simple Operations.md",
+    "Liner Algebra/Gaussian Elimination.md",
     "DataBase/SQL Server/T-SQL/T-SQL User-defined Procedure.md",
     "GIT/Git Pro.md",
     "DataBase/SQL Server/DDL/Drop.md",
     "Liner Algebra/Plan.md",
     "Liner Algebra/The Absolute Basics Vectors, Matrices, and Systems of Equations.md",
-    "Liner Algebra/Gaussian Elimination.md",
     "Liner Algebra",
     "GIT/Git شخبط.md",
     "copilot/copilot-conversations/you_are_Gilbert_Strang_from_MIT_and_you_will_teach@20260211_002827.md",
@@ -359,7 +360,6 @@
     "Django/Django Pagination.md",
     "linux/Bash Script/While Loop.md",
     "linux/Bash Script/What is Bash Script and why we need to learn it.md",
-    "linux/Bash Script/Types Of Conditions In Bash.md",
     "linux/Bash Script",
     "linux",
     "copilot/system-prompts",
