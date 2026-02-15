@@ -496,3 +496,29 @@ GROUP BY h.hacker_id, h.name
 HAVING COUNT(s.submission_id) > 1
 ORDER BY COUNT(s.submission_id) DESC, h.hacker_id ASC;
 ```
+
+---
+#### Scenario 12
+You are given three tables: _Students_, _Friends_ and _Packages._ _Students_ contains two columns: _ID_ and _Name_. _Friends_ contains two columns: _ID_ and _Friend_ID_ (_ID_ of the ONLY best friend). _Packages_ contains two columns: _ID_ and _Salary_ (offered salary in $ thousands per month).
+
+![](https://s3.amazonaws.com/hr-challenge-images/12895/1443820186-2a9b4939a8-1.png)
+
+Write a query to output the names of those students whose best friends got offered a higher salary than them. Names must be ordered by the salary amount offered to the best friends. It is guaranteed that no two students got same salary offer.
+
+**Sol**
+##### The Step-by-Step Logic
+
+1. **Start with the Student:** Join `Students` to `Friends` to find out who their best friend is.
+2. **Get the Student's Salary:** Join the `Packages` table to the student.
+3. **Get the Friend's Salary:** Join the `Packages` table _again_, but this time link it to the `Friend_ID`.
+4. **Compare and Filter:** Use the `WHERE` clause to find cases where the friend's salary is higher than the student's.
+
+```SQL
+Select Name
+from Students as s
+Inner Join Friends as f on s.ID = f.ID
+Inner Join Packages as p1 on s.ID = p1.ID
+Inner Join Packages as p2 on f.Friend_ID = p2.ID
+where p2.Salary > P1.Salary
+order by p2.Salary;
+```
