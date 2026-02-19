@@ -148,7 +148,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -329,10 +329,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6b4177b03dff0eac",
+  "active": "7900222a0c1e7cfc",
   "lastOpenFiles": [
-    "Liner Algebra/Inverse of the Matrix.md",
     "Liner Algebra/Determinant of the Matrix.md",
+    "Liner Algebra/Inverse of the Matrix.md",
     "DataBase/SQL Server/T-SQL/Try and Catch.md",
     "DataBase/SQL Server/T-SQL/IF Statement.md",
     "DataBase/SQL Server/T-SQL/Transaction.md",
