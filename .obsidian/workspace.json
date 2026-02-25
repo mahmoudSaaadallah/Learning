@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GIT/Git شخبط.md",
+                "file": "Links To Study.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Git شخبط"
+              "title": "Links To Study"
             }
           }
         ],
@@ -302,6 +302,7 @@
   },
   "active": "804c593a672c5508",
   "lastOpenFiles": [
+    "GIT/Git شخبط.md",
     "copilot/copilot-conversations/hello@20260224_132059.md",
     "copilot/copilot-conversations/hi@20260224_130052.md",
     "DataBase/SQL Server/T-SQL/T-SQL User-defined Procedure.md",
@@ -329,7 +330,6 @@
     "copilot/system-prompts/Discuss.md",
     "copilot/memory/Recent Conversations.md",
     "copilot/copilot-conversations/your_are_an_MIT_Professor_and_you_are_helping_me@20260216_150347.md",
-    "copilot/copilot-conversations/you_are_Gilbert_Strang_from_MIT_and_you_will_teach@20260211_002827.md",
     "copilot/system-prompts",
     "copilot/memory",
     "copilot/copilot-conversations",

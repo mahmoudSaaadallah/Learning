@@ -57,13 +57,42 @@
 
 - ### Advanced DB https://www.youtube.com/playlist?list=PLE8kQVoC67PzGwMMsSk3C8MvfAqcYjusF
 
+- ### SQL Server https://www.youtube.com/watch?v=SSKVgrwhzus&list=PLNcg_FV9n7qZY_2eAtUzEUulNjTJREhQe
+
 
 ## Docker
 - ### Docker [(179) Docker and Kubernetes | العلبة دي فيها سوعبان - YouTube](https://www.youtube.com/watch?v=PrusdhS2lmo)
 
 
+
+## Azure
+- ### Azure Monitoring https://www.youtube.com/watch?v=A0jAeGf2zUQ&pp=ygUoaG93IHRvIHVzZSBhcHBsaWNhdGlvbiBpbnNpZ2h0cyBpbiBhenVyZQ%3D%3D
+
+- https://www.youtube.com/watch?v=pjdBHqscUfU&list=PLU1w_BFZFd2p6-3yh5aZ6aeyPViDzZXWF
+
+- https://www.youtube.com/watch?v=2tSLfd02VLc&list=PL8wOlV8Hv3o9OwWe0QWji1KjVQtEyk_dL
+
+
+
+## Google Sheets
+- https://www.youtube.com/watch?v=vi3OA8Nw_LE&list=PL74FMKKJ-lYugQU-5_oeFdn9CE6WeMpO7
+
+- https://www.youtube.com/watch?v=e7OkXUMsFXI&list=PL74FMKKJ-lYvLZvo1N5RMY9ck8BHnDM4d
+
+- https://www.youtube.com/watch?v=FhvVT_p9iig&list=PL74FMKKJ-lYvRhIdc9WXOn1_51NBB8Twd
+
+- https://youtu.be/9GzTzK9hIpw?si=fhwARfxemu2-5QWx
+
+- https://youtu.be/s3Jkab7rGEc?si=wkAeololH77-IyGN
+
+
+
+
 ## Git Hub
 - ### Git hub account structure https://www.linkedin.com/posts/a-hemeda_%D9%85%D9%87%D9%85-%D8%AC%D8%AF%D8%A7-%D8%A7%D9%86%D9%83-%D8%AA%D8%B8%D8%A8%D8%B7-%D8%B4%D9%83%D9%84-%D8%A8%D8%B1%D9%88%D9%81%D8%A7%D9%8A%D9%84-github-%D8%A8%D8%AA%D8%A7%D8%B9%D9%83-activity-7367883860992212992-G84r  
+
+
+- ### GitHub Actions https://www.youtube.com/watch?v=7gJFHjXscr8
 
 - ### Platform to learn Git hub https://www.boot.dev/
 
