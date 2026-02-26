@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Links To Study.md",
+                "file": "Al-Fath/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Links To Study"
+              "title": "Untitled"
             }
           }
         ],
@@ -302,6 +302,9 @@
   },
   "active": "804c593a672c5508",
   "lastOpenFiles": [
+    "Links To Study.md",
+    "Al-Fath/Untitled.md",
+    "Al-Fath",
     "GIT/Git شخبط.md",
     "copilot/copilot-conversations/hello@20260224_132059.md",
     "copilot/copilot-conversations/hi@20260224_130052.md",
@@ -328,8 +331,6 @@
     "copilot-custom-prompts/Discuss.md",
     "copilot-custom-prompts",
     "copilot/system-prompts/Discuss.md",
-    "copilot/memory/Recent Conversations.md",
-    "copilot/copilot-conversations/your_are_an_MIT_Professor_and_you_are_helping_me@20260216_150347.md",
     "copilot/system-prompts",
     "copilot/memory",
     "copilot/copilot-conversations",
@@ -338,7 +339,6 @@
     "Type Script",
     "Thought From books",
     "React",
-    "Python",
     "Images/Pasted image 20260117172253.png",
     "Images/Pasted image 20260115125114.png",
     "Images/Pasted image 20251121112827.png",
