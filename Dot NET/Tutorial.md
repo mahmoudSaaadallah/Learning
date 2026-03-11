@@ -1,1 +1,2 @@
 - Struct [[Struct]].
+- Properties [[Properties]].
