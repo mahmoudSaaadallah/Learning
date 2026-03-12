@@ -52,10 +52,26 @@ This is the most common type, allowing both reading and writing.
 ```csharp
 public class Student
 {
-    private string _name;
+    private string Lname;
     private int _age;
-
-    public string Name
+	
+	public string FName
+	{
+		get;
+		set
+		{
+			// The value here refer to the value that will be passed to this prop when set 
+			//  executed.
+			if (value == null || value.Length == 0)
+			{
+				throw ArgumentNullException("The First Name can't be Null.")
+			}
+			// The field here refer to the FName prop itself which mean her set the field to 
+			//  the value that has been passed.
+			field = value;
+		}
+	}
+    public string LName
     {
         get { return _name; }
         set
