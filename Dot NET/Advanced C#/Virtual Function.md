@@ -1,4 +1,4 @@
-As we discussed with interfaces[[Interface]], polymorphism is a powerful concept. Virtual functions are the mechanism through which **runtime polymorphism** (also known as dynamic dispatch) is achieved in C# when working with inheritance.
+As we discussed with interfaces [[Interface]], polymorphism is a powerful concept. Virtual functions are the mechanism through which **runtime polymorphism** (also known as dynamic dispatch) is achieved in C# when working with inheritance.
 
 ### What is a Virtual Function?
 
@@ -9,7 +9,22 @@ In C#, a **virtual function** (or more accurately, a virtual method or property)
 1.  **`virtual` keyword:** This keyword is used in the base class to declare a method, property, event, or indexer as virtual. It signals that derived classes are permitted to provide their own implementation of this member.
 2.  **`override` keyword:** This keyword is used in a derived class to provide a new implementation for a virtual member inherited from a base class. It explicitly states that this method is replacing the base class's virtual method.
 3.  **`new` keyword (for hiding):** It's important to distinguish `override` from `new`. If a derived class defines a method with the same signature as a base class method *without* using `override` (and the base method isn't virtual), or if it uses `new`, it **hides** the base class method. This is *not* polymorphism; the method called depends on the *type of the reference*, not the actual object type. We want `override` for polymorphism.
-4.  **`sealed` keyword:** A virtual override can be declared `sealed` in a derived class. This prevents any further derived classes from overriding that specific method.
+```C#
+	// We have a base class or Interface with name IShape.
+	// The Circle class implement this interface.
+	// Now we try to create two instances using Circle and ISahpe as refernce type.
+	// Inside the ISahpe Interface there is no Radius Porp.
+	Circle cirlce3 = new(1.3);
+	Console.WriteLine(cirlce3.Radius); // this will return 1.3
+	IShape cirlce4 = new Circle(1.3);
+	Console.WriteLine(cirlce4.Radius); // Compiler Error
+```
+whey the previous error happened? 
+	* The previous error happened because the reference type of `circle4` is `IShape`, so we when we tried to access `Radius` prop it give error because it's not a part of `IShape` Interface.
+	* But when trying it with `circle3` it works correctly, as it's reference type of `Circle`, which contain the `Radius` prop.
+	* So It depends on the reference type not the object type.
+	
+1.  **`sealed` keyword:** A virtual override can be declared `sealed` [[Sealed]] in a derived class. This prevents any further derived classes from overriding that specific method.
 
 ### Why do we use Virtual Functions?
 

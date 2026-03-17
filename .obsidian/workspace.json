@@ -165,34 +165,6 @@
             }
           },
           {
-            "id": "1bce19e55d970f41",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET/Advanced C#/Sealed.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Sealed"
-            }
-          },
-          {
-            "id": "b1414b35b8a7260b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET/Advanced C#/Abstract.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Abstract"
-            }
-          },
-          {
             "id": "1ace8c0285e05973",
             "type": "leaf",
             "state": {
@@ -205,23 +177,9 @@
               "icon": "lucide-file",
               "title": "Virtual Function"
             }
-          },
-          {
-            "id": "3d6c6707789a4990",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET/Advanced C#/Interface.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Interface"
-            }
           }
         ],
-        "currentTab": 12
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -402,14 +360,15 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "b1414b35b8a7260b",
+  "active": "1ace8c0285e05973",
   "lastOpenFiles": [
-    "Dot NET/Advanced C#/Sealed.md",
-    "copilot/copilot-conversations/Explain_Seald_in_C#_with_details_and_examples_Act_as@20260317_211557.md",
-    "Dot NET/Tutorial.md",
-    "Dot NET/Advanced C#/Abstract.md",
     "Dot NET/Advanced C#/Interface.md",
     "Dot NET/Advanced C#/Virtual Function.md",
+    "Dot NET/Advanced C#/Sealed.md",
+    "Liner Algebra/Tutorial.md",
+    "Dot NET/Advanced C#/Abstract.md",
+    "copilot/copilot-conversations/Explain_Seald_in_C#_with_details_and_examples_Act_as@20260317_211557.md",
+    "Dot NET/Tutorial.md",
     "copilot/copilot-conversations/Explain_the_Abstract_in_details_with_examples_using_C#_with@20260315_161815.md",
     "copilot/copilot-conversations/Explain_the_interface_in_details_with_examples_using_C#_with@20260312_110839.md",
     "DataBase/SQL Server/SQL Server Tutorial.md",
@@ -431,7 +390,6 @@
     "DataBase/SQL Server/T-SQL/T-SQL Rollup.md",
     "Dot NET",
     "DataBase/SQL Server/T-SQL/IF Statement.md",
-    "DataBase/SQL Server/DDL/Select Into.md",
     "DBMS-Using-Bash-Shell-Script.canvas",
     "Al-Fath",
     "Css",
