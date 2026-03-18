@@ -5,3 +5,4 @@
 - Virtual Function [[Virtual Function]].
 - Abstract [[Abstract]].
 - Sealed [[Sealed]].
+- IComparable & IComparer [[IComparable & IComparer]].
