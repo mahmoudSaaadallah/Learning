@@ -156,12 +156,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/Tutorial.md",
+                "file": "Dot NET/Advanced C#/Passing By Value & Passing By Reference.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tutorial"
+              "title": "Passing By Value & Passing By Reference"
             }
           },
           {
@@ -193,7 +193,7 @@
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -374,13 +374,14 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "40935afc02a70e96",
+  "active": "3e98ba61c4e5f13a",
   "lastOpenFiles": [
+    "Dot NET/Tutorial.md",
+    "Dot NET/Advanced C#/Passing By Value & Passing By Reference.md",
+    "Dot NET/Advanced C#/Generic.md",
     "Dot NET/Advanced C#/Implicit & Explicit Implementation for Interface.md",
     "copilot/copilot-conversations/If_I_you_are_Gilbert_Strang_from_MIT_and_you@20260211_002202.md",
     "copilot/memory/Recent Conversations.md",
-    "Dot NET/Advanced C#/Generic.md",
-    "Dot NET/Tutorial.md",
     "copilot/copilot-conversations/hi@20260204_135415.md",
     "copilot/copilot-conversations/your_are_an_MIT_Professor_and_you_are_helping_me@20260216_150347.md",
     "Dot NET/Advanced C#/IComparable & IComparer.md",
@@ -401,7 +402,6 @@
     "copilot/copilot-conversations/Explain_the_interface_in_details_with_examples_using_C#_with@20260312_110839.md",
     "Dot NET/Advanced C#/Properties.md",
     "Dot NET/Advanced C#/Struct.md",
-    "copilot/copilot-conversations/Explain_Properties_in_C#_with_details_and_examples_Act_as@20260311_140900.md",
     "Dot NET/Advanced C#",
     "Dot NET",
     "DBMS-Using-Bash-Shell-Script.canvas",

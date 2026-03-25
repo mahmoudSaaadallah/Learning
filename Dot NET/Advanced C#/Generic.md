@@ -106,7 +106,7 @@ Here, `<T>` after `GenericStack` declares `T` as a type parameter. When you inst
 
 #### 2. Generic Methods
 
-You can also define methods that take type parameters. A common scenario is a utility method that can operate on different types.
+You can also define methods that take type parameters. A common scenario is a utility method that can operate on different types [[Passing By Value & Passing By Reference]].
 
 ```csharp
 public class Utility
