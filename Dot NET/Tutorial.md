@@ -7,3 +7,4 @@
 - Sealed [[Sealed]].
 - IComparable & IComparer [[IComparable & IComparer]].
 - Implicit & Explicit Implementation for Interface [[Implicit & Explicit Implementation for Interface]].
+- Generic [[Generic]].
