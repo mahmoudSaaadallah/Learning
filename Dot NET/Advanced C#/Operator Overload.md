@@ -1,14 +1,12 @@
-Alright class, settle down. Today, we're diving into a fundamental concept in object-oriented programming within the .NET ecosystem: **Operator Overloading**. As someone who's spent a decade wrestling with C# and its intricacies, I can tell you this feature, when used judiciously, can significantly enhance the readability and naturalness of your code, especially when working with custom types that represent mathematical or logical entities.
-
 ### What is Operator Overloading?
 
-At its core, operator overloading allows you to define how standard operators (like `+`, `-`, `*`, `/`, `==`, `!=`, etc.) behave when applied to instances of your custom classes or structs. Think about it: you can add two integers, `int a + int b`, or concatenate two strings, `string s1 + string s2`. The `+` operator behaves differently depending on the types it operates on. This is a form of polymorphism.
+At its core, operator overloading allows you to define how standard operators (like `+`, `-`, `*`, `/`, `==`, `!=`, etc.) behave when applied to instances of your custom classes or structs. Think about it: you can add two integers, `int a + int b`, or concatenate two strings, `string s1 + string s2`. The `+` operator behaves differently depending on the types it operates on. This is a form of polymorphism [[Polymorphism]].
 
 When you create your own types, say a `Vector2D` or a `Money` class, you might want to perform operations on them that feel intuitive. For instance, adding two `Vector2D` objects should result in a new `Vector2D` that is their sum. Without operator overloading, you'd be forced to write methods like `vectorA.Add(vectorB)`, which works, but isn't as elegant or expressive as `vectorA + vectorB`.
 
 The goal is to make your custom types behave as naturally as built-in types, improving code clarity and reducing cognitive load for anyone reading your code.
 
-### Key Principles and Syntax in C#
+### Key Principles and Syntax in `C#`
 
 In C#, operator overloading is achieved by defining `public static` methods within your class or struct. These methods must use the `operator` keyword followed by the symbol of the operator you wish to overload.
 
