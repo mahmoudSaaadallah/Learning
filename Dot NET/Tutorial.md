@@ -15,6 +15,7 @@
 - Static Class [[Static Class]].
 - IEnumerator [[IEnumerator]].
 - IEnumerable [[IEnumerable]].
+- ICollection [[ICollection]].
 
 
 ## Design Pattern

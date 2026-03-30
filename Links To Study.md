@@ -119,6 +119,10 @@
 - ### studyGate [StudyGate: Online Tutoring & Homework Help](https://www.studygate.com/)
 
 
+## AI Tools
+- ### Claude Cowork https://www.youtube.com/watch?v=vMo-yRCN3QM
+- ### Claude Cowork  https://www.youtube.com/watch?v=cJ2QCyr3yzU
+
 
 
 ## CVs
