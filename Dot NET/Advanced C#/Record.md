@@ -1,6 +1,6 @@
 ### The Motivation: The Boilerplate Problem
 
-Before `record` types, creating a simple, immutable data class in C# often involved a lot of boilerplate code. Imagine you wanted a `Person` class with `FirstName` and `LastName`. To make it truly immutable and behave like a "value" (where two people are considered equal if their names are the same, regardless of memory location), you'd typically write something like this:
+Before `record` types, creating a simple, immutable(Read Only) data class in C# often involved a lot of boilerplate code. Imagine you wanted a `Person` class with `FirstName` and `LastName`. To make it truly immutable and behave like a "value" (where two people are considered equal if their names are the same, regardless of memory location), you'd typically write something like this:
 
 ```csharp
 public class Person
