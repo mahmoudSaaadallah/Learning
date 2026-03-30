@@ -12,3 +12,10 @@
 - Delegates [[Delegates]].
 - Operator Overload [[Operator Overload]].
 - Record [[Record]].
+- Static Class [[Static Class]].
+- IEnumerator [[IEnumerator]].
+- IEnumerable [[IEnumerable]].
+
+
+## Design Pattern
+- Singleton Pattern [[Singleton Pattern]].

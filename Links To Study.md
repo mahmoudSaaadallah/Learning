@@ -45,6 +45,8 @@
 - ### Roadmap https://scrawny-english-170.notion.site/Full-RoadMap-278463d83f898016a1f9d350beab1a9c
 - ### Interview Questions https://eghtanem.runasp.net/
 
+- ### API Design and Management  https://www.youtube.com/watch?v=C6m2tE2lCpw&list=PLgAqrVq84PDcOryFRPZmhXR_FwGauGtyv
+
 
 
 
