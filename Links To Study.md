@@ -49,9 +49,17 @@
 
 
 
+## Design Pattern
+- ### ITI https://www.youtube.com/playlist?list=PLNFDrRZdysFximYrZuTi2-zQ3v6XGe-TA
+
+- ### Design Patterns: Easy Guide for Beginners https://www.youtube.com/playlist?list=PLZ1XikRjVdB70kLpfpp4h6PsmEVZTt2lZ
+
+
 
 ## English
 - ### Daily Dictation by Coach Shane (001--200) https://www.youtube.com/playlist?list=PLE4kwWAQ5Xpj1m3a-4H4JEtLBD9h65Y1D
+
+- ### Gemini https://labs.google/lll/en
 
 
 ## DataBase
@@ -60,6 +68,8 @@
 - ### Advanced DB https://www.youtube.com/playlist?list=PLE8kQVoC67PzGwMMsSk3C8MvfAqcYjusF
 
 - ### SQL Server https://www.youtube.com/watch?v=SSKVgrwhzus&list=PLNcg_FV9n7qZY_2eAtUzEUulNjTJREhQe
+
+- ### Rami Summarize https://drive.google.com/drive/folders/1PvaQay1-cddCIegXObp5X5DW8cXpCo85
 
 
 ## Docker

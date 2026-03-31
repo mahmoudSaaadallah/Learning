@@ -162,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -343,11 +343,13 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "08537c05f9844f6c",
+  "active": "7aad938366fc709e",
   "lastOpenFiles": [
+    "GIT/Git Pro.md",
+    "DataBase/SQL Server/Advanced Queries.md",
+    "Dot NET/Advanced C#/ICollection.md",
     "Dot NET/Tutorial.md",
     "Dot NET/Advanced C#/IEnumerable.md",
-    "Dot NET/Advanced C#/ICollection.md",
     "Links To Study.md",
     "Dot NET/Advanced C#/IEnumerator.md",
     "DataBase/SQL Server/SQL Server Tutorial.md",
@@ -370,8 +372,6 @@
     "Django/Django Rest Frame work/Djoser.md",
     "Dot NET/Advanced C#/Interface.md",
     "Dot NET/Advanced C#/Sealed.md",
-    "Liner Algebra/Tutorial.md",
-    "Dot NET/Advanced C#/Abstract.md",
     "Dot NET/Advanced C#",
     "Dot NET",
     "Al-Fath",
