@@ -4,6 +4,8 @@ In C#, the `IEnumerable` interface (and its generic version `IEnumerable<T>`) de
 
 Essentially, `IEnumerable` represents a *sequence* of items. It doesn't necessarily mean the items are all in memory at once; it just means that, given an `IEnumerable`, you can *get an enumerator* that will allow you to access each item in that sequence, one by one, as needed.
 
+Collections do not usually implement enumerators; instead, they provide enumerators, via the interface `IEnumerable`. By defining a single method retuning an enumerator, `IEnumerable` provides flexibility in that the iteration logic can be farmed out to another class. Moreover, it means that several consumers can enumerate the collection at once without interfering with one another. You can think of `IEnumerable` as “`IEnumeratorProvider`,” and it is the most basic interface that collection classes implement.
+
 ---
 
 ### Interface Definitions
