@@ -13,9 +13,8 @@
 - Operator Overload [[Operator Overload]].
 - Record [[Record]].
 - Static Class [[Static Class]].
-- IEnumerator [[IEnumerator]].
-- IEnumerable [[IEnumerable]].
-- ICollection [[ICollection]].
+- IEnumerable [[IEnumerator]].
+- IEnumerable
 
 
 ## Design Pattern
