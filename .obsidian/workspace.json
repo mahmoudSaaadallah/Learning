@@ -22,6 +22,34 @@
             }
           },
           {
+            "id": "ba462a792cdeeacb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DataBase/SQL Server/T-SQL/T-SQL LEAD.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "T-SQL LEAD"
+            }
+          },
+          {
+            "id": "6d9d2f6f24c90507",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DataBase/SQL Server/T-SQL/T-SQL Rollup.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "T-SQL Rollup"
+            }
+          },
+          {
             "id": "e189eb9d33a09004",
             "type": "leaf",
             "state": {
@@ -148,20 +176,6 @@
             }
           },
           {
-            "id": "e6555d2a7f8f11bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET/Advanced C#/Indexer.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Indexer"
-            }
-          },
-          {
             "id": "08537c05f9844f6c",
             "type": "leaf",
             "state": {
@@ -247,7 +261,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0876a6af07bdcd18",
@@ -370,21 +385,28 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "7aad938366fc709e",
+  "active": "08537c05f9844f6c",
   "lastOpenFiles": [
-    "Dot NET/Advanced C#/ICollection.md",
-    "Dot NET/Advanced C#/Indexer.md",
-    "DataBase/SQL Server/DML/Update.md",
-    "DataBase/SQL Server/SQL Server Tutorial.md",
-    "Django/ORM/Query Set.md",
     "Dot NET/Tutorial.md",
+    "Dot NET/Advanced C#/ICollection.md",
+    "Dot NET/Advanced C#/Record.md",
+    "Dot NET/Advanced C#/Indexer.md",
+    "copilot/copilot-conversations/ICollection_in_.NET_Explained@20260407_100334.md",
+    "copilot/copilot-conversations/In_a_detailed_Explain_the_Struct_and_use_the_last@20260310_173951.md",
+    "copilot/copilot-conversations/You_are_a_Software_Engineer_with_10_years_of_experices@20260310_134659.md",
     "Links To Study.md",
+    "copilot/copilot-conversations/Explain_Properties_in_C.md",
+    "DataBase/SQL Server/T-SQL/T-SQL LEAD.md",
+    "DataBase/SQL Server/SQL Server Tutorial.md",
+    "DataBase/SQL Server/T-SQL/T-SQL Rollup.md",
+    "DataBase/SQL Server/T-SQL/T-SQL PIVOT.md",
+    "DataBase/SQL Server/DML/Update.md",
+    "Django/ORM/Query Set.md",
     "Dot NET/Advanced C#/IEnumerable.md",
     "GIT/Git Pro.md",
     "DataBase/SQL Server/Advanced Queries.md",
     "Dot NET/Advanced C#/IEnumerator.md",
     "Dot NET/Advanced C#/Static Class.md",
-    "Dot NET/Advanced C#/Record.md",
     "Dot NET/Advanced C#/Virtual Function.md",
     "Django Debug Toolbar.md",
     "Al-Fath/Foreign Keys And Relations.md",
@@ -392,13 +414,6 @@
     "Dot NET/Advanced C#/Passing By Value & Passing By Reference.md",
     "Dot NET/Advanced C#/Operator Overload.md",
     "Dot NET/Advanced C#/Implicit & Explicit Implementation for Interface.md",
-    "Dot NET/Advanced C#/Generic.md",
-    "Dot NET/Implicit & Explicit Implementation for Interface.md",
-    "Dot NET/Advanced C#/IComparable & IComparer.md",
-    "Django/Widgets For Forms.md",
-    "Django/Django Field Types.md",
-    "Django/Django Tutorial.md",
-    "Django/Django Rest Frame work/Djoser.md",
     "Dot NET/Advanced C#",
     "Dot NET",
     "Al-Fath",

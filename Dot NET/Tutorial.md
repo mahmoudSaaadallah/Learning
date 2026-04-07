@@ -14,7 +14,10 @@
 - Record [[Record]].
 - Static Class [[Static Class]].
 - IEnumerable [[IEnumerator]].
-- IEnumerable
+- IEnumerable [[IEnumerable]].
+- Indexer [[Indexer]].
+- ICollection [[ICollection]].
+- IList [[IList]].
 
 
 ## Design Pattern
