@@ -10,6 +10,7 @@
 - Generic [[Generic]].
 - Passing By Value & Passing By Reference [[Passing By Value & Passing By Reference]].
 - Delegates [[Delegates]].
+- More About Delegates [[More About Delegates]].
 - Operator Overload [[Operator Overload]].
 - Record [[Record]].
 - Static Class [[Static Class]].
