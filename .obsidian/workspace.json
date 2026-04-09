@@ -176,17 +176,17 @@
             }
           },
           {
-            "id": "7f5e3d7aec9a24ea",
+            "id": "0cf4d6dce3bd239f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/More About Delegates.md",
+                "file": "Dot NET/Advanced C#/Lambda Expressions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "More About Delegates"
+              "title": "Lambda Expressions"
             }
           }
         ],
@@ -371,17 +371,18 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "7f5e3d7aec9a24ea",
+  "active": "0cf4d6dce3bd239f",
   "lastOpenFiles": [
-    "Dot NET/Delegates.md",
-    "Dot NET/More About Delegates.md",
+    "Dot NET/Advanced C#/IList.md",
+    "Dot NET/Advanced C#/More About Delegates.md",
+    "Dot NET/Advanced C#/Lambda Expressions.md",
     "Dot NET/Tutorial.md",
+    "Dot NET/Advanced C#/Delegates.md",
     "copilot/copilot-conversations/Explaining_.NET_IList_and_Delegates@20260407_173226.md",
     "copilot/copilot-conversations/ICollection_in_.NET_Explained@20260407_100334.md",
     "copilot/copilot-conversations/AI_Persona_Setup@20260407_104508.md",
     "copilot/copilot-conversations/You_are_a_Software_Engineer_with_10_years_of_experices@20260310_134659.md",
     "Dot NET/Advanced C#/ICollection.md",
-    "Dot NET/IList.md",
     "Links To Study.md",
     "Dot NET/Advanced C#/Record.md",
     "Dot NET/Advanced C#/Indexer.md",
@@ -398,7 +399,6 @@
     "DataBase/SQL Server/Advanced Queries.md",
     "Dot NET/Advanced C#/IEnumerator.md",
     "Dot NET/Advanced C#/Static Class.md",
-    "Dot NET/Advanced C#/Virtual Function.md",
     "DBMS-Using-Bash-Shell-Script.canvas",
     "Dot NET/Advanced C#",
     "Dot NET",
