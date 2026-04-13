@@ -47,6 +47,8 @@
 
 - ### API Design and Management  https://www.youtube.com/watch?v=C6m2tE2lCpw&list=PLgAqrVq84PDcOryFRPZmhXR_FwGauGtyv
 
+- ### RabbitMQ🐰 https://www.youtube.com/playlist?list=PLqXxd79f2JdAk64J20-MODndBBM-NpgJw
+
 
 
 ## Design Pattern
