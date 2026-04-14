@@ -3,6 +3,7 @@
 - Properties [[Properties]].
 - Object init and init accessor with Properties [[Object init  and init accessor with Properties]].
 - Anonyms Object [[Anonyms Object]].
+- Extension Function [[Extension Functions]].
 - Interface [[Interface]].
 - Virtual Function [[Virtual Function]].
 - Abstract [[Abstract]].
@@ -24,7 +25,6 @@
 - IList [[IList]].
 - Threading [[Threading]]. 
 - More About Threading [[More About Threading `async` and `await`]].
-
 
 
 
