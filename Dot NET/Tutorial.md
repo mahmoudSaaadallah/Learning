@@ -2,6 +2,7 @@
 - Struct [[Struct]].
 - Properties [[Properties]].
 - Object init and init accessor with Properties [[Object init  and init accessor with Properties]].
+- Anonyms Object [[Anonyms Object]].
 - Interface [[Interface]].
 - Virtual Function [[Virtual Function]].
 - Abstract [[Abstract]].

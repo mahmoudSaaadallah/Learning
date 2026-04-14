@@ -176,6 +176,20 @@
             }
           },
           {
+            "id": "202d6ffef60882c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dot NET/Anonyms Object.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Anonyms Object"
+            }
+          },
+          {
             "id": "243c2c14ac0958f7",
             "type": "leaf",
             "state": {
@@ -385,8 +399,9 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "243c2c14ac0958f7",
+  "active": "202d6ffef60882c3",
   "lastOpenFiles": [
+    "Dot NET/Anonyms Object.md",
     "Dot NET/Tutorial.md",
     "Dot NET/Advanced C#/Object init  and init accessor with Properties.md",
     "DataBase/SQL Server/SQL Server Tutorial.md",
@@ -413,7 +428,6 @@
     "Dot NET/Advanced C#/Indexer.md",
     "copilot/copilot-conversations/In_a_detailed_Explain_the_Struct_and_use_the_last@20260310_173951.md",
     "copilot/copilot-conversations/Explain_Properties_in_C.md",
-    "DataBase/SQL Server/T-SQL/T-SQL LEAD.md",
     "DBMS-Using-Bash-Shell-Script.canvas",
     "Dot NET/Advanced C#",
     "Dot NET",
