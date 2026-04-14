@@ -1,7 +1,7 @@
 ## Advanced C#.
 - Struct [[Struct]].
 - Properties [[Properties]].
-- Object init and init keyword with Properties [[Object init  and init keyword with Properties ]].
+- Object init and init accessor with Properties [[Object init  and init accessor with Properties]].
 - Interface [[Interface]].
 - Virtual Function [[Virtual Function]].
 - Abstract [[Abstract]].

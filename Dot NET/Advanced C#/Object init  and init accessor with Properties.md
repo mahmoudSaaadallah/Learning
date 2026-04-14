@@ -156,3 +156,47 @@ In such a system, `init` properties ensure that:
 *   Data integrity is maintained as these immutable messages flow through message queues, event stores, and various microservices, preventing accidental modifications and simplifying debugging.
 
 This scenario highlights how `init` properties are not just a syntactic convenience but a fundamental building block for robust, scalable, and maintainable architectures that rely heavily on immutable data flows.
+
+
+#### Required
+- While using `init` with properties makes them mutable, and only set while object initialization, but until now we have to option to not set the `init` properties with the object the object initialization.
+- So if we didn't set a value for the `init` properties then they will be set with the default value.
+
+- But what if we want to force the user of the class to set value for specific property while initializing the object, then we have to use `required` key word with the property declaration.
+
+```C#
+public class Order
+{
+    // Primary constructor for required dependencies or initial state
+    public Order(int orderId, string customerEmail)
+    {
+        Id = orderId;
+        CustomerEmail = customerEmail;
+        OrderDate = DateTime.UtcNow; // Set a default value in the constructor
+        Items = []; // Initialize collection with an empty collection expression
+    }
+
+    // Requried property must be set during object initialization.
+    public requried int Id { get; init; }
+
+    // init-only property: can only be set during object initialization
+    public string CustomerEmail { get; init; }
+
+    // init-only property with a default value
+    public DateTime OrderDate { get; init; }
+
+    // init-only collection property using collection expressions (C# 12)
+    public List<OrderItem> Items { get; init; }
+
+    // A mutable property for demonstration (e.g., status that changes over time)
+    public OrderStatus Status { get; set; } = OrderStatus.Pending;
+
+    // Method to simulate updating the order status
+    public void UpdateStatus(OrderStatus newStatus)
+    {
+        Status = newStatus;
+    }
+}
+```
+
+- Here in this example we can't create any object from the `Order` without setting a value for the `id` property, as it is a required property.
