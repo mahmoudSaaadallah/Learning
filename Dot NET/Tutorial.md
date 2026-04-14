@@ -1,6 +1,7 @@
 ## Advanced C#.
 - Struct [[Struct]].
 - Properties [[Properties]].
+- Object init and init keyword with Properties [[Object init  and init keyword with Properties ]].
 - Interface [[Interface]].
 - Virtual Function [[Virtual Function]].
 - Abstract [[Abstract]].
@@ -23,5 +24,16 @@
 - Threading [[Threading]]. 
 - More About Threading [[More About Threading `async` and `await`]].
 
+
+
+
+## LINQ
+- 
+
+
+
+
 ## Design Pattern
 - Singleton Pattern [[Singleton Pattern]].
+
+

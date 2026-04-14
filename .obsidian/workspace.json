@@ -176,27 +176,17 @@
             }
           },
           {
-            "id": "8691286c68b37cdd",
+            "id": "243c2c14ac0958f7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/Advanced C#/More About Threading `async` and `await`.md",
+                "file": "Dot NET/Advanced C#/Object init  and init keyword with Properties.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "More About Threading `async` and `await`"
-            }
-          },
-          {
-            "id": "18e0bbfb79d8d95f",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Object init  and init keyword with Properties"
             }
           },
           {
@@ -395,17 +385,19 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "8691286c68b37cdd",
+  "active": "243c2c14ac0958f7",
   "lastOpenFiles": [
+    "Dot NET/Tutorial.md",
+    "Dot NET/Advanced C#/Object init  and init keyword with Properties.md",
+    "Links To Study.md",
+    "Dot NET/LINQ",
+    "Dot NET/Advanced C#/More About Threading `async` and `await`.md",
     "copilot/copilot-conversations/Level_Up_to_Senior_.NET@20260413_142403.md",
     "DataBase/SQL Server/T-SQL/T-SQL Last_Value.md",
-    "Dot NET/Advanced C#/More About Threading `async` and `await`.md",
-    "Links To Study.md",
     "copilot/copilot-conversations/your_are_an_MIT_Professor_and_you_are_helping_me@20260216_150347.md",
     "copilot/copilot-conversations/MIT_C.md",
     "copilot/copilot-conversations/You_are_a_Software_Engineer_with_10_years_of_experiences@20260310_134853.md",
     "Dot NET/Advanced C#/Threading.md",
-    "Dot NET/Tutorial.md",
     "Dot NET/Advanced C#/Lambda Expressions.md",
     "copilot/copilot-conversations/MIT_C#_Professor_Persona@20260412_094119.md",
     "Dot NET/Advanced C#/IList.md",
@@ -422,7 +414,6 @@
     "copilot/copilot-conversations/Explain_Properties_in_C.md",
     "DataBase/SQL Server/T-SQL/T-SQL LEAD.md",
     "DataBase/SQL Server/SQL Server Tutorial.md",
-    "DataBase/SQL Server/T-SQL/T-SQL Rollup.md",
     "DBMS-Using-Bash-Shell-Script.canvas",
     "Dot NET/Advanced C#",
     "Dot NET",
@@ -433,7 +424,6 @@
     "copilot/memory",
     "copilot/copilot-conversations",
     "copilot",
-    "Type Script",
     "Images/Pasted image 20260117172253.png",
     "Images/Pasted image 20260115125114.png",
     "Images/Pasted image 20251121112827.png",
