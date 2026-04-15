@@ -29,6 +29,7 @@
 
 
 ## LINQ
+- LINQ [[LINQ]].
 - 
 
 
