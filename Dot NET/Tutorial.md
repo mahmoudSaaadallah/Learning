@@ -31,6 +31,7 @@
 ## LINQ
 - LINQ [[LINQ]].
 - LINQ Where [[LINQ Where]].
+- LINQ Select [[LINQ Select]].
 
 
 
