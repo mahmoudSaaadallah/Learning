@@ -98,7 +98,7 @@ public static class ProductCatalogService
 ### The "Senior" Nuance
 
 While LINQ is incredibly powerful, a senior engineer understands its subtleties and potential pitfalls:
-
+#Important_Note 
 1.  **Deferred Execution - The Double-Edged Sword:**
     *   **Benefit:** Allows for efficient query composition and execution only when needed.
     *   **Gotcha:** If you enumerate a query multiple times without materializing it (e.g., calling `ToList()`), the query will execute *each time*. This can lead to significant performance degradation, especially with database queries or complex in-memory operations.

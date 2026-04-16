@@ -30,7 +30,7 @@
 
 ## LINQ
 - LINQ [[LINQ]].
-- 
+- LINQ Where [[LINQ Where]].
 
 
 
