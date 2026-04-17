@@ -34,6 +34,13 @@
 
 
 
+## Data Structure & Algorithm
+- ### Adul Bari https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O
+  
+- ### ITI https://www.youtube.com/playlist?list=PLSGEGD0dbMKp8Md7YK0gUwxB7xec4Zqnq
+
+
+
 ## ITI
 - ### https://ae.linkedin.com/posts/mohamed-khaled-2b4202240_%D8%AF%D9%8A-%D8%A7%D9%84%D9%85%D8%A7%D8%AA%D9%8A%D8%B1%D9%8A%D8%A7%D9%84-%D8%A8%D8%AA%D8%A7%D8%B9%D8%A9-iti-%D9%83%D9%86%D8%B2-%D8%AD%D9%82%D9%8A%D9%82%D9%8A-%D8%AA%D8%B9%D8%A8%D8%AA-activity-7127525379744948225-tgBN
 
