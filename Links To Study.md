@@ -2,6 +2,8 @@
 - ### Javascript Nuggets https://www.youtube.com/playlist?list=PLnHJACx3NwAfRUcuKaYhZ6T5NRIpzgNGJ
 
 - ### Algorithm https://www.youtube.com/watch?v=coqQwbDezUA&list=PLC3y8-rFHvwjPxNAKvZpdnsr41E0fCMMP
+  
+  - ### ITI https://www.youtube.com/watch?v=c-RLeKxR8cA&list=PLNFDrRZdysFx-eu67uE0T0Erj2qx6lYjQ
 
 ## Django
 - ### Django Rest https://youtube.com/playlist?list=PL-2EBeDYMIbTLulc9FSoAXhbmXpLq2l5t&si=aZgI0R1Kh_4AJm9H
