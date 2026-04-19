@@ -32,7 +32,7 @@
 - LINQ [[LINQ]].
 - LINQ Where [[LINQ Where]].
 - LINQ Select [[LINQ Select]].
-- LINQ 
+- LINQ Casting [[LINQ Casting]].
 
 
 
