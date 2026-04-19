@@ -123,7 +123,7 @@ public static class ProductProjectionService
     *   **Gotcha:** A common mistake, especially when starting with ORMs like Entity Framework, is to retrieve entire entities (`_dbContext.Products.ToList()`) and *then* project them in memory (`.Select(p => new ProductSummaryDto(p.Id, p.Name, p.Price))`). This is equivalent to a `SELECT *` in SQL.
     *   **Why it's bad:** It pulls *all* columns for *all* rows into application memory, even if you only need a few. This wastes network bandwidth, database I/O, and application memory.
     *   **Senior Solution:** Always apply `Select` **as early as possible** in your `IQueryable` chain, *before* materializing the results (e.g., `ToList()`). This ensures the projection happens at the database level, and only the necessary columns are transferred.
-
+#Important_Note
 2.  **`IEnumerable<T>` vs. `IQueryable<T>` - Projection Location:**
     *   **Crucial Distinction:**
         *   `IQueryable<T>.Select(...)`: The projection logic is translated into SQL (or the native query language) and executed by the data source. This is highly efficient.
