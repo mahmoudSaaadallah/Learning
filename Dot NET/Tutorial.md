@@ -33,6 +33,7 @@
 - LINQ Where [[LINQ Where]].
 - LINQ Select [[LINQ Select]].
 - LINQ Casting [[LINQ Casting]].
+- LINQ Popular Methods [[LINQ Popular Methods distinct, count, sum, min, max, avg ,take, skip]].
 
 
 
