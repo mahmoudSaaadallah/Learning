@@ -22,17 +22,31 @@
             }
           },
           {
-            "id": "c107fb72312f5026",
+            "id": "3c3707a9d1ae8745",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/LINQ/LINQ OrderBy.md",
+                "file": "Dot NET/LINQ SelectMany.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LINQ OrderBy"
+              "title": "LINQ SelectMany"
+            }
+          },
+          {
+            "id": "a7e6f074dea81d24",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Links To Study.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Links To Study"
             }
           },
           {
@@ -47,6 +61,20 @@
               },
               "icon": "lucide-file",
               "title": "LINQ"
+            }
+          },
+          {
+            "id": "7a3c7f22e5eebbc1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dot NET/LINQ/LINQ GroupBy.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "LINQ GroupBy"
             }
           }
         ],
@@ -214,8 +242,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 935.5,
-    "collapsed": true
+    "width": 935.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -231,11 +258,24 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "c107fb72312f5026",
+  "active": "3c856724c5fbd55d",
   "lastOpenFiles": [
-    "Dot NET/LINQ/LINQ OrderBy.md",
-    "Dot NET/Tutorial.md",
+    "copilot/copilot-conversations/Senior_.NET_Engineering_Mentorship@20260420_142842.md",
+    "Links To Study.md",
+    "Dot NET/LINQ/LINQ GroupBy.md",
+    "Dot NET/LINQ SelectMany.md",
+    "copilot/copilot-conversations/Act_as_a_Senior_Staff_Engineer_and_Technical_Mentor_specializing@20260420_142213.md",
     "Dot NET/LINQ/LINQ.md",
+    "Dot NET/Tutorial.md",
+    "copilot/copilot-conversations/Level_Up_LINQ_GroupBy@20260420_100734.md",
+    "copilot/copilot-conversations/Senior_.NET_Dev_Mentoring@20260420_100158.md",
+    "copilot/copilot-conversations/AI_Persona_Setup@20260407_104508.md",
+    "copilot/copilot-conversations/Level_Up_to_Senior_.NET@20260413_142403.md",
+    "copilot/copilot-conversations/MIT_C.md",
+    "copilot/copilot-conversations/MIT_C#_Professor_Persona@20260412_094119.md",
+    "Daily.md",
+    "Thougths.md",
+    "Dot NET/LINQ/LINQ OrderBy.md",
     "DataBase/SQL Server/Advanced Queries.md",
     "Django/Widgets For Forms.md",
     "Django/Django Field Types.md",
@@ -250,21 +290,8 @@
     "Dot NET/LINQ/Untitled.base",
     "Al-Fath/Foreign Keys And Relations.md",
     "copilot/copilot-conversations/You_are_a_Software_Engineer_with_10_years_of_experiences@20260310_134853.md",
-    "copilot/copilot-conversations/Senior_.NET_Engineer_Mentorship@20260415_141956.md",
-    "Dot NET/LINQ/LINQ Popular Methods distinct, count, sum, min, max, avg ,take, skip.md",
-    "Dot NET/LINQ/LINQ Casting.md",
-    "Thougths.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
-    "Links To Study.md",
-    "copilot/copilot-conversations/Senior_.NET_Engineer_Mentorship@20260419_160723.md",
-    "copilot/copilot-conversations/You_are_a_Software_Engineer_with_10_years_of_experices@20260310_134659.md",
-    "copilot/copilot-conversations/MIT_C#_Professor_Persona@20260412_094119.md",
-    "copilot/copilot-conversations/ICollection_in_.NET_Explained@20260407_100334.md",
-    "copilot/copilot-conversations/Help_me_to_under_stand_the_Vector_Spaces_and_Subspaces@20260219_161913.md",
-    "copilot/copilot-conversations/Help_me_to_under_stand_the_Vector_Spaces_and_Subspaces@20260219_161806.md",
-    "copilot/copilot-conversations/hello@20260224_132059.md",
-    "copilot/copilot-conversations/Explaining_.NET_IList_and_Delegates@20260407_173226.md",
     "Dot NET/LINQ",
     "DBMS-Using-Bash-Shell-Script.canvas",
     "Dot NET/Advanced C#",

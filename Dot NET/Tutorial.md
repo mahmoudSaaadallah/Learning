@@ -35,6 +35,8 @@
 - LINQ Casting [[LINQ Casting]].
 - LINQ Popular Methods [[LINQ Popular Methods distinct, count, sum, min, max, avg ,take, skip]].
 - LINQ OrderBy [[LINQ OrderBy]].
+- LINQ GroupBy [[LINQ GroupBy]].
+- LINQ SelectMany [[LINQ SelectMany]].
 
 
 
