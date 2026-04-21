@@ -37,6 +37,7 @@
 - LINQ OrderBy [[LINQ OrderBy]].
 - LINQ GroupBy [[LINQ GroupBy]].
 - LINQ SelectMany [[LINQ SelectMany]].
+- LINQ OfType [[LINQ OfType]].
 
 
 
