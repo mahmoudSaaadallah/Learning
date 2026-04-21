@@ -1,18 +1,19 @@
-- Casting to Number [[Parsing(Casting to number)]].
-
-- Working with NaN [[NaN(Not a Number)]].
-
-- Format Number using toFixed() & toPrecision() [[Format a number using fixed-point notation(toFixed())]].
-
-- Sub string Functions [[substring() && slice()]].
-
-- Working with Infinity Value [[Check The Infinity Values]].
-
-- Comparing Using equal sign = [[ Comparing Using equal sing]].
 
 - Scopes For Variables [[Scopes For Variables]].
 
 - Check Datatype using `typeof` and `constructor.name` [[Check Datatype using `typeof` and `constructor.name` ]].
+
+- Comparing Using equal sign = [[ Comparing Using equal sing]].
+
+- Casting to Number [[Parsing(Casting to number)]].
+
+- Format Number using toFixed() & toPrecision() [[Format a number using fixed-point notation(toFixed())]].
+
+- Working with NaN [[NaN(Not a Number)]].
+
+- Sub string Functions [[substring() && slice()]].
+
+- Working with Infinity Value [[Check The Infinity Values]].
 
 - String(subString(), subStr(), slice()) [[String(substring(), substr(), slice())]].
 
