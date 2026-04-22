@@ -1,0 +1,49 @@
+{
+  "apiKey": "AIzaSyCtFPw_WpvLLI4hBqqRqDTspkPvvEH0CmY",
+  "model": "gemini-pro",
+  "prompts": [
+    {
+      "display": "Ask Gemini (Selection)",
+      "scope": "SELECTION",
+      "model": "gemini-pro",
+      "config": {
+        "topK": 1,
+        "topP": 1,
+        "temperature": 0.9,
+        "outputTokenLimit": 2048,
+        "maxOutputTokens": 2048,
+        "inputTokenLimit": 30720
+      },
+      "prompt": "",
+      "type": "generative"
+    },
+    {
+      "display": "Ask Gemini (Document)",
+      "scope": "DOCUMENT",
+      "model": "gemini-pro",
+      "config": {
+        "topK": 1,
+        "topP": 1,
+        "temperature": 0.9,
+        "outputTokenLimit": 2048,
+        "maxOutputTokens": 2048,
+        "inputTokenLimit": 30720
+      },
+      "prompt": "",
+      "type": "generative"
+    }
+  ],
+  "chat": {
+    "model": "gemini-pro",
+    "config": {
+      "topK": 1,
+      "topP": 1,
+      "temperature": 0.9,
+      "outputTokenLimit": 2048,
+      "maxOutputTokens": 2048,
+      "inputTokenLimit": 30720
+    },
+    "type": "chat"
+  },
+  "saftyThreshold": "HARM_BLOCK_THRESHOLD_UNSPECIFIED"
+}
