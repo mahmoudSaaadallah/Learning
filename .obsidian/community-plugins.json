@@ -8,10 +8,10 @@
   "ninja-cursor",
   "omnisearch",
   "cmdr",
-  "copilot",
   "obsidian-git",
   "colored-text",
   "highlightr-plugin",
   "execute-code",
-  "language-translator"
+  "language-translator",
+  "copilot"
 ]

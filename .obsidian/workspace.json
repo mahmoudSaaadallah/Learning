@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "fee6e2121777068c",
+        "id": "ee3d619c4f87f8e1",
         "type": "tabs",
         "children": [
           {
-            "id": "302a70abbc588931",
+            "id": "7eafc6aa459f9808",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,87 +22,31 @@
             }
           },
           {
-            "id": "58389a99edf0c583",
+            "id": "189956ab2e9c6c75",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/LINQ/LINQ OfType.md",
+                "file": "Dot NET/LINQ/LINQ Join.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LINQ OfType"
+              "title": "LINQ Join"
             }
           },
           {
-            "id": "3c3707a9d1ae8745",
+            "id": "b2bf893a7bc3e5f7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/LINQ/LINQ SelectMany.md",
+                "file": "Dot NET/LINQ/LINQ Popular Methods Union, Intersect, Except, Concat.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LINQ SelectMany"
-            }
-          },
-          {
-            "id": "1c775d61912524ee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JavaScript-Learning-main/Scopes For Variables.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Scopes For Variables"
-            }
-          },
-          {
-            "id": "a7e6f074dea81d24",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Links To Study.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Links To Study"
-            }
-          },
-          {
-            "id": "e40d69d727859240",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET/LINQ/LINQ.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "LINQ"
-            }
-          },
-          {
-            "id": "7a3c7f22e5eebbc1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET/LINQ/LINQ GroupBy.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "LINQ GroupBy"
+              "title": "LINQ Popular Methods Union, Intersect, Except, Concat"
             }
           }
         ],
@@ -226,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dot NET/LINQ/LINQ OrderBy.md",
+                "file": "Dot NET/LINQ/LINQ Join.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of LINQ OrderBy"
+              "title": "Outline of LINQ Join"
             }
           },
           {
@@ -256,7 +200,7 @@
             }
           },
           {
-            "id": "3c856724c5fbd55d",
+            "id": "b2582348a30db68c",
             "type": "leaf",
             "state": {
               "type": "copilot-chat-view",
@@ -284,19 +228,29 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "graph:Open graph view": false,
-      "omnisearch:Omnisearch": false
+      "omnisearch:Omnisearch": false,
+      "gemini-assistant:New Gemini chat": false
     }
   },
-  "active": "58389a99edf0c583",
+  "active": "189956ab2e9c6c75",
   "lastOpenFiles": [
-    "Dot NET/LINQ/LINQ OfType.md",
+    "Dot NET/LINQ/LINQ Join.md",
     "Dot NET/Tutorial.md",
+    "Dot NET/LINQ/LINQ Popular Methods Union, Intersect, Except, Concat.md",
+    "copilot/copilot-conversations/Senior_C#_LINQ_Set_Methods@20260422_160237.md",
+    "copilot/copilot-conversations/LINQ_Note_Discussion@20260422_152312.md",
+    "copilot/copilot-conversations/LINQ_Set_Operations_Deep_Dive@20260422_151919.md",
+    "Untitled.canvas",
+    "Dot NET/LINQ/LINQ GroupBy.md",
+    "copilot/copilot-conversations/LINQ_Popular_Methods_Explained@20260422_150425.md",
+    "DataBase/SQL Server/SQL Server Tutorial.md",
+    "DataBase/SQL Server/Functions/Coalesce ().md",
+    "Dot NET/LINQ/LINQ OfType.md",
     "Dot NET/LINQ/LINQ SelectMany.md",
     "JavaScript-Learning-main/Scopes For Variables.md",
     "JavaScript-Learning-main/JS Tutorial.md",
     "copilot/copilot-conversations/Senior_.NET_Engineering_Mentorship@20260420_142842.md",
     "Links To Study.md",
-    "Dot NET/LINQ/LINQ GroupBy.md",
     "copilot/copilot-conversations/Act_as_a_Senior_Staff_Engineer_and_Technical_Mentor_specializing@20260420_142213.md",
     "Dot NET/LINQ/LINQ.md",
     "copilot/copilot-conversations/Level_Up_LINQ_GroupBy@20260420_100734.md",
@@ -307,20 +261,11 @@
     "copilot/copilot-conversations/MIT_C#_Professor_Persona@20260412_094119.md",
     "Daily.md",
     "Thougths.md",
-    "Dot NET/LINQ/LINQ OrderBy.md",
-    "DataBase/SQL Server/Advanced Queries.md",
-    "Django/Widgets For Forms.md",
-    "Django/Django Field Types.md",
-    "DataBase/SQL Server/SQL Server Tutorial.md",
-    "DataBase/SQL Server/T-SQL/T-SQL LEAD.md",
-    "DataBase/SQL Server/T-SQL/T-SQL Rollup.md",
-    "Django/Django Rest Frame work/Djoser.md",
     "Untitled.base",
     "Untitled 1.base",
     "Dot NET/LINQ/Untitled 1.base",
     "Dot NET/LINQ/Untitled.base",
     "Untitled 1.canvas",
-    "Untitled.canvas",
     "Dot NET/LINQ",
     "DBMS-Using-Bash-Shell-Script.canvas",
     "Dot NET/Advanced C#",
