@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/Tutorial.md",
+                "file": "Dot NET/LINQ Popular Methods Any, All, Contains.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tutorial"
+              "title": "LINQ Popular Methods Any, All, Contains"
             }
           },
           {
@@ -49,8 +49,7 @@
               "title": "LINQ Popular Methods Union, Intersect, Except, Concat"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -170,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dot NET/LINQ/LINQ Join.md",
+                "file": "Dot NET/LINQ Popular Methods Any, All, Contains.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of LINQ Join"
+              "title": "Outline of LINQ Popular Methods Any, All, Contains"
             }
           },
           {
@@ -232,10 +231,11 @@
       "gemini-assistant:New Gemini chat": false
     }
   },
-  "active": "189956ab2e9c6c75",
+  "active": "7eafc6aa459f9808",
   "lastOpenFiles": [
-    "Dot NET/LINQ/LINQ Join.md",
     "Dot NET/Tutorial.md",
+    "Dot NET/LINQ Popular Methods Any, All, Contains.md",
+    "Dot NET/LINQ/LINQ Join.md",
     "Dot NET/LINQ/LINQ Popular Methods Union, Intersect, Except, Concat.md",
     "copilot/copilot-conversations/Senior_C#_LINQ_Set_Methods@20260422_160237.md",
     "copilot/copilot-conversations/LINQ_Note_Discussion@20260422_152312.md",
@@ -260,7 +260,6 @@
     "copilot/copilot-conversations/MIT_C.md",
     "copilot/copilot-conversations/MIT_C#_Professor_Persona@20260412_094119.md",
     "Daily.md",
-    "Thougths.md",
     "Untitled.base",
     "Untitled 1.base",
     "Dot NET/LINQ/Untitled 1.base",

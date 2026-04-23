@@ -35,12 +35,13 @@
 - LINQ Casting [[LINQ Casting]].
 - LINQ Popular Methods [[LINQ Popular Methods distinct, count, sum, min, max, avg ,take, skip]].
 - LINQ Popular Methods [[LINQ Popular Methods Union, Intersect, Except, Concat]].
+- LINQ Popular Methods [[LINQ Popular Methods Any, All, Contains]].
 - LINQ OrderBy [[LINQ OrderBy]].
 - LINQ GroupBy [[LINQ GroupBy]].
 - LINQ SelectMany [[LINQ SelectMany]].
 - LINQ OfType [[LINQ OfType]].
 - LINQ Join [[LINQ Join]].
-- 
+-  
 
 
 
