@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/LINQ Popular Methods Any, All, Contains.md",
+                "file": "Dot NET/Tutorial.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LINQ Popular Methods Any, All, Contains"
+              "title": "Tutorial"
             }
           },
           {
@@ -49,7 +49,8 @@
               "title": "LINQ Popular Methods Union, Intersect, Except, Concat"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -169,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dot NET/LINQ Popular Methods Any, All, Contains.md",
+                "file": "Dot NET/Tutorial.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of LINQ Popular Methods Any, All, Contains"
+              "title": "Outline of Tutorial"
             }
           },
           {
@@ -227,15 +228,14 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "graph:Open graph view": false,
-      "omnisearch:Omnisearch": false,
-      "gemini-assistant:New Gemini chat": false
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "7eafc6aa459f9808",
+  "active": "b2bf893a7bc3e5f7",
   "lastOpenFiles": [
+    "Dot NET/LINQ/LINQ Join.md",
     "Dot NET/Tutorial.md",
     "Dot NET/LINQ Popular Methods Any, All, Contains.md",
-    "Dot NET/LINQ/LINQ Join.md",
     "Dot NET/LINQ/LINQ Popular Methods Union, Intersect, Except, Concat.md",
     "copilot/copilot-conversations/Senior_C#_LINQ_Set_Methods@20260422_160237.md",
     "copilot/copilot-conversations/LINQ_Note_Discussion@20260422_152312.md",
