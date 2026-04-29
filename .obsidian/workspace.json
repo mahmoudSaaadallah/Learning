@@ -13,12 +13,36 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/Tutorial.md",
+                "file": "Dot NET/C# Tutorial.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tutorial"
+              "title": "C# Tutorial"
+            }
+          },
+          {
+            "id": "0e99f2806e769049",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dot NET/LINQ/LINQ Summary.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "LINQ Summary"
+            }
+          },
+          {
+            "id": "d6323b4285e8a969",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           },
           {
@@ -50,7 +74,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -231,19 +255,24 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "b2bf893a7bc3e5f7",
+  "active": "0e99f2806e769049",
   "lastOpenFiles": [
-    "Dot NET/LINQ/LINQ Join.md",
-    "Dot NET/Tutorial.md",
-    "Dot NET/LINQ Popular Methods Any, All, Contains.md",
+    "Dot NET/C# Tutorial.md",
+    "Dot NET/LINQ/LINQ Summary.md",
+    "Dot NET/LINQ/LINQ GroupBy.md",
     "Dot NET/LINQ/LINQ Popular Methods Union, Intersect, Except, Concat.md",
+    "DataBase/SQL Server/T-SQL/T-SQL Rollup.md",
+    "DataBase/SQL Server/SQL Server Tutorial.md",
+    "Dot NET/LINQ/LINQ Join.md",
+    "copilot/copilot-conversations/Extend_LINQ_Summary_Note@20260427_123233.md",
+    "copilot/copilot-conversations/Update_LINQ_Summary_Note@20260427_121311.md",
+    "copilot/copilot-conversations/Simple_Greeting@20260427_120441.md",
+    "Dot NET/LINQ/LINQ Popular Methods Any, All, Contains.md",
     "copilot/copilot-conversations/Senior_C#_LINQ_Set_Methods@20260422_160237.md",
     "copilot/copilot-conversations/LINQ_Note_Discussion@20260422_152312.md",
     "copilot/copilot-conversations/LINQ_Set_Operations_Deep_Dive@20260422_151919.md",
     "Untitled.canvas",
-    "Dot NET/LINQ/LINQ GroupBy.md",
     "copilot/copilot-conversations/LINQ_Popular_Methods_Explained@20260422_150425.md",
-    "DataBase/SQL Server/SQL Server Tutorial.md",
     "DataBase/SQL Server/Functions/Coalesce ().md",
     "Dot NET/LINQ/LINQ OfType.md",
     "Dot NET/LINQ/LINQ SelectMany.md",
@@ -255,11 +284,6 @@
     "Dot NET/LINQ/LINQ.md",
     "copilot/copilot-conversations/Level_Up_LINQ_GroupBy@20260420_100734.md",
     "copilot/copilot-conversations/Senior_.NET_Dev_Mentoring@20260420_100158.md",
-    "copilot/copilot-conversations/AI_Persona_Setup@20260407_104508.md",
-    "copilot/copilot-conversations/Level_Up_to_Senior_.NET@20260413_142403.md",
-    "copilot/copilot-conversations/MIT_C.md",
-    "copilot/copilot-conversations/MIT_C#_Professor_Persona@20260412_094119.md",
-    "Daily.md",
     "Untitled.base",
     "Untitled 1.base",
     "Dot NET/LINQ/Untitled 1.base",
