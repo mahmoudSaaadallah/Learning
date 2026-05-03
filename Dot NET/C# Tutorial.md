@@ -46,6 +46,7 @@
 
 ## EFC
 - Introduction to ORMs and EF Core [[Introduction to ORMs and EF Core]].
+- Setting Up Your First EF Core Project [[Setting Up Your First EF Core Project]].
 
 ## Design Pattern
 - Singleton Pattern [[Singleton Pattern]].
