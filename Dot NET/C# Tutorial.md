@@ -44,6 +44,8 @@
 -  LINQ Summary [[LINQ Summary]].
 
 
+## EFC
+- Introduction to ORMs and EF Core [[Introduction to ORMs and EF Core]].
 
 ## Design Pattern
 - Singleton Pattern [[Singleton Pattern]].
