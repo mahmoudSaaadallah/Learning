@@ -48,7 +48,8 @@
 - Introduction to ORMs and EF Core [[Introduction to ORMs and EF Core]].
 - Setting Up Your First EF Core Project [[Setting Up Your First EF Core Project]].
 - Migrations Workflow [[Migrations Workflow]].
-
+- Data Annotations [[Data Annotations]].
+- Fluent API [[Fluent API]].
 ## Design Pattern
 - Singleton Pattern [[Singleton Pattern]].
 
