@@ -11,6 +11,7 @@
   },
   "knownTags": {
     "check": 1,
+    "clean_architecture": 16,
     "copilot-conversation": 2,
     "creates": 3,
     "cssselector": 4,
