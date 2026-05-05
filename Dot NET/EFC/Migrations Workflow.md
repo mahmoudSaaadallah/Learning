@@ -122,7 +122,7 @@ We start with just the `Blog` entity and `AppDbContext` containing `DbSet<Blog> 
 ```bash
 dotnet ef migrations add InitialCreate # vsc
 or
-add migration InitialCreate # vs 
+add-migration InitialCreate # vs 
 ```
 
 **Output:**
@@ -181,7 +181,7 @@ namespace EfCoreMigrationsDemo.Migrations
 ```bash
 dotnet ef database update
 or
-update database
+update-database
 ```
 
 **Output:**
@@ -210,7 +210,7 @@ Now, let's add the `Post` entity and its `DbSet` to `AppDbContext`.
 ```bash
 dotnet ef migrations add AddPostsTable
 or
-add migrations AddPostsTable
+add-migrations AddPostsTable
 ```
 
 **Output:**
@@ -272,7 +272,7 @@ namespace EfCoreMigrationsDemo.Migrations
 ```bash
 dotnet ef database update
 or
-update database
+update-database
 ```
 Your database now has both `Blogs` and `Posts` tables.
 
@@ -297,7 +297,7 @@ public class Blog
 ```bash
 dotnet ef migrations add AddBlogDescription
 or
-add migration AddBlogDescription
+add-migration AddBlogDescription
 ```
 
 **Output:**
@@ -340,7 +340,7 @@ add migration AddBlogDescription
 ```bash
 dotnet ef database update
 or 
-update database
+update-database
 ```
 The `Blogs` table now has a `Description` column.
 
@@ -356,13 +356,14 @@ Sometimes in development, you realize the last migration was a mistake, or you n
 ```bash
 dotnet ef database update AddPostsTable
 or 
-update database AddPostsTable
+update-database AddPostsTable
 ```
 This command will run the `Down()` method of `AddBlogDescription` and remove its entry from `__EFMigrationsHistory`.
 
 *   **Revert all migrations (empty database):**
 ```bash
 dotnet ef database update 0
+update-migration -migration 0
 ```
 This will run all `Down()` methods in reverse order, effectively dropping all tables and clearing `__EFMigrationsHistory`.
 
@@ -375,7 +376,7 @@ If you've just created a migration, haven't applied it to any shared database, a
 ```bash
 dotnet ef migrations remove
 or 
-remove migration
+remove-migration
 ```
 This deletes the last migration file and reverts the `DbContext` snapshot.
 
