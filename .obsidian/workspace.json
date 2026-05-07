@@ -22,17 +22,59 @@
             }
           },
           {
-            "id": "f25c5c5ea426cf0e",
+            "id": "6d0f3bc831f0f9ef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/EFC/Fluent API.md",
+                "file": "Dot NET/EFC In Deep/1-The Query Pipeline From LINQ Expression to Raw Data Streaming.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fluent API"
+              "title": "1-The Query Pipeline From LINQ Expression to Raw Data Streaming"
+            }
+          },
+          {
+            "id": "39965e847cf6909e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dot NET/EFC In Deep/2-EF Core (Translation Failures).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2-EF Core (Translation Failures)"
+            }
+          },
+          {
+            "id": "c196449b381f9b27",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dot NET/EFC In Deep/2-EF Core (Translation Failures).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2-EF Core (Translation Failures)"
+            }
+          },
+          {
+            "id": "afe88a9345c1ce96",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dot NET/C# Tutorial.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "C# Tutorial"
             }
           }
         ],
@@ -217,15 +259,24 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "f25c5c5ea426cf0e",
+  "active": "6d0f3bc831f0f9ef",
   "lastOpenFiles": [
     "Dot NET/C# Tutorial.md",
+    "Dot NET/EFC In Deep/1-The Query Pipeline From LINQ Expression to Raw Data Streaming.md",
+    "Dot NET/EFC In Deep/2-EF Core (Translation Failures).md",
+    "Dot NET/EFC In Deep/2-EF Core (Translation Failures).md",
+    "Dot NET/EFC In Deep",
+    "Dot NET/Unconfirmed 371195.crdownload",
     "Dot NET/EFC/Fluent API.md",
-    "Dot NET/EFC/Data Annotations.md",
+    "Dot NET/Unconfirmed 297123.crdownload",
+    "Dot NET/Unconfirmed 193752.crdownload",
+    "DataBase/SQL Server/SQL Server Tutorial.md",
     "Dot NET/EFC/Migrations Workflow.md",
+    "DataBase/SQL Server/T-SQL/T-SQL Clustered Index.md",
+    "DataBase/SQL Server/T-SQL/T-SQL Non-Clustered Index.md",
+    "Dot NET/EFC/Data Annotations.md",
     "copilot/copilot-conversations/Mastering_Entity_Framework@20260504_102054.md",
     "copilot/copilot-conversations/Mentoring_for_.NET_Seniority@20260504_101944.md",
-    "DataBase/SQL Server/SQL Server Tutorial.md",
     "DataBase/SQL Server/T-SQL/T-SQL Standard View.md",
     "Dot NET/EFC/Introduction to ORMs and EF Core.md",
     "Dot NET/EFC/Setting Up Your First EF Core Project.md",
@@ -240,12 +291,6 @@
     "Dot NET/LINQ/LINQ Summary.md",
     "copilot/copilot-conversations/Extend_LINQ_Summary_Note@20260427_123233.md",
     "Dot NET/LINQ/LINQ GroupBy.md",
-    "DataBase/SQL Server/T-SQL/T-SQL Rollup.md",
-    "copilot/copilot-conversations/Update_LINQ_Summary_Note@20260427_121311.md",
-    "Dot NET/LINQ/LINQ Popular Methods Any, All, Contains.md",
-    "copilot/copilot-conversations/Senior_C#_LINQ_Set_Methods@20260422_160237.md",
-    "copilot/copilot-conversations/LINQ_Note_Discussion@20260422_152312.md",
-    "copilot/copilot-conversations/LINQ_Set_Operations_Deep_Dive@20260422_151919.md",
     "Untitled.canvas",
     "Untitled.base",
     "Untitled 1.base",
@@ -254,10 +299,6 @@
     "Untitled 1.canvas",
     "Dot NET/LINQ",
     "DBMS-Using-Bash-Shell-Script.canvas",
-    "Dot NET/Advanced C#",
-    "Dot NET",
-    "Al-Fath",
-    "Css",
     "Images/Pasted image 20260117172253.png",
     "Images/Pasted image 20260115125114.png",
     "Images/Pasted image 20251121112827.png",

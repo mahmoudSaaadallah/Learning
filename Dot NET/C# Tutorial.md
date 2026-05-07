@@ -50,6 +50,13 @@
 - Migrations Workflow [[Migrations Workflow]].
 - Data Annotations [[Data Annotations]].
 - Fluent API [[Fluent API]].
+
+## EFC In Deep
+- 1-The Query Pipeline From LINQ Expression to Raw Data Streaming [[1-The Query Pipeline From LINQ Expression to Raw Data Streaming]].
+- 2-EF Core (Translation Failures) [[2-EF Core (Translation Failures)]].
+
+
+
 ## Design Pattern
 - Singleton Pattern [[Singleton Pattern]].
 
