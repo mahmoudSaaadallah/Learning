@@ -22,34 +22,6 @@
             }
           },
           {
-            "id": "6d0f3bc831f0f9ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET/EFC In Deep/1-The Query Pipeline From LINQ Expression to Raw Data Streaming.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1-The Query Pipeline From LINQ Expression to Raw Data Streaming"
-            }
-          },
-          {
-            "id": "39965e847cf6909e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET/EFC In Deep/2-EF Core (Translation Failures).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2-EF Core (Translation Failures)"
-            }
-          },
-          {
             "id": "c196449b381f9b27",
             "type": "leaf",
             "state": {
@@ -259,10 +231,10 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "6d0f3bc831f0f9ef",
+  "active": "c196449b381f9b27",
   "lastOpenFiles": [
-    "Dot NET/C# Tutorial.md",
     "Dot NET/EFC In Deep/1-The Query Pipeline From LINQ Expression to Raw Data Streaming.md",
+    "Dot NET/C# Tutorial.md",
     "Dot NET/EFC In Deep/2-EF Core (Translation Failures).md",
     "Dot NET/EFC In Deep/2-EF Core (Translation Failures).md",
     "Dot NET/EFC In Deep",
