@@ -50,6 +50,7 @@
 - Migrations Workflow [[Migrations Workflow]].
 - Data Annotations [[Data Annotations]].
 - Fluent API [[Fluent API]].
+- Relationship Mapping [[Relationship Mapping]].
 
 ## EFC In Deep
 - 1-The Query Pipeline From LINQ Expression to Raw Data Streaming [[1-The Query Pipeline From LINQ Expression to Raw Data Streaming]].

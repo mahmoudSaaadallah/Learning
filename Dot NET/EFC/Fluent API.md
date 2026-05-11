@@ -1,5 +1,4 @@
 ### Entity Framework Core: Fluent API
-
 The Fluent API provides a code-first way to configure your EF Core model using a set of methods that can be chained together, offering a highly expressive and powerful syntax. All Fluent API configurations are typically performed by overriding the `OnModelCreating` method in your `DbContext` class.
 
 **Why is Fluent API crucial for senior developers?**
@@ -155,65 +154,72 @@ Let's break down the key Fluent API methods:
     *   **Purpose:** Starts the configuration for a specific entity type.
     *   **Example:** `modelBuilder.Entity<Blog>(entity => { ... });`
     *   **Senior Insight:** This is your entry point. The `entity` parameter (often named `b` for Blog, `p` for Post) is an `EntityTypeBuilder<TEntity>` object, which provides all the methods for configuring that entity.
-
-2.  **`entity.HasKey(propertyExpression)`**:
+###### Primary Key 🗝 
+1.  **`entity.HasKey(propertyExpression)`**:
     *   **Purpose:** Configures the primary key(s) for the entity.
     *   **Example:** `entity.HasKey(b => b.BlogId);`
-    *   **Composite Key Example:** `entity.HasKey(p => new { p.PostId, p.BlogId });` (This is a major advantage over Data Annotations).
+    *   **Composite Key Example:** `entity.HasKey(p => new { p.PostId, p.BlogId });` (This is a major advantage over Data Annotations) [[Data Annotations#Primary Key 🗝]].
 
-3.  **`entity.ToTable("TableName", "SchemaName")`**:
+###### Table description
+1.  **`entity.ToTable("TableName", "SchemaName")`**:
     *   **Purpose:** Specifies the database table name and optional schema.
-    *   **Example:** `entity.ToTable("WebBlogs", "blogging");`
+    *   **Example:** `entity.ToTable("WebBlogs", "blogging");` [[Data Annotations#Table description]].
 
-4.  **`entity.Property(propertyExpression)`**:
+2.  **`entity.Property(propertyExpression)`**:
     *   **Purpose:** Starts configuration for a specific property of the entity.
     *   **Example:** `entity.Property(b => b.Name)`
     *   **Senior Insight:** This returns a `PropertyBuilder<TProperty>` object, allowing you to chain further property-specific configurations.
 
-5.  **`IsRequired()`**:
+###### Required Prosperity 
+1.  **`IsRequired()`**:
     *   **Purpose:** Configures the property as non-nullable (`NOT NULL` in the database).
-    *   **Example:** `entity.Property(b => b.Name).IsRequired();`
-
-6.  **`HasMaxLength(length)`**:
+    *   **Example:** `entity.Property(b => b.Name).IsRequired();` [[Data Annotations#Required Prosperity]].
+ 
+###### String Length 
+1.  **`HasMaxLength(length)`**:
     *   **Purpose:** Sets the maximum length for string or byte array properties.
-    *   **Example:** `entity.Property(b => b.Name).HasMaxLength(200);`
+    *   **Example:** `entity.Property(b => b.Name).HasMaxLength(200);` [[Data Annotations#String Length]].
 
-7.  **`HasColumnName("ColumnName")`**:
+###### Column description.
+1.  **`HasColumnName("ColumnName")`**:
     *   **Purpose:** Specifies the database column name.
     *   **Example:** `entity.Property(b => b.Name).HasColumnName("BlogName");`
 
-8.  **`HasColumnType("dbType")`**:
+2.  **`HasColumnType("dbType")`**:
     *   **Purpose:** Specifies the exact database column type.
     *   **Example:** `entity.Property(b => b.Url).HasColumnType("varchar(500)");`
-    *   **Senior Insight:** Use this when you need precise control over the database type, especially for performance or compatibility reasons (e.g., `decimal(18,2)`, `date`, `text`).
+    *   **Senior Insight:** Use this when you need precise control over the database type, especially for performance or compatibility reasons (e.g., `decimal(18,2)`, `date`, `text`). [[Data Annotations#Column description]].
 
-9.  **`HasDefaultValue(value)` / `HasDefaultValueSql("SQL_EXPRESSION")`**:
+3.  **`HasDefaultValue(value)` / `HasDefaultValueSql("SQL_EXPRESSION")`**:
     *   **Purpose:** Sets a default value for the column when a row is inserted without providing a value for that column.
     *   **Example:** `entity.Property(b => b.Url).HasDefaultValue("https://default.com");`
     *   **Example SQL:** `entity.Property(b => b.CreatedDate).HasDefaultValueSql("GETDATE()");`
     *   **Senior Insight:** `HasDefaultValueSql` is incredibly powerful for database-generated defaults (timestamps, GUIDs, etc.) and is a common requirement in production systems.
 
-10. **`IsRowVersion()`**:
+###### Row Value
+1. **`IsRowVersion()`**:
     *   **Purpose:** Configures a `byte[]` property as a concurrency token (row version).
-    *   **Example:** `entity.Property(b => b.RowVersion).IsRowVersion();`
+    *   **Example:** `entity.Property(b => b.RowVersion).IsRowVersion();` [[Data Annotations#Row Value]].
 
-11. **`HasIndex(propertyExpression)` / `HasIndex(anonymousObject)`**:
+2. **`HasIndex(propertyExpression)` / `HasIndex(anonymousObject)`**:
     *   **Purpose:** Creates one or more indexes on the specified property(ies).
     *   **Example (Single Column):** `entity.HasIndex(b => b.Name);`
     *   **Example (Composite Index):** `entity.HasIndex(p => new { p.BlogId, p.Title });`
     *   **Senior Insight:** Indexes are critical for query performance. Always consider adding indexes to foreign keys and columns frequently used in `WHERE` clauses, `ORDER BY`, or `JOIN` operations.
 
-12. **`IsUnique()`**:
+3. **`IsUnique()`**:
     *   **Purpose:** Makes an index a unique constraint.
     *   **Example:** `entity.HasIndex(b => b.Name).IsUnique();`
     *   **Senior Insight:** Essential for enforcing data integrity where certain values must be unique across a table (e.g., email addresses, usernames).
 
-13. **`Ignore(propertyExpression)`**:
+###### Not Mapped Propriety
+1. **`Ignore(propertyExpression)`**:
     *   **Purpose:** Excludes a property from being mapped to the database.
-    *   **Example:** `entity.Ignore(b => b.TemporaryProperty);`
+    *   **Example:** `entity.Ignore(b => b.TemporaryProperty);` [[Data Annotations#Not Mapped Propriety]].
 
-14. **Relationship Configuration (`HasOne`, `WithMany`, `HasForeignKey`, `OnDelete`)**:
-    *   **Purpose:** Defines how entities relate to each other (one-to-many, one-to-one, many-to-many).
+###### Foreign Key 🗝 
+1. **Relationship Configuration (`HasOne`, `WithMany`, `HasForeignKey`, `OnDelete`)**:
+    *   **Purpose:** Defines how entities relate to each other (one-to-many, one-to-one, many-to-many). [[Data Annotations#Foreign Key 🗝]].
     *   **One-to-Many Example:**
 ```csharp
 entity.HasOne(p => p.Blog) // A Post has one Blog
@@ -232,7 +238,8 @@ entity.HasOne(p => p.Blog) // A Post has one Blog
     *   **Purpose:** Configures the join table for a many-to-many relationship where you don't have a dedicated C# entity for the join table.
     *   **Example:** `modelBuilder.Entity<Blog>().HasMany(b => b.Tags).WithMany(t => t.Blogs).UsingEntity(j => j.ToTable("BlogTags"));`
     *   **Senior Insight:** This simplifies many-to-many relationships, but if you need to add extra properties to the join table (e.g., `DateAdded` to `BlogTag`), you'll need to create an explicit join entity and configure it as two one-to-many relationships.
-
+      
+16. `HasComputedColumnSql("")` method is used to specify that the property should map to a computed column. The method takes a string indicating the expression used to generate the default value for a database column.
 ---
 
 #### **Advanced Fluent API & Senior Considerations**

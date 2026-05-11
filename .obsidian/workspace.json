@@ -22,6 +22,48 @@
             }
           },
           {
+            "id": "b9c8ba59a06173e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dot NET/EFC/Fluent API.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Fluent API"
+            }
+          },
+          {
+            "id": "266fd4f20df259f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dot NET/EFC/Data Annotations.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Data Annotations"
+            }
+          },
+          {
+            "id": "a0b47b3cf2dbd12b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dot NET/EFC/Relationship Mapping.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Relationship Mapping"
+            }
+          },
+          {
             "id": "c196449b381f9b27",
             "type": "leaf",
             "state": {
@@ -50,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -82,7 +124,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Important_Note",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,11 +145,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 652.5004348754883,
     "collapsed": true
   },
   "right": {
@@ -231,28 +274,32 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "c196449b381f9b27",
+  "active": "266fd4f20df259f9",
   "lastOpenFiles": [
-    "Dot NET/EFC In Deep/1-The Query Pipeline From LINQ Expression to Raw Data Streaming.md",
+    "Dot NET/EFC/Fluent API.md",
+    "Dot NET/EFC In Deep/2-EF Core (Translation Failures).md",
+    "Dot NET/EFC/Data Annotations.md",
+    "Dot NET/EFC/Relationship Mapping.md",
     "Dot NET/C# Tutorial.md",
-    "Dot NET/EFC In Deep/2-EF Core (Translation Failures).md",
-    "Dot NET/EFC In Deep/2-EF Core (Translation Failures).md",
+    "copilot/copilot-conversations/Entity_Framework_Senior_Path@20260510_165915.md",
+    "copilot/copilot-conversations/Mastering_Entity_Framework@20260504_102054.md",
+    "copilot/copilot-conversations/EF_Core_Learning_Plan@20260503_141433.md",
+    "copilot/memory/Recent Conversations.md",
+    "copilot/copilot-conversations/Extend_LINQ_Summary_Note@20260427_123233.md",
+    "copilot/copilot-conversations/Senior_.NET_Engineering_Mentorship@20260420_142842.md",
+    "Dot NET/EFC In Deep/1-The Query Pipeline From LINQ Expression to Raw Data Streaming.md",
     "Dot NET/EFC In Deep",
     "Dot NET/Unconfirmed 371195.crdownload",
-    "Dot NET/EFC/Fluent API.md",
     "Dot NET/Unconfirmed 297123.crdownload",
     "Dot NET/Unconfirmed 193752.crdownload",
     "DataBase/SQL Server/SQL Server Tutorial.md",
     "Dot NET/EFC/Migrations Workflow.md",
     "DataBase/SQL Server/T-SQL/T-SQL Clustered Index.md",
     "DataBase/SQL Server/T-SQL/T-SQL Non-Clustered Index.md",
-    "Dot NET/EFC/Data Annotations.md",
-    "copilot/copilot-conversations/Mastering_Entity_Framework@20260504_102054.md",
     "copilot/copilot-conversations/Mentoring_for_.NET_Seniority@20260504_101944.md",
     "DataBase/SQL Server/T-SQL/T-SQL Standard View.md",
     "Dot NET/EFC/Introduction to ORMs and EF Core.md",
     "Dot NET/EFC/Setting Up Your First EF Core Project.md",
-    "copilot/copilot-conversations/EF_Core_Learning_Plan@20260503_141433.md",
     "Dot NET/EFC",
     "DataBase/SQL Server/T-SQL/T-SQL Partitioned View.md",
     "DataBase/DataBaseDesign/ACID.md",
@@ -260,9 +307,6 @@
     "Dot NET/LINQ/LINQ Popular Methods Union, Intersect, Except, Concat.md",
     "Dot NET/LINQ/LINQ Join.md",
     "copilot/copilot-conversations/Simple_Greeting@20260427_120441.md",
-    "Dot NET/LINQ/LINQ Summary.md",
-    "copilot/copilot-conversations/Extend_LINQ_Summary_Note@20260427_123233.md",
-    "Dot NET/LINQ/LINQ GroupBy.md",
     "Untitled.canvas",
     "Untitled.base",
     "Untitled 1.base",
