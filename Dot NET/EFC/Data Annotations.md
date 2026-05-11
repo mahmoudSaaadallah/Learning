@@ -250,63 +250,6 @@ public class Product
 }
 ```
 
-#### 2. Using Fluent API: `ValueGenerated`
-
-The Fluent API provides more granular control and is generally preferred by senior developers for complex scenarios or when separating configuration from entities. You use the `ValueGenerated` method on a property builder.
-
-**`ValueGenerated` Options:**
-
-*   **`ValueGenerated.Never`**: Equivalent to `DatabaseGeneratedOption.None`.
-*   **`ValueGenerated.OnAdd`**: Equivalent to `DatabaseGeneratedOption.Identity`.
-*   **`ValueGenerated.OnUpdate`**: Value generated on update only (less common, but possible).
-*   **`ValueGenerated.OnAddOrUpdate`**: Equivalent to `DatabaseGeneratedOption.Computed`.
-
-**Examples in `OnModelCreating`:**
-
-```csharp
-using Microsoft.EntityFrameworkCore;
-using System;
-
-public class AppDbContext : DbContext
-{
-    public DbSet<Product> Products { get; set; }
-
-    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
-
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        modelBuilder.Entity<Product>(entity =>
-        {
-            // 1. Identity Primary Key (often inferred by convention, but can be explicit)
-            entity.Property(p => p.ProductId)
-                  .ValueGeneratedOnAdd(); // Equivalent to [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-
-            // 2. Computed Column
-            entity.Property(p => p.DiscountedPrice)
-                  .ValueGeneratedOnAddOrUpdate(); // Equivalent to [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
-            // IMPORTANT: You still need to define the computed column in your migration!
-            // Example migration code:
-            // migrationBuilder.AddColumn<decimal>(
-            //     name: "DiscountedPrice",
-            //     table: "Products",
-            //     type: "decimal(18,2)",
-            //     nullable: false,
-            //     computedColumnSql: "[Price] * 0.9"); // Example computation
-
-            // 3. Default Value (e.g., CreatedDate)
-            // This is the preferred way to handle database default values.
-            entity.Property(p => p.CreatedDate)
-                  .HasDefaultValueSql("GETDATE()") // SQL Server specific, use appropriate function for other DBs
-                  .ValueGeneratedOnAdd(); // Tells EF Core not to send a value on Add, letting DB handle default
-
-            // 4. Row Version / Timestamp (for optimistic concurrency)
-            // [Timestamp] attribute is a shortcut for this.
-            entity.Property(p => p.RowVersion)
-                  .IsRowVersion(); // This method automatically sets ValueGeneratedOnAddOrUpdate and configures type
-        });
-    }
-}
-```
 
 ### Senior-Level Considerations
 
