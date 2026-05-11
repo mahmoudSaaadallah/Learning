@@ -64,6 +64,16 @@
             }
           },
           {
+            "id": "04d518722cd4d112",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
             "id": "c196449b381f9b27",
             "type": "leaf",
             "state": {
@@ -92,7 +102,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -274,12 +284,16 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "266fd4f20df259f9",
+  "active": "a0b47b3cf2dbd12b",
   "lastOpenFiles": [
-    "Dot NET/EFC/Fluent API.md",
-    "Dot NET/EFC/Data Annotations.md",
-    "Dot NET/EFC In Deep/2-EF Core (Translation Failures).md",
+    "Docker/docker (1).md",
+    "Docker/docker.md",
+    "Docker/Docker cheat sheet (1).md",
+    "Docker/Docker cheat sheet.md",
     "Dot NET/EFC/Relationship Mapping.md",
+    "Dot NET/EFC/Data Annotations.md",
+    "Dot NET/EFC/Fluent API.md",
+    "Dot NET/EFC In Deep/2-EF Core (Translation Failures).md",
     "Dot NET/C# Tutorial.md",
     "copilot/copilot-conversations/Entity_Framework_Senior_Path@20260510_165915.md",
     "copilot/copilot-conversations/Mastering_Entity_Framework@20260504_102054.md",
@@ -303,10 +317,6 @@
     "Dot NET/EFC",
     "DataBase/SQL Server/T-SQL/T-SQL Partitioned View.md",
     "DataBase/DataBaseDesign/ACID.md",
-    "DataBase/SQL Server/T-SQL/Local & Global Tables.md",
-    "Dot NET/LINQ/LINQ Popular Methods Union, Intersect, Except, Concat.md",
-    "Dot NET/LINQ/LINQ Join.md",
-    "copilot/copilot-conversations/Simple_Greeting@20260427_120441.md",
     "Untitled.canvas",
     "Untitled.base",
     "Untitled 1.base",
