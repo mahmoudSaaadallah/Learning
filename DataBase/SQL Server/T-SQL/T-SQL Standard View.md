@@ -2,7 +2,7 @@
 
 At its core, a **view** in T-SQL is a virtual table whose content is defined by a query. It doesn't store data itself; rather, it's a stored query that, when referenced, dynamically retrieves data from one or more underlying base tables. Think of it as a pre-defined window into your data. When you query a view, the database engine essentially executes the view's underlying `SELECT` statement and presents the results as if they were coming from a table.
 
-A "Standard View" typically refers to a non-indexed view, which is the most common type. It's a logical construct that simplifies data access and enhances security without the physical storage overhead of an indexed view.
+A "Standard View" typically refers to a non-indexed view, which is the most common type. It's a logical construct that simplifies data access and enhances security without the physical storage overhead of an indexed view [[T-SQL Indexed View]].
 
 ### Why Use Standard Views? The Pillars of Good Database Design
 

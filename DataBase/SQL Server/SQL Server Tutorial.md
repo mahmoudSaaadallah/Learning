@@ -81,6 +81,7 @@
 ---
 #### Index
 - Clustered Index [[T-SQL Clustered Index]].
+- Check the Usage of Indexes in the system [[Check the Usage of Indexes in the system ]]
 - Non-Clustered Index [[T-SQL Non-Clustered Index]].
 ---
 ---
