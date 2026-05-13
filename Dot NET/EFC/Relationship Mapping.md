@@ -324,7 +324,8 @@ public class AppDbContext : DbContext
         // with StudentId and CourseId foreign keys.
         modelBuilder.Entity<Student>()
             .HasMany(s => s.Courses)    // A Student has many Courses
-            .WithMany(c => c.Students); // A Course has many Students
+            .WithMany(c => c.Students) // A Course has many Students
+            .UsingEntity(j => j.ToTable("StudentCourses")); // The Joing table
 
         // Seed data
         modelBuilder.Entity<Student>().HasData(
@@ -471,6 +472,7 @@ var courseWithStudents = await _context.Courses
 									   .Include(c => c.Students)
 									   .FirstOrDefaultAsync(c => c.CourseId == 101);
 ```
+
 *   **Manual:** You need to `Include` the join entity first, then `ThenInclude` the related principal entities:
 ```csharp
 var studentEnrollments = await _context.Students
@@ -481,7 +483,9 @@ var studentEnrollments = await _context.Students
 // To get courses for a student, you'd iterate through studentEnrollments.Enrollments
 // and access e.Course.
 ```
+
 Or, if you want to query from the `Enrollment` table directly:
+
 ```csharp
 var enrollmentsForStudent = await _context.Enrollments
 										  .Where(e => e.StudentId == 1)
