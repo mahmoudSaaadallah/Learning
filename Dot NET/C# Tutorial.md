@@ -51,10 +51,14 @@
 - Data Annotations [[Data Annotations]].
 - Fluent API [[Fluent API]].
 - Relationship Mapping [[Relationship Mapping]].
+- Loading Strategies [[Loading Strategies]].
+
 
 ## EFC In Deep
 - 1-The Query Pipeline From LINQ Expression to Raw Data Streaming [[1-The Query Pipeline From LINQ Expression to Raw Data Streaming]].
 - 2-EF Core (Translation Failures) [[2-EF Core (Translation Failures)]].
+- Shadow Properties [[Shadow Properties]].
+- Global Query Filter [[Global Query Filter]].
 
 
 

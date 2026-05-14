@@ -22,91 +22,21 @@
             }
           },
           {
-            "id": "2fd52cf037a9055a",
+            "id": "0bd6e24f3cb2020a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DataBase/SQL Server/SQL Server Tutorial.md",
+                "file": "Dot NET/EFC In Deep/Global Query Filter.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SQL Server Tutorial"
-            }
-          },
-          {
-            "id": "e198e2001314e96a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DataBase/SQL Server/T-SQL/Check the Usage of Indexes in the system.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Check the Usage of Indexes in the system"
-            }
-          },
-          {
-            "id": "b9c8ba59a06173e1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET/EFC/Fluent API.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Fluent API"
-            }
-          },
-          {
-            "id": "266fd4f20df259f9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET/EFC/Data Annotations.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Data Annotations"
-            }
-          },
-          {
-            "id": "a0b47b3cf2dbd12b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET/EFC/Relationship Mapping.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Relationship Mapping"
-            }
-          },
-          {
-            "id": "c196449b381f9b27",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET/EFC In Deep/2-EF Core (Translation Failures).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2-EF Core (Translation Failures)"
+              "title": "Global Query Filter"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -163,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5004348754883,
+    "width": 249.50043487548828,
     "collapsed": true
   },
   "right": {
@@ -287,39 +217,39 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "a0b47b3cf2dbd12b",
+  "active": "0bd6e24f3cb2020a",
   "lastOpenFiles": [
+    "Dot NET/C# Tutorial.md",
+    "Dot NET/EFC In Deep/Global Query Filter.md",
+    "Dot NET/EFC In Deep/Shadow Properties.md",
+    "Dot NET/EFC/Loading Strategies.md",
+    "copilot/copilot-conversations/Entity_Framework_Seniority_Path@20260513_133300.md",
+    "copilot/copilot-conversations/Entity_Framework_Seniority_Path@20260513_133001.md",
+    "DataBase/SQL Server/SQL Server Tutorial.md",
+    "Dot NET/EFC In Deep/2-EF Core (Translation Failures).md",
+    "Dot NET/EFC/Relationship Mapping.md",
     "Dot NET/EFC/Data Annotations.md",
     "Dot NET/EFC/Fluent API.md",
+    "copilot/copilot-conversations/Mentoring_for_.NET_Seniority@20260504_101944.md",
+    "copilot/copilot-conversations/Mastering_Entity_Framework@20260504_102054.md",
     "DataBase/SQL Server/T-SQL/Check the Usage of Indexes in the system.md",
-    "DataBase/SQL Server/SQL Server Tutorial.md",
     "DataBase/SQL Server/T-SQL/T-SQL Indexed View.md",
     "DataBase/SQL Server/T-SQL/T-SQL Standard View.md",
     "DataBase/SQL Server/T-SQL/T-SQL Partitioned View.md",
-    "Dot NET/C# Tutorial.md",
-    "Dot NET/EFC In Deep/2-EF Core (Translation Failures).md",
     "DataBase/SQL Server/T-SQL/Pasted image 20260512152332.png",
-    "Dot NET/EFC/Relationship Mapping.md",
     "Docker/docker (1).md",
     "Docker/docker.md",
     "Docker/Docker cheat sheet (1).md",
     "Docker/Docker cheat sheet.md",
     "copilot/copilot-conversations/Entity_Framework_Senior_Path@20260510_165915.md",
-    "copilot/copilot-conversations/Mastering_Entity_Framework@20260504_102054.md",
     "copilot/copilot-conversations/EF_Core_Learning_Plan@20260503_141433.md",
     "copilot/memory/Recent Conversations.md",
     "copilot/copilot-conversations/Extend_LINQ_Summary_Note@20260427_123233.md",
     "copilot/copilot-conversations/Senior_.NET_Engineering_Mentorship@20260420_142842.md",
-    "Dot NET/EFC In Deep/1-The Query Pipeline From LINQ Expression to Raw Data Streaming.md",
     "Dot NET/EFC In Deep",
     "Dot NET/Unconfirmed 371195.crdownload",
     "Dot NET/Unconfirmed 297123.crdownload",
     "Dot NET/Unconfirmed 193752.crdownload",
-    "Dot NET/EFC/Migrations Workflow.md",
-    "DataBase/SQL Server/T-SQL/T-SQL Clustered Index.md",
-    "DataBase/SQL Server/T-SQL/T-SQL Non-Clustered Index.md",
-    "copilot/copilot-conversations/Mentoring_for_.NET_Seniority@20260504_101944.md",
-    "Dot NET/EFC/Introduction to ORMs and EF Core.md",
     "Dot NET/EFC",
     "Untitled.canvas",
     "Untitled.base",
