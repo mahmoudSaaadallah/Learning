@@ -52,7 +52,7 @@
 - Fluent API [[Fluent API]].
 - Relationship Mapping [[Relationship Mapping]].
 - Loading Strategies [[Loading Strategies]].
-- 
+- Index Using DA & FAPI [[Index Using DA & FAPI]].
 
 
 ## EFC In Deep
@@ -62,7 +62,14 @@
 - Global Query Filter [[Global Query Filter]].
 - IQueryable vs. IEnumerable [[IQueryable vs. IEnumerable]].
 - Tracking vs. No-Tracking [[Tracking vs. No-Tracking]].
-- Raw SQL & Interceptors [[Raw SQL & Interceptors ]]
+- Raw SQL & Interceptors [[Raw SQL & Interceptors ]].
+- **The Repository & Unit of Work Patterns:** Deciding whether to wrap `DbContext` or use it directly (the great architectural debate).
+- **Concurrency Conflicts:** Implementing Optimistic Concurrency using `RowVersion` or `IsRowVersion` to prevent users from overwriting each other's data.
+- **Transactions:** Going beyond `SaveChanges()` to handle multi-context transactions or `IDbContextTransaction`.
+- **Multi-tenancy:** Implementing strategies to keep different clients' data separate within the same database.
+
+
+
 ## Design Pattern
 - Singleton Pattern [[Singleton Pattern]].
 
