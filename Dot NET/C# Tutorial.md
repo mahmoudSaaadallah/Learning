@@ -62,7 +62,7 @@
 - Global Query Filter [[Global Query Filter]].
 - IQueryable vs. IEnumerable [[IQueryable vs. IEnumerable]].
 - Tracking vs. No-Tracking [[Tracking vs. No-Tracking]].
-
+- Raw SQL & Interceptors [[Raw SQL & Interceptors ]]
 ## Design Pattern
 - Singleton Pattern [[Singleton Pattern]].
 
