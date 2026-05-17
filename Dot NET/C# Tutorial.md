@@ -52,6 +52,7 @@
 - Fluent API [[Fluent API]].
 - Relationship Mapping [[Relationship Mapping]].
 - Loading Strategies [[Loading Strategies]].
+- 
 
 
 ## EFC In Deep
@@ -59,7 +60,7 @@
 - 2-EF Core (Translation Failures) [[2-EF Core (Translation Failures)]].
 - Shadow Properties [[Shadow Properties]].
 - Global Query Filter [[Global Query Filter]].
-
+- IQueryable vs. IEnumerable [[IQueryable vs. IEnumerable]].
 
 
 ## Design Pattern
