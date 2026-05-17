@@ -61,7 +61,7 @@
 - Shadow Properties [[Shadow Properties]].
 - Global Query Filter [[Global Query Filter]].
 - IQueryable vs. IEnumerable [[IQueryable vs. IEnumerable]].
-
+- Tracking vs. No-Tracking [[Tracking vs. No-Tracking]].
 
 ## Design Pattern
 - Singleton Pattern [[Singleton Pattern]].
