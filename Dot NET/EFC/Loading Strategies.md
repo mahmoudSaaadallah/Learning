@@ -70,24 +70,24 @@ var orders = await _context.Orders
 	.ToListAsync();
 ```
 *   **Projection (`Select`):** For maximum control and efficiency, especially in read-heavy scenarios (e.g., API endpoints, reports), *always* consider projecting into a DTO (Data Transfer Object) or an anonymous type using `.Select()`. This allows you to fetch *only* the columns and related data you actually need, avoiding over-fetching entirely.
-    ```csharp
-    var orderDto = await _context.Orders
-        .Where(o => o.Id == orderId)
-        .Select(o => new OrderDetailDto // Projecting into a DTO
-        {
-            OrderId = o.Id,
-            OrderNumber = o.OrderNumber,
-            CustomerName = o.Customer.Name, // Accessing related data directly
-            ItemCount = o.Items.Count(),
-            Items = o.Items.Select(oi => new OrderItemDto
-            {
-                ProductName = oi.ProductName,
-                Quantity = oi.Quantity
-            }).ToList()
-        })
-        .FirstOrDefaultAsync();
-    ```
-    This is often the most performant approach for specific views or API responses.
+```csharp
+var orderDto = await _context.Orders
+	.Where(o => o.Id == orderId)
+	.Select(o => new OrderDetailDto // Projecting into a DTO
+	{
+		OrderId = o.Id,
+		OrderNumber = o.OrderNumber,
+		CustomerName = o.Customer.Name, // Accessing related data directly
+		ItemCount = o.Items.Count(),
+		Items = o.Items.Select(oi => new OrderItemDto
+		{
+			ProductName = oi.ProductName,
+			Quantity = oi.Quantity
+		}).ToList()
+	})
+	.FirstOrDefaultAsync();
+```
+This is often the most performant approach for specific views or API responses.
 *   **Bounded Contexts & Aggregates:** In a DDD (Domain-Driven Design) context, eager loading aligns well with loading an entire aggregate root and its immediate children. However, be mindful of loading entire aggregates when only a small part is needed.
 
 ---

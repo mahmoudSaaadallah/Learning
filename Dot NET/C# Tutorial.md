@@ -63,6 +63,7 @@
 - IQueryable vs. IEnumerable [[IQueryable vs. IEnumerable]].
 - Tracking vs. No-Tracking [[Tracking vs. No-Tracking]].
 - Raw SQL & Interceptors [[Raw SQL & Interceptors ]].
+- Update and Delete on the Server Side [[Update and Delete on the Server Side]].
 - **The Repository & Unit of Work Patterns:** Deciding whether to wrap `DbContext` or use it directly (the great architectural debate).
 - **Concurrency Conflicts:** Implementing Optimistic Concurrency using `RowVersion` or `IsRowVersion` to prevent users from overwriting each other's data.
 - **Transactions:** Going beyond `SaveChanges()` to handle multi-context transactions or `IDbContextTransaction`.
