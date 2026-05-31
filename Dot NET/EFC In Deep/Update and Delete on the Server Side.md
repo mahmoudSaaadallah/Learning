@@ -145,7 +145,7 @@ Console.WriteLine($"Deleted {affectedRows} old, out-of-stock products.");
     *   No `SaveChanges()` needed.
     *   No `SavingChanges` or `SavedChanges` events.
 *   **Performance**: Extremely efficient for bulk deletions. A single `DELETE` statement is executed.
-#Important_Note 
+#i
 *   **Cascade Deletes**: This is a critical point. `ExecuteDelete` does *not* trigger EF Core's in-memory cascade delete behavior. If you have relationships configured with `DeleteBehavior.Cascade` in your EF Core model, these will only be honored if the *database itself* has cascade delete rules defined for the foreign keys. If not, you might end up with orphaned child records or a foreign key constraint violation.
     *   **Recommendation**: For complex graphs with cascade deletes, either ensure your database handles cascades, or use traditional EF Core deletion (load and remove) if you rely on EF Core's in-memory cascade logic.
 *   **Concurrency**: Similar to `ExecuteUpdate`, `ExecuteDelete` doesn't inherently handle optimistic concurrency tokens.
@@ -156,43 +156,43 @@ Console.WriteLine($"Deleted {affectedRows} old, out-of-stock products.");
 
 1.  **Transactions**: When combining `ExecuteUpdate`/`ExecuteDelete` with other EF Core operations (e.g., traditional `SaveChanges()`), always wrap them in a database transaction to ensure atomicity.
 
-    ```csharp
-    using var context = new AppDbContext();
-    await using var transaction = await context.Database.BeginTransactionAsync();
+```csharp
+using var context = new AppDbContext();
+await using var transaction = await context.Database.BeginTransactionAsync();
 
-    try
-    {
-        // Perform a traditional update first
-        var productToUpdate = await context.Products.FirstOrDefaultAsync(p => p.Id == 1);
-        if (productToUpdate != null)
-        {
-            productToUpdate.Name = "Updated Product Name";
-            await context.SaveChangesAsync(); // This uses change tracking
-        }
+try
+{
+	// Perform a traditional update first
+	var productToUpdate = await context.Products.FirstOrDefaultAsync(p => p.Id == 1);
+	if (productToUpdate != null)
+	{
+		productToUpdate.Name = "Updated Product Name";
+		await context.SaveChangesAsync(); // This uses change tracking
+	}
 
-        // Then perform a bulk update
-        var affectedBulkRows = await context.Products
-            .Where(p => p.StockQuantity < 10)
-            .ExecuteUpdateAsync(setters => setters
-                .SetProperty(p => p.StockQuantity, p => p.StockQuantity + 5));
+	// Then perform a bulk update
+	var affectedBulkRows = await context.Products
+		.Where(p => p.StockQuantity < 10)
+		.ExecuteUpdateAsync(setters => setters
+			.SetProperty(p => p.StockQuantity, p => p.StockQuantity + 5));
 
-        // Then perform a bulk delete
-        var affectedDeleteRows = await context.Products
-            .Where(p => p.IsActive == false && p.LastUpdated < DateTime.UtcNow.AddMonths(-6))
-            .ExecuteDeleteAsync();
+	// Then perform a bulk delete
+	var affectedDeleteRows = await context.Products
+		.Where(p => p.IsActive == false && p.LastUpdated < DateTime.UtcNow.AddMonths(-6))
+		.ExecuteDeleteAsync();
 
-        await transaction.CommitAsync();
-        Console.WriteLine("Transaction committed successfully.");
-    }
-    catch (Exception ex)
-    {
-        await transaction.RollbackAsync();
-        Console.WriteLine($"Transaction rolled back: {ex.Message}");
-    }
-    ```
+	await transaction.CommitAsync();
+	Console.WriteLine("Transaction committed successfully.");
+}
+catch (Exception ex)
+{
+	await transaction.RollbackAsync();
+	Console.WriteLine($"Transaction rolled back: {ex.Message}");
+}
+```
 
 2.  **Auditing**: Since these methods bypass change tracking, any automatic auditing mechanisms (e.g., interceptors that populate `CreatedDate`, `ModifiedDate`) will not be triggered. If auditing is required for these operations, you must implement it manually (e.g., by inserting audit records in the same transaction).
-
+#Important_Note 
 3.  **Caching**: If you have an application-level cache, remember that `ExecuteUpdate` and `ExecuteDelete` will modify the database directly, potentially invalidating cached data. You'll need a strategy to refresh or invalidate your cache after these operations.
 
 4.  **Read-Your-Own-Writes Consistency**: If you perform an `ExecuteUpdate` or `ExecuteDelete` and then immediately query the affected data using traditional EF Core, you might encounter stale data if your `DbContext` instance is still tracking old versions of those entities. It's often best to use a fresh `DbContext` instance or clear the change tracker (`context.ChangeTracker.Clear()`) if you need to immediately re-query the affected data after a bulk operation.
@@ -204,5 +204,3 @@ Console.WriteLine($"Deleted {affectedRows} old, out-of-stock products.");
     *   When you rely heavily on EF Core's change tracking for auditing, concurrency, or automatic property population.
     *   When you need EF Core's in-memory cascade delete behavior for complex object graphs.
     *   When dealing with a small number of entities where the performance gain of bulk operations is negligible, and the clarity of traditional operations is preferred.
-
-By mastering `ExecuteUpdate` and `ExecuteDelete`, you gain powerful tools for optimizing database interactions in your .NET applications, a hallmark of a senior software engineer. Always consider the trade-offs and choose the right tool for the job!
