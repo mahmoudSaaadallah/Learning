@@ -66,6 +66,9 @@
 - Update and Delete on the Server Side [[Update and Delete on the Server Side]].
 - Optimistic and Pessimistic Changes [[Optimistic and Pessimistic Concurrency]].
 - Concurrency Check Attribute [[Concurrency Check Attribute]].
+- Complex Type.
+- JSON Column.
+- Inter-sectors.
 - **The Repository & Unit of Work Patterns:** Deciding whether to wrap `DbContext` or use it directly (the great architectural debate).
 - **Concurrency Conflicts:** Implementing Optimistic Concurrency using `RowVersion` or `IsRowVersion` to prevent users from overwriting each other's data.
 - **Transactions:** Going beyond `SaveChanges()` to handle multi-context transactions or `IDbContextTransaction`.
@@ -74,6 +77,12 @@
 
 
 ## Design Pattern
+- SOLID Principles 
+  -  Single Responsibility Principle [[Single Responsibility Principle]].
+  -  Open/CIosed Principle
+  - Liskov Substitution Principle
+  - Interface Segregation Principle
+  - Dependency Inversion Principle
 - Singleton Pattern [[Singleton Pattern]].
 
 

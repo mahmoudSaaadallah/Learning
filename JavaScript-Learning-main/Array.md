@@ -197,6 +197,12 @@ console.log(arr); // [ 1, 2, 3, 5, 5, 6, 7 ]
 // Sort in Descending order
 arr.sort((a, b) =>  b - a)
 console.log(arr); // [ 7, 6, 5, 5, 3, 2, 1 ]
+
+arr.sort();
+console.log(arr); // [ 1, 2, 3, 5, 5, 6, 7 ]
+arr.sort().reverse();
+console.log(arr); // [ 7, 6, 5, 5, 3, 2, 1 ]
+
 ```
 
 ##### ⚠️ Why `numbers.sort()` without a compare function is wrong:
