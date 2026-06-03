@@ -22,21 +22,20 @@
             }
           },
           {
-            "id": "fea417086d83886c",
+            "id": "9861b4e7d325fe9a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/SOLID/Single Responsibility Principle.md",
+                "file": "Dot NET/SOLID/Open Closed Principle.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Single Responsibility Principle"
+              "title": "Open Closed Principle"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -200,7 +199,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 935.5
+    "width": 935.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -216,11 +216,13 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "fea417086d83886c",
+  "active": "7eafc6aa459f9808",
   "lastOpenFiles": [
-    "Dot NET/SOLID",
-    "Dot NET/SOLID/Single Responsibility Principle.md",
+    "Dot NET/SOLID/Open Closed Principle.md",
     "Dot NET/C# Tutorial.md",
+    "Open",
+    "Dot NET/SOLID/Single Responsibility Principle.md",
+    "Dot NET/SOLID",
     "JavaScript-Learning-main/Array.md",
     "JavaScript-Learning-main/JS Tutorial.md",
     "DataBase/SQL Server/T-SQL/Transaction.md",
@@ -254,8 +256,6 @@
     "Dot NET/EFC",
     "Untitled.canvas",
     "Untitled.base",
-    "Untitled 1.base",
-    "Dot NET/LINQ/Untitled 1.base",
     "Untitled 1.canvas",
     "DBMS-Using-Bash-Shell-Script.canvas",
     "Images/Pasted image 20260117172253.png",

@@ -75,11 +75,15 @@
 - **Multi-tenancy:** Implementing strategies to keep different clients' data separate within the same database.
 
 
+## WEB API
+
+
+
 
 ## Design Pattern
 - SOLID Principles 
   -  Single Responsibility Principle [[Single Responsibility Principle]].
-  -  Open/CIosed Principle
+  -  Open/CIosed Principle [[Open Closed Principle]].
   - Liskov Substitution Principle
   - Interface Segregation Principle
   - Dependency Inversion Principle
