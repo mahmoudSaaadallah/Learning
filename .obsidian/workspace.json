@@ -13,29 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/HTTP Characteristics.md",
+                "file": "Dot NET/C# Tutorial.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HTTP Characteristics"
+              "title": "C# Tutorial"
             }
           },
           {
-            "id": "9861b4e7d325fe9a",
+            "id": "fef7c53cb22596b1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/SOLID/Open Closed Principle.md",
+                "file": "Dot NET/OOP/Encapsulation Using C.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Open Closed Principle"
+              "title": "Encapsulation Using C"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -216,13 +217,18 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "7eafc6aa459f9808",
+  "active": "fef7c53cb22596b1",
   "lastOpenFiles": [
-    "Dot NET/C# Tutorial.md",
-    "Dot NET/HTTP Characteristics.md",
     "Prompts.md",
-    "copilot/memory/Recent Conversations.md",
+    "Dot NET/OOP/Encapsulation Using C.md",
+    "Dot NET/C# Tutorial.md",
+    "Dot NET/OOP/Polymorphism.md",
+    "JavaScript-Learning-main/JS OOP/Encapsulation.md",
     "Dot NET/SOLID/Open Closed Principle.md",
+    "Dot NET/OOP",
+    "Dot NET/WEB API",
+    "Dot NET/WEB API/HTTP Characteristics.md",
+    "copilot/memory/Recent Conversations.md",
     "Open",
     "Dot NET/SOLID/Single Responsibility Principle.md",
     "Dot NET/SOLID",
@@ -243,9 +249,6 @@
     "copilot/copilot-conversations/hi@20260206_202714.md",
     "Dot NET/EFC In Deep/Update and Delete on the Server Side.md",
     "copilot/copilot-conversations/Help_me_to_under_stand_the_Vector_Spaces_and_Subspaces@20260219_161913.md",
-    "Dot NET/EFC In Deep/2-EF Core (Translation Failures).md",
-    "Dot NET/EFC/Index Using DA & FAPI.md",
-    "Dot NET/EFC/Relationship Mapping.md",
     "Docker/Docker Summary.pdf",
     "Docker",
     "DataBase/SQL Server/T-SQL/Pasted image 20260512152332.png",
@@ -253,9 +256,7 @@
     "Dot NET/Unconfirmed 371195.crdownload",
     "Dot NET/Unconfirmed 297123.crdownload",
     "Dot NET/Unconfirmed 193752.crdownload",
-    "Dot NET/EFC",
     "Untitled.canvas",
-    "Untitled.base",
     "Untitled 1.canvas",
     "DBMS-Using-Bash-Shell-Script.canvas",
     "Images/Pasted image 20260117172253.png",
