@@ -21,3 +21,11 @@
 ## Comprehensive LINQ Summary Note
 **Time:** 2026-04-27 12:30
 **Summary:** The user provided extensive C# code and documentation to create a detailed LINQ summary note. This note covers the fundamentals of LINQ, essential C# features like `var`, extension methods, and anonymous types, and a wide array of LINQ operators including filtering (`Where`), projecting (`Select`), ordering (`OrderBy`), element retrieval (`First`, `Single`), aggregation (`Count`, `Sum`), generation (`Range`, `Repeat`), set operations (`Union`, `Distinct`), casting, quantifiers (`Any`, `All`), zipping, grouping (`GroupBy`), and query syntax constructs (`Let`, `Into`), along with explanations of deferred execution and fluent vs. query syntax.
+
+## .NET Backend Mentorship Setup
+**Time:** 2026-06-03 17:38
+**Summary:** The user is setting up a long-term mentorship role for an AI, aiming to become a strong .NET backend developer. They provided extensive, detailed instructions on how the AI should explain topics, emphasizing practical examples, production-level scenarios, and senior-level insights. The AI, however, encountered connection errors and did not provide a response.
+
+## .NET Backend Mentor Setup
+**Time:** 2026-06-03 17:39
+**Summary:** The user is setting up the AI to act as a long-term .NET backend mentor, providing detailed instructions and 20 specific rules for how the AI should explain topics related to .NET and C#. The AI, however, returned an error indicating that its quota was exceeded.
