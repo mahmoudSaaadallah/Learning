@@ -16,7 +16,7 @@ class Swimmable:
 class Duck(Flyable, Swimmable):
     def quack(self):
         print("Quack!")
-
++
 my_duck = Duck()
 my_duck.fly()
 my_duck.swim()
@@ -91,29 +91,29 @@ When `p.speak()` is called, Python finds `speak` in `Mammal` first, so it prints
 1.  **Code Reusability**: The most obvious benefit. You can combine functionalities from multiple base classes without duplicating code.
 2.  **Mixins**: This is arguably the most common and Pythonic use case for multiple inheritance. A mixin is a class that provides a specific piece of functionality to another class, but is not intended to be instantiated on its own. They often don't have their own state and are designed to be "mixed in" with other classes.
 
-    ```python
-    class LoggerMixin:
-        def log(self, message):
-            print(f"LOG: {message}")
+```python
+class LoggerMixin:
+	def log(self, message):
+		print(f"LOG: {message}")
 
-    class AuthenticatorMixin:
-        def authenticate(self, user, password):
-            if user == "admin" and password == "secret":
-                self.log("Authentication successful")
-                return True
-            self.log("Authentication failed")
-            return False
+class AuthenticatorMixin:
+	def authenticate(self, user, password):
+		if user == "admin" and password == "secret":
+			self.log("Authentication successful")
+			return True
+		self.log("Authentication failed")
+		return False
 
-    class UserManagementSystem(LoggerMixin, AuthenticatorMixin):
-        def __init__(self, name):
-            self.name = name
-            self.log(f"System '{self.name}' initialized.")
+class UserManagementSystem(LoggerMixin, AuthenticatorMixin):
+	def __init__(self, name):
+		self.name = name
+		self.log(f"System '{self.name}' initialized.")
 
-    ums = UserManagementSystem("HR System")
-    ums.authenticate("admin", "secret")
-    ums.authenticate("guest", "wrongpass")
-    ```
-    Here, `UserManagementSystem` gains logging and authentication capabilities by mixing in `LoggerMixin` and `AuthenticatorMixin`. Notice how `AuthenticatorMixin` even uses `log` from `LoggerMixin`, demonstrating how mixins can interact through the MRO.
+ums = UserManagementSystem("HR System")
+ums.authenticate("admin", "secret")
+ums.authenticate("guest", "wrongpass")
+```
+Here, `UserManagementSystem` gains logging and authentication capabilities by mixing in `LoggerMixin` and `AuthenticatorMixin`. Notice how `AuthenticatorMixin` even uses `log` from `LoggerMixin`, demonstrating how mixins can interact through the MRO.
 
 3.  **Modeling Complex Relationships**: For scenarios where an entity genuinely possesses characteristics from multiple independent domains, multiple inheritance can provide a more direct and intuitive model.
 
@@ -127,34 +127,34 @@ While powerful, multiple inheritance comes with its own set of complexities:
 4.  **Maintenance Headaches**: Debugging and maintaining code with deep and wide multiple inheritance hierarchies can be challenging due to the non-obvious flow of control.
 5.  **State Management**: If multiple parent classes have their own state (i.e., `__init__` methods), ensuring proper initialization across the hierarchy requires careful use of `super()`.
 
-    ```python
-    class Base:
-        def __init__(self):
-            print("Base init")
+```python
+class Base:
+	def __init__(self):
+		print("Base init")
 
-    class A(Base):
-        def __init__(self):
-            super().__init__()
-            print("A init")
+class A(Base):
+	def __init__(self):
+		super().__init__()
+		print("A init")
 
-    class B(Base):
-        def __init__(self):
-            super().__init__()
-            print("B init")
+class B(Base):
+	def __init__(self):
+		super().__init__()
+		print("B init")
 
-    class C(A, B):
-        def __init__(self):
-            super().__init__() # This is crucial!
-            print("C init")
+class C(A, B):
+	def __init__(self):
+		super().__init__() # This is crucial!
+		print("C init")
 
-    c = C()
-    # Output:
-    # Base init
-    # B init
-    # A init
-    # C init
-    ```
-    Notice how `super().__init__()` in `C` correctly calls `A.__init__`, which then calls `B.__init__` (due to MRO), which then calls `Base.__init__`. This cooperative `super()` call is essential for proper initialization in complex hierarchies.
+c = C()
+# Output:
+# Base init
+# B init
+# A init
+# C init
+```
+Notice how `super().__init__()` in `C` correctly calls `A.__init__`, which then calls `B.__init__` (due to MRO), which then calls `Base.__init__`. This cooperative `super()` call is essential for proper initialization in complex hierarchies.
 
 ### Alternatives to Multiple Inheritance
 
@@ -162,61 +162,61 @@ Given the potential complexities, it's often wise to consider alternatives:
 
 1.  **Composition over Inheritance**: This is a widely recommended principle. Instead of inheriting functionalities, a class can *contain* instances of other classes and delegate tasks to them. This promotes looser coupling and greater flexibility.
 
-    ```python
-    class FlyBehavior:
-        def fly(self):
-            print("I can fly!")
+```python
+class FlyBehavior:
+	def fly(self):
+		print("I can fly!")
 
-    class SwimBehavior:
-        def swim(self):
-            print("I can swim!")
+class SwimBehavior:
+	def swim(self):
+		print("I can swim!")
 
-    class Duck:
-        def __init__(self):
-            self.fly_behavior = FlyBehavior()
-            self.swim_behavior = SwimBehavior()
+class Duck:
+	def __init__(self):
+		self.fly_behavior = FlyBehavior()
+		self.swim_behavior = SwimBehavior()
 
-        def fly(self):
-            self.fly_behavior.fly()
+	def fly(self):
+		self.fly_behavior.fly()
 
-        def swim(self):
-            self.swim_behavior.swim()
+	def swim(self):
+		self.swim_behavior.swim()
 
-        def quack(self):
-            print("Quack!")
+	def quack(self):
+		print("Quack!")
 
-    my_duck = Duck()
-    my_duck.fly()
-    my_duck.swim()
-    ```
-    Here, `Duck` *has a* `FlyBehavior` and `SwimBehavior` rather than *is a* `Flyable` and `Swimmable`.
+my_duck = Duck()
+my_duck.fly()
+my_duck.swim()
+```
+Here, `Duck` *has a* `FlyBehavior` and `SwimBehavior` rather than *is a* `Flyable` and `Swimmable`.
 
 2.  **Abstract Base Classes (ABCs)**: Python's `abc` module allows you to define interfaces. A class can declare that it implements certain methods without providing their implementation. This is similar to interfaces in Java.
 
-    ```python
-    from abc import ABC, abstractmethod
+```python
+from abc import ABC, abstractmethod
 
-    class IFlyable(ABC):
-        @abstractmethod
-        def fly(self):
-            pass
+class IFlyable(ABC):
+	@abstractmethod
+	def fly(self):
+		pass
 
-    class ISwimmable(ABC):
-        @abstractmethod
-        def swim(self):
-            pass
+class ISwimmable(ABC):
+	@abstractmethod
+	def swim(self):
+		pass
 
-    class Duck(IFlyable, ISwimmable): # Can inherit from multiple ABCs
-        def fly(self):
-            print("Duck flying!")
-        def swim(self):
-            print("Duck swimming!")
-        def quack(self):
-            print("Quack!")
+class Duck(IFlyable, ISwimmable): # Can inherit from multiple ABCs
+	def fly(self):
+		print("Duck flying!")
+	def swim(self):
+		print("Duck swimming!")
+	def quack(self):
+		print("Quack!")
 
-    # d = IFlyable() # This would raise an error as IFlyable is abstract
-    ```
-    While `Duck` inherits from `IFlyable` and `ISwimmable`, it's primarily for defining a contract, not inheriting implementation.
+# d = IFlyable() # This would raise an error as IFlyable is abstract
+```
+While `Duck` inherits from `IFlyable` and `ISwimmable`, it's primarily for defining a contract, not inheriting implementation.
 
 ### Best Practices
 
