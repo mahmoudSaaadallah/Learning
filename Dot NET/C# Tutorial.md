@@ -1,6 +1,8 @@
 ## OOP
-- Encapsulation Using C# [[Encapsulation Using C#]].
-- Polymorphism [[Polymorphism]]. 
+- Encapsulation Using C# [[Encapsulation Using CSharp]].
+- Inheritance Using C# [[Inheritance Using CSharp]]
+- Polymorphism Using CSharp [[Polymorphism Using CSharp]]. 
+- Composition Using CSharp [[Composition Using CSharp]].
 
 ## Advanced C#.
 - Struct [[Struct]].
