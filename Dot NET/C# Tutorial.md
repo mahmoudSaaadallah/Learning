@@ -85,6 +85,7 @@
 
 ## WEB API
 - HTTP Characteristics [[HTTP Characteristics]].
+- REST Constraints [[REST Constraints]].
 
 
 
