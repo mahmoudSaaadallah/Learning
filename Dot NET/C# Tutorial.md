@@ -86,6 +86,7 @@
 ## WEB API
 - HTTP Characteristics [[HTTP Characteristics]].
 - REST Constraints [[REST Constraints]].
+- Dependency Injection [[Dependency Injection]].
 
 
 
@@ -95,8 +96,8 @@
   -  Single Responsibility Principle [[Single Responsibility Principle]].
   -  Open/CIosed Principle [[Open Closed Principle]].
   - Liskov Substitution Principle
-  - Interface Segregation Principle
-  - Dependency Inversion Principle
+  - Interface Segregation Principle 
+  - Dependency Inversion Principle  [[Dependency Inversion Principle]].
 - Singleton Pattern [[Singleton Pattern]].
 
 
