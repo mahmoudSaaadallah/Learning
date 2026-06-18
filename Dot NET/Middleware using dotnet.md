@@ -128,7 +128,7 @@ app.Run(async context =>
 #### b) Class-Based Middleware (Recommended for complex logic)
 
 For more complex or reusable middleware, create a dedicated class.
-
+#Important_Note
 ```csharp
 // 1. Define the Middleware Class
 public class RequestLoggingMiddleware
