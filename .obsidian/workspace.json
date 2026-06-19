@@ -35,8 +35,7 @@
               "title": "CURD Operations"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 241.50043487548828,
-    "collapsed": true
+    "width": 241.50043487548828
   },
   "right": {
     "id": "0876a6af07bdcd18",
@@ -217,11 +215,11 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "7a01dc19ec5c0350",
+  "active": "7eafc6aa459f9808",
   "lastOpenFiles": [
+    "Dot NET/CURD Operations.md",
     "Prompts.md",
     "copilot/copilot-conversations/Senior_.NET_Engineer_Role@20260618_153444.md",
-    "Dot NET/CURD Operations.md",
     "Dot NET/C# Tutorial.md",
     "Dot NET/Middleware using dotnet.md",
     "JavaScript-Learning-main/JS Tutorial.md",
