@@ -22,20 +22,35 @@
             }
           },
           {
-            "id": "7a01dc19ec5c0350",
+            "id": "e787138d3402d5fe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/CURD Operations.md",
+                "file": "Dot NET/WEB API/CreatedAtAction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CURD Operations"
+              "title": "CreatedAtAction"
+            }
+          },
+          {
+            "id": "519cba1f865c60e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dot NET/WEB API/ASP Dot Net Basic.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ASP Dot Net Basic"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -92,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 241.50043487548828
+    "width": 241.50043487548828,
+    "collapsed": true
   },
   "right": {
     "id": "0876a6af07bdcd18",
@@ -215,18 +231,20 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "7eafc6aa459f9808",
+  "active": "519cba1f865c60e0",
   "lastOpenFiles": [
-    "Dot NET/CURD Operations.md",
+    "Dot NET/WEB API/CURD Operations.md",
+    "Dot NET/WEB API/CreatedAtAction.md",
+    "Dot NET/C# Tutorial.md",
+    "Dot NET/WEB API/ASP Dot Net Basic.md",
     "Prompts.md",
     "copilot/copilot-conversations/Senior_.NET_Engineer_Role@20260618_153444.md",
-    "Dot NET/C# Tutorial.md",
-    "Dot NET/Middleware using dotnet.md",
+    "Dot NET/WEB API/Middleware using dotnet.md",
     "JavaScript-Learning-main/JS Tutorial.md",
     "JavaScript-Learning-main/Parsing(Casting to number).md",
     "JavaScript-Learning-main/Comparing Using equal sing.md",
     "Django/Middleware.md",
-    "Dot NET/Dependency Injection.md",
+    "Dot NET/WEB API/Dependency Injection.md",
     "copilot/copilot-conversations/Senior_.NET_Backend_Mentor_Setup@20260617_111223.md",
     "Dot NET/WEB API/HTTP Characteristics.md",
     "Dot NET/WEB API/REST Constraints.md",
@@ -244,8 +262,6 @@
     "Dot NET/OOP",
     "Dot NET/EFC/Index Using DA & FAPI.md",
     "Dot NET/EFC In Deep/Update and Delete on the Server Side.md",
-    "Dot NET/EFC In Deep/Optimistic and Pessimistic Concurrency.md",
-    "Dot NET/EFC In Deep/Concurrency Check Attribute.md",
     "Dot NET/CQRS/CQRS Pattern.pdf",
     "Dot NET/CQRS",
     "DataBase/SQL Server/T-SQL/Pasted image 20260512152332.png",

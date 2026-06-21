@@ -88,9 +88,10 @@
 - REST Constraints [[REST Constraints]].
 - Dependency Injection [[Dependency Injection]].
 - Middleware using dotnet [[Middleware using dotnet]].
+- **ASP.NET Core Web API Basics**[[ASP Dot Net Basic]].
 - CURD Operations [[CURD Operations]].
-- Services Pattern
-- CreatedAtAction
+- CreatedAtAction [[CreatedAtAction]].
+- Service Layer [[Service Layer]].
 
 
 

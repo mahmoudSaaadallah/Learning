@@ -29,3 +29,11 @@
 ## .NET Backend Mentor Setup
 **Time:** 2026-06-03 17:39
 **Summary:** The user is setting up the AI to act as a long-term .NET backend mentor, providing detailed instructions and 20 specific rules for how the AI should explain topics related to .NET and C#. The AI, however, returned an error indicating that its quota was exceeded.
+
+## .NET Backend Mentorship Setup & ASP.NET Core Basics
+**Time:** 2026-06-20 18:13
+**Summary:** The user initiated a long-term mentorship with the AI, acting as a Senior Software Engineer, to learn .NET backend development. The AI accepted the role and began explaining the first topic, "ASP.NET Core Basic," covering its definition, benefits, project setup using the .NET CLI, basic project structure, and a detailed line-by-line explanation of the `Program.cs` file, including the concept of the HTTP Request Pipeline and middleware.
+
+## .NET Backend Mentorship Setup
+**Time:** 2026-06-20 18:14
+**Summary:** The user initiated a long-term mentorship with an AI, acting as a Senior Software Engineer, to learn .NET backend development. The user provided 20 detailed rules for how the AI should explain topics, focusing on practical, production-level insights. The AI acknowledged these rules and began explaining the first topic: 'ASP.NET Core Basic'.
