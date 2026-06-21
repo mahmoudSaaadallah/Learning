@@ -92,6 +92,8 @@
 - CURD Operations [[CURD Operations]].
 - CreatedAtAction [[CreatedAtAction]].
 - Route Constraints [[Route Constraints]].
+- Parameter Binding [[Parameter Binding]].
+- Manual Mapping Using Extension Methods [[Manual Mapping Using Extension Methods]].
 - Service Layer [[Service Layer]].
 
 
