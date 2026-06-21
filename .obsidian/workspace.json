@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/Manual Mapping Using Extension Methods.md",
+                "file": "Dot NET/WEB API/Manual Mapping Using Extension Methods.md",
                 "mode": "source",
                 "source": false
               },
@@ -264,7 +264,7 @@
     "copilot/copilot-conversations/Manual_Mapping_Extension_Methods@20260621_154146.md",
     "copilot/copilot-conversations/.NET_Backend_Mentorship_Setup@20260621_154146.md",
     "Prompts.md",
-    "Dot NET/Manual Mapping Using Extension Methods.md",
+    "Dot NET/WEB API/Manual Mapping Using Extension Methods.md",
     "Dot NET/C# Tutorial.md",
     "Dot NET/WEB API/Parameter Binding.md",
     "Dot NET/WEB API/CreatedAtAction.md",
