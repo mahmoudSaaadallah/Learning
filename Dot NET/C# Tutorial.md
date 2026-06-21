@@ -91,6 +91,7 @@
 - **ASP.NET Core Web API Basics**[[ASP Dot Net Basic]].
 - CURD Operations [[CURD Operations]].
 - CreatedAtAction [[CreatedAtAction]].
+- Route Constraints [[Route Constraints]].
 - Service Layer [[Service Layer]].
 
 
