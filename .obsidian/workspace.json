@@ -22,12 +22,54 @@
             }
           },
           {
+            "id": "472dbe74ed058e00",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dot NET/EFC/Custom Validation Attribute.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Custom Validation Attribute"
+            }
+          },
+          {
+            "id": "68f435bac323c833",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dot NET/EFC/Data Annotations.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Data Annotations"
+            }
+          },
+          {
+            "id": "33c0bae654555294",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dot NET/WEB API/Service Layer.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Service Layer"
+            }
+          },
+          {
             "id": "5f19c4aae5d29310",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/Mapping With Mapster.md",
+                "file": "Dot NET/WEB API/Mapping With Mapster.md",
                 "mode": "source",
                 "source": false
               },
@@ -273,18 +315,21 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "5f19c4aae5d29310",
+  "active": "472dbe74ed058e00",
   "lastOpenFiles": [
-    "Dot NET/WEB API/CreatedAtAction.md",
+    "Dot NET/WEB API/Mapping With Mapster.md",
+    "Dot NET/EFC/Custom Validation Attribute.md",
+    "Dot NET/C# Tutorial.md",
+    "Dot NET/EFC/Data Annotations.md",
     "Dot NET/WEB API/Parameter Binding.md",
+    "Dot NET/WEB API/Service Layer.md",
+    "Dot NET/WEB API/CreatedAtAction.md",
     "Dot NET/WEB API/Manual Mapping Using Extension Methods.md",
-    "Dot NET/Mapping With Mapster.md",
     "copilot/copilot-conversations/Mapping_With_Mapster@20260622_112850.md",
     "copilot/copilot-conversations/.NET_Backend_Mentor_Setup@20260622_112850.md",
     "Dot NET/WEB API/ASP Dot Net Basic.md",
     "Prompts.md",
     "copilot/copilot-conversations/Senior_.NET_Mentor_Setup@20260622_112714.md",
-    "Dot NET/C# Tutorial.md",
     "copilot/copilot-conversations/Manual_Mapping_Extension_Methods@20260621_154146.md",
     "copilot/copilot-conversations/.NET_Backend_Mentorship_Setup@20260621_154146.md",
     "Dot NET/WEB API/Route Constraints.md",
@@ -298,9 +343,6 @@
     "JavaScript-Learning-main/Parsing(Casting to number).md",
     "JavaScript-Learning-main/Comparing Using equal sing.md",
     "Django/Middleware.md",
-    "Dot NET/WEB API/Dependency Injection.md",
-    "copilot/copilot-conversations/Senior_.NET_Backend_Mentor_Setup@20260617_111223.md",
-    "Dot NET/WEB API/HTTP Characteristics.md",
     "Dot NET/WEB API",
     "Dot NET/SOLID",
     "Dot NET/OOP",

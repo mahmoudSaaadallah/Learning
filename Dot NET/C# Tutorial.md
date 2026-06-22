@@ -57,6 +57,7 @@
 - Setting Up Your First EF Core Project [[Setting Up Your First EF Core Project]].
 - Migrations Workflow [[Migrations Workflow]].
 - Data Annotations [[Data Annotations]].
+- Custom Validation Attribute [[Custom Validation Attribute]].
 - Fluent API [[Fluent API]].
 - Relationship Mapping [[Relationship Mapping]].
 - Loading Strategies [[Loading Strategies]].
