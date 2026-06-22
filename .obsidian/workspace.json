@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "5f19c4aae5d29310",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dot NET/Mapping With Mapster.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Mapping With Mapster"
+            }
+          },
+          {
             "id": "7a219e968091091c",
             "type": "leaf",
             "state": {
@@ -259,19 +273,23 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "7a219e968091091c",
+  "active": "5f19c4aae5d29310",
   "lastOpenFiles": [
+    "Dot NET/WEB API/CreatedAtAction.md",
+    "Dot NET/WEB API/Parameter Binding.md",
+    "Dot NET/WEB API/Manual Mapping Using Extension Methods.md",
+    "Dot NET/Mapping With Mapster.md",
+    "copilot/copilot-conversations/Mapping_With_Mapster@20260622_112850.md",
+    "copilot/copilot-conversations/.NET_Backend_Mentor_Setup@20260622_112850.md",
+    "Dot NET/WEB API/ASP Dot Net Basic.md",
+    "Prompts.md",
+    "copilot/copilot-conversations/Senior_.NET_Mentor_Setup@20260622_112714.md",
+    "Dot NET/C# Tutorial.md",
     "copilot/copilot-conversations/Manual_Mapping_Extension_Methods@20260621_154146.md",
     "copilot/copilot-conversations/.NET_Backend_Mentorship_Setup@20260621_154146.md",
-    "Prompts.md",
-    "Dot NET/WEB API/Manual Mapping Using Extension Methods.md",
-    "Dot NET/C# Tutorial.md",
-    "Dot NET/WEB API/Parameter Binding.md",
-    "Dot NET/WEB API/CreatedAtAction.md",
     "Dot NET/WEB API/Route Constraints.md",
     "copilot/copilot-conversations/Senior_.NET_Engineer_Persona@20260621_135716.md",
     "Thougths.md",
-    "Dot NET/WEB API/ASP Dot Net Basic.md",
     "copilot/copilot-conversations/Senior_.NET_Engineer_Persona@20260621_113847.md",
     "Dot NET/WEB API/CURD Operations.md",
     "copilot/copilot-conversations/Senior_.NET_Engineer_Role@20260618_153444.md",
@@ -283,11 +301,7 @@
     "Dot NET/WEB API/Dependency Injection.md",
     "copilot/copilot-conversations/Senior_.NET_Backend_Mentor_Setup@20260617_111223.md",
     "Dot NET/WEB API/HTTP Characteristics.md",
-    "Dot NET/WEB API/REST Constraints.md",
-    "copilot/copilot-conversations/Senior_.NET_Engineer_Role@20260616_152725.md",
-    "Python/Tuples Using Python.md",
     "Dot NET/WEB API",
-    "Dot NET/SOLID/Single Responsibility Principle.md",
     "Dot NET/SOLID",
     "Dot NET/OOP",
     "Dot NET/CQRS/CQRS Pattern.pdf",
