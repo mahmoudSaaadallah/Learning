@@ -122,16 +122,16 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // Register FluentValidation
 builder.Services.AddFluentValidationAutoValidation(); // Enables automatic validation
 builder.Services.AddValidatorsFromAssemblyContaining<CreateEventDtoValidator>(); // Scans assembly for validators
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // Another way to Inject the FluentValidation 
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
 var app = builder.Build();
@@ -328,3 +328,123 @@ As a senior developer, I consider FluentValidation an essential tool for almost 
 6.  **Consistency:** Standardize your validation approach across the entire application. If you choose FluentValidation, use it consistently. This reduces cognitive load for other developers.
 
 FluentValidation is a significant upgrade over `DataAnnotations` for most real-world applications. It provides the flexibility, power, and maintainability needed to handle complex validation requirements effectively, while its use of a Fluent API makes the validation rules clear and expressive.
+
+------------------------------
+## Dynamic Error Messages
+
+
+FluentValidation allows you to embed various placeholders into your `WithMessage()` calls, which are then replaced with actual values at runtime when a validation error occurs. This makes your error messages much more descriptive without hardcoding values.
+
+The two most common and useful placeholders are indeed `{PropertyName}` and `{PropertyValue}`.
+
+### Understanding `{PropertyName}` and `{PropertyValue}`
+
+*   **`{PropertyName}`**: This placeholder will be replaced by the **name of the property** that the validation rule is applied to.
+    *   Example: If you have `RuleFor(x => x.Name)` and the validation fails, `{PropertyName}` will become "Name".
+*   **`{PropertyValue}`**: This placeholder will be replaced by the **actual value of the property** that failed validation.
+    *   Example: If `RuleFor(x => x.Age).GreaterThan(18)` fails for an `Age` of `16`, `{PropertyValue}` will become "16".
+
+### How to Use Them in `WithMessage()`
+
+You simply include them within the string you pass to `WithMessage()`. FluentValidation will automatically parse and replace them.
+
+Let's revisit our `CreateEventDtoValidator` and enhance its error messages using these placeholders.
+
+#### Example: Enhanced `CreateEventDtoValidator`
+
+```csharp
+// DTOs/CreateEventDto.cs (No DataAnnotations)
+public class CreateEventDto
+{
+    public string Name { get; set; }
+    public DateTime EventDate { get; set; }
+    public string Description { get; set; }
+    public int MaxAttendees { get; set; }
+    public decimal TicketPrice { get; set; }
+}
+
+// Validators/CreateEventDtoValidator.cs
+using FluentValidation;
+
+public class CreateEventDtoValidator : AbstractValidator<CreateEventDto>
+{
+    private readonly IEventService _eventService; // Assuming this is injected
+
+    public CreateEventDtoValidator(IEventService eventService)
+    {
+        _eventService = eventService;
+
+        RuleFor(x => x.Name)
+            .NotEmpty().WithMessage("The event {PropertyName} cannot be empty.")
+            .Length(3, 100).WithMessage("The {PropertyName} must be between {MinLength} and {MaxLength} characters. You entered {TotalLength} characters.")
+            .MustAsync(async (name, cancellation) => await _eventService.IsEventNameUniqueAsync(name, cancellation))
+            .WithMessage("An event with the name '{PropertyValue}' already exists. Please choose a different name.");
+
+        RuleFor(x => x.EventDate)
+            .NotEmpty().WithMessage("The {PropertyName} is required.")
+            .Must(BeAFutureDate).WithMessage("The {PropertyName} must be a future date. You provided '{PropertyValue:yyyy-MM-dd}'."); // Custom format for DateTime
+
+        RuleFor(x => x.Description)
+            .MaximumLength(500).WithMessage("The {PropertyName} cannot exceed {MaxLength} characters.");
+
+        RuleFor(x => x.MaxAttendees)
+            .GreaterThan(0).WithMessage("The {PropertyName} must be greater than {ComparisonValue}. Current value: {PropertyValue}.");
+
+        RuleFor(x => x.TicketPrice)
+            .GreaterThanOrEqualTo(0).WithMessage("The {PropertyName} cannot be negative. Value: {PropertyValue}.");
+    }
+
+    private bool BeAFutureDate(DateTime date)
+    {
+        return date > DateTime.UtcNow;
+    }
+}
+```
+
+#### Let's trace some potential error messages:
+
+1.  **`Name` is empty:**
+    *   Input: `{ "Name": "", "EventDate": "2027-01-01", ... }`
+    *   Error: "The event Name cannot be empty."
+    *   Here, `{PropertyName}` became "Name".
+
+2.  **`Name` is too short (e.g., "ab"):**
+    *   Input: `{ "Name": "ab", "EventDate": "2027-01-01", ... }`
+    *   Error: "The Name must be between 3 and 100 characters. You entered 2 characters."
+    *   Here, `{PropertyName}` became "Name", `{MinLength}` became "3", `{MaxLength}` became "100", and `{TotalLength}` became "2".
+
+3.  **`Name` is not unique (e.g., "Tech Conference 2026"):**
+    *   Input: `{ "Name": "Tech Conference 2026", "EventDate": "2027-01-01", ... }`
+    *   Error: "An event with the name 'Tech Conference 2026' already exists. Please choose a different name."
+    *   Here, `{PropertyValue}` became "Tech Conference 2026".
+
+4.  **`EventDate` is in the past (e.g., "2025-01-01"):**
+    *   Input: `{ "Name": "New Event", "EventDate": "2025-01-01", ... }`
+    *   Error: "The EventDate must be a future date. You provided '2025-01-01'."
+    *   Here, `{PropertyName}` became "EventDate", and `{PropertyValue:yyyy-MM-dd}` formatted the `DateTime` value.
+
+5.  **`MaxAttendees` is 0:**
+    *   Input: `{ "Name": "New Event", "EventDate": "2027-01-01", "MaxAttendees": 0, ... }`
+    *   Error: "The MaxAttendees must be greater than 0. Current value: 0."
+    *   Here, `{PropertyName}` became "MaxAttendees", `{ComparisonValue}` became "0" (from `GreaterThan(0)`), and `{PropertyValue}` became "0".
+
+### Other Useful Placeholders
+
+FluentValidation provides many other context-specific placeholders depending on the validator you're using:
+
+*   **`{MinLength}` / `{MaxLength}` / `{TotalLength}`**: For `Length` and `MinimumLength`/`MaximumLength` validators.
+*   **`{Min}` / `{Max}`**: For `Range` validators.
+*   **`{ComparisonValue}`**: For comparison validators like `GreaterThan`, `LessThan`, `Equal`, etc. This is the value you are comparing against.
+*   **`{ExpectedPrecision}` / `{ExpectedScale}`**: For `ScalePrecision` validators.
+*   **`{CollectionIndex}`**: When validating items within a collection (e.g., `RuleForEach`).
+*   **`{ValidatorType}`**: The type of the validator that failed.
+
+You can also use standard C# string formatting within `{PropertyValue}` for `DateTime` or numeric types, as shown with `{PropertyValue:yyyy-MM-dd}`.
+
+### Production-Level Considerations
+
+1.  **User Experience:** Dynamic error messages significantly improve the user experience for API consumers (whether they are frontend developers or other services). They get precise information about *what* went wrong and *why*.
+2.  **Debugging:** Clear error messages also aid in debugging, making it easier for developers to understand validation failures.
+3.  **Localization:** When dealing with multiple languages, these placeholders are invaluable. You can provide localized error message templates, and the placeholders will still be correctly substituted.
+4.  **Consistency:** Using placeholders helps maintain consistency in your error messages across different properties and validators.
+5.  **Avoid Hardcoding:** Never hardcode values like "3" or "100" in your error messages if they are derived from the validation rule itself. Always use the appropriate placeholders (`{MinLength}`, `{MaxLength}`). This prevents discrepancies if you change the rule but forget to update the message.
