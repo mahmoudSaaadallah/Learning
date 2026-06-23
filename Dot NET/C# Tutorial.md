@@ -97,6 +97,7 @@
 - Manual Mapping Using Extension Methods [[Manual Mapping Using Extension Methods]].
 - Mapping With Mapster [[Mapping With Mapster]].
 - Service Layer [[Service Layer]].
+- Fluent Validation [[Fluent Validation]].
 
 
 
