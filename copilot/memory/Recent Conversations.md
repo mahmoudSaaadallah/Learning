@@ -37,3 +37,31 @@
 ## .NET Backend Mentorship Setup
 **Time:** 2026-06-20 18:14
 **Summary:** The user initiated a long-term mentorship with an AI, acting as a Senior Software Engineer, to learn .NET backend development. The user provided 20 detailed rules for how the AI should explain topics, focusing on practical, production-level insights. The AI acknowledged these rules and began explaining the first topic: 'ASP.NET Core Basic'.
+
+## Untitled Conversation
+**Time:** 2026-06-24 15:01
+**Summary:** Summary generation failed
+
+## Untitled Conversation
+**Time:** 2026-06-24 15:02
+**Summary:** Summary generation failed
+
+## Untitled Conversation
+**Time:** 2026-06-24 15:06
+**Summary:** Summary generation failed
+
+## Covered Topics Update
+**Time:** 2026-06-24 15:14
+**Summary:** The user, learning to be a Back-End Developer, provided a list of topics they have already covered with the AI, who is acting as their Senior .NET Mentor. The user indicated they would send the next topic in the subsequent message.
+
+## Untitled Conversation
+**Time:** 2026-06-24 15:15
+**Summary:** Summary generation failed
+
+## Untitled Conversation
+**Time:** 2026-06-24 15:18
+**Summary:** Summary generation failed
+
+## Senior .NET Backend Mentorship and Roadmap
+**Time:** 2026-06-24 15:55
+**Summary:** The user has engaged the AI to act as a Senior .NET Mentor for backend development, focusing on modern C# practices and production-grade architecture. They reviewed a list of completed topics, including Dependency Injection, Middleware, and CRUD operations, to set the stage for future deep-dive lessons.
