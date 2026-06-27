@@ -65,3 +65,11 @@
 ## Senior .NET Backend Mentorship and Roadmap
 **Time:** 2026-06-24 15:55
 **Summary:** The user has engaged the AI to act as a Senior .NET Mentor for backend development, focusing on modern C# practices and production-grade architecture. They reviewed a list of completed topics, including Dependency Injection, Middleware, and CRUD operations, to set the stage for future deep-dive lessons.
+
+## ASP.NET Core Web API Database Interaction
+**Time:** 2026-06-27 15:49
+**Summary:** The user asked to learn about working with databases using ASP.NET Core Web API. The AI mentor provided a deep explanation focusing on Entity Framework Core (EF Core), covering its benefits, setup (NuGet packages, entity classes, DbContext, connection strings), database migrations, and basic CRUD operations. The mentor also demonstrated integration with API controllers and offered senior insights on architectural patterns, performance, security, and testing.
+
+## Database Interaction in ASP.NET Core Web API
+**Time:** 2026-06-27 17:35
+**Summary:** The user, a mentee, asked their AI mentor to explain "Working with Database using asp dot net web api". The AI mentor, acting as a Senior Software Engineer, acknowledged the topic and reminded the user that they had a comprehensive discussion on this topic previously, covering EF Core setup, CRUD, and integration. The AI then offered to re-explain, dive deeper into advanced aspects, or move to a new topic.
