@@ -144,7 +144,7 @@ app.Run();
 By calling `builder.Services.AddDbContext<ApplicationDbContext>(...)`, you're registering `ApplicationDbContext` with the DI container. This means you can now inject `ApplicationDbContext` into your controllers or other services.
 
 #### **3. Database Migrations**
-
+[[Migrations Workflow]]
 Migrations are how EF Core manages your database schema. When you change your entity classes (e.g., add a new property to `Product`), you create a migration to apply those changes to the database.
 
 **Step 1: Add a Migration**
@@ -307,7 +307,7 @@ namespace MyDatabaseApi.Controllers
 *   **`PostProduct(Product product)` (Create):**
     *   `_context.Products.Add(product)` stages the `product` entity to be inserted into the database. It's not saved yet.
     *   `await _context.SaveChangesAsync()` commits all pending changes (adds, updates, deletes) in the `DbContext` to the database.
-    *   `CreatedAtAction` returns a 201 Created status code and includes a `Location` header pointing to the newly created resource.
+    *   `CreatedAtAction` [[CreatedAtAction]] returns a 201 Created status code and includes a `Location` header pointing to the newly created resource.
 
 *   **`PutProduct(int id, Product product)` (Update):**
     *   `_context.Entry(product).State = EntityState.Modified;` tells EF Core that the `product` object (which was likely detached from the context) has been modified and needs to be updated in the database.
@@ -358,9 +358,3 @@ Now, let's elevate our understanding with some senior-level considerations:
 
 7.  **Architectural Patterns:**
     *   **Insight:** EF Core fits well into various architectural patterns like Clean Architecture, Onion Architecture, or Vertical Slice Architecture. In these patterns, EF Core typically resides in the "Infrastructure" layer, implementing interfaces defined in the "Application" or "Domain" layers. This keeps your core business logic independent of the data access technology.
-
----
-
-This covers the essential aspects of working with databases using ASP.NET Core Web API and Entity Framework Core. We've gone from setting up the project to performing CRUD operations and then discussed critical senior insights.
-
-Do you have any questions about this topic, or would you like to dive deeper into any specific aspect (e.g., relationships, advanced querying, repository pattern)? Or are you ready for the next topic?
