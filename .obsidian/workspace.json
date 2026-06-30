@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "e3aa5fec0745dd89",
+        "id": "4ef46d08af685835",
         "type": "tabs",
         "children": [
           {
@@ -22,35 +22,48 @@
             }
           },
           {
-            "id": "8719f6c9c8dd28c4",
+            "id": "70d6076985bc3af6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/WEB API/CreatedAtAction.md",
+                "file": "Dot NET/WEB API/JWT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CreatedAtAction"
+              "title": "JWT"
             }
           },
           {
-            "id": "6ff0845b441e20d6",
+            "id": "3a243e6d2e466860",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/WEB API/Working With Database.md",
+                "file": "Dot NET/WEB API/Fluent Validation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Working With Database"
+              "title": "Fluent Validation"
+            }
+          },
+          {
+            "id": "eb17c641771f0f7a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dot NET/WEB API/Cancellation Token.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cancellation Token"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -231,14 +244,18 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "8719f6c9c8dd28c4",
+  "active": "7eafc6aa459f9808",
   "lastOpenFiles": [
-    "Dot NET/WEB API/Cancellation Token.md",
-    "Dot NET/C# Tutorial.md",
+    "Dot NET/WEB API/JWT.md",
+    "copilot/copilot-conversations/Senior_.NET_Engineer_Role@20260629_150713.md",
     "Prompts.md",
-    "copilot/copilot-conversations/Senior_.NET_Engineer_Persona@20260628_151238.md",
-    "Dot NET/WEB API/CreatedAtAction.md",
+    "copilot/copilot-conversations/.NET_Backend_Mentor_Setup@20260629_150713.md",
+    "Dot NET/C# Tutorial.md",
+    "Dot NET/WEB API/Fluent Validation.md",
+    "Dot NET/WEB API/Cancellation Token.md",
     "Dot NET/WEB API/Working With Database.md",
+    "Dot NET/WEB API/CreatedAtAction.md",
+    "copilot/copilot-conversations/Senior_.NET_Engineer_Persona@20260628_151238.md",
     "copilot/copilot-conversations/You_are_a_Senior_Software_Engineer_with_10+_years_of@20260624_155015.md",
     "copilot/copilot-conversations/You_are_a_Senior_Software_Engineer_with_10+_years_of@20260624_154820.md",
     "copilot/copilot-conversations/__title_Senior_.NET_Mentor_and_Web_API_Topics,_@20260624_151652.md",
@@ -253,12 +270,8 @@
     "Dot NET/WEB API/Manual Mapping Using Extension Methods.md",
     "Dot NET/WEB API/Mapping With Mapster.md",
     "Dot NET/WEB API/Service Layer.md",
-    "Dot NET/WEB API/Fluent Validation.md",
     "Dot NET/EFC/Data Annotations.md",
     "Dot NET/EFC/Custom Validation Attribute.md",
-    "copilot/copilot-conversations/Mapping_With_Mapster@20260622_112850.md",
-    "copilot/copilot-conversations/.NET_Backend_Mentor_Setup@20260622_112850.md",
-    "copilot/copilot-conversations/Senior_.NET_Mentor_Setup@20260622_112714.md",
     "Dot NET/WEB API",
     "Dot NET/SOLID",
     "Dot NET/OOP",
