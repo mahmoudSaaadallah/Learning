@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "4ef46d08af685835",
+        "id": "ee3d619c4f87f8e1",
         "type": "tabs",
         "children": [
           {
@@ -22,48 +22,35 @@
             }
           },
           {
-            "id": "70d6076985bc3af6",
+            "id": "6ff0845b441e20d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/WEB API/JWT.md",
+                "file": "Dot NET/WEB API/Working With Database.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JWT"
+              "title": "Working With Database"
             }
           },
           {
-            "id": "3a243e6d2e466860",
+            "id": "2d9fa389396a07d2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/WEB API/Fluent Validation.md",
+                "file": "Css/Flex.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fluent Validation"
-            }
-          },
-          {
-            "id": "eb17c641771f0f7a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET/WEB API/Cancellation Token.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Cancellation Token"
+              "title": "Flex"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -120,8 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 241.50043487548828,
-    "collapsed": true
+    "width": 241.50043487548828
   },
   "right": {
     "id": "0876a6af07bdcd18",
@@ -232,6 +218,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-kanban:Create new board": false,
       "copilot:Open Copilot Chat": false,
       "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
@@ -241,32 +228,18 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "graph:Open graph view": false,
-      "omnisearch:Omnisearch": false,
-      "obsidian-kanban:Create new board": false
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "7eafc6aa459f9808",
+  "active": "2d9fa389396a07d2",
   "lastOpenFiles": [
-    "Dot NET/WEB API/JWT.md",
-    "Custom Colors for VS.md",
-    "Dot NET/Advanced C#/Threading.md",
-    "Dot NET/C# Tutorial.md",
-    "Welcome.md",
-    "Prompts.md",
-    "Thougths.md",
-    "Markdown CheatSheat.md",
-    "Links To Study.md",
-    "Django Debug Toolbar.md",
-    "Daily.md",
-    "Images/Pasted image 20260630155015.png",
-    "Untitled Kanban.md",
-    "copilot/copilot-conversations/Senior_.NET_Engineer_Role@20260629_150713.md",
-    "copilot/copilot-conversations/.NET_Backend_Mentor_Setup@20260629_150713.md",
-    "Dot NET/WEB API/Fluent Validation.md",
-    "Dot NET/WEB API/Cancellation Token.md",
     "Dot NET/WEB API/Working With Database.md",
-    "Dot NET/WEB API/CreatedAtAction.md",
-    "copilot/copilot-conversations/Senior_.NET_Engineer_Persona@20260628_151238.md",
+    "Dot NET/C# Tutorial.md",
+    "Images/Pasted image 20260630155015.png",
+    "Dot NET/WEB API/JWT.md",
+    "Dot NET/WEB API/Cancellation Token.md",
+    "Custom Colors for VS.md",
+    "Prompts.md",
     "copilot/copilot-conversations/You_are_a_Senior_Software_Engineer_with_10+_years_of@20260624_155015.md",
     "copilot/copilot-conversations/You_are_a_Senior_Software_Engineer_with_10+_years_of@20260624_154820.md",
     "copilot/copilot-conversations/__title_Senior_.NET_Mentor_and_Web_API_Topics,_@20260624_151652.md",
@@ -274,6 +247,18 @@
     "copilot/copilot-conversations/__title_Senior_.NET_Backend_Engineer_Persona,_@20260624_151409.md",
     "copilot/copilot-conversations/Senior_.NET_Mentorship_Setup@20260624_150617.md",
     "copilot/copilot-conversations/You_are_a_Senior_Software_Engineer_with_10+_years_of@20260624_150230.md",
+    "copilot/copilot-conversations/You_are_a_Senior_Software_Engineer_with_10+_years_of@20260624_150131.md",
+    "copilot/copilot-conversations/Senior_.NET_Backend_Mentor@20260624_150057.md",
+    "Dot NET/WEB API/ASP Dot Net Basic.md",
+    "Dot NET/WEB API/CreatedAtAction.md",
+    "Dot NET/WEB API/Parameter Binding.md",
+    "Dot NET/WEB API/Manual Mapping Using Extension Methods.md",
+    "Dot NET/WEB API/Mapping With Mapster.md",
+    "Dot NET/WEB API/Service Layer.md",
+    "Dot NET/WEB API/Fluent Validation.md",
+    "Dot NET/EFC/Data Annotations.md",
+    "Dot NET/EFC/Custom Validation Attribute.md",
+    "copilot/copilot-conversations/Mapping_With_Mapster@20260622_112850.md",
     "Dot NET/WEB API",
     "Dot NET/SOLID",
     "Dot NET/OOP",
