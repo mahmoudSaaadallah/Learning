@@ -100,10 +100,17 @@
 - Fluent Validation [[Fluent Validation]].
 - Working With Database [[Working With Database]].
 - Cancellation Token [[Cancellation Token]].
+
 ### Authorization
 - JWT [[JWT]].
 - 
 
+### Options Pattern
+- IConfiguration to deal with app settings  [[IConfiguration]].
+- Options Pattern [[Options Pattern]].
+
+### Advanced Topics
+- Race Condition 
 
 
 ## Design Pattern
