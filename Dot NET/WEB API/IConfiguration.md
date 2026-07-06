@@ -154,7 +154,7 @@ public class SettingsController : ControllerBase
 *   **Harder to test:** Requires mocking `IConfiguration`.
 *   **Scattered dependencies:** If many classes directly access `IConfiguration`, it becomes a hidden dependency.
 
-#### 4. Strongly-Typed Configuration (The Options Pattern)
+#### 4. Strongly-Typed Configuration (The [[Options Pattern]]) 
 
 This is the **recommended and modern approach** for managing application settings in ASP.NET Core. It involves binding configuration sections to plain old C# objects (POCOs) and injecting these objects using the `IOptions<T>` interface.
 
@@ -177,6 +177,26 @@ This is the **recommended and modern approach** for managing application setting
 Let's use the `MyServiceSettings` from our `appsettings.json`.
 
 **1. Define the POCO class:**
+
+```json
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "MyServiceSettings": {
+    "ApiBaseUrl": "https://api.myservice.com",
+    "ApiKey": "some-default-key",
+    "MaxRetries": 3
+  },
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=MyDb;Trusted_Connection=True;MultipleActiveResultSets=true"
+  }
+}
+```
 
 ```csharp
 // Models/MyServiceSettings.cs
@@ -345,33 +365,33 @@ As a senior developer, here's how I approach configuration:
     *   Just because a setting exists doesn't mean it's valid. You can add validation to your configuration POCOs using data annotations or custom validation logic.
     *   **Example with Data Annotations:**
 
-    ```csharp
-    using System.ComponentModel.DataAnnotations;
+```csharp
+using System.ComponentModel.DataAnnotations;
 
-    public class MyServiceSettings
-    {
-        public const string SectionName = "MyServiceSettings";
+public class MyServiceSettings
+{
+	public const string SectionName = "MyServiceSettings";
 
-        [Required(ErrorMessage = "API Base URL is required.")]
-        [Url(ErrorMessage = "API Base URL must be a valid URL.")]
-        public string ApiBaseUrl { get; set; } = string.Empty;
+	[Required(ErrorMessage = "API Base URL is required.")]
+	[Url(ErrorMessage = "API Base URL must be a valid URL.")]
+	public string ApiBaseUrl { get; set; } = string.Empty;
 
-        [Required(ErrorMessage = "API Key is required.")]
-        [MinLength(16, ErrorMessage = "API Key must be at least 16 characters.")]
-        public string ApiKey { get; set; } = string.Empty;
+	[Required(ErrorMessage = "API Key is required.")]
+	[MinLength(16, ErrorMessage = "API Key must be at least 16 characters.")]
+	public string ApiKey { get; set; } = string.Empty;
 
-        [Range(1, 10, ErrorMessage = "Max Retries must be between 1 and 10.")]
-        public int MaxRetries { get; set; }
-    }
-    ```
-    *   **Registering Validation:**
-        ```csharp
-        builder.Services.AddOptions<MyServiceSettings>()
-            .Bind(builder.Configuration.GetSection(MyServiceSettings.SectionName))
-            .ValidateDataAnnotations() // Enables data annotation validation
-            .ValidateOnStart(); // Ensures validation runs at app startup
-        ```
-    *   If validation fails, the application will throw an exception at startup, preventing it from running with invalid configuration. This is a huge win for reliability.
+	[Range(1, 10, ErrorMessage = "Max Retries must be between 1 and 10.")]
+	public int MaxRetries { get; set; }
+}
+```
+*   **Registering Validation:**
+```csharp
+builder.Services.AddOptions<MyServiceSettings>()
+	.Bind(builder.Configuration.GetSection(MyServiceSettings.SectionName))
+	.ValidateDataAnnotations() // Enables data annotation validation
+	.ValidateOnStart(); // Ensures validation runs at app startup
+```
+*   If validation fails, the application will throw an exception at startup, preventing it from running with invalid configuration. This is a huge win for reliability.
 
 5.  **Reloading Configuration (`IOptionsMonitor<T>`):**
     *   While powerful, be cautious with automatic reloading in production.
@@ -379,7 +399,3 @@ As a senior developer, here's how I approach configuration:
     *   For most web APIs, `IOptions<T>` (static) or `IOptionsSnapshot<T>` (per-request refresh) are sufficient. `IOptionsMonitor<T>` is more for background services or specific scenarios where immediate, dynamic updates are crucial.
 
 6.  **Don't Hardcode:** This is the golden rule. Any value that might change between environments or deployments should be in configuration.
-
-By mastering `IConfiguration` and especially the Options Pattern, you'll build ASP.NET Core applications that are flexible, secure, and easy to maintain across various environments.
-
-What's next on your learning journey? Do you want to explore a specific aspect of `IConfiguration` further, or move on to another topic?
