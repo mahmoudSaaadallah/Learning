@@ -108,7 +108,7 @@
 ### Options Pattern
 - IConfiguration to deal with app settings  [[IConfiguration]].
 - Options Pattern [[Options Pattern]].
-
+ 
 ### Advanced Topics
 - Race Condition 
 
