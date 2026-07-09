@@ -11,140 +11,56 @@
             "id": "7eafc6aa459f9808",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Dot NET/C# Tutorial.md",
-                "mode": "source",
-                "source": false
+                "aFile": "Dot NET/EFC/Owned.md",
+                "bFile": "Dot NET/EFC/Owned.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "C# Tutorial"
+              "icon": "diff",
+              "title": "Diff: Owned  (Working Tree)"
             }
           },
           {
-            "id": "e3a8763f139dea3f",
+            "id": "912998732246374d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET/Clean Architecture/Clean Arch Image.md",
+                "file": "Dot NET/EFC/Owned.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Clean Arch Image"
+              "title": "Owned"
             }
           },
           {
-            "id": "ed28319b4e9d71f4",
+            "id": "5d62a2adb8ff25a2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript-Learning-main/JS Tutorial.md",
+                "file": "Dot NET/WEB API/Refresh Token.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JS Tutorial"
+              "title": "Refresh Token"
             }
           },
           {
-            "id": "9a205b51527a1de2",
+            "id": "c7ae24442a4efac6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript-Learning-main/Array.md",
+                "file": "Dot NET/WEB API/Status Code.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Array"
-            }
-          },
-          {
-            "id": "fe6868333e272ea0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JavaScript-Learning-main/substring() && slice().md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "substring() && slice()"
-            }
-          },
-          {
-            "id": "a12e2226031fea15",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET/Advanced C#/Extension Functions.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Extension Functions"
-            }
-          },
-          {
-            "id": "07c5561002bd0610",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET/Advanced C#/Static Class.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Static Class"
-            }
-          },
-          {
-            "id": "027e52d97b7938b5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET/WEB API/Options Pattern.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Options Pattern"
-            }
-          },
-          {
-            "id": "0bc0a383589311ed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET/Clean Architecture/Clean Arch Image.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Clean Arch Image"
-            }
-          },
-          {
-            "id": "0891ce8478e6d836",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET/WEB API/IConfiguration.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "IConfiguration"
+              "title": "Status Code"
             }
           },
           {
@@ -161,8 +77,7 @@
               "title": "Links To Study"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -219,8 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.50043487548828,
-    "collapsed": true
+    "width": 245.50043487548828
   },
   "right": {
     "id": "0876a6af07bdcd18",
@@ -322,12 +236,11 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 935.5,
-    "collapsed": true
+    "width": 935.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -344,38 +257,38 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "a12e2226031fea15",
+  "active": "7eafc6aa459f9808",
   "lastOpenFiles": [
+    "Dot NET/C# Tutorial.md",
+    "Links To Study.md",
+    "Dot NET/WEB API/Refresh Token.md",
+    "Dot NET/EFC/Owned.md",
+    "linux/Linux Tutorial.md",
+    "copilot/copilot-conversations/Refresh_Token_in_.NET@20260709_143138.md",
+    "Prompts.md",
+    "copilot/copilot-conversations/.NET_Backend_Mentor_Setup@20260709_143138.md",
+    "Dot NET/WEB API/Status Code.md",
+    "Dot NET/WEB API/IConfiguration.md",
+    "Dot NET/Clean Architecture/Clean Arch Image.md",
+    "Dot NET/WEB API/Options Pattern.md",
+    "Dot NET/Advanced C#/Static Class.md",
+    "Dot NET/Advanced C#/Extension Functions.md",
     "JavaScript-Learning-main/substring() && slice().md",
     "JavaScript-Learning-main/Array.md",
     "JavaScript-Learning-main/JS Tutorial.md",
-    "Dot NET/Clean Architecture/Clean Arch Image.md",
     "Images/Pasted image 20260708161648.png",
-    "Dot NET/WEB API/Status Code.md",
-    "Prompts.md",
     "copilot/copilot-conversations/Senior_.NET_Engineer_Persona@20260708_155455.md",
-    "Dot NET/C# Tutorial.md",
-    "Dot NET/Advanced C#/Extension Functions.md",
     "Dot NET/WEB API/REST Constraints.md",
     "Dot NET/WEB API/HTTP Characteristics.md",
-    "Links To Study.md",
     "Images/Pasted image 20260707172758.png",
     "Dot NET/Clean Architecture",
-    "Dot NET/WEB API/Options Pattern.md",
-    "Dot NET/Advanced C#/Static Class.md",
     "Dot NET/Advanced C#/Indexer.md",
     "Dot NET/Advanced C#/More About Delegates.md",
-    "Dot NET/WEB API/IConfiguration.md",
     "Css/Flex.md",
     "copilot/copilot-conversations/Senior_.NET_Engineer_Role@20260706_124040.md",
     "Dot NET/WEB API/Working With Database.md",
     "copilot/copilot-conversations/Senior_.NET_Backend_Mentorship@20260705_163706.md",
     "Images/Pasted image 20260630155015.png",
-    "Dot NET/WEB API/JWT.md",
-    "Dot NET/WEB API/Cancellation Token.md",
-    "Custom Colors for VS.md",
-    "copilot/copilot-conversations/You_are_a_Senior_Software_Engineer_with_10+_years_of@20260624_155015.md",
-    "copilot/copilot-conversations/You_are_a_Senior_Software_Engineer_with_10+_years_of@20260624_154820.md",
     "Dot NET/WEB API",
     "Dot NET/SOLID",
     "Dot NET/OOP",

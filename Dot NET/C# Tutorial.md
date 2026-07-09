@@ -57,6 +57,7 @@
 - Setting Up Your First EF Core Project [[Setting Up Your First EF Core Project]].
 - Migrations Workflow [[Migrations Workflow]].
 - Data Annotations [[Data Annotations]].
+- Owned [[Owned]].
 - Custom Validation Attribute [[Custom Validation Attribute]].
 - Fluent API [[Fluent API]].
 - Relationship Mapping [[Relationship Mapping]].
@@ -104,8 +105,8 @@
 
 ### Authorization
 - JWT [[JWT]].
-- 
-
+- Refresh Token [[Refresh Token]].
+ 
 ### Options Pattern
 - IConfiguration to deal with app settings  [[IConfiguration]].
 - Options Pattern [[Options Pattern]].
