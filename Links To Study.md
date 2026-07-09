@@ -5,6 +5,7 @@
   
   - ### ITI https://www.youtube.com/watch?v=c-RLeKxR8cA&list=PLNFDrRZdysFx-eu67uE0T0Erj2qx6lYjQ
 
+- ### API https://www.youtube.com/watch?v=XHokFQeQ6Lk&list=PLK5U0tyd34tBsRqm-ki81vtlioGv9j7Ky
 ## Django
 - ### Django Rest https://youtube.com/playlist?list=PL-2EBeDYMIbTLulc9FSoAXhbmXpLq2l5t&si=aZgI0R1Kh_4AJm9H
 
@@ -53,6 +54,8 @@
 ## .net
 - ### Roadmap https://scrawny-english-170.notion.site/Full-RoadMap-278463d83f898016a1f9d350beab1a9c
 - ### Interview Questions https://eghtanem.runasp.net/
+
+- ### Clean Architecture https://www.courses.milanjovanovic.tech/courses/2135795/lectures/48111780
 
 - ### PeaceCake https://www.youtube.com/@poclearn
 

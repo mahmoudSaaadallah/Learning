@@ -87,6 +87,7 @@
 ## WEB API
 - HTTP Characteristics [[HTTP Characteristics]].
 - REST Constraints [[REST Constraints]].
+- Status Codes [[Status Code]].
 - Dependency Injection [[Dependency Injection]].
 - Middleware using dotnet [[Middleware using dotnet]].
 - **ASP.NET Core Web API Basics**[[ASP Dot Net Basic]].
@@ -111,6 +112,12 @@
  
 ### Advanced Topics
 - Race Condition 
+
+
+
+
+## Clean Architecture 
+- Clean Arch Image [[Clean Arch Image]].
 
 
 ## Design Pattern

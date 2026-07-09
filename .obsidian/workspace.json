@@ -22,6 +22,62 @@
             }
           },
           {
+            "id": "e3a8763f139dea3f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dot NET/Clean Architecture/Clean Arch Image.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Clean Arch Image"
+            }
+          },
+          {
+            "id": "ed28319b4e9d71f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript-Learning-main/JS Tutorial.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "JS Tutorial"
+            }
+          },
+          {
+            "id": "9a205b51527a1de2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript-Learning-main/Array.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Array"
+            }
+          },
+          {
+            "id": "fe6868333e272ea0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript-Learning-main/substring() && slice().md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "substring() && slice()"
+            }
+          },
+          {
             "id": "a12e2226031fea15",
             "type": "leaf",
             "state": {
@@ -69,12 +125,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Links To Study.md",
+                "file": "Dot NET/Clean Architecture/Clean Arch Image.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Links To Study"
+              "title": "Clean Arch Image"
             }
           },
           {
@@ -106,7 +162,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -288,18 +344,29 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "027e52d97b7938b5",
+  "active": "a12e2226031fea15",
   "lastOpenFiles": [
-    "Dot NET/Advanced C#/Extension Functions.md",
+    "JavaScript-Learning-main/substring() && slice().md",
+    "JavaScript-Learning-main/Array.md",
+    "JavaScript-Learning-main/JS Tutorial.md",
+    "Dot NET/Clean Architecture/Clean Arch Image.md",
+    "Images/Pasted image 20260708161648.png",
+    "Dot NET/WEB API/Status Code.md",
+    "Prompts.md",
+    "copilot/copilot-conversations/Senior_.NET_Engineer_Persona@20260708_155455.md",
     "Dot NET/C# Tutorial.md",
+    "Dot NET/Advanced C#/Extension Functions.md",
+    "Dot NET/WEB API/REST Constraints.md",
+    "Dot NET/WEB API/HTTP Characteristics.md",
+    "Links To Study.md",
+    "Images/Pasted image 20260707172758.png",
+    "Dot NET/Clean Architecture",
     "Dot NET/WEB API/Options Pattern.md",
     "Dot NET/Advanced C#/Static Class.md",
     "Dot NET/Advanced C#/Indexer.md",
     "Dot NET/Advanced C#/More About Delegates.md",
     "Dot NET/WEB API/IConfiguration.md",
-    "Links To Study.md",
     "Css/Flex.md",
-    "Prompts.md",
     "copilot/copilot-conversations/Senior_.NET_Engineer_Role@20260706_124040.md",
     "Dot NET/WEB API/Working With Database.md",
     "copilot/copilot-conversations/Senior_.NET_Backend_Mentorship@20260705_163706.md",
@@ -309,14 +376,6 @@
     "Custom Colors for VS.md",
     "copilot/copilot-conversations/You_are_a_Senior_Software_Engineer_with_10+_years_of@20260624_155015.md",
     "copilot/copilot-conversations/You_are_a_Senior_Software_Engineer_with_10+_years_of@20260624_154820.md",
-    "copilot/copilot-conversations/__title_Senior_.NET_Mentor_and_Web_API_Topics,_@20260624_151652.md",
-    "copilot/copilot-conversations/Senior_.NET_Backend_Mentorship_Setup@20260624_151536.md",
-    "copilot/copilot-conversations/__title_Senior_.NET_Backend_Engineer_Persona,_@20260624_151409.md",
-    "copilot/copilot-conversations/Senior_.NET_Mentorship_Setup@20260624_150617.md",
-    "copilot/copilot-conversations/You_are_a_Senior_Software_Engineer_with_10+_years_of@20260624_150230.md",
-    "copilot/copilot-conversations/You_are_a_Senior_Software_Engineer_with_10+_years_of@20260624_150131.md",
-    "copilot/copilot-conversations/Senior_.NET_Backend_Mentor@20260624_150057.md",
-    "Dot NET/WEB API/ASP Dot Net Basic.md",
     "Dot NET/WEB API",
     "Dot NET/SOLID",
     "Dot NET/OOP",
@@ -327,7 +386,6 @@
     "Dot NET/Unconfirmed 371195.crdownload",
     "Dot NET/Unconfirmed 297123.crdownload",
     "Dot NET/Unconfirmed 193752.crdownload",
-    "Dot NET/EFC",
     "Untitled.canvas",
     "Untitled 1.canvas",
     "DBMS-Using-Bash-Shell-Script.canvas",
@@ -337,8 +395,6 @@
     "Images/Pasted image 20251121112754.png",
     "Images/Pasted image 20251121112720.png",
     "Images/Pasted image 20250910180759.png",
-    "Images/Pasted image 20250825183307.png",
-    "Images/Pasted image 20250825165605.png",
     "Learning/DBMS-Using-Bash-Shell-Script.canvas"
   ]
 }
