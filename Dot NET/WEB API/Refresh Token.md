@@ -400,5 +400,3 @@ Here's how an experienced developer thinks about Refresh Tokens:
     *   Refresh Tokens are a core concept in OAuth 2.0 flows (like Authorization Code Flow). While we're implementing a simpler version here, understanding the broader OAuth context is beneficial for integrating with third-party identity providers.
 
 By carefully implementing Refresh Tokens with these senior insights in mind, you can build a robust, secure, and user-friendly authentication system for your ASP.NET Core APIs.
-
-What's next on your learning journey?
