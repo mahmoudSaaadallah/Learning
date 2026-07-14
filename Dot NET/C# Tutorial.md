@@ -106,6 +106,7 @@
 ### Authorization
 - JWT [[JWT]].
 - Refresh Token [[Refresh Token]].
+- CORS [[CORS]].
  
 ### Options Pattern
 - IConfiguration to deal with app settings  [[IConfiguration]].
