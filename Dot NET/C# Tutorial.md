@@ -111,9 +111,13 @@
 ### Options Pattern
 - IConfiguration to deal with app settings  [[IConfiguration]].
 - Options Pattern [[Options Pattern]].
- 
+
+### Error Handling
+- Error Handling Using Result Pattern [[Error Handling Using Result Pattern]].
+
 ### Advanced Topics
 - Race Condition 
+
 
 
 
