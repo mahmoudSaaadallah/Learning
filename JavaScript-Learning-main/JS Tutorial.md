@@ -1,4 +1,4 @@
-
+.
 - Scopes For Variables [[Scopes For Variables]].
 
 - Check Datatype using `typeof` and `constructor.name` [[Check Datatype using `typeof` and `constructor.name` ]].
@@ -18,6 +18,7 @@
 - String(subString(), subStr(), slice()) [[String(substring(), substr(), slice())]].
 
 - Array [[Array]].
+- Sorting Array [[Sorting Array]].
 
 - Filter method with array [[Array.filter()]].
 
