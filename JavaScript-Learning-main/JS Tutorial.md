@@ -1,4 +1,4 @@
-.
+
 - Scopes For Variables [[Scopes For Variables]].
 
 - Check Datatype using `typeof` and `constructor.name` [[Check Datatype using `typeof` and `constructor.name` ]].
@@ -27,6 +27,8 @@
 - Math [[Math]].
 
 - Null [[Null]].
+
+- Local Storage [[Local Storage]].
 
 -  Window Object [[Window Object]].
 	 - Window.open() [[Window.open]].

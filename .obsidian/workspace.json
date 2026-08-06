@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "67212c3088e4869b",
+            "id": "5e588d7753d3f155",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,17 +22,17 @@
             }
           },
           {
-            "id": "ac7c8f99a0df6b24",
+            "id": "e70ddd80f223e14d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript-Learning-main/Sorting Array.md",
+                "file": "JavaScript-Learning-main/Local Storage.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sorting Array"
+              "title": "Local Storage"
             }
           }
         ],
@@ -221,9 +221,22 @@
   },
   "active": "4003043815a115e7",
   "lastOpenFiles": [
-    "copilot/copilot-conversations/JavaScript_Array_Sorting_Explained@20260804_154911.md",
-    "JavaScript-Learning-main/Sorting Array.md",
+    "copilot/copilot-conversations/Local_Storage_JavaScript_Deep_Dive@20260804_162644.md",
     "JavaScript-Learning-main/JS Tutorial.md",
+    "copilot/copilot-conversations/__title_Senior_.NET_Mentor_and_Web_API_Topics,_@20260624_151652.md",
+    "copilot/copilot-conversations/__title_Senior_.NET_Backend_Engineer_Persona,_@20260624_151409.md",
+    "copilot/copilot-conversations/you_are_Gilbert_Strang_from_MIT_and_you_will_teach@20260211_002827.md",
+    "copilot/copilot-conversations/your_are_an_MIT_Professor_and_you_are_helping_me@20260216_150347.md",
+    "copilot/copilot-conversations/You_are_a_Software_Engineer_with_10_years_of_experiences@20260310_134853.md",
+    "copilot/copilot-conversations/You_are_a_Senior_Software_Engineer_with_10+_years_of@20260624_155015.md",
+    "copilot/copilot-conversations/You_are_a_Senior_Software_Engineer_with_10+_years_of@20260624_154820.md",
+    "copilot/copilot-conversations/You_are_a_Senior_Software_Engineer_with_10+_years_of@20260624_150131.md",
+    "copilot/copilot-conversations/You_are_a_Software_Engineer_with_10_years_of_experices@20260310_134659.md",
+    "copilot/copilot-conversations/You_are_a_Software_Engineer_with_10_years_of_experiences@20260310_135214.md",
+    "copilot/memory/Recent Conversations.md",
+    "JavaScript-Learning-main/Local Storage.md",
+    "JavaScript-Learning-main/Sorting Array.md",
+    "copilot/copilot-conversations/JavaScript_Array_Sorting_Explained@20260804_154911.md",
     "Links To Study.md",
     "Css/Flex.md",
     "Dot NET/WEB API/Error Handling Using Result Pattern.md",
@@ -234,19 +247,6 @@
     "copilot/copilot-conversations/Error_Handling_Using_Result_Pattern@20260714_185249.md",
     "Prompts.md",
     "copilot/copilot-conversations/.NET_Backend_Mentor_Setup@20260714_185249.md",
-    "Dot NET/WEB API/CORS.md",
-    "copilot/copilot-conversations/Senior_.NET_Mentor_Setup@20260714_130042.md",
-    "Dot NET/WEB API/Options Pattern.md",
-    "Dot NET/EFC/Data Annotations.md",
-    "Dot NET/WEB API/Refresh Token.md",
-    "Dot NET/WEB API/Untitled Kanban.md",
-    "Dot NET/EFC/Owned.md",
-    "Dot NET/WEB API/Status Code.md",
-    "Dot NET/EFC In Deep/1-The Query Pipeline From LINQ Expression to Raw Data Streaming.md",
-    "Welcome.md",
-    "Thougths.md",
-    "Markdown CheatSheat.md",
-    "Django Debug Toolbar.md",
     "DBMS-Using-Bash-Shell-Script.canvas",
     "Images/Pasted image 20260708161648.png",
     "Images/Pasted image 20260707172758.png",
