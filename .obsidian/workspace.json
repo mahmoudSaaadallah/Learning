@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dot NET/Tutorial.md",
+                "file": "Italy/A0/A0.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Tutorial"
+              "title": "Outline"
             }
           },
           {
@@ -196,8 +196,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 935.5,
-    "collapsed": true
+    "width": 935.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -215,9 +214,11 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "7eafc6aa459f9808",
+  "active": "4003043815a115e7",
   "lastOpenFiles": [
+    "Custom Colors for VS.md",
     "Italy/A0/A0.md",
+    "Ds & Alg/Linked List.md",
     "copilot/skills/obsidian-cli/SKILL.md",
     "copilot/skills/obsidian-cli/LICENSE",
     "copilot/skills/obsidian-cli",
@@ -253,8 +254,6 @@
     "Dot NET/WEB API/Status Code.md",
     "Dot NET/WEB API/Refresh Token.md",
     "Dot NET/WEB API/Options Pattern.md",
-    "Dot NET/WEB API/IConfiguration.md",
-    "Dot NET/WEB API/Error Handling Using Result Pattern.md",
     "Images/Pasted image 20260630155015.png",
     "DataBase/SQL Server/T-SQL/Pasted image 20260512152332.png",
     "Untitled.canvas",
