@@ -22,12 +22,14 @@
     "important_note": 15,
     "innerhtml": 8,
     "innertext": 9,
+    "nested": 18,
     "print": 10,
     "queryselector": 11,
     "queryselectorall": 12,
     "readcommand": 12,
     "textcontent": 13,
-    "value": 14
+    "value": 14,
+    "nested/tag": 1
   },
   "tagColors": {},
   "_version": 4
