@@ -192,11 +192,12 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 935.5
+    "width": 556.7222290039062,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,6 +218,7 @@
   },
   "active": "7eafc6aa459f9808",
   "lastOpenFiles": [
+    "Italy/A0/La Famiglia = The Family.md",
     "Italy/A0/A0.md",
     "copilot/copilot-conversations/AI_Offers_Help@20260823_125715.md",
     "Custom Colors for VS.md",
@@ -254,7 +256,6 @@
     "Images/Pasted image 20260708161648.png",
     "Images/Pasted image 20260707172758.png",
     "Dot NET/WEB API/Status Code.md",
-    "Dot NET/WEB API/Refresh Token.md",
     "Images/Pasted image 20260630155015.png",
     "DataBase/SQL Server/T-SQL/Pasted image 20260512152332.png",
     "Untitled.canvas",
