@@ -211,13 +211,14 @@
       "graph:Open graph view": false,
       "omnisearch:Omnisearch": false,
       "copilot:Open Copilot Agent Chat": false,
-      "terminal:Open terminal": false
+      "terminal:Open terminal": false,
+      "translate:Open translation view": false
     }
   },
-  "active": "4003043815a115e7",
+  "active": "7eafc6aa459f9808",
   "lastOpenFiles": [
-    "copilot/copilot-conversations/AI_Offers_Help@20260823_125715.md",
     "Italy/A0/A0.md",
+    "copilot/copilot-conversations/AI_Offers_Help@20260823_125715.md",
     "Custom Colors for VS.md",
     "Ds & Alg/Linked List.md",
     "copilot/skills/obsidian-cli/SKILL.md",
