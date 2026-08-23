@@ -192,12 +192,11 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 556.7222290039062,
-    "collapsed": true
+    "width": 556.7222290039062
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -216,7 +215,7 @@
       "translate:Open translation view": false
     }
   },
-  "active": "7eafc6aa459f9808",
+  "active": "4003043815a115e7",
   "lastOpenFiles": [
     "Italy/A0/La Famiglia = The Family.md",
     "Italy/A0/A0.md",
