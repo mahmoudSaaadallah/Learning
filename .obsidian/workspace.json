@@ -80,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 241.50043487548828
+    "width": 241.50043487548828,
+    "collapsed": true
   },
   "right": {
     "id": "0876a6af07bdcd18",
@@ -211,14 +212,23 @@
       "graph:Open graph view": false,
       "omnisearch:Omnisearch": false,
       "copilot:Open Copilot Agent Chat": false,
-      "terminal:Open terminal": false,
-      "translate:Open translation view": false
+      "note-reader:Note Reader": false,
+      "note-reader-cosyvoice:Open CosyVoice reader controls": false,
+      "voice:Voice read text": false,
+      "voice:Open Voice player": false,
+      "local-dictation:Speech Kit — start dictation": false,
+      "momento:打开拾光": false
     }
   },
-  "active": "7eafc6aa459f9808",
+  "active": "4003043815a115e7",
   "lastOpenFiles": [
-    "Italy/A0/La Famiglia = The Family.md",
     "Italy/A0/A0.md",
+    "Italy/A0/Who is Doing the Action Io, Tu, Lui, Lei, Noi, Loro.md",
+    "Dot NET/WEB API/Middleware using dotnet.md",
+    "Italy/Italy Tutorial.md",
+    "DataBase/DataBaseDesign/Normalization.md",
+    "copilot/copilot-conversations/Image_Text_Styling@20260825_121441.md",
+    "Italy/A0/La Famiglia = The Family.md",
     "copilot/copilot-conversations/AI_Offers_Help@20260823_125715.md",
     "Custom Colors for VS.md",
     "Ds & Alg/Linked List.md",
@@ -248,13 +258,8 @@
     "copilot/skills/copilot-read-pdf/SKILL.md",
     "copilot/skills/copilot-web-fetch/SKILL.md",
     "copilot/skills/copilot-web-search/SKILL.md",
-    "Dot NET/C# Tutorial.md",
-    "Dot NET/Untitled.md",
-    "JavaScript-Learning-main/Sorting Array.md",
-    "JavaScript-Learning-main/Local Storage.md",
     "Images/Pasted image 20260708161648.png",
     "Images/Pasted image 20260707172758.png",
-    "Dot NET/WEB API/Status Code.md",
     "Images/Pasted image 20260630155015.png",
     "DataBase/SQL Server/T-SQL/Pasted image 20260512152332.png",
     "Untitled.canvas",
