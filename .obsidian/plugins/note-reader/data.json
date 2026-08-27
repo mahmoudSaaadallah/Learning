@@ -44,16 +44,16 @@
   "statisticsStorageMode": "pluginStorage",
   "stats": {
     "generatedAudioFileCount": 0,
-    "playSampleTextCounter": 0,
-    "readNoteCount": 0,
-    "readTotalSeconds": 0,
+    "playSampleTextCounter": 1,
+    "readNoteCount": 8,
+    "readTotalSeconds": 149.904,
     "restartFromBeginningCount": 0,
-    "selectCloseCount": 0,
-    "selectPauseCount": 0,
+    "selectCloseCount": 4,
+    "selectPauseCount": 1,
     "selectPlayCount": 0,
     "selectReloadCount": 0,
     "selectRewindCount": 0,
-    "viewSettingsCount": 3
+    "viewSettingsCount": 5
   },
   "storage": {
     "audioFileStorageLocation": "subfolder",
