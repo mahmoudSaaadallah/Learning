@@ -180,8 +180,7 @@
       "omnisearch:Omnisearch": false,
       "obsidian-git:Open Git source control": false,
       "copilot:Open Copilot Chat": false,
-      "obsidian-kanban:Create new board": false,
-      "speed-reader:Speed read current note": false
+      "obsidian-kanban:Create new board": false
     }
   },
   "active": "b399e77b7f74ff61",
