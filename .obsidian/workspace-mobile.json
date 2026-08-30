@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c967586bb829d2c5",
+        "id": "16ec260f2da984e5",
         "type": "tabs",
         "children": [
           {
-            "id": "37b09a7081641f0e",
+            "id": "b399e77b7f74ff61",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Italy/A0/A0.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -154,9 +154,19 @@
           "icon": "calendar-with-checkmark",
           "title": "Calendar"
         }
+      },
+      {
+        "id": "705b3d30684e4fba",
+        "type": "leaf",
+        "state": {
+          "type": "git-view",
+          "state": {},
+          "icon": "git-pull-request",
+          "title": "Source Control"
+        }
       }
     ],
-    "currentTab": 0
+    "currentTab": 4
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -173,6 +183,9 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "37b09a7081641f0e",
-  "lastOpenFiles": []
+  "active": "b399e77b7f74ff61",
+  "lastOpenFiles": [
+    "Italy/Italy Tutorial.md",
+    "Italy/A0/A0.md"
+  ]
 }
