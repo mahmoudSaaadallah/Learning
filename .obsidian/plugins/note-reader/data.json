@@ -44,16 +44,16 @@
   "statisticsStorageMode": "pluginStorage",
   "stats": {
     "generatedAudioFileCount": 0,
-    "playSampleTextCounter": 1,
-    "readNoteCount": 8,
-    "readTotalSeconds": 149.904,
+    "playSampleTextCounter": 4,
+    "readNoteCount": 17,
+    "readTotalSeconds": 222.95999999999998,
     "restartFromBeginningCount": 0,
     "selectCloseCount": 4,
-    "selectPauseCount": 1,
-    "selectPlayCount": 0,
+    "selectPauseCount": 3,
+    "selectPlayCount": 2,
     "selectReloadCount": 0,
     "selectRewindCount": 0,
-    "viewSettingsCount": 5
+    "viewSettingsCount": 11
   },
   "storage": {
     "audioFileStorageLocation": "subfolder",
@@ -71,7 +71,7 @@
   "tts": {
     "pitch": 0,
     "provider": "online",
-    "speed": 1,
+    "speed": 0.87,
     "voiceLocal": "Microsoft Zira - English (United States)",
     "voiceOnline": "en-US-AvaMultilingualNeural",
     "voiceSelectorFilters": null

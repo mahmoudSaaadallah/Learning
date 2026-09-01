@@ -1,0 +1,1017 @@
+/* Classes like .is-collapsed, .collapsed, .appearing, .lite, .selected, .highlight-visible, .no-transition are all subclasses applied to elements that already carry a .note-reader- base class (e.g., .note-reader-player.collapsed), so they are scoped under the plugin's root class and themeable */
+.note-reader-welcome-message {
+    color: var(--text-accent);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.note-reader-no-background {
+    background-color: transparent !important;
+}
+
+/* Info message in settings */
+.note-reader-info-message {
+    padding: var(--size-4-2) var(--size-4-4);
+    background-color: var(--background-primary);
+    border-left: 3px solid var(--text-accent);
+    margin-bottom: var(--size-4-2);
+    color: var(--text-normal);
+    font-size: var(--font-ui-small);
+}
+
+/* Setting Group (Collapsible Panel) */
+.note-reader-setting-group {
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--background-modifier-border);
+}
+
+.note-reader-setting-group.is-collapsed {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    border: none;
+    padding: 0;
+}
+
+.note-reader-setting-group .note-reader-setting-group-content {
+    padding: 10px;
+}
+
+.note-reader-setting-group.is-collapsed .note-reader-setting-group-content {
+    display: none;
+}
+
+.note-reader-setting-group .setting-item.setting-item-heading.note-reader-setting-group-header-collapsible {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    background-color: var(--background-modifier-border-hover);
+    padding: 8px 12px;
+    margin: 0;
+}
+
+.note-reader-setting-group.is-collapsed .setting-item.setting-item-heading.note-reader-setting-group-header-collapsible {
+    background-color: transparent;
+}
+
+.note-reader-setting-group .setting-item.setting-item-heading.note-reader-setting-group-header-collapsible:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.note-reader-setting-group .setting-item.setting-item-heading .note-reader-setting-group-chevron {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    color: var(--text-muted);
+    transition: transform 0.2s ease;
+    margin-left: auto;
+}
+
+.note-reader-setting-group.is-collapsed .setting-item.setting-item-heading .note-reader-setting-group-chevron {
+    transform: rotate(-90deg);
+}
+
+.note-reader-setting-group .setting-item.setting-item-heading .setting-item-name {
+    font-size: 13px;
+    color: var(--text-normal);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Sub-headings within setting group content (e.g., "Phrase line filter") */
+.note-reader-setting-group-content .setting-item.setting-item-heading {
+    background-color: var(--background-primary-alt);
+    padding: 6px 12px;
+    margin: 0 -12px 8px -12px;
+    border-radius: 0;
+}
+
+.note-reader-setting-group-content .setting-item.setting-item-heading .setting-item-name {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* Player Container */
+.note-reader-player {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--background-modifier-border);
+    margin: 8px 7px 8px 6px;
+    padding: 8px;
+    background: var(--background-secondary);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    max-height: 200px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.note-reader-player.collapsed {
+    max-height: 0;
+    padding: 0;
+    margin: 0;
+    border-width: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.note-reader-player.appearing {
+    animation: noteReaderRollDown 0.4s ease-out forwards;
+}
+
+/* Reading Progress */
+.note-reader-reading-progress {
+    flex: 0 0 auto;
+    width: auto;
+    font-weight: 500;
+    color: var(--color-accent);
+    white-space: nowrap;
+    transition: opacity 0.15s;
+    text-align: center;
+}
+
+.note-reader-controls {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    flex: 1;
+}
+
+.note-reader-controls.lite {
+    justify-content: space-between;
+}
+
+.note-reader-central-area {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+    transition: background 0.15s;
+    flex: 1;
+    min-width: 0;
+    height: var(--icon-button-height, 28px);
+}
+
+.note-reader-central-area.lite {
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media (hover: hover) {
+    .clickable-icon:hover,
+    .note-reader-central-area:hover {
+        box-shadow: none;
+        color: var(--icon-color-hover);
+        background-color: var(--background-modifier-hover);
+    }
+}
+
+/* Center icons in clickable buttons within the player */
+.note-reader-player .clickable-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.note-reader-right-slot {
+    flex: 0 0 auto;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+}
+
+input.note-reader-progress-slider {
+    width: 100%;
+    height: 8px;
+}
+
+.note-reader-progress-slider {
+    flex: 1;
+    height: var(--slider-track-height);
+    background: var(--slider-track-background);
+    border-radius: var(--slider-thumb-radius);
+    --progress-percent: 0%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 3px;
+}
+
+.note-reader-progress-slider:disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.note-reader-enhanced-play-icon {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+    margin-right: 1px;
+    color: var(--text-muted);
+    transition: color 0.15s;
+    cursor: default;
+}
+
+.note-reader-player .note-reader-enhanced-play-icon svg,
+.note-reader-player #note-reader-rewind svg {
+    display: block;
+}
+
+.note-reader-progress-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 0;
+    height: 0;
+    border: none;
+    background: transparent;
+    visibility: hidden;
+}
+
+.note-reader-progress-slider::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: var(--progress-percent);
+    background: var(--color-accent);
+    top: 0;
+    left: 0;
+    transition: width var(--progress-transition-duration, 0.5s) ease;
+}
+
+.note-reader-progress-slider:focus {
+    outline: none;
+}
+
+.note-reader-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--text-faint);
+    border-top: 2px solid var(--color-accent);
+    border-radius: 50%;
+    animation: note-reader-spin 0.75s linear infinite;
+    margin-right: 6px;
+    vertical-align: text-bottom;
+}
+
+/* Utility Classes */
+.note-reader-disabled {
+    cursor: not-allowed;
+}
+
+.note-reader-hidden {
+    display: none !important;
+}
+
+/* Display utility for generating audio state */
+.note-reader-element-hidden {
+    display: none;
+}
+
+.note-reader-element-visible {
+    display: block;
+}
+
+/* Progress slider custom properties */
+.note-reader-progress-slider.note-reader-progress-active {
+    --progress-percent: 0%;
+}
+
+.note-reader-progress-slider.note-reader-transition-none {
+    --progress-transition-duration: none;
+}
+
+.note-reader-progress-slider.note-reader-transition-default {
+    --progress-transition-duration: 0.5s;
+}
+
+/* Animations */
+@keyframes note-reader-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes noteReaderRollDown {
+    0% {
+        max-height: 0;
+        padding: 0;
+        margin: 0;
+        border-width: 0;
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        max-height: 200px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Traveling underline shared variables */
+:root {
+    --traveling-underline-height: 5px;
+    --traveling-underline-radius: 3px;
+}
+
+/* Line sweep animation */
+.note-reader-line-sweep {
+    position: absolute;
+    height: var(--traveling-underline-height);
+    background: var(--color-accent);
+    border-radius: var(--traveling-underline-radius);
+    pointer-events: none;
+    opacity: 0;
+    transition: width 0.4s ease-out;
+}
+
+.note-reader-line-sweep.animate {
+    opacity: 1;
+}
+
+/* Interaction Control Classes */
+.note-reader-traveling-highlight {
+    position: absolute;
+    height: var(--traveling-underline-height);
+    background: transparent;
+    border-radius: var(--traveling-underline-radius);
+    pointer-events: none;
+    /* Dynamic positioning via CSS custom properties */
+    --highlight-left: 0px;
+    --highlight-top: 0px;
+    --highlight-width: 0px;
+    --highlight-height: 0px;
+    left: var(--highlight-left);
+    top: var(--highlight-top);
+    width: var(--highlight-width);
+    height: var(--highlight-height);
+    /* Theme styles via CSS custom properties */
+    --highlight-background: transparent;
+    --highlight-border: none;
+    --highlight-border-bottom: none;
+    --highlight-border-radius: 0;
+    --highlight-box-shadow: none;
+    --highlight-background-image: none;
+    --highlight-background-size: 300% 100%;
+    --highlight-background-repeat: no-repeat;
+    --highlight-z-index: 0;
+    background: var(--highlight-background);
+    border: var(--highlight-border);
+    border-bottom: var(--highlight-border-bottom);
+    border-radius: var(--highlight-border-radius);
+    box-shadow: var(--highlight-box-shadow);
+    background-image: var(--highlight-background-image);
+    background-size: var(--highlight-background-size);
+    background-repeat: var(--highlight-background-repeat);
+    z-index: var(--highlight-z-index);
+    /* z-index set in JavaScript: 0 for reading view, -1 for edit view */
+    transition:
+        left 0.08s ease-out,
+        width 0.08s ease-out;
+    will-change: left, width, top;
+}
+
+.note-reader-traveling-highlight.highlight-visible {
+    display: block;
+    opacity: 1;
+}
+
+.note-reader-traveling-highlight.no-transition {
+    transition: none !important;
+}
+
+.note-reader-line-highlight-overlay.highlight-visible {
+    display: block;
+}
+
+/*- pushes border below the word */
+.note-reader-traveling-highlight.has-underline {
+    padding-bottom: 20px;
+}
+
+/* Line highlight overlay - full line background */
+.note-reader-line-highlight-overlay {
+    position: absolute;
+    left: 0;
+    /* Dynamic positioning via CSS custom properties */
+    --line-highlight-top: 0px;
+    --line-highlight-height: 0px;
+    --line-highlight-width: 100%;
+    top: var(--line-highlight-top);
+    height: var(--line-highlight-height);
+    width: var(--line-highlight-width);
+    pointer-events: none;
+    /* Theme values via CSS custom properties */
+    --line-highlight-color: var(--color-accent);
+    --line-highlight-opacity: 0.1;
+    --line-highlight-z-index: -1;
+    z-index: var(--line-highlight-z-index);
+    transition: top 0.08s ease-out;
+    background-color: var(--line-highlight-color);
+    opacity: var(--line-highlight-opacity);
+}
+
+/* Theme-specific line highlight colors */
+.note-reader-line-highlight-overlay.line-plus-underline {
+    --line-highlight-color: var(--color-accent);
+    --line-highlight-opacity: 0.1;
+}
+
+/* Interaction Control Classes */
+.note-reader-editor-disabled {
+    pointer-events: none;
+    user-select: none;
+}
+
+.note-reader-editor-disabled .cm-content {
+    caret-color: transparent;
+    cursor: default;
+}
+
+.note-reader-editor-scrollbar-disabled {
+    overflow: hidden;
+}
+
+.note-reader-editor-disabled .cm-scroller {
+    pointer-events: auto;
+    cursor: default;
+}
+
+.note-reader-editor-scrollbar-disabled {
+    overflow: hidden;
+}
+
+.note-reader-editor-disabled .cm-scroller {
+    pointer-events: auto;
+    
+}
+
+/* Line Sweep Animation States */
+.note-reader-line-sweep-start {
+    left: var(--highlight-left);
+    width: var(--highlight-width);
+    transition:
+        left 0.15s ease-out,
+        width 0.15s ease-out;
+}
+
+.note-reader-line-sweep-return {
+    left: var(--highlight-left);
+    width: var(--highlight-width);
+    transition:
+        left 0.3s ease-in-out,
+        width 0.3s ease-in-out;
+}
+
+.note-reader-line-sweep-fade {
+    transition: opacity 0.2s ease-out;
+}
+
+/* Theme Preview Styles */
+/* Static theme preview in settings */
+.note-reader-theme-preview-static {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 6px;
+    background: var(--background-primary-alt);
+}
+
+.note-reader-theme-preview-sample {
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.6;
+    background: var(--background-primary);
+    color: var(--text-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.note-reader-preview-line-highlight {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1.6em;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 0;
+    /* Theme custom properties - set dynamically by JavaScript */
+    --line-highlight-color: transparent;
+    --line-highlight-opacity: 1;
+    background-color: var(--line-highlight-color);
+    opacity: var(--line-highlight-opacity);
+}
+
+.note-reader-theme-preview-sample > *:not(.note-reader-preview-line-highlight) {
+    position: relative;
+    z-index: 1;
+}
+
+.note-reader-preview-text {
+    position: relative;
+    z-index: 1;
+}
+
+.note-reader-word-highlight-preview {
+    display: inline;
+    position: relative;
+    transition: all 0.15s ease;
+    /* Theme custom properties - set dynamically by JavaScript */
+    --theme-background: transparent;
+    --theme-background-clip: unset;
+    --theme-background-color: transparent;
+    --theme-background-image: none;
+    --theme-background-repeat: repeat;
+    --theme-background-size: auto;
+    --theme-border: none;
+    --theme-border-bottom: none;
+    --theme-border-radius: 0;
+    --theme-box-shadow: none;
+    --theme-gap: normal;
+    --theme-height: auto;
+    --theme-position: static;
+    --theme-transition: none;
+    --theme-width: auto;
+    background: var(--theme-background);
+    background-clip: var(--theme-background-clip);
+    background-color: var(--theme-background-color);
+    background-image: var(--theme-background-image);
+    background-repeat: var(--theme-background-repeat);
+    background-size: var(--theme-background-size);
+    border: var(--theme-border);
+    border-bottom: var(--theme-border-bottom);
+    border-radius: var(--theme-border-radius);
+    box-shadow: var(--theme-box-shadow);
+    gap: var(--theme-gap);
+    height: var(--theme-height);
+    position: var(--theme-position);
+    transition: var(--theme-transition);
+    width: var(--theme-width);
+}
+
+/* Compact Header Controls */
+.note-reader-settings-header-controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    padding: 4px 0;
+}
+
+.note-reader-compact-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 4px;
+    background: var(--background-primary);
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    font-size: 12px;
+    padding: 0;
+    min-width: auto;
+}
+
+/* Estimated Reading Time Display */
+.note-reader-estimated-time {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: var(--text-muted);
+    padding: 0 4px;
+    white-space: nowrap;
+}
+
+.note-reader-estimated-time-visible {
+    display: flex;
+}
+
+.note-reader-modal-title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: var(--font-ui-large);
+    font-weight: var(--font-semibold);
+    color: var(--text-normal);
+}
+
+.note-reader-resume-position-modal-message {
+    margin-bottom: 20px;
+    color: var(--text-normal);
+}
+
+.note-reader-resume-position-modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 8px;
+}
+
+/* Voice Dropdown Component */
+.note-reader-voice-dropdown-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.note-reader-voice-dropdown-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.note-reader-voice-demo-button {
+    flex-shrink: 0;
+}
+
+.note-reader-voice-configure-button {
+    flex-shrink: 0;
+    min-width: 80px;
+}
+
+/* Voice Selector Modal */
+.note-reader-voice-modal {
+    padding: 0;
+}
+
+.note-reader-voice-modal .modal-content {
+    max-width: 900px;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.note-reader-voice-modal-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.note-reader-voice-search-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+}
+
+.note-reader-voice-search {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 4px;
+    background: var(--background-primary);
+    color: var(--text-normal);
+    font-size: 14px;
+}
+
+.note-reader-voice-search:focus {
+    outline: none;
+    border-color: var(--color-accent);
+}
+
+.note-reader-voice-filters {
+    display: flex;
+    gap: 12px;
+    padding: 0 20px 12px 20px;
+    align-items: center;
+}
+
+.note-reader-reset-filters-btn {
+    flex-shrink: 0;
+}
+
+.note-reader-voice-table-container {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    padding: 0 20px;
+    min-height: 200px;
+}
+
+.note-reader-voice-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.note-reader-voice-table th {
+    text-align: left;
+    padding: 10px 8px;
+    font-weight: 600;
+    color: var(--text-muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.note-reader-voice-table td {
+    padding: 6px 8px;
+    font-size: 13px;
+}
+
+.note-reader-voice-table tr {
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.note-reader-voice-table tr:hover {
+    background: var(--background-modifier-hover);
+}
+
+.note-reader-voice-table tr:hover .note-reader-voice-actions {
+    opacity: 1;
+    visibility: visible;
+}
+
+.note-reader-voice-table tr.selected {
+    background: var(--background-accent);
+}
+
+.note-reader-voice-name {
+    font-weight: 500;
+}
+
+.note-reader-voice-gender {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.note-reader-voice-actions {
+    display: flex;
+    gap: 6px;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.2s,
+        visibility 0.2s;
+    border-bottom: none;
+}
+
+.note-reader-voice-actions button {
+    padding: 4px 8px;
+    min-width: 32px;
+}
+
+.note-reader-voice-count {
+    padding: 12px 20px;
+    font-size: 12px;
+    color: var(--text-muted);
+    text-align: center;
+    background: var(--background-primary);
+    border-top: 1px solid var(--background-modifier-border);
+    flex-shrink: 0;
+}
+
+.note-reader-voice-modal-footer {
+    display: none;
+}
+
+.note-reader-country-flag {
+    margin-right: 5px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .note-reader-voice-modal .modal-content {
+        max-width: 100%;
+        max-height: 100%;
+        height: 100%;
+    }
+
+    .note-reader-voice-table-container {
+        max-height: calc(100vh - 200px);
+    }
+
+    .note-reader-voice-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .note-reader-voice-filters {
+        flex-direction: column;
+    }
+}
+
+.modal.note-reader-theme-preview-modal {
+    width: 1000px;
+}
+
+/* Theme Preview Modal */
+.note-reader-theme-preview-modal-content .modal-content {
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.note-reader-theme-preview-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* Theme Grid */
+.note-reader-theme-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 16px 20px;
+    overflow-y: auto;
+}
+
+/* Theme Card (Clickable) */
+.note-reader-theme-card {
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 8px;
+    padding: 12px;
+    background: var(--background-primary);
+    transition:
+        border-color 0.15s ease,
+        box-shadow 0.15s ease;
+    cursor: pointer;
+}
+
+.note-reader-theme-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.note-reader-theme-card.selected {
+    border: 2px dashed var(--color-accent);
+    background: var(--background-primary-alt);
+}
+
+/* Card Header */
+.note-reader-theme-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.note-reader-theme-card-name {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text-normal);
+}
+
+.note-reader-theme-card-badge {
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: var(--background-modifier-border);
+    color: var(--text-muted);
+}
+
+/* Card Description */
+.note-reader-theme-card-desc {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin: 0 0 8px 0;
+}
+
+/* Card Preview */
+.note-reader-theme-card-preview {
+    padding: 8px;
+    border-radius: 4px;
+    background: var(--background-secondary);
+    margin-bottom: 8px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* Modal Footer */
+.note-reader-theme-preview-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    border-top: 1px solid var(--background-modifier-border);
+    background: var(--background-secondary);
+}
+
+.note-reader-theme-preview-selection {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.note-reader-theme-preview-selection strong {
+    color: var(--text-normal);
+}
+
+.note-reader-theme-preview-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+/* Custom Theme Modal */
+.note-reader-custom-theme-modal {
+    min-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.note-reader-custom-theme-modal h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.note-reader-custom-theme-modal h3 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: var(--font-ui-medium);
+    color: var(--text-normal);
+}
+
+/* Compact settings within custom theme modal */
+.modal .note-reader-custom-theme-modal .setting-item:not(.setting-item-heading) {
+    padding: 2px 0;
+    border-top: none;
+    border: none;
+    margin: 0;
+}
+
+.note-reader-custom-theme-preview {
+    padding: 12px;
+    background: var(--background-secondary);
+    border-radius: 4px;
+    margin: 8px 0 16px;
+}
+
+.note-reader-custom-theme-preview-sample {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: var(--font-ui-normal);
+    gap: 0;
+}
+
+.note-reader-custom-theme-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    justify-content: flex-end;
+}
+
+/* Jump Position Controller - Play icon for line jump */
+.note-reader-jump-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.15s ease, opacity 0.15s ease;
+    z-index: 10;
+    --jump-left: 0px;
+    --jump-top: 0px;
+    left: var(--jump-left);
+    top: var(--jump-top);
+    color: var(--text-accent);
+    pointer-events: auto;
+    background: var(--background-primary);
+}
+
+.note-reader-jump-icon svg {
+    width: 14px;
+    height: 14px;
+    opacity: 0.35;
+}
+
+.note-reader-jump-icon:hover,
+.note-reader-jump-icon:focus-visible {
+    background: var(--background-modifier-hover);
+    border-radius: 4px;
+}
+
+.note-reader-jump-icon:hover svg,
+.note-reader-jump-icon:focus-visible svg {
+    opacity: 1;
+}

@@ -25433,10 +25433,40 @@ var ColorHandler = class {
       const curCellColor = this.colorBar.getCurCellColor();
       if (selection.length === 0 && colorMode === 1 /* ColoredText */)
         return;
+      const formatInline = (t) => t.replace(/[\*\_]{3}(.+?)[\*\_]{3}/g, "<b><i>$1</i></b>").replace(/[\*\_]{2}(.+?)[\*\_]{2}/g, "<b>$1</b>").replace(/[\*\_](.+?)[\*\_]/g, "<i>$1</i>");
+      const wrapContent = (content) => `<span style="color:${curCellColor}">${formatInline(content)}</span>`;
+      const wrapLinePart = (part, atLineStart) => {
+        if (part.length === 0)
+          return part;
+        if (!atLineStart)
+          return wrapContent(part);
+        const m = part.match(
+          /^(\s*(?:>\s*)*(?:(?:[-*+]|\d+[.)])\s+)?(?:\[[ xX]\]\s+)?)(.*)$/
+        );
+        const prefix2 = m ? m[1] : "";
+        const content = m ? m[2] : part;
+        if (content.length === 0)
+          return part;
+        return `${prefix2}${wrapContent(content)}`;
+      };
       let newText = selection;
-      newText = newText.replace(/[\*\_]{3}(.+?)[\*\_]{3}/g, "<b><i>$1</i></b>").replace(/[\*\_]{2}(.+?)[\*\_]{2}/g, "<b>$1</b>").replace(/[\*\_](.+?)[\*\_]/g, "<i>$1</i>");
-      newText = newText.replace(/\n/g, "<br>");
-      editor.replaceSelection(`<span style="color:${curCellColor}">${newText}</span>`);
+      if (selection.length > 0) {
+        const from2 = editor.getCursor("from");
+        const to = editor.getCursor("to");
+        const parts = [];
+        for (let ln = from2.line; ln <= to.line; ln++) {
+          const fullLine = editor.getLine(ln);
+          const selStart = ln === from2.line ? from2.ch : 0;
+          const selEnd = ln === to.line ? to.ch : fullLine.length;
+          const part = fullLine.slice(selStart, selEnd);
+          const atLineStart = /^\s*$/.test(fullLine.slice(0, selStart));
+          parts.push(wrapLinePart(part, atLineStart));
+        }
+        newText = parts.join("\n");
+        editor.replaceSelection(newText);
+      } else {
+        editor.replaceSelection(`<span style="color:${curCellColor}"></span>`);
+      }
       const cursorEnd = editor.getCursor("to");
       try {
         const cursorEndChar = newText.length === 0 ? cursorEnd.ch - 7 : cursorEnd.ch + 1;

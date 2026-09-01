@@ -1,23 +1,19 @@
 [
   "calendar",
-  "obsidian-icon-folder",
   "colored-tags",
-  "file-explorer-note-count",
-  "code-styler",
-  "file-explorer-plus",
-  "ninja-cursor",
-  "omnisearch",
-  "cmdr",
-  "obsidian-git",
   "colored-text",
-  "highlightr-plugin",
+  "cmdr",
   "execute-code",
-  "language-translator",
-  "copilot",
-<<<<<<< HEAD
+  "file-explorer-note-count",
+  "file-explorer-plus",
+  "highlightr-plugin",
+  "obsidian-icon-folder",
+  "ninja-cursor",
   "obsidian-kanban",
+  "language-translator",
+  "omnisearch",
+  "templater-obsidian",
+  "obsidian-git",
+  "copilot",
   "note-reader"
-=======
-  "obsidian-kanban"
->>>>>>> 6814172664362c64f17aee0ec5bf471503a53ae5
 ]
