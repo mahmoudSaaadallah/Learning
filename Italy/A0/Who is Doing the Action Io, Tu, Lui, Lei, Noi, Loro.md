@@ -229,3 +229,81 @@ Some verbs don't follow these rules. They are called **irregular verbs**. You'll
 | Noi     | vediamo | We see  |
 | Voi     | vedete  | You (plural) see |
 | Loro    | vedono  | They see |
+
+
+### Sapere (To know - facts, how to do something)
+
+| Pronoun | Italy   | English    |
+| :------ | :------ | :--------- |
+| Io      | so      | I know     |
+| Tu      | sai     | You know   |
+| Lui/Lei | sa      | He/She knows |
+| Noi     | sappiamo| We know    |
+| Voi     | sapete  | You (plural) know |
+| Loro    | sanno   | They know  |
+
+### Conoscere (To know - people, places, be familiar with)
+
+| Pronoun | Italy   | English    |
+| :------ | :------ | :--------- |
+| Io      | conosco | I know     |
+| Tu      | conosci | You know   |
+| Lui/Lei | conosce | He/She knows |
+| Noi     | conosciamo| We know    |
+| Voi     | conoscete| You (plural) know |
+| Loro    | conoscono| They know  |
+
+### Mettere (To put, to place)
+
+| Pronoun | Italy   | English |
+| :------ | :------ | :------ |
+| Io      | metto   | I put   |
+| Tu      | metti   | You put |
+| Lui/Lei | mette   | He/She puts |
+| Noi     | mettiamo| We put  |
+| Voi     | mettete | You (plural) put |
+| Loro    | mettono | They put |
+
+### Dire (To say, to tell)
+
+| Pronoun | Italy   | English |
+| :------ | :------ | :------ |
+| Io      | dico    | I say   |
+| Tu      | dici    | You say |
+| Lui/Lei | dice    | He/She says |
+| Noi     | diciamo| We say  |
+| Voi     | dite    | You (plural) say |
+| Loro    | dicono  | They say |
+
+### Volere (To want)
+
+| Pronoun | Italy   | English |
+| :------ | :------ | :------ |
+| Io      | voglio  | I want  |
+| Tu      | vuoi    | You want |
+| Lui/Lei | vuole   | He/She wants |
+| Noi     | vogliamo| We want |
+| Voi     | volete  | You (plural) want |
+| Loro    | vogliono| They want |
+
+### Dare (To give)
+
+| Pronoun | Italy   | English |
+| :------ | :------ | :------ |
+| Io      | do      | I give  |
+| Tu      | dai     | You give |
+| Lui/Lei | dà      | He/She gives |
+| Noi     | diamo   | We give |
+| Voi     | date    | You (plural) give |
+| Loro    | danno   | They give |
+
+### Mangiare (To eat)
+
+| Pronoun | Italy   | English |
+| :------ | :------ | :------ |
+| Io      | mangio  | I eat   |
+| Tu      | mangi   | You eat |
+| Lui/Lei | mangia  | He/She eats |
+| Noi     | mangiamo| We eat  |
+| Voi     | mangiate| You (plural) eat |
+| Loro    | mangiano| They eat |
