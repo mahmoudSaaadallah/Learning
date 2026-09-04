@@ -1,0 +1,85 @@
+{
+  "filters": {
+    "asterisks": true,
+    "backslashEscapes": true,
+    "blockquotes": false,
+    "codeBlocks": true,
+    "emojis": true,
+    "enableLinePrefixFilter": false,
+    "enablePhraseLineFilter": false,
+    "frontmatter": true,
+    "headers": true,
+    "highlights": true,
+    "ignoreLinePrefix": "",
+    "ignorePhraseLine": "",
+    "imageEmbeds": true,
+    "inlineCode": true,
+    "tables": false,
+    "tags": false,
+    "underscores": true,
+    "urls": true
+  },
+  "liteMode": false,
+  "onboarding": {
+    "hasShownMobileBatteryNotice": false,
+    "hasShownOnboardingTooltip": true
+  },
+  "reading": {
+    "alwaysStartFromBeginningOnModify": false,
+    "enableJumpIcon": true,
+    "enablePositionPersistence": false,
+    "enableReadFileName": false,
+    "persistRewind": true,
+    "repeatReaderCommand": "pause",
+    "repeatReaderCommandNewNoteVisible": "reload",
+    "resumeThresholdSeconds": 60
+  },
+  "readingCompletionBehavior": {
+    "closePlayerOnFinish": true,
+    "enableChimeOnFinish": true,
+    "enableStopReading": false,
+    "stopReadingPhrase": ""
+  },
+  "showRibbonIcon": true,
+  "statisticsStorageMode": "pluginStorage",
+  "stats": {
+    "generatedAudioFileCount": 0,
+    "playSampleTextCounter": 4,
+    "readNoteCount": 17,
+    "readTotalSeconds": 222.95999999999998,
+    "restartFromBeginningCount": 0,
+    "selectCloseCount": 4,
+    "selectPauseCount": 3,
+    "selectPlayCount": 2,
+    "selectReloadCount": 0,
+    "selectRewindCount": 0,
+    "viewSettingsCount": 11
+  },
+  "storage": {
+    "audioFileStorageLocation": "subfolder",
+    "specifiedFolderPath": "",
+    "subfolderName": "note-readings"
+  },
+  "troubleshooting": {
+    "debugLogging": false,
+    "readActiveNoteOnLoad": false,
+    "showEstimatedReadingTime": false,
+    "stallCheckIntervalMs": 2000,
+    "stallThresholdSeconds": 5,
+    "targetBufferAheadSeconds": 90
+  },
+  "tts": {
+    "pitch": 0,
+    "provider": "online",
+    "speed": 0.87,
+    "voiceLocal": "Microsoft Zira - English (United States)",
+    "voiceOnline": "en-US-AvaMultilingualNeural",
+    "voiceSelectorFilters": null
+  },
+  "wordHighlighting": {
+    "customThemes": [],
+    "enableLockedScrolling": true,
+    "enableWordHighlighting": true,
+    "highlightThemeId": "classy"
+  }
+}

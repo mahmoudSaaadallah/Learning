@@ -6,5 +6,11 @@
       ],
       "key": "C"
     }
+  ],
+  "copilot:new-chat": [
+    {
+      "modifiers": [],
+      "key": "F4"
+    }
   ]
 }

@@ -172,4 +172,138 @@ Some verbs don't follow these rules. They are called **irregular verbs**. You'll
 -   **Practice every day:** Even just 5 minutes a day makes a big difference.
 -   **You don't always have to say the pronoun:** In Italian, we often understand who is doing the action from the verb ending, so it's not always necessary to say "Io", "Tu", etc. For example, `Cammino` already means "I walk". But to start, it's helpful to use them!
 
-I hope this explanation is helpful for you! Let me know if you have any more questions.
+
+------------------
+----
+### Essere (To be)
+
+| Pronoun | Italy   | English |
+| :------ | :------ | :------ |
+| Io      | sono    | I am    |
+| Tu      | sei     | You are |
+| Lui/Lei | è       | He/She is |
+| Noi     | siamo   | We are  |
+| Voi     | siete   | You (plural) are |
+| Loro    | sono    | They are |
+
+### Avere (To have)
+
+| Pronoun | Italy   | English |
+| :------ | :------ | :------ |
+| Io      | ho      | I have  |
+| Tu      | hai     | You have |
+| Lui/Lei | ha      | He/She has |
+| Noi     | abbiamo | We have |
+| Voi     | avete   | You (plural) have |
+| Loro    | hanno   | They have |
+
+### Potere (To be able to / Can)
+
+| Pronoun | Italy   | English |
+| :------ | :------ | :------ |
+| Io      | posso   | I can   |
+| Tu      | puoi    | You can |
+| Lui/Lei | può     | He/She can |
+| Noi     | possiamo| We can  |
+| Voi     | potete  | You (plural) can |
+| Loro    | possono | They can |
+
+### Parlare (To speak)
+
+| Pronoun | Italy    | English   |
+| :------ | :------- | :-------- |
+| Io      | parlo    | I speak   |
+| Tu      | parli    | You speak |
+| Lui/Lei | parla    | He/She speaks |
+| Noi     | parliamo | We speak  |
+| Voi     | parlate  | You (plural) speak |
+| Loro    | parlano  | They speak |
+
+### Vedere (To see)
+
+| Pronoun | Italy   | English |
+| :------ | :------ | :------ |
+| Io      | vedo    | I see   |
+| Tu      | vedi    | You see |
+| Lui/Lei | vede    | He/She sees |
+| Noi     | vediamo | We see  |
+| Voi     | vedete  | You (plural) see |
+| Loro    | vedono  | They see |
+
+
+### Sapere (To know - facts, how to do something)
+
+| Pronoun | Italy   | English    |
+| :------ | :------ | :--------- |
+| Io      | so      | I know     |
+| Tu      | sai     | You know   |
+| Lui/Lei | sa      | He/She knows |
+| Noi     | sappiamo| We know    |
+| Voi     | sapete  | You (plural) know |
+| Loro    | sanno   | They know  |
+
+### Conoscere (To know - people, places, be familiar with)
+
+| Pronoun | Italy   | English    |
+| :------ | :------ | :--------- |
+| Io      | conosco | I know     |
+| Tu      | conosci | You know   |
+| Lui/Lei | conosce | He/She knows |
+| Noi     | conosciamo| We know    |
+| Voi     | conoscete| You (plural) know |
+| Loro    | conoscono| They know  |
+
+### Mettere (To put, to place)
+
+| Pronoun | Italy   | English |
+| :------ | :------ | :------ |
+| Io      | metto   | I put   |
+| Tu      | metti   | You put |
+| Lui/Lei | mette   | He/She puts |
+| Noi     | mettiamo| We put  |
+| Voi     | mettete | You (plural) put |
+| Loro    | mettono | They put |
+
+### Dire (To say, to tell)
+
+| Pronoun | Italy   | English |
+| :------ | :------ | :------ |
+| Io      | dico    | I say   |
+| Tu      | dici    | You say |
+| Lui/Lei | dice    | He/She says |
+| Noi     | diciamo| We say  |
+| Voi     | dite    | You (plural) say |
+| Loro    | dicono  | They say |
+
+### Volere (To want)
+
+| Pronoun | Italy   | English |
+| :------ | :------ | :------ |
+| Io      | voglio  | I want  |
+| Tu      | vuoi    | You want |
+| Lui/Lei | vuole   | He/She wants |
+| Noi     | vogliamo| We want |
+| Voi     | volete  | You (plural) want |
+| Loro    | vogliono| They want |
+
+### Dare (To give)
+
+| Pronoun | Italy   | English |
+| :------ | :------ | :------ |
+| Io      | do      | I give  |
+| Tu      | dai     | You give |
+| Lui/Lei | dà      | He/She gives |
+| Noi     | diamo   | We give |
+| Voi     | date    | You (plural) give |
+| Loro    | danno   | They give |
+
+### Mangiare (To eat)
+
+| Pronoun | Italy   | English |
+| :------ | :------ | :------ |
+| Io      | mangio  | I eat   |
+| Tu      | mangi   | You eat |
+| Lui/Lei | mangia  | He/She eats |
+| Noi     | mangiamo| We eat  |
+| Voi     | mangiate| You (plural) eat |
+| Loro    | mangiano| They eat |
