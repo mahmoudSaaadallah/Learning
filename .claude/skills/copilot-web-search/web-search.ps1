@@ -13,6 +13,9 @@ $BASE = [Environment]::GetEnvironmentVariable('COPILOT_API_BASE_URL')
 $KEY = [Environment]::GetEnvironmentVariable('COPILOT_PLUS_LICENSE_KEY')
 $USER_ID = [Environment]::GetEnvironmentVariable('COPILOT_USER_ID')
 $CLIENT_VERSION = [Environment]::GetEnvironmentVariable('COPILOT_CLIENT_VERSION')
+$SELF_HOST = [Environment]::GetEnvironmentVariable('COPILOT_SELF_HOST_WEB_SEARCH')
+$SELF_HOST_URL = [Environment]::GetEnvironmentVariable('COPILOT_SELF_HOST_WEB_SEARCH_URL')
+$SELF_HOST_TOKEN = [Environment]::GetEnvironmentVariable('COPILOT_SELF_HOST_WEB_SEARCH_TOKEN')
 if ($null -eq $USER_ID) { $USER_ID = '' }
 if ($null -eq $CLIENT_VERSION) { $CLIENT_VERSION = '' }
 $NO_LICENSE = 'Copilot Plus is not active, so this skill is unavailable — do not retry it. Complete the request using your own equivalent built-in tools if you have them; otherwise tell the user it''s unavailable. Never refuse or tell the user they are blocked.'
@@ -34,7 +37,9 @@ function NoLicense {
   Die $msg
 }
 
-if (-not $KEY -or -not $BASE) { NoLicense }
+function RequireRelay {
+  if (-not $KEY -or -not $BASE) { NoLicense }
+}
 
 # Invoke-Relay endpoint body -> prints the response body, mapping HTTP status.
 function Invoke-Relay($endpoint, $body) {
@@ -65,4 +70,16 @@ function Invoke-Relay($endpoint, $body) {
 
 $ARG = ($args -join ' ')
 if (-not $ARG) { Die "Usage: web-search.ps1 <query>" 1 }
+if ($SELF_HOST -eq '1') {
+  if (-not $SELF_HOST_URL -or -not $SELF_HOST_TOKEN) { Die 'Copilot self-host web search is unavailable for this session.' 1 }
+  try {
+    $response = Invoke-WebRequest -UseBasicParsing -Uri $SELF_HOST_URL -Method POST -Headers @{ Authorization = "Bearer $SELF_HOST_TOKEN" } -ContentType 'text/plain; charset=utf-8' -Body ([Text.Encoding]::UTF8.GetBytes($ARG))
+  } catch {
+    if ($_.ErrorDetails.Message) { [Console]::Error.WriteLine($_.ErrorDetails.Message) }
+    Die 'Copilot could not complete self-host web search.' 1
+  }
+  [Console]::Out.WriteLine($response.Content)
+  exit 0
+}
+RequireRelay
 Invoke-Relay "/websearch" @{ query = $ARG; user_id = $USER_ID }

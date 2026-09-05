@@ -4,7 +4,7 @@ description: Fetch the transcript of a YouTube video using Copilot Plus. Use whe
 license: Copilot Plus
 metadata:
   copilot-enabled-agents: claude, codex, opencode
-  copilot-builtin-version: "5"
+  copilot-builtin-version: "6"
 ---
 
 # Copilot YouTube transcript
@@ -41,3 +41,4 @@ the request when you have one (otherwise tell the user it's unavailable) — nev
 refuse or block the user. Only mention upgrading or renewing Copilot Plus when
 the script's message explicitly invites it, and keep any such note short and
 friendly.
+
