@@ -1,4 +1,31 @@
 ## 1
+- Ciao!
+>  Ciao!
+- Qual e il tuo nome?
+>  Il mio nome e Mahmoud.
+>  Qual e il  tuo nome?
+- Il mio nome e Claudia.
+- Piacere.
+> Piacere di conoscerti.
+
+---
+## 2 
+- Ciao, buonasera!
+> Buonasera signora.
+- Come va?
+> Va tutto Molto bene, E lei?
+- Gene grazia.
+
+-----
+## 3
+- Mi Scusi.
+> Si?
+- Prendo un caffe per favore.
+> Si , certo. 
+- Grazie.
+> Di niente.
+
+## 4
 - Buongiorno, vorrei un caffe, perfavore.
 > - Buongiorno, normale?
 - come?
@@ -14,14 +41,14 @@
 
 ---
 
-## 2
+## 5
 - Ciao, una limonata, perfavore.
 > - Certo, con ghiaccio.
 > - Ecco qua!
 - Graize.
 ---
 
-## 3
+## 6
 - Ciao!
 > - Ciao, come sta?
 - Sto molto bene. come ti chiami?
@@ -34,7 +61,7 @@
 
 ---
 
-## 4
+## 7
 - Buongiorno, ha un appuntamento?
 > Buongiorno, si ho un appuntamento per il permesso di soggiorno.
 - Mi puo dare il passaporto, per favore?
