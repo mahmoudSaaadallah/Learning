@@ -299,11 +299,34 @@ Some verbs don't follow these rules. They are called **irregular verbs**. You'll
 
 ### Mangiare (To eat)
 
-| Pronoun | Italy   | English |
-| :------ | :------ | :------ |
-| Io      | mangio  | I eat   |
-| Tu      | mangi   | You eat |
-| Lui/Lei | mangia  | He/She eats |
-| Noi     | mangiamo| We eat  |
-| Voi     | mangiate| You (plural) eat |
-| Loro    | mangiano| They eat |
+| Pronoun | Italy    | English          |
+| :------ | :------- | :--------------- |
+| Io      | mangio   | I eat            |
+| Tu      | mangi    | You eat          |
+| Lui/Lei | mangia   | He/She eats      |
+| Noi     | mangiamo | We eat           |
+| Voi     | mangiate | You (plural) eat |
+| Loro    | mangiano | They eat         |
+### Guidare 
+| Pronoun | Italy    | English    |
+| :------ | :------- | :--------- |
+| Io      | Guido    | I drive    |
+| Tu      | Guidi    | You drive  |
+| Lei     | Guida    | She drives |
+| Lui     | Guida    | He drives  |
+| Noi     | Guidiamo | We drive   |
+| Voi     | Guidate  | You drive  |
+| Loro    | Guidano  | They drive |
+
+
+### Prendere
+| Pronoun | Italy     | English   |
+| :------ | :-------- | :-------- |
+| Io      | Prendo    | I take    |
+| Tu      | Prendi    | You take  |
+| Lei     | Prende    | She takes |
+| Lui     | Prende    | He taks   |
+| Noi     | Prendiamo | We take   |
+| Voi     | Prendete  | You take  |
+| Loro    | Prendono  | They take |
+
