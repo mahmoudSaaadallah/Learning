@@ -219,15 +219,16 @@
       "graph:Open graph view": false,
       "templater-obsidian:Templater": false,
       "obsidian-git:Open Git source control": false,
+      "note-reader:Note Reader": false,
       "copilot:Open Copilot Agent Chat": false,
-      "obsidian-kanban:Create new board": false,
-      "note-reader:Note Reader": false
+      "obsidian-kanban:Create new board": false
     }
   },
-  "active": "268a4215463ca43d",
+  "active": "de5d9613159c61f7",
   "lastOpenFiles": [
     "Italy/A0/Who is Doing the Action Io, Tu, Lui, Lei, Noi, Loro.md",
     "Italy/A0/A0.md",
+    "copilot/copilot-conversations/Italian_Noun_Sentences@20260906_191324.md",
     "Italy/A0/Conversazione.md",
     "copilot/copilot-conversations/File_Words_Conjecuation@20260903_115923.md",
     "copilot/skills/openartifacts-publish/SKILL.md",
@@ -258,7 +259,6 @@
     "copilot/skills/obsidian-cli/SKILL.md",
     "copilot/skills/obsidian-cli/LICENSE",
     "copilot/skills/obsidian-cli",
-    "copilot/skills/json-canvas/SKILL.md",
     "copilot/skills/json-canvas/LICENSE",
     "copilot/skills/json-canvas/references",
     "copilot/skills/json-canvas",
