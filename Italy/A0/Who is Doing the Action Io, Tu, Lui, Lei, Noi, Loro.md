@@ -197,6 +197,16 @@ Some verbs don't follow these rules. They are called **irregular verbs**. You'll
 | Voi     | avete   | You (plural) have |
 | Loro    | hanno   | They have |
 
+
+| Sentence                  | Possessive Phrase  |
+| :------------------------ | :----------------- |
+| Io ho una macchina.       | la mia macchina    |
+| Tu hai una macchina.      | la tua macchina    |
+| Lui ha una macchina.      | la sua macchina    |
+| Lei ha una macchina.      | la sua macchina    |
+| Noi abbiamo una macchina. | la nostra macchina |
+| Voi avete una macchina.   | la vostra macchina |
+| Loro hanno una macchina.  | la loro macchina   |
 ### Potere (To be able to / Can)
 
 | Pronoun | Italy   | English |
@@ -330,3 +340,28 @@ Some verbs don't follow these rules. They are called **irregular verbs**. You'll
 | Voi     | Prendete  | You take  |
 | Loro    | Prendono  | They take |
 
+
+### Fermarsi
+
+| Conjugated Verb |
+| :-------------- |
+| Io mi fermo     |
+| tu ti fermi     |
+| lei si ferma    |
+| lui si ferma    |
+| noi ci fermiamo |
+| voi vi fermate  |
+| loro si fermano |
+
+
+### Vivere
+
+| Conjugated Verb |
+| :-------------- |
+| Io vivo         |
+| tu vivi         |
+| lei vive        |
+| lui vive        |
+| noi viviamo     |
+| voi vivete      |
+| loro vivono     |
