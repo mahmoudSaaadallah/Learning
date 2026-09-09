@@ -1,44 +1,85 @@
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $OutputEncoding = [System.Text.Encoding]::UTF8
+# Publish one HTML file to OpenArtifacts over HTTPS with the license key Copilot
+# supplies in the environment.
 
-$SOURCE = if ($args.Count -ge 1) { $args[0] } else { '' }
-$STAGED_HTML = if ($args.Count -ge 2) { $args[1] } else { '' }
-if (($args.Count -ne 1 -and $args.Count -ne 2) -or -not $SOURCE -or ($args.Count -eq 2 -and -not $STAGED_HTML)) {
-  [Console]::Error.WriteLine('Usage: openartifacts-publish.ps1 <source-note-path> [staged-html-path]')
+function Show-Usage {
+  [Console]::Error.WriteLine('Usage: openartifacts-publish.ps1 publish <html-file> <title> [docId]')
+  [Console]::Error.WriteLine('       openartifacts-publish.ps1 unshare <docId>')
   exit 1
 }
 
-$OBSIDIAN_CLI = [Environment]::GetEnvironmentVariable('COPILOT_OBSIDIAN_CLI')
-$WORKSPACE_ROOT = [Environment]::GetEnvironmentVariable('OPENARTIFACTS_WORKSPACE_ROOT')
-if (-not $WORKSPACE_ROOT) {
-  [Console]::Error.WriteLine('The owning Obsidian workspace is unavailable.')
+$KEY = [Environment]::GetEnvironmentVariable('COPILOT_PLUS_LICENSE_KEY')
+if (-not $KEY) {
+  [Console]::Error.WriteLine('Publishing to OpenArtifacts needs a Copilot Plus license key. Add it in Copilot Settings and try again.')
+  exit 1
+}
+$API_HOST = [Environment]::GetEnvironmentVariable('OPENARTIFACTS_API_HOST')
+if (-not $API_HOST) { $API_HOST = 'https://api.openartifacts.ai' }
+$API_HOST = $API_HOST.TrimEnd('/')
+
+$COMMAND = if ($args.Count -ge 1) { [string]$args[0] } else { '' }
+$DOC_ID = ''
+switch ($COMMAND) {
+  'publish' {
+    if ($args.Count -ne 3 -and $args.Count -ne 4) { Show-Usage }
+    $HTML_FILE = [string]$args[1]
+    $TITLE = [string]$args[2]
+    if ($args.Count -eq 4) { $DOC_ID = [string]$args[3] }
+    if (-not (Test-Path -LiteralPath $HTML_FILE -PathType Leaf)) {
+      [Console]::Error.WriteLine("HTML file not found: $HTML_FILE")
+      exit 1
+    }
+  }
+  'unshare' {
+    if ($args.Count -ne 2) { Show-Usage }
+    $DOC_ID = [string]$args[1]
+  }
+  default { Show-Usage }
+}
+if ($DOC_ID -and $DOC_ID -notmatch '^[0-9abcdefghjkmnpqrstvwxyz]{16}$') {
+  [Console]::Error.WriteLine("Invalid OpenArtifacts document id: $DOC_ID")
   exit 1
 }
 
-$EXIT_CODE = 0
+$headers = @{ Authorization = "Bearer $KEY" }
 try {
-  if (-not $OBSIDIAN_CLI) { throw 'A compatible Obsidian CLI is unavailable.' }
-  Set-Location -LiteralPath $WORKSPACE_ROOT
-  $VAULT_NAME = Split-Path -Leaf (Get-Location).Path
-  if (-not $VAULT_NAME) { throw 'The owning Obsidian vault is unavailable.' }
-  $SOURCE_B64 = [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes($SOURCE))
-  if ($args.Count -eq 1) {
-    $CODE = "(()=>{const decode=(value)=>new TextDecoder().decode(Uint8Array.from(atob(value),(char)=>char.charCodeAt(0)));const bridge=app.plugins.plugins.copilot?.openArtifactsAgentBridge;if(!bridge)throw new Error('Copilot OpenArtifacts host is unavailable.');return bridge.reviewAgentManage(decode('$SOURCE_B64')).then(JSON.stringify);})()"
+  if ($COMMAND -eq 'unshare') {
+    $null = Invoke-WebRequest -UseBasicParsing -Method Delete -Uri "$API_HOST/api/v1/docs/$DOC_ID" -Headers $headers
+    [Console]::Out.WriteLine('{"docId":"' + $DOC_ID + '","status":"unshared"}')
   } else {
-    $HTML_B64 = [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes($STAGED_HTML))
-    $CODE = "(()=>{const decode=(value)=>new TextDecoder().decode(Uint8Array.from(atob(value),(char)=>char.charCodeAt(0)));const bridge=app.plugins.plugins.copilot?.openArtifactsAgentBridge;if(!bridge)throw new Error('Copilot OpenArtifacts host is unavailable.');return bridge.reviewAgentPublish(decode('$SOURCE_B64'),decode('$HTML_B64')).then(JSON.stringify);})()"
+    $html = [System.IO.File]::ReadAllText($HTML_FILE, (New-Object System.Text.UTF8Encoding($false)))
+    $body = @{ title = $TITLE; html = $html } | ConvertTo-Json -Compress -Depth 2
+    $bytes = [System.Text.Encoding]::UTF8.GetBytes($body)
+    $method = if ($DOC_ID) { 'Put' } else { 'Post' }
+    $uri = if ($DOC_ID) { "$API_HOST/api/v1/docs/$DOC_ID" } else { "$API_HOST/api/v1/docs" }
+    $response = Invoke-WebRequest -UseBasicParsing -Method $method -Uri $uri -Headers $headers -ContentType 'application/json; charset=utf-8' -Body $bytes
+    [Console]::Out.WriteLine([string]$response.Content)
   }
-
-  $CLI_OUTPUT = & $OBSIDIAN_CLI "vault=$VAULT_NAME" 'eval' "code=$CODE"
-  if ($LASTEXITCODE -ne 0) { throw 'Copilot could not complete the OpenArtifacts review.' }
-  $CLI_RESULT = [string](@($CLI_OUTPUT | Where-Object { ([string]$_).StartsWith('=> {') })[-1])
-  if (-not $CLI_RESULT.StartsWith('=> {')) {
-    throw 'Copilot could not complete the OpenArtifacts review.'
-  }
-  $OUTCOME = $CLI_RESULT.Substring(3)
-  [Console]::Out.Write($OUTCOME)
 } catch {
-  [Console]::Error.WriteLine($_.Exception.Message)
-  $EXIT_CODE = 1
+  $status = $null
+  $detail = ''
+  if ($_.Exception.Response) {
+    try { $status = [int]$_.Exception.Response.StatusCode } catch { $status = $null }
+    try {
+      $reader = New-Object System.IO.StreamReader($_.Exception.Response.GetResponseStream())
+      $detail = $reader.ReadToEnd()
+    } catch { $detail = '' }
+  }
+  if (-not $detail -and $_.ErrorDetails) { $detail = [string]$_.ErrorDetails.Message }
+  if ($COMMAND -eq 'unshare' -and $status -eq 404 -and $detail -match '"not_found"') {
+    # The API's structured not_found means the page is already gone, which is the outcome asked for.
+    [Console]::Out.WriteLine('{"docId":"' + $DOC_ID + '","status":"unshared"}')
+    exit 0
+  }
+  if ($status) {
+    [Console]::Error.WriteLine("OpenArtifacts returned HTTP $status")
+    if ($detail) { [Console]::Error.WriteLine($detail) }
+  } elseif ($detail) {
+    [Console]::Error.WriteLine($detail)
+  } else {
+    [Console]::Error.WriteLine("Could not reach OpenArtifacts at $API_HOST. " + $_.Exception.Message)
+  }
+  exit 1
 }
-exit $EXIT_CODE
+exit 0
