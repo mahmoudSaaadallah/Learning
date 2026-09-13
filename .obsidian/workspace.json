@@ -114,6 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Italy/A0/A0.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -224,10 +225,11 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "268a4215463ca43d",
+  "active": "de5d9613159c61f7",
   "lastOpenFiles": [
-    "Italy/A0/Who is Doing the Action Io, Tu, Lui, Lei, Noi, Loro.md",
+    "Italy/Italy Tutorial.md",
     "Italy/A0/A0.md",
+    "Italy/A0/Who is Doing the Action Io, Tu, Lui, Lei, Noi, Loro.md",
     "copilot/copilot-conversations/Writing_Without_Translation@20260907_232816.md",
     "copilot/copilot-conversations/Italian_Noun_Sentences@20260906_191324.md",
     "Italy/A0/Conversazione.md",
@@ -250,7 +252,6 @@
     "JavaScript-Learning-main/JS Tutorial.md",
     "Django/Django Admin.md",
     "Dot NET/WEB API/Middleware using dotnet.md",
-    "Italy/Italy Tutorial.md",
     "DataBase/DataBaseDesign/Normalization.md",
     "copilot/copilot-conversations/Image_Text_Styling@20260825_121441.md",
     "Italy/A0/La Famiglia = The Family.md",
