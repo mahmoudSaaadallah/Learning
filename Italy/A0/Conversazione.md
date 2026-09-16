@@ -72,3 +72,15 @@
 > Quanto tempo devo aspettare?
 - Circa trenta minuti.
 > Va bene, grazie mille.
+
+
+----
+## 8
+- Quando fai colazione?
+> Io faccio colazione alle sette in punto. E tu?
+- Io faccio colazione alle otto. Cosa mangi per colazione?
+> Io mangio un panino.
+- Quando pranzi?
+> Io pranzo alle dodici in punto. E tu?
+- Io pranzo all'una. Quando ceni?
+> Io ceno alle nove.
