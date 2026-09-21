@@ -35,7 +35,8 @@
               "title": "Who is Doing the Action Io, Tu, Lui, Lei, Noi, Loro"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -225,11 +226,11 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "de5d9613159c61f7",
+  "active": "25857c57cb60aca3",
   "lastOpenFiles": [
+    "Italy/A0/A0.md",
     "copilot/copilot-conversations/Add_Verbs@20260920_152601.md",
     "Italy/A0/Who is Doing the Action Io, Tu, Lui, Lei, Noi, Loro.md",
-    "Italy/A0/A0.md",
     "Italy/A0/Conversazione.md",
     "Italy/Italy Tutorial.md",
     "copilot/copilot-conversations/Writing_Without_Translation@20260907_232816.md",
