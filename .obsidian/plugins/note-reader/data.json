@@ -45,15 +45,15 @@
   "stats": {
     "generatedAudioFileCount": 0,
     "playSampleTextCounter": 4,
-    "readNoteCount": 17,
-    "readTotalSeconds": 222.95999999999998,
+    "readNoteCount": 28,
+    "readTotalSeconds": 244.91999999999993,
     "restartFromBeginningCount": 0,
-    "selectCloseCount": 4,
+    "selectCloseCount": 5,
     "selectPauseCount": 3,
     "selectPlayCount": 2,
     "selectReloadCount": 0,
     "selectRewindCount": 0,
-    "viewSettingsCount": 11
+    "viewSettingsCount": 12
   },
   "storage": {
     "audioFileStorageLocation": "subfolder",

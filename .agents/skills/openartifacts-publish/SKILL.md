@@ -1,77 +1,88 @@
 ---
 name: openartifacts-publish
-description: Publish, update, or withdraw an existing Markdown note through OpenArtifacts' host-owned review flow. Use when the user asks to publish, share, update, delete, remove, or withdraw an OpenArtifacts page.
+description: Publish, update, or withdraw an existing Markdown note as a public OpenArtifacts page. Use when the user asks to publish, share, update, delete, remove, or withdraw an OpenArtifacts page.
 metadata:
   copilot-enabled-agents: claude, codex, opencode
-  copilot-builtin-version: "1"
+  copilot-builtin-version: "2"
 ---
 
 # Publish Markdown to OpenArtifacts
 
-Require one existing Markdown source file. When the user asks to delete, remove, or
-withdraw its current OpenArtifacts page, do not generate HTML. Run the host wrapper with
-only the vault-relative source-note path. Obsidian reads the note's current identity
-and opens its existing management modal; the user alone chooses Update or Delete.
-Never tell the user to delete the page at its public URL.
+Copilot supplies everything this skill needs through the environment:
+`$OPENARTIFACTS_WORKSPACE_ROOT` is the vault root, and `COPILOT_PLUS_LICENSE_KEY`
+is the credential the bundled wrapper sends. Do not read Copilot settings or credential
+files, print the key, install anything, or run Node, npm, npx, or the Obsidian CLI.
 
-For publishing or updating, finish a complete, self-contained,
-passive HTML document before asking Obsidian to review it. Render source-specific
-content such as Mermaid and Obsidian Bases into static HTML or SVG, embed images,
-and include no scripts, frames, forms, handlers, redirects, or external assets. Treat
-YAML frontmatter as note metadata: never render the raw frontmatter block as page
-content. The exact UTF-8 HTML must not exceed `10485760` bytes.
+If `COPILOT_PLUS_LICENSE_KEY` is unset or empty, stop before generating anything and tell
+the user: Publishing to OpenArtifacts needs a Copilot Plus license key. Add it in Copilot Settings and try again.
 
-Style the page from a theme file rather than improvising. Resolve the theme name in
-this order: `OPENARTIFACTS_THEME` from the environment when set, then a theme the
-user named in chat, then `research-memo`. Read
-`$OPENARTIFACTS_WORKSPACE_ROOT/.openartifacts/themes/<name>.md` when the
-user has authored that theme, otherwise `themes/<name>.md` next to this file. Follow
-it exactly: tokens, type, scale, layout, components, and its theme-handling CSS, all
-inlined. If neither file exists, still publish with restrained defaults (system fonts,
-one accent, a readable measure, light and dark handled) and tell the user which theme
-was not found.
+## 1. Prepare the page
 
-Write those final bytes to a new unique `.html` file under
-`$OPENARTIFACTS_WORKSPACE_ROOT/.openartifacts/handoffs/`, creating that
-directory first when it does not exist. Do not show a prose substitute or ask
-for confirmation in chat. Instead run the host wrapper with exactly two
-vault-relative paths: the source note and the staged HTML.
+Read one existing Markdown source note. Treat YAML frontmatter as metadata, never as page
+content. Note its `openartifacts` property, or on older notes the `symposium` property:
+an `https://…/d/<docId>` value means the note is already published and this task updates
+that page; pass that `docId` to the wrapper. Compare document ids, not urls: an older
+`symposium.site` link and an `openartifacts.site` link with the same id are the same page.
+If either property holds any other value, or the two name different ids, stop and ask the
+user before touching them.
 
-On macOS or Linux:
+Write complete UTF-8 HTML (at most `10485760` bytes) to a new file
+under `$OPENARTIFACTS_WORKSPACE_ROOT/.openartifacts/handoffs/`, creating
+the directory if needed. Preserve the note's content; render Obsidian-specific syntax such
+as wikilinks, callouts, embeds, Mermaid, and Bases into static HTML or SVG. CSS, scripts,
+and external resources are allowed and are published unchanged.
+
+Themes are optional. For a named theme, check
+`$OPENARTIFACTS_WORKSPACE_ROOT/.openartifacts/themes/<name>.md`, then
+`themes/<name>.md` next to this skill. Check each path independently. If neither
+exists, continue with readable defaults; a missing theme must never block publishing.
+The bundled `research-memo` is an optional example.
+
+## 2. Let the user review
+
+Tell the user the absolute path of the HTML file and that opening it in a browser shows
+the page as it will be uploaded; OpenArtifacts adds its own header and footer bylines when
+it serves the page. Then end your turn.
+
+Never publish in the same turn that generated the HTML. Publish only when a later
+message from the user clearly asks to publish this page. Treat anything else as feedback
+(revise the same file and repeat this step) or as a cancellation. When unsure whether a
+message is an approval, ask once. Never simulate the user's approval.
+
+## 3. Publish
+
+Run the wrapper next to this SKILL.md with the HTML file, the note's title (its file
+name without `.md`), and the existing `docId` when updating. On macOS or Linux:
 
 ```bash
-sh "/absolute/path/to/this/skill/directory/openartifacts-publish.sh" "Notes/source.md" ".openartifacts/handoffs/unique.html"
+sh "/absolute/path/to/this/skill/directory/openartifacts-publish.sh" publish "$OPENARTIFACTS_WORKSPACE_ROOT/.openartifacts/handoffs/unique.html" "Note title" [docId]
 ```
 
-For withdrawal, omit the staged-HTML argument:
-
-```bash
-sh "/absolute/path/to/this/skill/directory/openartifacts-publish.sh" "Notes/source.md"
-```
-
-On Windows, use the `.cmd` wrapper (prefix it with `&` in PowerShell):
+On Windows, use the `.cmd` wrapper (prefix with `&` in PowerShell):
 
 ```powershell
-& "/absolute/path/to/this/skill/directory/openartifacts-publish.cmd" "Notes/source.md" ".openartifacts/handoffs/unique.html"
+& "/absolute/path/to/this/skill/directory/openartifacts-publish.cmd" publish "$env:OPENARTIFACTS_WORKSPACE_ROOT/.openartifacts/handoffs/unique.html" "Note title" [docId]
 ```
 
-Omit the staged-HTML argument on Windows for withdrawal as well.
+Success prints the server's JSON, `{"docId", "url", "version"}`. Set the note's
+`openartifacts` frontmatter property to that `url` (create the frontmatter block if
+needed, keep every other property) and remove a `symposium` property whose link has the
+same document id. Delete the HTML file from `.openartifacts/handoffs/`, then
+report the URL. Publishing the same note again updates the same page.
 
-With only the source path, the wrapper blocks while Obsidian shows its host-owned
-Update/Delete management modal. With a staged HTML path, it blocks while Obsidian
-consumes the artifact and shows its source, title, and a link to a sandboxed
-local-browser rendering of the exact captured page. Obsidian rejects active or
-externally loaded content, prevents navigation from the browser preview, removes the
-original artifact, removes its temporary browser preview after review, and alone reads
-the current note identity to choose whether confirmation publishes or updates; never
-choose an action or document id.
+On failure the wrapper prints the HTTP status and the server's message to stderr and
+exits 1. Report that message verbatim. Do not retry on your own, invent a cause, strip
+styling, or publish another way. For a 401, the license key was refused or the plan
+cannot publish; point the user at Copilot Settings. For `not_found` on an update, stop;
+do not create a replacement page unless the user explicitly asks.
 
-- `cancelled`: stop. No request was sent.
-- `regenerate`: create a new complete artifact and run the wrapper again. The
-  previous confirmation never applies to regenerated bytes.
-- `published` or `updated`: return the host-provided public URL verbatim.
-- `deleted`: report that the host withdrew the page and removed its note identity.
-- `failed`: if the host says to edit the staged file, address every listed issue in
-  that same file and retry exactly once. Otherwise, or if that retry fails, stop and
-  report the exact host message. Never invent a cause, change unrelated styling, create
-  another filename, bypass the review, or publish directly.
+## 4. Withdraw
+
+For delete, remove, or withdraw requests, read the `docId` with the same rules as step 1:
+`openartifacts` first, `symposium` on older notes, compared by document id, and stop to
+ask on any other value or on two properties naming different ids. If there is none, say
+nothing is published. Otherwise tell the user the link will stop working and that copies
+people already saved cannot be recalled, then end your turn. On a clear yes, run the wrapper
+with `unshare <docId>`, remove the `openartifacts` and `symposium` properties from the
+note, and report that the page is gone. Never tell the user to delete the page at its
+public URL.

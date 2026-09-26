@@ -197,6 +197,16 @@ Some verbs don't follow these rules. They are called **irregular verbs**. You'll
 | Voi     | avete   | You (plural) have |
 | Loro    | hanno   | They have |
 
+
+| Sentence                  | Possessive Phrase  |
+| :------------------------ | :----------------- |
+| Io ho una macchina.       | la mia macchina    |
+| Tu hai una macchina.      | la tua macchina    |
+| Lui ha una macchina.      | la sua macchina    |
+| Lei ha una macchina.      | la sua macchina    |
+| Noi abbiamo una macchina. | la nostra macchina |
+| Voi avete una macchina.   | la vostra macchina |
+| Loro hanno una macchina.  | la loro macchina   |
 ### Potere (To be able to / Can)
 
 | Pronoun | Italy   | English |
@@ -299,11 +309,59 @@ Some verbs don't follow these rules. They are called **irregular verbs**. You'll
 
 ### Mangiare (To eat)
 
-| Pronoun | Italy   | English |
-| :------ | :------ | :------ |
-| Io      | mangio  | I eat   |
-| Tu      | mangi   | You eat |
-| Lui/Lei | mangia  | He/She eats |
-| Noi     | mangiamo| We eat  |
-| Voi     | mangiate| You (plural) eat |
-| Loro    | mangiano| They eat |
+| Pronoun | Italy    | English          |
+| :------ | :------- | :--------------- |
+| Io      | mangio   | I eat            |
+| Tu      | mangi    | You eat          |
+| Lui/Lei | mangia   | He/She eats      |
+| Noi     | mangiamo | We eat           |
+| Voi     | mangiate | You (plural) eat |
+| Loro    | mangiano | They eat         |
+### Guidare 
+| Pronoun | Italy    | English    |
+| :------ | :------- | :--------- |
+| Io      | Guido    | I drive    |
+| Tu      | Guidi    | You drive  |
+| Lei     | Guida    | She drives |
+| Lui     | Guida    | He drives  |
+| Noi     | Guidiamo | We drive   |
+| Voi     | Guidate  | You drive  |
+| Loro    | Guidano  | They drive |
+
+
+### Prendere
+| Pronoun | Italy     | English   |
+| :------ | :-------- | :-------- |
+| Io      | Prendo    | I take    |
+| Tu      | Prendi    | You take  |
+| Lei     | Prende    | She takes |
+| Lui     | Prende    | He taks   |
+| Noi     | Prendiamo | We take   |
+| Voi     | Prendete  | You take  |
+| Loro    | Prendono  | They take |
+
+
+### Fermarsi
+
+| Conjugated Verb |
+| :-------------- |
+| Io mi fermo     |
+| tu ti fermi     |
+| lei si ferma    |
+| lui si ferma    |
+| noi ci fermiamo |
+| voi vi fermate  |
+| loro si fermano |
+
+
+### Vivere
+
+| Conjugated Verb |
+| :-------------- |
+| Io vivo         |
+| tu vivi         |
+| lei vive        |
+| lui vive        |
+| noi viviamo     |
+| voi vivete      |
+| loro vivono     |

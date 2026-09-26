@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "176e76582852a4b4",
+    "id": "12eb3ac8ef926451",
     "type": "split",
     "children": [
       {
-        "id": "f83bc312233c86f5",
+        "id": "3300c8299ff6e802",
         "type": "tabs",
         "children": [
           {
-            "id": "268a4215463ca43d",
+            "id": "872abeb62c022cd5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Italy/A0/A0.md",
+                "file": "GIT/Git Pro.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "A0"
+              "title": "Git Pro"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "c54b93ca102dcac0",
+    "id": "43f01d9b5e3be153",
     "type": "split",
     "children": [
       {
-        "id": "36c503e26c686af9",
+        "id": "ad1e85f1973d3c5b",
         "type": "tabs",
         "children": [
           {
-            "id": "b3172e7a04d09a4a",
+            "id": "b19a86fd4eb900cb",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -50,13 +50,13 @@
             }
           },
           {
-            "id": "77150a1e65755754",
+            "id": "3020435efbf0d913",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": true,
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -67,7 +67,7 @@
             }
           },
           {
-            "id": "4f81b6bbb1c1aab7",
+            "id": "ce412c75cc34749a",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -83,22 +83,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 246.38932037353516
+    "width": 300
   },
   "right": {
-    "id": "0876a6af07bdcd18",
+    "id": "188af0180491efa8",
     "type": "split",
     "children": [
       {
-        "id": "e07f8a82cac6fdba",
+        "id": "71d2c30e447d818b",
         "type": "tabs",
         "children": [
           {
-            "id": "674fb1ffcbc96e4b",
+            "id": "b1cf28c88fc534c5",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "GIT/Git Pro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,11 +113,12 @@
             }
           },
           {
-            "id": "af49405c919ca53f",
+            "id": "3d495e87d4ea2dc9",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "GIT/Git Pro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -125,7 +127,7 @@
             }
           },
           {
-            "id": "508e2a4d68274ee6",
+            "id": "c193c344a148cf4a",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -140,11 +142,12 @@
             }
           },
           {
-            "id": "19046ff86ed118c9",
+            "id": "7edcf3515209d20e",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "GIT/Git Pro.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -154,17 +157,7 @@
             }
           },
           {
-            "id": "de5d9613159c61f7",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
-          },
-          {
-            "id": "174f72b48bd8485e",
+            "id": "4476c607a1f86d96",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -172,94 +165,34 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
-          },
-          {
-            "id": "e1fa2a0abc6abff2",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "copilot-chat-view",
-              "state": {},
-              "pinned": true,
-              "icon": "message-square",
-              "title": "Copilot (Quick Chat)"
-            }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 556.7222290039062
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
       "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "omnisearch:Omnisearch": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "graph:Open graph view": false,
+      "obsidian-kanban:Create new board": false,
+      "omnisearch:Omnisearch": false,
       "templater-obsidian:Templater": false,
       "obsidian-git:Open Git source control": false,
       "copilot:Open Copilot Agent Chat": false,
-      "obsidian-kanban:Create new board": false,
       "note-reader:Note Reader": false
     }
   },
-  "active": "de5d9613159c61f7",
+  "active": "872abeb62c022cd5",
   "lastOpenFiles": [
-    "Italy/A0/Who is Doing the Action Io, Tu, Lui, Lei, Noi, Loro.md",
-    "copilot/skills/copilot-fetch-x/SKILL.md",
-    "copilot/copilot-conversations/File_Words_Conjecuation@20260903_115923.md",
-    "Italy/A0/A0.md",
-    "copilot/skills/openartifacts-publish/SKILL.md",
-    "copilot/skills/openartifacts-publish/openartifacts-publish.ps1",
-    "copilot/skills/openartifacts-publish/openartifacts-publish.cmd",
-    "copilot/skills/openartifacts-publish/openartifacts-publish.sh",
-    "copilot/skills/openartifacts-publish/themes/research-memo.md",
-    "copilot/skills/openartifacts-publish/themes",
-    "copilot/skills/openartifacts-publish",
-    "copilot/copilot-conversations/Create_Table@20260902_003028.md",
-    "copilot/copilot-conversations/Greeting_and_Offer@20260831_183729.md",
-    "CLAUDE.md",
-    "AGENTS.md",
-    "copilot/copilot-conversations/__title_Senior_.NET_Backend_Engineer_Persona,_@20260624_151409.md",
-    "Italy/A0/Conversazione.md",
-    "copilot/copilot-conversations/تعديل_ألوان_الملف@20260827_144854.md",
-    "JavaScript-Learning-main/DOM/Changing & Retrieving the HTML Content.md",
-    "JavaScript-Learning-main/DOM/DOM(Document Object Model).md",
-    "JavaScript-Learning-main/JS Tutorial.md",
-    "Django/Django Admin.md",
-    "Dot NET/WEB API/Middleware using dotnet.md",
-    "Italy/Italy Tutorial.md",
-    "DataBase/DataBaseDesign/Normalization.md",
-    "copilot/copilot-conversations/Image_Text_Styling@20260825_121441.md",
-    "Italy/A0/La Famiglia = The Family.md",
-    "copilot/copilot-conversations/AI_Offers_Help@20260823_125715.md",
-    "Custom Colors for VS.md",
-    "Ds & Alg/Linked List.md",
-    "copilot/skills/obsidian-cli/SKILL.md",
-    "copilot/skills/obsidian-cli/LICENSE",
-    "copilot/skills/obsidian-cli",
-    "copilot/skills/json-canvas/LICENSE",
-    "copilot/skills/json-canvas/references",
-    "copilot/skills/json-canvas",
-    "Images/Pasted image 20260708161648.png",
-    "Images/Pasted image 20260707172758.png",
-    "Images/Pasted image 20260630155015.png",
-    "DataBase/SQL Server/T-SQL/Pasted image 20260512152332.png",
-    "Untitled.canvas",
-    "Untitled 1.canvas",
-    "DBMS-Using-Bash-Shell-Script.canvas",
-    "Images/Pasted image 20260117172253.png",
-    "Images/Pasted image 20260115125114.png",
-    "Images/Pasted image 20251121112827.png",
-    "Images/Pasted image 20251121112754.png",
-    "Images/Pasted image 20251121112720.png",
-    "Images/Pasted image 20250910180759.png",
-    "Learning/DBMS-Using-Bash-Shell-Script.canvas"
+    "GIT/Git شخبط.md",
+    "GIT/Git Pro.md"
   ]
 }
