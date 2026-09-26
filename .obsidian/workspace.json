@@ -20,23 +20,8 @@
               "icon": "lucide-file",
               "title": "A0"
             }
-          },
-          {
-            "id": "25857c57cb60aca3",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".agents/skills/copilot-fetch-x/fetch-x.ps1",
-                "bFile": ".agents/skills/copilot-fetch-x/fetch-x.ps1",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: fetch-x.ps1  (Working Tree)"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -224,7 +209,7 @@
       "note-reader:Note Reader": false
     }
   },
-  "active": "25857c57cb60aca3",
+  "active": "de5d9613159c61f7",
   "lastOpenFiles": [
     "Italy/A0/Who is Doing the Action Io, Tu, Lui, Lei, Noi, Loro.md",
     "copilot/skills/copilot-fetch-x/SKILL.md",
