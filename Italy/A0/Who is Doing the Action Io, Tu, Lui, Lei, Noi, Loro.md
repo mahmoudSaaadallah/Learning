@@ -287,14 +287,29 @@ Some verbs don't follow these rules. They are called **irregular verbs**. You'll
 
 ### Volere (To want)
 
-| Pronoun | Italy   | English |
-| :------ | :------ | :------ |
-| Io      | voglio  | I want  |
-| Tu      | vuoi    | You want |
-| Lui/Lei | vuole   | He/She wants |
-| Noi     | vogliamo| We want |
-| Voi     | volete  | You (plural) want |
-| Loro    | vogliono| They want |
+| Pronoun | Italy    | English           |
+| :------ | :------- | :---------------- |
+| Io      | voglio   | I want            |
+| Tu      | vuoi     | You want          |
+| Lui/Lei | vuole    | He/She wants      |
+| Noi     | vogliamo | We want           |
+| Voi     | volete   | You (plural) want |
+| Loro    | vogliono | They want         |
+- Io voglio bere. Io ho sete.
+- Io voglio bere un bicchiere d'acqua.
+- Tu vuoi mangiare una mela.
+- Lei vuole una fetta di pizza.
+- Lui vuole un  bicchiere d'acqua.
+- Noi vogliamo mangiare un panino.
+- Voi volete fare colazione.
+- loro vogliono mangiare.
+- Noi voglianmo pane e formaggio.
+- Lei vuole una meal gialla.
+- Io voglio andare a case.
+- Tu vuoi bere una tazza di te'.
+- Voi volete prendere l'autobus.
+- Lui vuole guidare la macchina.
+
 
 ### Dare (To give)
 
@@ -365,3 +380,28 @@ Some verbs don't follow these rules. They are called **irregular verbs**. You'll
 | noi viviamo     |
 | voi vivete      |
 | loro vivono     |
+
+### Avere Fame (To be hungry - حرفياً: To have hunger)
+
+| Pronoun | Verb Phrase (Avere + Fame) | English Meaning |
+| :------ | :------------------------- | :-------------- |
+| `Io`    | `Io ho fame`               | I am hungry     |
+| `Tu`    | `Tu hai fame`              | You are hungry  |
+| `Lui`   | `Lui ha fame`              | He is hungry    |
+| `Lei`   | `Lei ha fame`              | She is hungry   |
+| `Noi`   | `Noi abbiamo fame`         | We are hungry   |
+| `Voi`   | `Voi avete fame`           | You all are hungry |
+| `Loro`  | `Loro hanno fame`          | They are hungry |
+
+
+### Avere Sete (To be thirsty - حرفياً: To have thirst)
+
+| Pronoun | Verb Phrase (Avere + Sete) | English Meaning |
+| :------ | :------------------------- | :-------------- |
+| `Io`    | `Io ho sete`               | I am thirsty    |
+| `Tu`    | `Tu hai sete`              | You are thirsty |
+| `Lui`   | `Lui ha sete`              | He is thirsty   |
+| `Lei`   | `Lei ha sete`              | She is thirsty  |
+| `Noi`   | `Noi abbiamo sete`         | We are thirsty  |
+| `Voi`   | `Voi avete sete`           | You all are thirsty |
+| `Loro`  | `Loro hanno sete`          | They are thirsty |
