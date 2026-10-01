@@ -208,13 +208,21 @@
           {
             "id": "b62ba4e6e2b50a3b",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "copilot-chat-view",
               "state": {},
-              "pinned": true,
               "icon": "message-square",
               "title": "Copilot (Quick Chat)"
+            }
+          },
+          {
+            "id": "746e1074e14215d4",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-agent-chat-view",
+              "state": {},
+              "icon": "copilot-agent",
+              "title": "Copilot Agent"
             }
           }
         ],
@@ -241,11 +249,13 @@
       "note-reader:Note Reader": false
     }
   },
-  "active": "872abeb62c022cd5",
+  "active": "9a771b8b9b8e3da5",
   "lastOpenFiles": [
+    "Italy/A0/Untitled.md",
     "Italy/A0/A0.md",
     "Italy/A0/Who is Doing the Action Io, Tu, Lui, Lei, Noi, Loro.md",
     "Italy/A0/Conversazione.md",
+    "copilot/copilot-conversations/Casual_Greeting@20260929_163758.md",
     "copilot/copilot-conversations/Fame_Sete_Schedule@20260927_165148.md",
     "copilot/copilot-conversations/__title_Senior_.NET_Backend_Engineer_Persona,_@20260624_151409.md",
     "copilot/copilot-conversations/__title_Senior_.NET_Mentor_and_Web_API_Topics,_@20260624_151652.md",
