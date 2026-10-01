@@ -5221,9 +5221,6 @@ var _ColoredTagsPlugin = class extends import_obsidian4.Plugin {
     this.app.workspace.onLayoutReady(async () => {
       await this.saveKnownTags();
       this.reload();
-      window.setTimeout(() => {
-        void this.checkUpdates();
-      }, _ColoredTagsPlugin.INITIAL_UPDATE_CHECK_DELAY);
       this.registerEvent(
         this.app.workspace.on(
           "editor-change",
@@ -5289,25 +5286,6 @@ var _ColoredTagsPlugin = class extends import_obsidian4.Plugin {
         this.colorizeTag(tagName);
       }
     });
-  }
-  async checkUpdates() {
-    var _a, _b;
-    try {
-      const response = (await (0, import_obsidian4.requestUrl)({
-        url: "https://api.github.com/repos/pfrankov/obsidian-colored-tags/releases/latest",
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        contentType: "application/json"
-      })).json;
-      if (response.tag_name !== this.manifest.version) {
-        const pluginName = (_b = (_a = this.manifest) == null ? void 0 : _a.name) != null ? _b : "Colored Tags";
-        new import_obsidian4.Notice(I18n.t("notices.updateAvailable", { pluginName }));
-      }
-    } catch (error) {
-      console.error(error);
-    }
   }
   reload(palettes) {
     this.onunload();
@@ -5502,8 +5480,6 @@ ${css}
   }
 };
 var ColoredTagsPlugin = _ColoredTagsPlugin;
-ColoredTagsPlugin.INITIAL_UPDATE_CHECK_DELAY = 5e3;
-// 5 seconds
 ColoredTagsPlugin.EDITOR_CHANGE_DEBOUNCE = 3e3;
 // 3 seconds
 ColoredTagsPlugin.LEAF_CHANGE_DEBOUNCE = 300;
