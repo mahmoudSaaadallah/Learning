@@ -87,6 +87,20 @@
 
 ---
 ## 9
-Buongiorno. Ho una gran fame. È tempo di fare colazione.
+- Buongiorno quanto costano le mele?
+> Due euro al chilo
+- E le arance?
+> Anche quelle due euro al chilo.
+- Un chilo di mele e un chilo di arance per favore.
+> Ecco a lei. quattro euro in totto.
+- Perfetto grazie.
+> Grazie a lei buona giornata.
 
+---
 
+## 10
+- Ciao. Come ti chiami?
+> Ciao. Mi chiamo David. E tu?
+- Mi chiamo Miriam. Di dove sei, David?
+> Sono spagnolo. E tu?
+- Io vengo dal Sudan. Io sono sudanese.
