@@ -405,3 +405,48 @@ Some verbs don't follow these rules. They are called **irregular verbs**. You'll
 | `Noi`   | `Noi abbiamo sete`         | We are thirsty  |
 | `Voi`   | `Voi avete sete`           | You all are thirsty |
 | `Loro`  | `Loro hanno sete`          | They are thirsty |
+
+
+
+### Chiamarsi (To be called / To call oneself)
+
+| Pronoun | Italy          | English          |
+| :------ | :------------- | :--------------- |
+| Io      | mi chiamo      | I call myself    |
+| Tu      | ti chiami      | You call yourself |
+| Lui     | si chiama      | He calls himself |
+| Lei     | si chiama      | She calls herself |
+| Noi     | ci chiamiamo   | We call ourselves |
+| Voi     | vi chiamate    | You all call yourselves |
+| Loro    | si chiamano    | They call themselves |
+
+- Io mi chiamo Mahmoud.
+- Tu ti chiami Anna.
+- Lei si chiama Miriam.
+- Lui si chiama Noah.
+- Voi vi chiamate Eva e Yannis.
+- Loro si chiamano Olivia e Luc.
+- tu ti chiami Lisa.
+- Noi ci chiamiamo Elena e kim.
+
+
+### Cercare (To search / To look for)
+
+| Pronoun | Italy      | English         |
+| :------ | :--------- | :-------------- |
+| Io      | cerco      | I search        |
+| Tu      | cerchi     | You search      |
+| Lui     | cerca      | He searches     |
+| Lei     | cerca      | She searches    |
+| Noi     | cerchiamo  | We search       |
+| Voi     | cercate    | You all search  |
+| Loro    | cercano    | They search     |
+- Loro cercano l'ospedale.
+- Io cerco il mio gatto.
+- Noi cerchiamo il tesoro.
+- Loro cercano il loro genitori.
+- Tu cerchi la tua sedia.
+- Voi cercate un ospedale.
+- Lui cerca il suo orologio.
+- Lei cerca una scodella.
+- Voi cercate i vostri genitori.

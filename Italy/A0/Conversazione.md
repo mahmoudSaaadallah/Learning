@@ -104,3 +104,12 @@
 - Mi chiamo Miriam. Di dove sei, David?
 > Sono spagnolo. E tu?
 - Io vengo dal Sudan. Io sono sudanese.
+
+----
+
+## 11
+- Ciao Maria.
+> Ciao Miriam.
+- Cosa ti piace fare?
+> Mi piace ascoltare musica.
+- A me piace giocare a tennis. 
