@@ -450,3 +450,43 @@ Some verbs don't follow these rules. They are called **irregular verbs**. You'll
 - Lui cerca il suo orologio.
 - Lei cerca una scodella.
 - Voi cercate i vostri genitori.
+
+
+
+### Ascoltare (To listen)
+
+| Pronoun | Italy       | English       |
+| :------ | :---------- | :------------ |
+| Io      | ascolto     | I listen      |
+| Tu      | ascolti     | You listen    |
+| Lui     | ascolta     | He listens    |
+| Lei     | ascolta     | She listens   |
+| Noi     | ascoltiamo  | We listen     |
+| Voi     | ascoltate   | You all listen|
+| Loro    | ascoltano   | They listen   |
+- Io ascolto la musica.
+- Tu ascolti il tuo papa.
+- Lei ascolta la sua mamma.
+- Lui ascolta la musica co il suo papa.
+- Noi ascoltiamo musica sull'autobus.
+- Voi ascoltate i vostri genitori.
+- Loro ascoltano musica in macchina.
+- Io ascolto i miei genitori.
+
+### Giocare (To play)
+
+| Pronoun | Italy       | English      |
+| :------ | :---------- | :----------- |
+| Io      | gioco       | I play       |
+| Tu      | giochi      | You play     |
+| Lui     | gioca       | He plays     |
+| Lei     | gioca       | She plays    |
+| Noi     | giochiamo   | We play      |
+| Voi     | giocate     | You all play |
+| Loro    | giocano     | They play    |
+- Io gioco a tennis.
+- Tu giochi con tua sorella.
+- Lei gioca a domino.
+- Lui gioca con i suoi genitori.
+- Voi giocate sotto al tavolo.
+- Loro giocano a scuola.
