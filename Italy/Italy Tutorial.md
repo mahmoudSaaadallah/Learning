@@ -2,3 +2,5 @@
 - A0 Vocabulary [[A0]].
 - Who is Doing the Action Io, Tu, Lui, Lei, Noi, Loro [[Who is Doing the Action Io, Tu, Lui, Lei, Noi, Loro]].
 - Conversazione [[Conversazione]].
+- Le Preposizioni [[Le Preposizioni حروف الجر]].
+- 
