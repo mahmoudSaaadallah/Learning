@@ -490,3 +490,39 @@ Some verbs don't follow these rules. They are called **irregular verbs**. You'll
 - Lui gioca con i suoi genitori.
 - Voi giocate sotto al tavolo.
 - Loro giocano a scuola.
+
+
+### Disegnare
+
+| Pronoun | Italy      | English      |
+| :------ | :--------- | :----------- |
+| Io      | disegno    | I draw       |
+| Tu      | disegni    | You draw     |
+| Lui/Lei | disegna    | He/She draws |
+| Noi     | disegniamo | We draw      |
+| Voi     | disegnate  | You all draw |
+| Loro    | disegnano  | They draw    |
+- Io disegno una palla.
+- Tu disegni una zebra.
+- Lei disegna una casa.
+- Noi disegniamo un gatto.
+- Voi disegnate due mele.
+- Loro disegnano una collana.
+
+
+### Dipingo
+
+| Pronoun | Italy      | English       |
+| :------ | :--------- | :------------ |
+| Io      | dipingo    | I paint       |
+| Tu      | dipingi    | You paint     |
+| Lui/Lei | dipinge    | He/She paints |
+| Noi     | dipingiamo | We paint      |
+| Voi     | dipingete  | You all paint |
+| Loro    | dipingono  | They paint    |
+- Io dipingo la parete.
+- Tu dipingi il soffitto.
+- lei dipinge un disegno.
+- Noi dipingiamo con la vernice.
+- Voi dipingete sul muro.
+- Loro dipingono una mela.

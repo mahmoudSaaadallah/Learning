@@ -73,3 +73,11 @@
 ## Database Interaction in ASP.NET Core Web API
 **Time:** 2026-06-27 17:35
 **Summary:** The user, a mentee, asked their AI mentor to explain "Working with Database using asp dot net web api". The AI mentor, acting as a Senior Software Engineer, acknowledged the topic and reminded the user that they had a comprehensive discussion on this topic previously, covering EF Core setup, CRUD, and integration. The AI then offered to re-explain, dive deeper into advanced aspects, or move to a new topic.
+
+## Italian Verbs and Prepositions Explained
+**Time:** 2026-10-06 19:34
+**Summary:** The user is learning Italian grammar, asking for detailed explanations and examples. The conversation first clarifies the usage of Italian prepositions "a," "al" (and its variations), and "in" with the verb "vado" (I go) for different types of destinations. Following this, it details the conjugation of the regular -are verb "disegnare" (to draw), showing how its endings change for each personal pronoun.
+
+## Coniugare verbi italiani
+**Time:** 2026-10-06 20:38
+**Summary:** L’utente esercita la coniugazione al presente dei verbi «disegnare» e «dipingere», fornendo le forme per tutte le persone e una frase d’esempio per ciascuno. L’assistente conferma che le coniugazioni e gli esempi sono corretti.
