@@ -48,20 +48,6 @@
               "icon": "lucide-file",
               "title": "Who is Doing the Action Io, Tu, Lui, Lei, Noi, Loro"
             }
-          },
-          {
-            "id": "1889405913aa0bd6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Italy/A0/Le Preposizioni حروف الجر.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Le Preposizioni حروف الجر"
-            }
           }
         ]
       }
@@ -125,8 +111,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "188af0180491efa8",
@@ -244,11 +229,13 @@
       }
     ],
     "direction": "horizontal",
-    "width": 414.36114501953125
+    "width": 414.36114501953125,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
       "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
@@ -259,28 +246,18 @@
       "templater-obsidian:Templater": false,
       "obsidian-git:Open Git source control": false,
       "copilot:Open Copilot Agent Chat": false,
-      "note-reader:Note Reader": false,
-      "graph:Open graph view": false
+      "note-reader:Note Reader": false
     }
   },
-  "active": "9a771b8b9b8e3da5",
+  "active": "872abeb62c022cd5",
   "lastOpenFiles": [
     "Italy/A0/Who is Doing the Action Io, Tu, Lui, Lei, Noi, Loro.md",
-    "Italy/A0/A0.md",
     "Italy/A0/Conversazione.md",
-    "copilot/copilot-conversations/Disegnare_Verb_Conjugation@20261006_193439.md",
-    "Important tables and relations.svg",
-    "Italy/Italy Tutorial.md",
     "Italy/A0/Le Preposizioni حروف الجر.md",
+    "Important tables and relations.svg",
     "Images/Pasted image 20261006104851.png",
-    "copilot/copilot-conversations/Explain_This@20261006_104819.md",
-    "copilot/copilot-conversations/attachments/copilot-image-516a9ace3d27f42ecef9e6ae7e1daf6743493284f8268a7328fd37d9ac652446.png",
-    "copilot/copilot-conversations/attachments",
-    "Prompts.md",
-    "Thougths.md",
-    "Welcome.md",
-    "Markdown CheatSheat.md",
-    "copilot/copilot-conversations/Chiamarsi_Italian_Conjugation@20261004_152233.md",
+    "Italy/A0/A0.md",
+    "Italy/A0/Untitled.md",
     "copilot/copilot-conversations/Casual_Greeting@20260929_163758.md",
     "copilot/copilot-conversations/Fame_Sete_Schedule@20260927_165148.md",
     "copilot/copilot-conversations/__title_Senior_.NET_Backend_Engineer_Persona,_@20260624_151409.md",
